@@ -1,0 +1,15 @@
+- zrobić plansze
+- wyświetlać planszę
+- zrobić obiekt human
+- human ma chodzić po planszy
+- human ma  z innym human, gdy wchodzą na tę samo kratkę
+- dodać różne cechy do human
+- dodać stałe obiekty na plansze
+- sprawić by human zmieniał swoje efekty, gdy wejdzie na plansze
+- zrobić obiekt car
+- zrobić pathfinding dla human i car
+- zrobić interakcje human i car
+- zrobić zapis danej ery (tury) do jakiegoś pliku 
+- zrobić wybieranie zmiennych na początku uruchamiania programu
+- * generacja mapy na podstawie seed
+- * zmiana mapy przez ludzi z specyficznymi cechami
