@@ -2,7 +2,7 @@
 - wyświetlać planszę
 - zrobić obiekt human
 - human ma chodzić po planszy
-- human ma  z innym human, gdy wchodzą na tę samo kratkę
+- human ma interakt z innym human, gdy wchodzą na tę samo kratkę
 - dodać różne cechy do human
 - dodać stałe obiekty na plansze
 - sprawić by human zmieniał swoje efekty, gdy wejdzie na plansze
