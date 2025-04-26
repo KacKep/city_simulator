@@ -2,7 +2,7 @@
 project lol
 
 Skład:
-Kacper Krzekotowski (lider)
+Kacper Krzekotowski (lider),
 Mateusz Grzywa
 
 Temat: Symulacja Miasta
