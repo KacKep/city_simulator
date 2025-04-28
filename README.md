@@ -1,15 +1,17 @@
 # city_simulator
 project lol
 
-Sk³ad:
-Kacper Krzekotowski (lider)
+=======
+SkÅ‚ad:
+Kacper Krzekotowski (lider),
+>>>>>>> 280f75fa1c88d51d7e1f583f0fcbceb6a56929ac
 Mateusz Grzywa
 
 Temat: Symulacja Miasta
 
-Opis: Projekt polega na symulacji miasta, które sk³ada siê z ulicy oraz kilku budynków. W mieœcie mieszka mo¿liwa do zmiany liczba ludzi. Maj¹ oni ró¿ne wylosowane cechy, których prawdopodobieñstwo mo¿na okreœliæ. Te cechy wp³ywaj¹ na ich zachowanie. Mieszkañcy poruszaj¹ siê miêdzy budynkami. Przebywanie w konkretnym budynku wp³ywa na ró¿ne sposoby na mieszkañca, np. po przebywaniu w politechnice traci chêæ do ¿ycia, a przebywanie w monopolowym ma okreœlon¹ szansê zmieniæ go w pijaka. Mieszkañcy maj¹ te¿ interakcje miêdzy sob¹: dwóch pijaków mo¿e siê np. pobiæ, pieszy mo¿e wpaœæ pod samochód itd.
+Opis: Projekt polega na symulacji miasta, ktï¿½re skï¿½ada siï¿½ z ulicy oraz kilku budynkï¿½w. W mieï¿½cie mieszka moï¿½liwa do zmiany liczba ludzi. Majï¿½ oni rï¿½ne wylosowane cechy, ktï¿½rych prawdopodobieï¿½stwo moï¿½na okreï¿½liï¿½. Te cechy wpï¿½ywajï¿½ na ich zachowanie. Mieszkaï¿½cy poruszajï¿½ siï¿½ miï¿½dzy budynkami. Przebywanie w konkretnym budynku wpï¿½ywa na rï¿½ne sposoby na mieszkaï¿½ca, np. po przebywaniu w politechnice traci chï¿½ï¿½ do ï¿½ycia, a przebywanie w monopolowym ma okreï¿½lonï¿½ szansï¿½ zmieniï¿½ go w pijaka. Mieszkaï¿½cy majï¿½ teï¿½ interakcje miï¿½dzy sobï¿½: dwï¿½ch pijakï¿½w moï¿½e siï¿½ np. pobiï¿½, pieszy moï¿½e wpaï¿½ï¿½ pod samochï¿½d itd.
 
-Jêzyk programowania:
+Jï¿½zyk programowania:
 
 C++
 
