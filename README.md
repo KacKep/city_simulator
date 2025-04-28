@@ -4,14 +4,13 @@ project lol
 =======
 Skład:
 Kacper Krzekotowski (lider),
->>>>>>> 280f75fa1c88d51d7e1f583f0fcbceb6a56929ac
 Mateusz Grzywa
 
 Temat: Symulacja Miasta
 
-Opis: Projekt polega na symulacji miasta, kt�re sk�ada si� z ulicy oraz kilku budynk�w. W mie�cie mieszka mo�liwa do zmiany liczba ludzi. Maj� oni r�ne wylosowane cechy, kt�rych prawdopodobie�stwo mo�na okre�li�. Te cechy wp�ywaj� na ich zachowanie. Mieszka�cy poruszaj� si� mi�dzy budynkami. Przebywanie w konkretnym budynku wp�ywa na r�ne sposoby na mieszka�ca, np. po przebywaniu w politechnice traci ch�� do �ycia, a przebywanie w monopolowym ma okre�lon� szans� zmieni� go w pijaka. Mieszka�cy maj� te� interakcje mi�dzy sob�: dw�ch pijak�w mo�e si� np. pobi�, pieszy mo�e wpa�� pod samoch�d itd.
+Opis: Projekt polega na symulacji miasta, które składa się z ulicy oraz kilku budynków. W mieście mieszka możliwa do zmiany liczba ludzi. Mają oni różne wylosowane cechy, których prawdopodobieństwo można określić. Te cechy wpływają na ich zachowanie. Mieszkańcy poruszają się między budynkami. Przebywanie w konkretnym budynku wpływa na różne sposoby na mieszkańca, np. po przebywaniu w politechnice traci chęć do życia, a przebywanie w monopolowym ma określoną szansę zmienić go w pijaka. Mieszkańcy mają też interakcje między sobą: dwóch pijaków może się np. pobić, pieszy może wpaść pod samochód itd.
 
-J�zyk programowania:
+Język programowania:
 
 C++
 
