@@ -1,14 +1,21 @@
 #include <SFML/Graphics.hpp>
+#include <cstdlib>
+#include "Draw.hpp"
+#include "Human.hpp"
+#include "TileMap.hpp"
+
 
 int main()
 {
-    std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
-    sf::Texture texture;
-    if (!texture.loadFromFile(texturePath)) {
-        // Handle loading error
-        return -1;
-    }
+    //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
+    sf::Texture texture = giveTexture("pwr-logo.png");
+   
     sf::Sprite sprite(texture);
+    sf::Color currentColor = sprite.getColor();
+    sprite.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, currentColor.a-150));
+    sprite.setScale(sf::Vector2f(0.25f, 0.25f));
+    srand(120);
+    
     
     // size of the window and name
     sf::RenderWindow window(sf::VideoMode({ 1280, 720 }), "City Simulator");
@@ -31,6 +38,28 @@ int main()
 
     float xvelocity = 3;
     float yvelocity = 3;
+
+    std::vector<Human> humans;
+    const int numHumans = 20;
+
+    for (int i = 0; i < numHumans; ++i) {
+        humans.emplace_back(i); // assuming Human(int seed) constructor
+    }
+
+    
+    constexpr int size = 128 * 72;
+    std::array<int, size> level;
+
+    std::srand(std::time(nullptr)); // Seed random
+
+    for (int i = 0; i < size; ++i) {
+        level[i] = std::rand() % 4;  
+    }
+    
+    // create the tilemap from the level definition
+    TileMap map;
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset.png", {10, 10}, level.data(), 128, 72))
+        return -1;
 
     // main loop nothing works without it
     while (window.isOpen())
@@ -60,17 +89,39 @@ int main()
             yvelocity *= -1;
         }
         rect.setPosition(rectanglePosition);
+
+
         //shape.setPosition(rect.getPosition() - behind);
         
+        //makes program slower
+        //sf::sleep(sf::milliseconds(100));
 
         // drawing the shape
         window.clear();
-        //window.draw(shape);
-        window.draw(sprite);
+
+
         
+        //background(window, 128);
+        //human.draw(window);
+
+        
+
+        window.draw(map);
+
+        window.draw(shape);
+        window.draw(sprite);
+
+        
+
         window.draw(rect);
+        for (auto& human : humans) {
+            human.walk();        
+            window.draw(human);  
+        }
+        
         
         window.display();
+
         // after effect
         behind2.x = xvelocity * 2;
         behind2.y = yvelocity * 2;
