@@ -4,6 +4,7 @@ bool TileMap::load(const std::filesystem::path& tileset, sf::Vector2u tileSize, 
 {
     if (!m_tileset.loadFromFile(tileset.string()))
         return false;
+    //you don't get it? neather do I. it's from sfml tutorial of graphics
 
     m_vertices.setPrimitiveType(sf::PrimitiveType::Triangles);
     m_vertices.resize(width * height * 6);

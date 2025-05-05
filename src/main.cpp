@@ -8,13 +8,16 @@
 int main()
 {
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
+    //pwr logo
     sf::Texture texture = giveTexture("pwr-logo.png");
    
     sf::Sprite sprite(texture);
     sf::Color currentColor = sprite.getColor();
     sprite.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, currentColor.a-150));
     sprite.setScale(sf::Vector2f(0.25f, 0.25f));
-    srand(120);
+
+    //seed lol
+    srand(120); 
     
     
     // size of the window and name
@@ -25,7 +28,7 @@ int main()
     sf::RectangleShape shape(sf::Vector2f(100, 100));
     shape.setFillColor(sf::Color(255,255,255,200));
     
-
+    //bouncy square for the lols
     sf::RectangleShape rect;
 
     sf::Vector2f rectanglePosition(300,250);
@@ -39,18 +42,20 @@ int main()
     float xvelocity = 3;
     float yvelocity = 3;
 
+
+    //human duplication glitch
     std::vector<Human> humans;
     const int numHumans = 20;
 
     for (int i = 0; i < numHumans; ++i) {
-        humans.emplace_back(i); // assuming Human(int seed) constructor
+        humans.emplace_back(i); // assuming Human(int seed) constructor // it's useless with the seed it does nothing rn
     }
 
-    
+    //map generation we need to put it to draw later 
     constexpr int size = 128 * 72;
     std::array<int, size> level;
 
-    std::srand(std::time(nullptr)); // Seed random
+    
 
     for (int i = 0; i < size; ++i) {
         level[i] = std::rand() % 4;  
@@ -76,7 +81,7 @@ int main()
                 window.close();
             }
         }
-        // "physic"
+        // "physic" of the bouncy square
 
         rectanglePosition.x += xvelocity;
         rectanglePosition.y += yvelocity;
@@ -96,16 +101,10 @@ int main()
         //makes program slower
         //sf::sleep(sf::milliseconds(100));
 
+
         // drawing the shape
         window.clear();
-
-
-        
-        //background(window, 128);
-        //human.draw(window);
-
-        
-
+       
         window.draw(map);
 
         window.draw(shape);

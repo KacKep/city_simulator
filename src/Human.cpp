@@ -10,21 +10,22 @@ Human::Human(int seed) {
 	isTarget = false;
 	TargetPosition = Position;
 }
-float tolerance = 5.0f;
+//float tolerance = 5.0f;
 
 Human::~Human() {
 
 }
 
-void Human::setTarget(bool a) {
-	isTarget = a;
-}
-bool Human::getTarget() {
-	return isTarget;
-}
-
 int Human::getSeed() {
 	return seed;
+}
+
+void Human::setTarget(bool a) {
+	this->isTarget = a;
+}
+
+bool Human::getTarget() {
+	return isTarget;
 }
 
 sf::Vector2f Human::getPosition() {
@@ -38,8 +39,8 @@ void Human::Target() {
 		TargetPosition = sf::Vector2f((rand() % 118)*10, (rand() % 62)*10);
 		setTarget(true);
 	}
-	if (abs(TargetPosition.x - Position.x) < tolerance &&
-		abs(TargetPosition.y - Position.y) < tolerance) {
+	if (abs(TargetPosition.x - Position.x) < 5.0f &&
+		abs(TargetPosition.y - Position.y) < 5.0f) {
 		Position = TargetPosition;
 		setTarget(false);
 	}
@@ -55,7 +56,7 @@ void Human::Target() {
 	
 
 
-void Human::setPosition() {
+void Human::checkBoundry() {
 	if (Position.x < 0 || Position.x>1280 - 10)
 	{
 		xVelocity *= -1;
@@ -76,12 +77,11 @@ void Human::walk() {
 	else if (TargetPosition.x > Position.x) {
 		Position.x += xVelocity;
 	}
-
-	if (TargetPosition.y < Position.y)
+	else if (TargetPosition.y < Position.y)
 	{
 		Position.y -= yVelocity;
 	}
-	else if (TargetPosition.y > Position.y) {
+	else /*if (TargetPosition.y > Position.y)*/ {
 		Position.y += yVelocity;
 	}
 
@@ -89,7 +89,7 @@ void Human::walk() {
 	Position.y += yVelocity;*/
 	//shape.move(Move);
 
-	setPosition();
+	checkBoundry();
 	shape.setPosition(Position);
 	Target();
 }
