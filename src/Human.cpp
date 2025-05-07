@@ -2,7 +2,7 @@
 
 Human::Human(int seed) {
 	seed = seed;
-	Position = sf::Vector2f(100, 100);
+	Position = sf::Vector2f(rand()%128 *10, rand()%72*10);
 	shape.setSize( sf::Vector2f(10, 10));
 	shape.setFillColor(sf::Color::Red);
 	xVelocity = 10;

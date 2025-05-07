@@ -5,6 +5,7 @@
 #include "TileMap.hpp"
 
 
+
 int main()
 {
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
@@ -17,7 +18,7 @@ int main()
     sprite.setScale(sf::Vector2f(0.25f, 0.25f));
 
     //seed lol
-    srand(120); 
+    srand(time(0)); 
     
     
     // size of the window and name
@@ -51,19 +52,43 @@ int main()
         humans.emplace_back(i); // assuming Human(int seed) constructor // it's useless with the seed it does nothing rn
     }
 
-    //map generation we need to put it to draw later 
+    //map generation we need to put it to draw later
     constexpr int size = 128 * 72;
     std::array<int, size> level;
 
     
 
     for (int i = 0; i < size; ++i) {
-        level[i] = std::rand() % 4;  
+        level[i] = std::rand() % 2;  
+    }
+    int a = std::rand() % (72);
+    int b = std::rand() % (128);
+    int c = 5;/*std::rand() % (72);*/
+    
+    //std::array<int, size> level;
+
+    for (int i = 0; i <= 128;++i) {
+
+        for (int j = i; j < 72*i; j++)
+        {
+            // top tp bottom road
+            if (b == j%128)
+            {
+                level[j-1] =level[j] = 2;
+            }
+
+            /*if (c >= i && c <= i+2   )
+            {
+                level[j] = 2;
+            }*/
+        }
+
+        
     }
     
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load(std::string(RESOURCE_DIR) + "/tileset.png", {10, 10}, level.data(), 128, 72))
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", {10, 10}, level.data(), 128, 72))
         return -1;
 
     // main loop nothing works without it
