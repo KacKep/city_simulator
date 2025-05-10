@@ -1,7 +1,8 @@
 #include "TileMap.hpp"
 
-bool TileMap::load(const std::filesystem::path& tileset, sf::Vector2u tileSize, const int* tiles, unsigned int width, unsigned int height)
+bool TileMap::load(const std::filesystem::path& tileset, const int* tiles, unsigned int width, unsigned int height)
 {
+    sf::Vector2u tileSize = { 10,10 };
     if (!m_tileset.loadFromFile(tileset.string()))
         return false;
     //you don't get it? neather do I. it's from sfml tutorial of graphics

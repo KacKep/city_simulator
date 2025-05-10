@@ -39,3 +39,85 @@ void background(sf::RenderWindow& window, int seed) {
     }
 
 }
+
+void road(int* level, int width, int height) {
+    int roadColb = std::rand() % 5;
+    int roadCol = std::rand() % 5;
+    int rb = roadColb;
+    int ra = roadCol;
+    bool h = false;
+    bool l = false;
+    for (; ; )
+    {
+
+        //walk of 2
+        for (int i = 0; i < height; ++i) {
+            level[i * width + roadCol] = 2;
+
+            level[i * width + roadCol + 3] = 2;
+        }
+        //left to right
+
+        for (int i = 0; i < width; ++i) {
+            level[roadColb * width + i] = 2;
+            level[(roadColb + 3) * width + i] = 2;
+        }
+
+
+        if (roadColb + 15 < height - 3) {
+            roadColb += 15;
+        }
+        else
+        {
+            h = true;
+        }
+        if (roadCol + 15 < width - 3) {
+            roadCol += 15;
+        }
+        else
+        {
+            l = true;
+        }
+        if (l && h) {
+            break;
+        }
+    }
+
+    roadColb = rb;
+    roadCol = ra;
+    h = l = false;
+
+    for (; ; )
+    {
+
+        //road of 4
+        for (int i = 0; i < height; ++i) {
+            level[i * width + roadCol + 1] = 3;
+            level[i * width + roadCol + 2] = 3;
+        }
+
+        //left to right
+        for (int i = 0; i < width; ++i) {
+            level[(roadColb + 1) * width + i] = 3;
+            level[(roadColb + 2) * width + i] = 3;
+        }
+
+        if (roadColb + 15 < height - 3) {
+            roadColb += 15;
+        }
+        else
+        {
+            h = true;
+        }
+        if (roadCol + 15 < width - 3) {
+            roadCol += 15;
+        }
+        else
+        {
+            l = true;
+        }
+        if (l && h) {
+            break;
+        }
+    }
+}

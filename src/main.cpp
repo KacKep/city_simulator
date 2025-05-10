@@ -5,17 +5,22 @@
 #include "TileMap.hpp"
 
 
+//constexpr int WIDTH = 128;
+//constexpr int HEIGHT = 72;
 
 int main()
 {
+    bool ValueSwitch = false;
+    bool keyV;
+
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
     //pwr logo
     sf::Texture texture = giveTexture("pwr-logo.png");
    
-    sf::Sprite sprite(texture);
-    sf::Color currentColor = sprite.getColor();
-    sprite.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, currentColor.a-150));
-    sprite.setScale(sf::Vector2f(0.25f, 0.25f));
+    sf::Sprite pwr(texture);
+    sf::Color currentColor = pwr.getColor();
+    pwr.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, currentColor.a-150));
+    pwr.setScale(sf::Vector2f(0.25f, 0.25f));
 
     //seed lol
     srand(time(0)); 
@@ -46,51 +51,53 @@ int main()
 
     //human duplication glitch
     std::vector<Human> humans;
-    const int numHumans = 20;
+    const int numHumans = 1;
+    int WIDTH = 128;
+    int HEIGHT = 72;
+    float WIDTHf = WIDTH;
+    float HEIGHTf = HEIGHT;
+    constexpr int SIZE = 128 * 72;//you can ignore it for teasting for null it gives nothing on map
 
+    sf::Vector2 a{ HEIGHTf,WIDTHf };
     for (int i = 0; i < numHumans; ++i) {
-        humans.emplace_back(i); // assuming Human(int seed) constructor // it's useless with the seed it does nothing rn
+        humans.emplace_back(a); // assuming Human(int seed) constructor // it's useless with the seed it does nothing rn
     }
 
     //map generation we need to put it to draw later
-    constexpr int size = 128 * 72;
-    std::array<int, size> level;
+     
+     
+     std::array<int,SIZE> level;
+     std::vector<std::vector<int>> Intmap(HEIGHT, std::vector<int>(WIDTH));
 
-    
 
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < SIZE; ++i) {
         level[i] = std::rand() % 2;  
     }
-    int a = std::rand() % (72);
-    int b = std::rand() % (128);
-    int c = 5;/*std::rand() % (72);*/
     
-    //std::array<int, size> level;
+    road(level.data(), WIDTH, HEIGHT);
 
-    for (int i = 0; i <= 128;++i) {
-
-        for (int j = i; j < 72*i; j++)
-        {
-            // top tp bottom road
-            if (b == j%128)
-            {
-                level[j-1] =level[j] = 2;
-            }
-
-            /*if (c >= i && c <= i+2   )
-            {
-                level[j] = 2;
-            }*/
+    for (int y = 0; y < HEIGHT; ++y) {
+        for (int x = 0; x < WIDTH; ++x) {
+            Intmap[y][x] = level[y * WIDTH + x];
         }
-
-        
     }
+
+    sf::Font font("C:\\Windows\\Fonts\\AGENCYR.TTF");
+    sf::Text text(font);
+    text.setFillColor(sf::Color::Black);
+    text.setCharacterSize(5);
+    
+   
+
+    //if (!font.loadFromFile((RESOURCE_DIR)+"AGENCYR.TTF")) {
+    //    return -1; // make sure you have a font file in your folder
+    //}
     
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", {10, 10}, level.data(), 128, 72))
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), WIDTH, HEIGHT))
         return -1;
-
+    sf::Vector2 loop{ 0,0 };
     // main loop nothing works without it
     while (window.isOpen())
     {
@@ -104,6 +111,19 @@ int main()
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
             {
                 window.close();
+            }
+            keyV = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V);
+            if (keyV)
+            {
+                if (!ValueSwitch)
+                {
+                    ValueSwitch = true;
+                }
+                else
+                {
+                    ValueSwitch = false;
+                }
+                keyV = false;
             }
         }
         // "physic" of the bouncy square
@@ -124,7 +144,7 @@ int main()
         //shape.setPosition(rect.getPosition() - behind);
         
         //makes program slower
-        //sf::sleep(sf::milliseconds(100));
+        sf::sleep(sf::milliseconds(10));
 
 
         // drawing the shape
@@ -132,14 +152,31 @@ int main()
        
         window.draw(map);
 
-        window.draw(shape);
-        window.draw(sprite);
+        //window.draw(shape);
+        //window.draw(pwr);
 
         
+        if (ValueSwitch)
+        {
+            for (loop.x = 0; loop.x < HEIGHT ; ++loop.x) {
+                for (loop.y = 0; loop.y < WIDTH; ++loop.y) {
+                
+                    // Draw text
+                    std::string numStr = std::to_string(Intmap[loop.x][loop.y]);
+                    text.setString(numStr);
+                    // Center the text in the tile
+                    float textY = loop.x * 10 + (10 / 2.0f);
+                    float textX = loop.y * 10 + (10 / 2.0f) -2; // -5 for visual adjustment
+                    text.setPosition(sf::Vector2f(textX, textY));
+                    window.draw(text);
+                }
+            }
+            loop = { 0,0 };
+        }
 
         window.draw(rect);
         for (auto& human : humans) {
-            human.walk();        
+            human.walk(Intmap);
             window.draw(human);  
         }
         
@@ -151,6 +188,7 @@ int main()
         behind2.y = yvelocity * 2;
         shape.setPosition(behind = rectanglePosition - behind2);
     }
+    return 0;
 }
 
 

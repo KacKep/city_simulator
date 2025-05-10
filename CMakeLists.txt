@@ -22,6 +22,7 @@ add_library(draw_lib
     src/Draw.cpp
     src/Human.cpp
     src/TileMap.cpp
+    
 )
 
 # Set include directories for the library
@@ -33,7 +34,7 @@ target_include_directories(draw_lib PUBLIC
 target_link_libraries(draw_lib PUBLIC SFML::Graphics)
 
 # Add your executable
-add_executable(main src/main.cpp)
+add_executable(main src/main.cpp )
 
 # Set C++ standard for all targets
 set(CMAKE_CXX_STANDARD 17)
