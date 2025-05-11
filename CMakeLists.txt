@@ -22,7 +22,8 @@ add_library(draw_lib
     src/Draw.cpp
     src/Human.cpp
     src/TileMap.cpp
-    
+    src/Building.cpp
+    src/Shop.cpp
 )
 
 # Set include directories for the library
@@ -42,5 +43,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Link libraries to your executable
 target_link_libraries(main PRIVATE 
-    draw_lib  # This gives main access to both your library and SFML
+    draw_lib  
 )

@@ -1,8 +1,9 @@
 #include "Human.hpp"
-#include <iostream>
+
+
 Human::Human(sf::Vector2f a) {
 	boundry = a;
-	Position = sf::Vector2f(rand() % ((int)boundry.x) * 10, (rand() % (int)boundry.y) * 10 );
+	Position = sf::Vector2f((rand() % (int)boundry.y) * 10,rand() % ((int)boundry.x) * 10  );
 	shape.setSize( sf::Vector2f(10, 10));
 	shape.setFillColor(sf::Color::Red);
 	xVelocity = 10;
@@ -10,7 +11,9 @@ Human::Human(sf::Vector2f a) {
 	isTarget = false;
 	TargetPosition = Position;
 	unstuck = 0;
-	std::cout << a.x <<"\n"<<a.y;
+	satiety = 100;
+
+	//std::cout << a.x <<"\n"<<a.y;
 }
 //float tolerance = 5.0f;
 
@@ -36,18 +39,28 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 
 	if (!ActiveTarget())
 	{
-		TargetPosition = sf::Vector2f((rand() % ((int)boundry.y)) * 10, (rand() % ((int)boundry.x)) * 10);
-		xMap = TargetPosition.x / 10;
-		yMap = TargetPosition.y / 10;
+		BuildingList place;
+		if (satiety<50)
+		{
+			place = ShopTile;
+		}
+		else
+		{
+			place = PavementTile;
+		}
+
+		TargetPosition = sf::Vector2f((rand() % ((int)boundry.x)) , (rand() % ((int)boundry.y)) );
+		xMap = TargetPosition.x ;
+		yMap = TargetPosition.y ;
 		for (int y = 0; y < boundry.y && !ActiveTarget(); y++)
 		{
 			for (int x = 0; x < boundry.x && !ActiveTarget(); x++)
 			{
 				X2 = (xMap + x) % ((int)boundry.x);
 				Y2 = (yMap + y) % ((int)boundry.y);
-				if (Intmap[Y2][X2] < 3) {
-
-					TargetPosition = sf::Vector2f( X2 * 10,Y2 * 10);
+				if (Intmap[X2][Y2 ] == place) {
+					std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
+					TargetPosition = sf::Vector2f( Y2 * 10,X2 * 10);
 					setTarget(true);
 					break;
 				}
@@ -56,58 +69,17 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 		}
 		
 	}
-	if ((abs(TargetPosition.x - Position.x) < 9.0f &&
-		abs(TargetPosition.y - Position.y) < 9.0f) || ++unstuck==boundry.x+boundry.y) {
+	if ((abs((float)TargetPosition.x - (float)Position.x) <= 9.0f &&
+		abs((float)TargetPosition.y - (float)Position.y) <= 9.0f) || ++unstuck==(boundry.x*boundry.y)/4) {
 		Position = TargetPosition;
 		unstuck = 0;
+		satiety -= 10;
 		setTarget(false);
 	}
-	//float dx = TargetPosition.x - Position.x;
-	//float dy = TargetPosition.y - Position.y;
-	//float distanceSquared = dx * dx + dy * dy;
-
-	//if (distanceSquared < 100.0f) { // 100 = 10px tolerance (10^2)
-	//	Position = TargetPosition; // snap to it
-	//	setTarget(0);
-	//}
 }
 	
-
-
-bool Human::checkBoundry() {
-	if (Position.x < 0 || Position.x>boundry.x - 10)
-	{
-		return false;
-	}
-	if (Position.y < 0 || Position.y>boundry.y - 10)
-	{
-		return false;
-	}
-	return true;
-}
-
-void Human::walk(const std::vector<std::vector<int>>& Intmap) {
-	
-	xMap = Position.x / 10;
-	yMap = Position.y / 10;
-	
-	if (checkBoundry()) {
-		// Move in X direction
-		if (TargetPosition.x < Position.x  && Intmap[yMap][xMap - 1] < 3) {
-			Position.x -= xVelocity;
-		}
-		else if (TargetPosition.x > Position.x && Intmap[yMap][xMap + 1] < 3) {
-			Position.x += xVelocity;
-		}
-		// Move in Y direction
-		else if (TargetPosition.y < Position.y && Intmap[yMap - 1][xMap] < 3) {
-			Position.y -= yVelocity;
-		}
-		else if (TargetPosition.y > Position.y &&  Intmap[yMap + 1][xMap] < 3) {
-			Position.y += yVelocity;
-		}
-	}
-	else if (TargetPosition.x < Position.x)
+void Human::BasicWalk() {
+	if (TargetPosition.x < Position.x)
 	{
 		Position.x -= xVelocity;
 	}
@@ -121,17 +93,63 @@ void Human::walk(const std::vector<std::vector<int>>& Intmap) {
 	else if (TargetPosition.y > Position.y) {
 		Position.y += yVelocity;
 	}
+}
 
-	/*Position.x += xVelocity;
-	Position.y += yVelocity;*/
-	//shape.move(Move);
+bool Human::checkBoundry(unsigned int a,int check) {
+	
+	switch (check) {
+	case 1: // Left
+		//std::cout << check << "- left\n";
+		return Position.x/10 > a + 1;
+	case 2: // Right
+		//std::cout << check << "- right\n";
+		return Position.x/10 < boundry.x - a - 1;
+	case 3: // Up
+		//std::cout << check << "- up\n";
+		return Position.y/10 > a + 1;
+	case 4: // Down
+		//std::cout << check << "- down\n";
+		return Position.y/10 < boundry.y - a - 1;
+	default:
+		return false;
+	}
+}
 
-	//checkBoundry();
-	shape.setPosition(Position);
+void Human::walk(const std::vector<std::vector<int>>& Intmap) {
+	Target(Intmap);
+	xMap = Position.x / 10;
+	yMap = Position.y / 10;
+	//std::cout << "\nXmap" << xMap << " ,Ymap " << yMap ;
 
-	std::cout <<"X" << Position.x << " ,Y " << Position.y<<"\n";
+	if (checkBoundry(1,1)&& TargetPosition.x < Position.x)
+	{
+		Position.x -= xVelocity;
+	} 
+	else if(checkBoundry(1, 2)&& (TargetPosition.x > Position.x))
+	{
+		Position.x += xVelocity;
+	}
+	else if(checkBoundry(1,3)&& TargetPosition.y < Position.y)
+	{
+		Position.y -= yVelocity;
+	}
+	else if (checkBoundry(1, 4)&& (TargetPosition.y > Position.y))
+	{
+		Position.y += yVelocity;
+	}
+	else
+	{
+		BasicWalk();
+	}
+
+	
 
 	Target(Intmap);
+	shape.setPosition(Position);
+
+	//std::cout <<"\nX" << Position.x << " ,Y " << Position.y<<"\n";
+
+	
 }
 
 void Human::draw(sf::RenderTarget& target, sf::RenderStates states) const

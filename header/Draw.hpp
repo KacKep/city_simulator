@@ -7,4 +7,4 @@
 
 sf::Texture giveTexture(std::string path);
 void background(sf::RenderWindow& window, int seed);
-void road(int* level, int width, int height);
+void cross(int* level, int width, int height);

@@ -4,12 +4,7 @@
 
 //easy way to give textures maybe pointless
 sf::Texture giveTexture(std::string path) {
-    sf::Texture texture;
-    if (!texture.loadFromFile(std::string(RESOURCE_DIR) + "/" + path)) {
-        // Handle loading error
-        return texture;
-    }
-    return texture;
+    return sf::Texture(std::string(RESOURCE_DIR) + "/" + path);;
 }
 
 //makes back ground duh
@@ -40,7 +35,7 @@ void background(sf::RenderWindow& window, int seed) {
 
 }
 
-void road(int* level, int width, int height) {
+void cross(int* level, int width, int height) {
     int roadColb = std::rand() % 5;
     int roadCol = std::rand() % 5;
     int rb = roadColb;

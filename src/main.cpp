@@ -3,10 +3,13 @@
 #include "Draw.hpp"
 #include "Human.hpp"
 #include "TileMap.hpp"
+#include "Building.hpp"
+#include "Shop.hpp"
 
 
-//constexpr int WIDTH = 128;
-//constexpr int HEIGHT = 72;
+
+//constexpr int hight = 128;
+//constexpr int lenght = 72;
 
 int main()
 {
@@ -48,37 +51,40 @@ int main()
     float xvelocity = 3;
     float yvelocity = 3;
 
-
+    
+    
     //human duplication glitch
     std::vector<Human> humans;
-    const int numHumans = 1;
-    int WIDTH = 128;
-    int HEIGHT = 72;
-    float WIDTHf = WIDTH;
-    float HEIGHTf = HEIGHT;
-    constexpr int SIZE = 128 * 72;//you can ignore it for teasting for null it gives nothing on map
+    const int numHumans = 10;
 
-    sf::Vector2 a{ HEIGHTf,WIDTHf };
-    for (int i = 0; i < numHumans; ++i) {
-        humans.emplace_back(a); // assuming Human(int seed) constructor // it's useless with the seed it does nothing rn
-    }
+    std::vector<std::shared_ptr<Building>> buildings;
+    int buildinfnum = 5;
+    //maps
+    int hight = 60;
+    int lenght = 50;
+    //just for sfml
+    float hightf = hight;
+    float lenghtf = lenght;
+    constexpr int SIZE = 60 * 50;//you can ignore it for teasting for null it gives nothing on map
+    
+    
 
     //map generation we need to put it to draw later
      
      
      std::array<int,SIZE> level;
-     std::vector<std::vector<int>> Intmap(HEIGHT, std::vector<int>(WIDTH));
+     std::vector<std::vector<int>> Intmap(lenght, std::vector<int>(hight));
 
 
     for (int i = 0; i < SIZE; ++i) {
         level[i] = std::rand() % 2;  
     }
     
-    road(level.data(), WIDTH, HEIGHT);
+    cross(level.data(), hight, lenght);
 
-    for (int y = 0; y < HEIGHT; ++y) {
-        for (int x = 0; x < WIDTH; ++x) {
-            Intmap[y][x] = level[y * WIDTH + x];
+    for (int y = 0; y < lenght; ++y) {
+        for (int x = 0; x < hight; ++x) {
+            Intmap[y][x] = level[y * hight + x];
         }
     }
 
@@ -86,16 +92,33 @@ int main()
     sf::Text text(font);
     text.setFillColor(sf::Color::Black);
     text.setCharacterSize(5);
-    
-   
 
-    //if (!font.loadFromFile((RESOURCE_DIR)+"AGENCYR.TTF")) {
-    //    return -1; // make sure you have a font file in your folder
-    //}
+    
+    Shop build;
+    if (!build.Build(Intmap, lenght, hight))
+    {
+        std::cout << "No space for the building" << build.getName();;
+    } 
+
+   
+    for (int i = 0; i < 5; ++i) {
+        auto shop = std::make_shared<Shop>();
+        if (shop->Build(Intmap, lenght, hight)) {
+            buildings.push_back(shop);
+        }
+        
+    }
+
+    sf::Vector2 a{ lenghtf,hightf };
+    for (int i = 0; i < numHumans; ++i) {
+        humans.emplace_back(a); 
+    }
+
+    
     
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), WIDTH, HEIGHT))
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), hight, lenght))
         return -1;
     sf::Vector2 loop{ 0,0 };
     // main loop nothing works without it
@@ -155,19 +178,19 @@ int main()
         //window.draw(shape);
         //window.draw(pwr);
 
-        
+        window.draw(build);
         if (ValueSwitch)
         {
-            for (loop.x = 0; loop.x < HEIGHT ; ++loop.x) {
-                for (loop.y = 0; loop.y < WIDTH; ++loop.y) {
+            for (loop.x = 0; loop.x < lenght ; ++loop.x) {
+                for (loop.y = 0; loop.y < hight; ++loop.y) {
                 
                     // Draw text
                     std::string numStr = std::to_string(Intmap[loop.x][loop.y]);
                     text.setString(numStr);
                     // Center the text in the tile
-                    float textY = loop.x * 10 + (10 / 2.0f);
-                    float textX = loop.y * 10 + (10 / 2.0f) -2; // -5 for visual adjustment
-                    text.setPosition(sf::Vector2f(textX, textY));
+                    float textX = loop.x * 10 + (10 / 2.0f);
+                    float textY= loop.y * 10 + (10 / 2.0f) -2; // -5 for visual adjustment
+                    text.setPosition(sf::Vector2f(textY, textX));
                     window.draw(text);
                 }
             }
@@ -175,6 +198,12 @@ int main()
         }
 
         window.draw(rect);
+
+        for (const auto& building :  buildings) {
+            
+            window.draw(*building);
+        }
+
         for (auto& human : humans) {
             human.walk(Intmap);
             window.draw(human);  
