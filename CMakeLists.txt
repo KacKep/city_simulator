@@ -19,11 +19,12 @@ FetchContent_MakeAvailable(SFML)
 
 # Create your drawing library
 add_library(draw_lib
-    src/Draw.cpp
+    
     src/Human.cpp
     src/TileMap.cpp
     src/Building.cpp
     src/Shop.cpp
+    src/City.cpp
 )
 
 # Set include directories for the library

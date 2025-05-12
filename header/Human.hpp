@@ -4,6 +4,7 @@
 #include <iostream>
 #include "BuildingList.hpp"
 
+
 class Human : public sf::Drawable, public sf::Transformable {
 public:
 	// ---------methods-------
