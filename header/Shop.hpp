@@ -7,24 +7,24 @@ public:
 	Shop ();
 	~Shop ();
 
-	sf::Vector2f getPosition() override;
-	void setPosition(sf::Vector2f position) override;
-	sf::RectangleShape& getShape() override;
+	//sf::Vector2f getPosition() override;
+	//void setPosition(sf::Vector2f position) override;
+	//sf::RectangleShape& getShape() override;
 
-	std::string& getName() override;
+	
 
-	int getTile() const override;
+
+
+	//void setMoney(int money) override;
+	//int giveValue() const override;
 	
 	//bool Shop::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yBoundry)override;
 
 private:
 	//std::string name;
-	int satiety;
+	int foodValue;
 	int price;
-	sf::RectangleShape shape;
-	sf::Vector2f Position;
-	double money;
-	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+	//void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
 };
 

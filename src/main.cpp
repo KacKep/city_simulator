@@ -60,23 +60,23 @@ int main()
     std::vector<std::shared_ptr<Building>> buildings;
     int buildinfnum = 5;
     //maps
-    int hight = 60;
-    int lenght = 50;
+    int hight = 100;
+    int lenght = 70;
     //just for sfml
     float hightf = hight;
     float lenghtf = lenght;
-    constexpr int SIZE = 60 * 50;//you can ignore it for teasting for null it gives nothing on map
+    //constexpr int SIZE = hight * lenght;//you can ignore it for teasting for null it gives nothing on map
     
     
 
     //map generation we need to put it to draw later
      
      
-     std::array<int,SIZE> level;
+    std::vector<int> level(lenght*hight);
      std::vector<std::vector<int>> Intmap(lenght, std::vector<int>(hight));
 
 
-    for (int i = 0; i < SIZE; ++i) {
+    for (int i = 0; i < lenght * hight; ++i) {
         level[i] = std::rand() % 2;  
     }
     
@@ -94,18 +94,15 @@ int main()
     text.setCharacterSize(5);
 
     
-    Shop build;
-    if (!build.Build(Intmap, lenght, hight))
-    {
-        std::cout << "No space for the building" << build.getName();;
-    } 
-
+    
+    
    
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 15; ++i) {
         auto shop = std::make_shared<Shop>();
         if (shop->Build(Intmap, lenght, hight)) {
             buildings.push_back(shop);
         }
+        
         
     }
 
@@ -177,8 +174,19 @@ int main()
 
         //window.draw(shape);
         //window.draw(pwr);
+        
+        //building area
 
-        window.draw(build);
+        for (const auto& building : buildings) {
+
+            window.draw(*building);
+        }
+
+        for (auto& human : humans) {
+            human.walk(Intmap);
+            window.draw(human);
+        }
+
         if (ValueSwitch)
         {
             for (loop.x = 0; loop.x < lenght ; ++loop.x) {
@@ -189,7 +197,7 @@ int main()
                     text.setString(numStr);
                     // Center the text in the tile
                     float textX = loop.x * 10 + (10 / 2.0f);
-                    float textY= loop.y * 10 + (10 / 2.0f) -2; // -5 for visual adjustment
+                    float textY= loop.y * 10 + (10 / 2.0f) ; // -5 for visual adjustment
                     text.setPosition(sf::Vector2f(textY, textX));
                     window.draw(text);
                 }
@@ -199,15 +207,7 @@ int main()
 
         window.draw(rect);
 
-        for (const auto& building :  buildings) {
-            
-            window.draw(*building);
-        }
-
-        for (auto& human : humans) {
-            human.walk(Intmap);
-            window.draw(human);  
-        }
+        
         
         
         window.display();

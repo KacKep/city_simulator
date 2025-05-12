@@ -4,24 +4,28 @@
 #include "BuildingList.hpp"
 #include <iostream>
 #include <string>
-class Building : public sf::Drawable, public sf::Transformable
+class Building : public sf::RectangleShape
 {
 public:
 	Building(const std::string& name, const BuildingList& construct);
 	~Building() = default;
+	
 
-	virtual sf::Vector2f getPosition()=0;
-	virtual void setPosition(sf::Vector2f position) = 0;
+	std::string getName() const;
+	void setProductValue(int value);
 
-	virtual sf::RectangleShape& getShape()=0;
+	void setMoney(int money);
 
-	virtual std::string& getName();
-	virtual int getTile() const = 0;
+	int giveProdactValue() ;
+	int getTile() ;
 
-	virtual bool Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yBoundry) ;
 
-protected:
+
+	 bool Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yBoundry) ;
+
+private:
+	double money;
+	int productValue;
 	std::string name;
 	BuildingList construct;
 };
-

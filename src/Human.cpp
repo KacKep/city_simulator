@@ -59,7 +59,7 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 				X2 = (xMap + x) % ((int)boundry.x);
 				Y2 = (yMap + y) % ((int)boundry.y);
 				if (Intmap[X2][Y2 ] == place) {
-					std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
+					//std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
 					TargetPosition = sf::Vector2f( Y2 * 10,X2 * 10);
 					setTarget(true);
 					break;
@@ -121,7 +121,7 @@ void Human::walk(const std::vector<std::vector<int>>& Intmap) {
 	yMap = Position.y / 10;
 	//std::cout << "\nXmap" << xMap << " ,Ymap " << yMap ;
 
-	if (checkBoundry(1,1)&& TargetPosition.x < Position.x)
+	/*if (checkBoundry(1,1)&& TargetPosition.x < Position.x)
 	{
 		Position.x -= xVelocity;
 	} 
@@ -138,9 +138,9 @@ void Human::walk(const std::vector<std::vector<int>>& Intmap) {
 		Position.y += yVelocity;
 	}
 	else
-	{
+	{*/
 		BasicWalk();
-	}
+	//}
 
 	
 

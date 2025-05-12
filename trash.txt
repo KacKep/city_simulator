@@ -183,3 +183,91 @@ void Human::walk(const std::vector<std::vector<int>>& Intmap) {
 		Position.y -= yVelocity;
 	}*/
 	//else { BasicWalk(); }
+
+
+
+
+
+
+
+
+		/*
+			//basic check
+			if (X2 > 0 && X2 + xSize < xBoundry && Y2 > 0 && Y2 + ySize < yBoundry && // just chechikng for boundry if % doesn't work
+				Intmap[X2][Y2] < PavementTile && Intmap[X2 + xSize-1][Y2] < PavementTile && // max left building check
+				Intmap[X2][Y2 + ySize-1] < PavementTile && Intmap[X2 + xSize-1][Y2 + ySize-1] < PavementTile && (//max right building check
+					//"expert" checks
+					((xSize >3)? (Intmap[X2+3][Y2] < PavementTile && Intmap[X2 + 3][Y2+ ySize - 1] < PavementTile) : true) &&// middle top and middle bottom check
+					((ySize > 3) ? (Intmap[X2 ][Y2+3] < PavementTile && Intmap[X2 + xSize - 1][Y2 + 3] < PavementTile) : true) && //middle left and middle right check  //  now everybode hates me for this as they should but it works lol
+					//final check for walkable surface
+					Intmap[X2 - 1][Y2 - 1] == PavementTile || Intmap[X2 +xSize][Y2 + ySize] == PavementTile)) { // looking in corners for PavementTile
+*/
+
+if (!(X2 > 0 && X2 + xSize < xBoundry && Y2 > 0 && Y2 + ySize < yBoundry)) {
+				continue;
+			}
+			if (!(Intmap[X2 - 1][Y2 - 1] == 2 || Intmap[X2 + xSize][Y2 + ySize] == 2)) {
+				continue;
+			}
+			build = true;
+			for (int j = 0; j < ySize; ++j) {
+				
+				for (int i = 0; i < xSize; ++i) {
+					std::cout << "\nx:" << X2+i << "	,y:" << Y2+j;
+					if (Intmap[X2 + i][Y2 + j] <  2) {
+						build = false;
+						break;
+					}
+					if (!build) 
+					{ break; }
+				}
+				
+			}
+
+			if (build)
+			{
+				for (int i = 0; i < ySize; ++i) {
+					for (int j = 0; j < xSize; ++j) {
+						Intmap[X2 + i][Y2 + j] = getTile();
+					}
+				}
+				std::cout << "\nx:" << xSize << "	,y:" << ySize;
+				setPosition(sf::Vector2f(Y2 * 10, X2 * 10));
+				return true;
+			}
+			else
+			{
+				continue;
+			}
+
+
+			if ( // just chechikng for boundry if % doesn't work
+				Intmap[X2][Y2] < PavementTile && Intmap[X2 + xSize-1][Y2] < PavementTile && // max left building check
+				Intmap[X2][Y2 + ySize-1] < PavementTile && Intmap[X2 + xSize-1][Y2 + ySize-1] < PavementTile && (//max right building check
+					//"expert" checks
+					 Intmap[X2+xMidSize][Y2] < PavementTile && Intmap[X2 + xMidSize][Y2+ ySize - 1] < PavementTile  &&// middle top and middle bottom check
+					 Intmap[X2 ][Y2+yMidSize] < PavementTile && Intmap[X2 + xSize - 1][Y2 + yMidSize] < PavementTile  && //middle left and middle right check  //  now everybode hates me for this as they should but it works lol
+					//final check for walkable surface
+					Intmap[X2 - 1][Y2 - 1] == PavementTile || Intmap[X2 +xSize][Y2 + ySize] == PavementTile)) { // looking in corners for PavementTile
+
+				std::cout <<"\n first check;" << Intmap[X2][Y2] << ", " << Intmap[X2 + xSize - 1][Y2] << ", " <<  // max left building check
+					"\n second check;" << Intmap[X2][Y2 + ySize - 1] << ", " << Intmap[X2 + xSize - 1][Y2 + ySize - 1] << ", " << //max right building check
+					//"expert" checks
+					"\n xMidSize check;" << Intmap[X2 + xMidSize][Y2] << ", " << Intmap[X2 + xMidSize][Y2 + ySize - 1] << ", " << // middle top and middle bottom check
+					"\n 4 check;" << Intmap[X2][Y2 + yMidSize] << ", " << Intmap[X2 + xSize - 1][Y2 + 3] << ", " <<//middle left and middle right check  //  now everybode hates me for this as they should but it works lol
+					//final check for walkable surface
+					"\n pevment check;" << Intmap[X2 - 1][Y2 - 1] << ", " << Intmap[X2 + xSize][Y2 + ySize];
+
+				for (int i = 0; i < xSize; ++i) {
+					for (int j = 0; j < ySize; ++j) {
+						Intmap[X2 + j ][Y2 + i ]  = getTile();
+					}
+				}				
+				std::cout << "\nXmap" << xMap << " ,Ymap " << yMap
+						  << "\nX2:" << X2 << " ,Y2:" << Y2;
+
+
+
+				// i know i'ts confusing but just resources/Vector_shenanigens.png open for explenation
+				setPosition( sf::Vector2f(Y2 * 10, X2 * 10)); 
+				return true;
