@@ -31,7 +31,7 @@ private:
 	float X2;
 	float Y2;
 	int unstuck;
-	int satiety;
+	int hunger;
 
 	// ---------methods-------
 	void Target(const std::vector<std::vector<int>>& Intmap);

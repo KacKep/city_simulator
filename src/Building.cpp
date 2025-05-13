@@ -15,14 +15,14 @@ std::string Building::getName() const {
 void Building::setProductValue(int value) {
 	this->productValue = value;
  }
-
+int Building::getProdactValue() {
+	return productValue;
+}
 void Building::setMoney(int money) {
 	this->money += money;
 }
 
-int Building::giveProdactValue()  {
-	return productValue;
-}
+
 int Building::getTile()  {
 	return construct;
 }
