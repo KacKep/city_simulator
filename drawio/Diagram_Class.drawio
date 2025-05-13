@@ -292,6 +292,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="NYHfAqsLUKOo6qwBhdmx-23" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center; text-decoration: underline;&quot;&gt;&lt;b&gt;Hospital1: Building&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;position = 40, 120&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-shape = 20,50&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-tile = 7&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-money = 200&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-productValue = 15&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-name = Liquor&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;-price = 20&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="1260" width="140" height="140" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
