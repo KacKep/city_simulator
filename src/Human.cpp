@@ -11,7 +11,7 @@ Human::Human(sf::Vector2f a) {
 	isTarget = false;
 	TargetPosition = Position;
 	unstuck = 0;
-	satiety = 100;
+	hunger = 100;
 
 	//std::cout << a.x <<"\n"<<a.y;
 }
@@ -40,7 +40,7 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 	if (!ActiveTarget())
 	{
 		BuildingList place;
-		if (satiety<50)
+		if (hunger<50)
 		{
 			place = ShopTile;
 		}
@@ -73,7 +73,7 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 		abs((float)TargetPosition.y - (float)Position.y) <= 9.0f) || ++unstuck==(boundry.x*boundry.y)/4) {
 		Position = TargetPosition;
 		unstuck = 0;
-		satiety -= 10;
+		hunger -= 10;
 		setTarget(false);
 	}
 }
