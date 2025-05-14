@@ -208,8 +208,9 @@ void City::start() {
     std::cout << buildings.size();
 
     Human2 *mapper = new Human2();
-    mapper->setIntMap(Intmap, sf::Vector2i(lenght, hight));
-    delete mapper;
+    mapper->setMap(Intmap, sf::Vector2i(lenght, hight));
+    
+    Human2 Tester;
 
     sf::Vector2 a{ lenghtf,hightf };
     for (int i = 0; i < numHumans; ++i) {
@@ -279,6 +280,8 @@ void City::start() {
             }
         }
         
+        Tester.walk();
+        window.draw(Tester);
 
         for (auto& human : humans) {
             human.walk(Intmap);

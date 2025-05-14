@@ -1,7 +1,8 @@
 #include "Entity.hpp"
 //it's static and it must be implemented beafor using it so long gaybowser
 sf::Vector2i Entity::boundry = { 10,10 };
- std::vector<std::vector<int>> Entity::intmap;
+ std::vector<std::vector<int>> Entity::map;
+ unsigned int Entity::entity_count=0;
 
 Entity::Entity()
 	: sf::RectangleShape({10,10}){}
@@ -41,13 +42,44 @@ Entity::Entity()
 	 this->target = target;
 }
 
- void Entity::setIntMap(std::vector<std::vector<int>>& intmap, static sf::Vector2i boundry) {
-	 this->intmap = intmap;
+ void Entity::setID() {
+	 this->ID = entity_count++;
+ }
+ unsigned int Entity::getID() const {
+	 return ID;
+ }
+ unsigned int Entity::getEntityCount() {
+	return entity_count;
+ }
+
+ //--------methods-------
+ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
+
+	 switch (direction) {
+	 case left: // Left
+		 //std::cout << check << "- left\n";
+		 return (int)getPosition().x / 10 > dystance + 1;
+	 case right: // Right
+		 //std::cout << check << "- right\n";
+		 return (int)getPosition().x / 10 < getBoundry().x - dystance - 1;
+	 case up: // Up
+		 //std::cout << check << "- up\n";
+		 return (int)getPosition().y / 10 > dystance + 1;
+	 case down: // Down
+		 //std::cout << check << "- down\n";
+		 return (int)getPosition().y / 10 < getBoundry().y - dystance - 1;
+	 default:
+		 return false;
+	 }
+ }
+
+ void Entity::setMap(std::vector<std::vector<int>>& map, static sf::Vector2i boundry) {
+	 this->map = map;
 	 this->boundry = boundry;
 }
- std::vector<std::vector<int>>& Entity::getIntMap() const {
-	 return intmap;
-}
+ const std::vector<std::vector<int>>& Entity::getMap() const {
+	 return map;
+ }
  const sf::Vector2i& Entity::getBoundry()const {
 	 return boundry;
  }

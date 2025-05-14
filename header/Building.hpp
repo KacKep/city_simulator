@@ -15,11 +15,17 @@ public:
 	Building();
 
 	std::string getName() const;
+
 	void setProductValue(int value);
+	int getProdactValue();
 
-	void setMoney(int money);
+	void setPrice(int price);
+	int getPrice();
 
-	int getProdactValue() ;
+	void setMoney(double money);
+	double getMoney();
+
+	
 	int getTile() ;
 
 
@@ -29,6 +35,7 @@ public:
 private:
 	double money;
 	int productValue;
+	int price;
 	std::string name;
 	BuildingList construct;
 };

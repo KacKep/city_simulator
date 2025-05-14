@@ -1,11 +1,24 @@
 #pragma once
 #include "Building.hpp"
+#include "BuildingList.hpp"
+#include <iostream>
+
+enum Direction
+{
+	left=0,
+	right=1,
+	down=2,
+	up=3
+
+};
 
 class Entity : public sf::RectangleShape
 {
 public:
 	Entity();
 	virtual ~Entity() =default;
+
+	//------Getters and Seters------------
 
 	void setDead(bool yes);
 	bool getDead() const;
@@ -22,9 +35,20 @@ public:
 	sf::Vector2f getTarget()const;
 	void setTarget(sf::Vector2f target);
 
-	void setIntMap(std::vector<std::vector<int>>& intmap, static sf::Vector2i boundry);
-	std::vector<std::vector<int>>& getIntMap()const;
+	void setID();
+	unsigned int getID() const;
+
+	unsigned int getEntityCount();
+
+	//------methods------
+
+	void setMap(std::vector<std::vector<int>>& map, static sf::Vector2i boundry);
+	const std::vector<std::vector<int>>& getMap()const;
 	const sf::Vector2i& getBoundry ()const;
+
+	bool checkBoundry(unsigned int dystance, Direction direction);
+
+	//--------interface methods----------
 
 	/*virtual void fight(Entity& enemy)=0;
 	virtual void interact(Building& building) = 0;*/
@@ -40,7 +64,9 @@ private:
 	int attack;
 	sf::Vector2f target;
 	static sf::Vector2i boundry;
-	static std::vector<std::vector<int>> intmap;
+	static std::vector<std::vector<int>> map;
+	static unsigned int entity_count;
+	unsigned int ID;
 	
 };
 

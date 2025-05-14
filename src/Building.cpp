@@ -22,14 +22,26 @@ Building::Building()
 std::string Building::getName() const {
 	return this->name;
 }
+
 void Building::setProductValue(int value) {
 	this->productValue = value;
  }
 int Building::getProdactValue() {
 	return productValue;
 }
-void Building::setMoney(int money) {
+
+void Building::setPrice(int price) {
+	this->price = price;
+}
+int Building::getPrice() {
+	return price;
+}
+
+void Building::setMoney(double money) {
 	this->money += money;
+}
+double Building::getMoney() {
+	return money;
 }
 
 
@@ -37,14 +49,14 @@ int Building::getTile()  {
 	return construct;
 }
 
-//
+// I'm bob the builder. I will build it if there is a place enough place in city boundrys
 bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yBoundry) {
 
 	//std::cout << "Build() called" << std::endl;
 	unsigned int xMap = rand() % (xBoundry);
 	unsigned int yMap = rand() % (yBoundry);
-	unsigned int X2;
-	unsigned int Y2;
+	int X2;
+	int Y2;
 	int xSize = getSize().y / 10;
 	int ySize = getSize().x / 10;
 	int xMidSize = xSize / 2;
@@ -76,8 +88,8 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 				Intmap[X2][Y2] < PavementTile && Intmap[X2 + xSize - 1][Y2] < PavementTile && // max left building check
 				Intmap[X2][Y2 + ySize - 1] < PavementTile && Intmap[X2 + xSize - 1][Y2 + ySize - 1] < PavementTile && (//max right building check
 					//"expert" checks
-					((xSize > 3) ? (Intmap[X2 + 3][Y2] < PavementTile && Intmap[X2 + 3][Y2 + ySize - 1] < PavementTile) : true) &&// middle top and middle bottom check
-					((ySize > 3) ? (Intmap[X2][Y2 + 3] < PavementTile && Intmap[X2 + xSize - 1][Y2 + 3] < PavementTile) : true) && //middle left and middle right check  //  now everybode hates me for this as they should but it works lol
+					((xSize > 3) ? (Intmap[X2 + xMidSize][Y2] < PavementTile && Intmap[X2 + xMidSize][Y2 + ySize - 1] < PavementTile) : true) &&// middle top and middle bottom check
+					((ySize > 3) ? (Intmap[X2][Y2 + yMidSize] < PavementTile && Intmap[X2 + xSize - 1][Y2 + yMidSize] < PavementTile) : true) && //middle left and middle right check  //  now everybode hates me for this as they should but it works lol
 					//final check for walkable surface
 					Intmap[X2 - 1][Y2 - 1] == PavementTile || Intmap[X2 + xSize][Y2 + ySize] == PavementTile)) { // looking in corners for PavementTile
 
@@ -96,10 +108,10 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 
 				for (int i = 0; i < xSize; ++i) {
 					for (int j = 0; j < ySize; ++j) {
-						/*if (X2+i <= 0 || X2+i + xSize >= xBoundry||Y2+j <= 0 || Y2+j + ySize >= yBoundry)
+						if (X2+i <= 0 || X2+i + xSize >= xBoundry||Y2+j <= 0 || Y2+j + ySize >= yBoundry)
 						{
 							break;
-						}*/
+						}
 						Intmap[X2 + i][Y2 + j] = getTile();
 					}
 				}

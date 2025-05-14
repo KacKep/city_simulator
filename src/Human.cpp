@@ -123,16 +123,16 @@ bool Human::checkBoundry(unsigned int a,int check) {
 	switch (check) {
 	case 1: // Left
 		//std::cout << check << "- left\n";
-		return Position.x/10 > a + 1;
+		return (int)Position.x/10 > a + 1;
 	case 2: // Right
 		//std::cout << check << "- right\n";
-		return Position.x/10 < boundry.x - a - 1;
+		return (int)Position.x/10 < boundry.x - a - 1;
 	case 3: // Up
 		//std::cout << check << "- up\n";
-		return Position.y/10 > a + 1;
+		return (int)Position.y/10 > a + 1;
 	case 4: // Down
 		//std::cout << check << "- down\n";
-		return Position.y/10 < boundry.y - a - 1;
+		return (int)Position.y/10 < boundry.y - a - 1;
 	default:
 		return false;
 	}
