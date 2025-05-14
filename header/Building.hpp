@@ -5,19 +5,21 @@
 #include "BuildingList.hpp"
 #include <iostream>
 #include <string>
+
+
 class Building : public sf::RectangleShape
 {
 public:
 	Building(const std::string& name, const BuildingList& construct);
 	~Building() = default;
-	
+	Building();
 
 	std::string getName() const;
 	void setProductValue(int value);
 
 	void setMoney(int money);
 
-	int giveProdactValue() ;
+	int getProdactValue() ;
 	int getTile() ;
 
 

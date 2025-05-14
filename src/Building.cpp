@@ -8,6 +8,16 @@ Building::Building(const std::string& name, const BuildingList& construct)
 	this->money = 0;
 	this->productValue = 0;
 }
+Building::Building()
+	: sf::RectangleShape({ 10,10 })
+{
+	this->name = "ghost";
+	this->construct = GrassTile;
+	this->money = -1;
+	this->productValue = -1;
+	setPosition({ 0, 0 });
+	setFillColor(sf::Color::Transparent);
+}
 
 std::string Building::getName() const {
 	return this->name;
@@ -39,6 +49,12 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 	int ySize = getSize().x / 10;
 	int xMidSize = xSize / 2;
 	int yMidSize = ySize / 2;
+	if (xBoundry<xSize+5||yBoundry<ySize+5)
+	{
+		std::cout << "No space for the: " << getName() << std::endl;
+		return false;
+	}
+	
 
 	int freeSpaces = 0;
 	for (int y = 0; y < yBoundry; ++y) {
@@ -70,11 +86,11 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 					continue;
 				}
 
-				std::cout << "\n first check;" << Intmap[X2][Y2] << ", " << Intmap[X2 + xSize - 1][Y2] << ", " <<  // max left building check
-					"\n second check;" << Intmap[X2][Y2 + ySize - 1] << ", " << Intmap[X2 + xSize - 1][Y2 + ySize - 1] << ", " << //max right building check
+				std::cout << "\n1 first check;" << Intmap[X2][Y2] << ", " << Intmap[X2 + xSize - 1][Y2] << ", " <<  // max left building check
+					"\n2 second check;" << Intmap[X2][Y2 + ySize - 1] << ", " << Intmap[X2 + xSize - 1][Y2 + ySize - 1] << ", " << //max right building check
 					//"expert" checks
-					"\n xMidSize check;" << Intmap[X2 + xMidSize][Y2] << ", " << Intmap[X2 + xMidSize][Y2 + ySize - 1] << ", " << // middle top and middle bottom check
-					"\n 4 check;" << Intmap[X2][Y2 + yMidSize] << ", " << Intmap[X2 + xSize - 1][Y2 + 3] << ", " <<//middle left and middle right check  //  now everybode hates me for this as they should but it works lol
+					"\n3 xMidSize check;" << Intmap[X2 + xMidSize][Y2] << ", " << Intmap[X2 + xMidSize][Y2 + ySize - 1] << ", " << // middle top and middle bottom check
+					"\n4  yMidSize check;" << Intmap[X2][Y2 + yMidSize] << ", " << Intmap[X2 + xSize - 1][Y2 + yMidSize] << ", " <<//middle left and middle right check  //  now everybode hates me for this as they should but it works lol
 					//final check for walkable surface
 					"\n pevment check;" << Intmap[X2 - 1][Y2 - 1] << ", " << Intmap[X2 + xSize][Y2 + ySize];
 

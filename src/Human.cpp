@@ -5,7 +5,7 @@ Human::Human(sf::Vector2f a) {
 	boundry = a;
 	Position = sf::Vector2f((rand() % (int)boundry.y) * 10,rand() % ((int)boundry.x) * 10  );
 	shape.setSize( sf::Vector2f(10, 10));
-	shape.setFillColor(sf::Color::Red);
+	shape.setFillColor(sf::Color::Black);
 	xVelocity = 10;
 	yVelocity = 10;
 	isTarget = false;
@@ -48,24 +48,45 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 		{
 			place = PavementTile;
 		}
-
-		TargetPosition = sf::Vector2f((rand() % ((int)boundry.x)) , (rand() % ((int)boundry.y)) );
-		xMap = TargetPosition.x ;
-		yMap = TargetPosition.y ;
-		for (int y = 0; y < boundry.y && !ActiveTarget(); y++)
+		for (size_t i = 0; i < 3; i++)
 		{
-			for (int x = 0; x < boundry.x && !ActiveTarget(); x++)
+
+
+			TargetPosition = sf::Vector2f((rand() % ((int)boundry.x)), (rand() % ((int)boundry.y)));
+			xMap = TargetPosition.x;
+			yMap = TargetPosition.y;
+			for (int y = 0; y < boundry.y && !ActiveTarget(); y++)
 			{
-				X2 = (xMap + x) % ((int)boundry.x);
-				Y2 = (yMap + y) % ((int)boundry.y);
-				if (Intmap[X2][Y2 ] == place) {
-					//std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
-					TargetPosition = sf::Vector2f( Y2 * 10,X2 * 10);
-					setTarget(true);
+				for (int x = 0; x < boundry.x && !ActiveTarget(); x++)
+				{
+					X2 = (xMap + x) % ((int)boundry.x);
+					Y2 = (yMap + y) % ((int)boundry.y);
+					if (Intmap[X2][Y2] == place) {
+						//std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
+						TargetPosition = sf::Vector2f(Y2 * 10, X2 * 10);
+						setTarget(true);
+						return;
+					}
+				}
+
+			}
+			if (i==0)
+			{
+				place = PavementTile;
+			}
+			else
+			{
+				switch (rand()%2)
+				{
+				case 0:
+					place = GrassTile;
+					break;
+				default:
+					place = FlowersTile;
 					break;
 				}
 			}
-
+			
 		}
 		
 	}
@@ -81,17 +102,19 @@ void Human::Target(const std::vector<std::vector<int>>& Intmap) {
 void Human::BasicWalk() {
 	if (TargetPosition.x < Position.x)
 	{
-		Position.x -= xVelocity;
+		Position.x += -10.f;
+		std::cout << "go left";
+
 	}
 	else if (TargetPosition.x > Position.x) {
-		Position.x += xVelocity;
+		Position.x += 10.f;
 	}
 	else if (TargetPosition.y < Position.y)
 	{
-		Position.y -= yVelocity;
+		Position.y += -10.f;
 	}
 	else if (TargetPosition.y > Position.y) {
-		Position.y += yVelocity;
+		Position.y += 10.f;
 	}
 }
 

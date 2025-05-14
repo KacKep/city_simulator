@@ -4,6 +4,9 @@
 #include "TileMap.hpp"
 #include "Building.hpp"
 #include "Shop.hpp"
+#include <iostream>
+#include "Entity.hpp"
+#include "Human2.hpp"
 
 
 

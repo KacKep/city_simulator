@@ -40,6 +40,12 @@ void City::background(sf::RenderWindow& window, int seed) {
 }
 
 void City::cross(int* level, int width, int height) {
+
+    if (width<=9||height<=9)
+    {
+        std::cout << "no road today";
+        return;
+    }
     int roadColb = std::rand() % 5;
     int roadCol = std::rand() % 5;
     int rb = roadColb;
@@ -151,13 +157,13 @@ void City::start() {
 
     //human duplication glitch
     std::vector<Human> humans;
-    const int numHumans = 10;
+    const int numHumans = 1;
 
-    std::vector<std::shared_ptr<Building>> buildings;
+    std::vector<std::unique_ptr<Building>> buildings;
     int buildinfnum = 5;
     //maps
-    int hight = 100;
-    int lenght = 70;
+    int hight =50;
+    int lenght = 72;
     //just for sfml
     float hightf = hight;
     float lenghtf = lenght;
@@ -190,17 +196,20 @@ void City::start() {
     text.setCharacterSize(5);
 
 
-
-
+    
+    buildings.push_back(std::make_unique<Building>());
 
     for (int i = 0; i < 15; ++i) {
-        auto shop = std::make_shared<Shop>();
+        auto shop = std::make_unique<Shop>();
         if (shop->Build(Intmap, lenght, hight)) {
-            buildings.push_back(shop);
+            buildings.push_back(std::move(shop));
         }
-
-
     }
+    std::cout << buildings.size();
+
+    Human2 *mapper = new Human2();
+    mapper->setIntMap(Intmap, sf::Vector2i(lenght, hight));
+    delete mapper;
 
     sf::Vector2 a{ lenghtf,hightf };
     for (int i = 0; i < numHumans; ++i) {
@@ -230,6 +239,7 @@ void City::start() {
             {
                 window.close();
             }
+
             keyV = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V);
             if (keyV)
             {
@@ -261,11 +271,14 @@ void City::start() {
         //window.draw(pwr);
 
         //building area
+        if (buildings.size()>0)
+        {
+            for (const auto& building : buildings) {
 
-        for (const auto& building : buildings) {
-
-            window.draw(*building);
+                window.draw(*building);
+            }
         }
+        
 
         for (auto& human : humans) {
             human.walk(Intmap);
@@ -280,9 +293,9 @@ void City::start() {
                     // Draw text
                     std::string numStr = std::to_string(Intmap[loop.x][loop.y]);
                     text.setString(numStr);
-                    // Center the text in the tile
-                    float textX = loop.x * 10 + (10 / 2.0f);
-                    float textY = loop.y * 10 + (10 / 2.0f); 
+                    
+                    float textX = loop.x * 10 + (10 / 2.0f)-2;
+                    float textY = loop.y * 10 + (10 / 2.0f)-1; 
                     text.setPosition(sf::Vector2f(textY, textX));
                     window.draw(text);
                 }

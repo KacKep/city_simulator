@@ -25,6 +25,8 @@ add_library(draw_lib
     src/Building.cpp
     src/Shop.cpp
     src/City.cpp
+    src/Entity.cpp
+    src/Human2.cpp
 )
 
 # Set include directories for the library
