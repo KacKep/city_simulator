@@ -100,6 +100,67 @@ Entity::Entity()
 
 
  //--------methods-------
+ //void Entity::behavior() {
+	// setTargetTile(GrassTile);
+	// return;
+ //}
+	 
+ 
+
+
+ void Entity::chooseTarget() {
+	 for (size_t i = 0; i < 3; i++)//it only exist for no pavment tiles
+	 {
+
+
+		 //setTarget(sf::Vector2f({ rand() % getBoundry().x, rand() % getBoundry().y }));
+		 int xMap = rand() % getBoundry().x;
+		 int yMap = rand() % getBoundry().y;
+		 int X2;
+		 int Y2;
+		 for (int y = 0; y < getBoundry().y; y++)
+		 {
+			 for (int x = 0; x < getBoundry().x; x++)
+			 {
+				 X2 = (xMap + x) % (getBoundry().x);
+				 Y2 = (yMap + y) % (getBoundry().y);
+				 if (getMap()[X2][Y2] == getTargetTile()) {
+					 //std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
+					 setTarget(sf::Vector2f(Y2 * 10, X2 * 10));
+					 //setTarget();
+					 return;
+				 }
+			 }
+
+		 }
+		 if (i == 0)
+		 {
+			 setTargetTile(PavementTile);
+		 }
+		 else
+		 {
+			 if (rand() % 2 == 0)
+			 {
+				 setTargetTile(GrassTile);
+			 }
+			 else
+			 {
+				 setTargetTile(FlowersTile);
+			 }
+
+
+		 }
+	 }
+ }
+	 
+ 
+
+
+
+
+
+
+
  bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 
 	 switch (direction) {

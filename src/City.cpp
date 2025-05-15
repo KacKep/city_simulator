@@ -1,7 +1,12 @@
 #include "City.hpp"
 
 City::City() {
-
+    numHumans=1000;
+    numBuildings=10;
+    height = 128;
+    length = 72;
+    ValueSwitch2 = false;
+    ValueSwitch = false;
 }
 City::~City() {
 
@@ -11,33 +16,6 @@ sf::Texture City::giveTexture(std::string path) {
     return sf::Texture(std::string(RESOURCE_DIR) + "/" + path);;
 }
 
-//makes back ground duh
-void City::background(sf::RenderWindow& window, int seed) {
-    sf::Texture texture1 = giveTexture("brick1.png");
-    sf::Texture texture2 = giveTexture("brick2.png");
-    sf::Sprite sprite(texture1);
-    sf::Vector2f a = { 0,0 };
-    sprite.setPosition(a);
-    unsigned int Seed = 10;
-
-    //sf::Randomizer::SetSeed(Seed);
-    for (; a.x < 1280; a.x += 10)
-    {
-        sprite.setPosition(a);
-        for (; a.y < 720; a.y += 10) {
-            sprite.setPosition(a);
-            if (rand() % 30 == 0) {
-                sprite.setTexture(texture2);
-                window.draw(sprite);
-                sprite.setTexture(texture1);
-                continue;
-            }
-            window.draw(sprite);
-        }
-        a.y = 0;
-    }
-
-}
 
 void City::cross(int* level, int width, int height) {
 
@@ -130,9 +108,9 @@ void City::cross(int* level, int width, int height) {
 
 void City::start() {
 
-
+    bool ValueSwitch2 = false;
     bool ValueSwitch = false;
-    bool keyV;
+    
 
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
     //pwr logo
@@ -151,42 +129,34 @@ void City::start() {
     sf::RenderWindow window(sf::VideoMode({ 1280, 720 }), "City Simulator");
     window.setFramerateLimit(60);
 
-
-
-
+    sf::View view = window.getDefaultView();
+    //view.setViewport(sf::FloatRect({ 0.f, 0.f }, { 1.f, 1.f }));
+    sf::View minimapView = window.getDefaultView();
+    //minimapView.setViewport(sf::FloatRect({ 0.75f, 0.f }, { 0.25f, 0.25f }));
 
     //human duplication glitch
     std::vector<std::unique_ptr<Entity>> entities;
-    const int numHumans = 1;
+ 
 
     std::vector<std::unique_ptr<Building>> buildings;
-    int numbuildin = 10;
+    
     //maps
-    int hight =50;
-    int lenght = 72;
-    //just for sfml
-    float hightf = hight;
-    float lenghtf = lenght;
-    //constexpr int SIZE = hight * lenght;//you can ignore it for teasting for null it gives nothing on map
+    
+
+    //Do not touch
+    std::vector<int> level(length * height);
+    std::vector<std::vector<int>> Intmap(length, std::vector<int>(height));
 
 
-
-    //map generation we need to put it to draw later
-
-
-    std::vector<int> level(lenght * hight);
-    std::vector<std::vector<int>> Intmap(lenght, std::vector<int>(hight));
-
-
-    for (int i = 0; i < lenght * hight; ++i) {
+    for (int i = 0; i < length * height; ++i) {
         level[i] = std::rand() % 2;
     }
 
-    cross(level.data(), hight, lenght);
+    cross(level.data(), height, length);
 
-    for (int y = 0; y < lenght; ++y) {
-        for (int x = 0; x < hight; ++x) {
-            Intmap[y][x] = level[y * hight + x];
+    for (int y = 0; y < length; ++y) {
+        for (int x = 0; x < height; ++x) {
+            Intmap[y][x] = level[y * height + x];
         }
     }
 
@@ -199,47 +169,50 @@ void City::start() {
     
     buildings.push_back(std::make_unique<Building>());
 
-    for (int i = 0; i < numbuildin; ++i) {
+    for (int i = 0; i < numBuildings; ++i) {
         switch (i%4)
         {
         case 0: {
             auto shop = std::make_unique<Shop>();
-            if (shop->Build(Intmap, lenght, hight)) {
+                if (shop->Build(Intmap, length, height)) {
                 buildings.push_back(std::move(shop));
-            }
+                }
             break;
-        }
+            }
         case 1: {
             auto hospital = std::make_unique<Hospital>();
-            if (hospital->Build(Intmap, lenght, hight)) {
-                buildings.push_back(std::move(hospital));
-            }
+                if (hospital->Build(Intmap, length, height)) {
+                    buildings.push_back(std::move(hospital));
+                }
             break;
-        }
+            }
         case 2: {
-            auto Office = std::make_unique<OfficeBuilding>();
-            if (Office->Build(Intmap, lenght, hight)) {
+                auto Office = std::make_unique<OfficeBuilding>();
+                if (Office->Build(Intmap, length, height)) {
                 buildings.push_back(std::move(Office));
+                }
+            break;
+            }
+        case 3: {
+            std::cout << "imnotthere";
+            break;
+            }
+        default: {
+            break;
             }
         }
-        default:
-            break;
-        }
-        auto shop = std::make_unique<Shop>();
-        if (shop->Build(Intmap, lenght, hight)) {
-            buildings.push_back(std::move(shop));
-        }
+        
     }
     std::cout << buildings.size();
 
-    //map fo entitie yes i'm lazy but the project does not require ultimate efficiency
+    //map for entitie, yes i'm lazy but the project does not require ultimate efficiency
     Human2 *mapper = new Human2();
-    mapper->setMap(Intmap, sf::Vector2i(lenght, hight));
+    mapper->setMap(Intmap, sf::Vector2i(length, height));
     delete mapper;
     
     
 
-    sf::Vector2 a{ lenghtf,hightf };//rn fir human the original
+ 
 
     for (int i = 0; i < numHumans; ++i) {
         auto human = std::make_unique<Human2>();
@@ -250,10 +223,10 @@ void City::start() {
 
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), hight, lenght)) {
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), height, length)) {
         std::cout << "Map faild to load";
     }
-
+    
     sf::Vector2 loop{ 0,0 };
     int count=0;
     // main loop nothing works without it
@@ -271,6 +244,39 @@ void City::start() {
                 window.close();
             }
 
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
+            {
+                sf::sleep(sf::milliseconds(10));
+                view.zoom(1.25f);
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
+            {
+                sf::sleep(sf::milliseconds(10));
+                view.zoom(0.8f);
+            }
+            
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
+            {
+                
+                view.move(sf::Vector2f(-10,0));
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
+            {
+                
+                view.move(sf::Vector2f(10, 0));
+            }if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down))
+            {
+                //sf::sleep(sf::milliseconds(100));
+                view.move(sf::Vector2f(0, 10));
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up))
+            {
+                //sf::sleep(sf::milliseconds(100));
+                view.move(sf::Vector2f(0, -10));
+            }
+
+            // shows number tiles
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
             {
                 sf::sleep(sf::milliseconds(100));
@@ -282,39 +288,93 @@ void City::start() {
                 {
                     ValueSwitch = false;
                 }
-                keyV = false;
+                
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num0))
+            {
+                sf::sleep(sf::milliseconds(100));
+                if (!ValueSwitch2)
+                {
+                    ValueSwitch2 = true;
+                }
+                else
+                {
+                    ValueSwitch2 = false;
+                }
+                
             }
             
         }
         
         for (size_t i = 0; i < entities.size(); i++)
         {
+
             if (entities[i]->getDead())
             {
                 continue;
             }
+            if (entities[i]->getTargetTile() <= 3) 
+            {
+                continue;
+            }
             for (size_t j = 0; j < buildings.size(); j++) {
-                if (*entities[i] == *buildings[j])
+                if (entities[i]->getTargetTile() != buildings[j]->getTile())
                 {
-                    std::cout << "\ni'm a building don't be a racist"<< count++;
+
+                    continue;
+                }
+                if (!buildings[j]->getGlobalBounds().contains(entities[i]->getPosition())) {
+                    continue;
+                }
+
+
+            }
+        }
+
+        for (size_t i = 0; i < entities.size(); i++)
+        {
+            if (entities[i]->getDead())
+            {
+                continue;
+            }
+            for (size_t j = i+1; j < entities.size(); j++) {
+
+                if (entities[j]->getDead())
+                {
+                    continue;
+                }
+                if (entities[i]->getPosition() == entities[j]->getPosition())
+                {
+                    if (rand()%10==0)
+                    {
+                        std::cout<<"Fight between:"<< entities[i]->getID()<<" and "<<entities[j]->getID()<<std::endl;
+                        entities[i]->fight(*entities[j]);
+                    }
                 }
             }
         }
 
-
-
-        //shape.setPosition(rect.getPosition() - behind);
+    
 
         //makes program slower
-        sf::sleep(sf::milliseconds(10));
+        //sf::sleep(sf::milliseconds(10));
+       
+        if (ValueSwitch2)
+        {
+            window.setView(window.getDefaultView());
+        }
+        else {
+            window.setView(view);
+        }
 
-
+        
+        
         // drawing the shape
         window.clear();
 
         window.draw(map);
 
-        //window.draw(shape);
+        
         //window.draw(pwr);
 
         //building area
@@ -322,10 +382,6 @@ void City::start() {
         {
             window.draw(*buildings[i]);
         }
-         /*for (const auto& building : buildings) {
-
-                window.draw(*building);
-            }*/
         
         
         
@@ -335,15 +391,12 @@ void City::start() {
             entities[i]->walk();
             window.draw(*entities[i]);
         }
-        /*for (auto& human : humans) {
-            human.walk(Intmap);
-            window.draw(human);
-        }*/
+        
 
         if (ValueSwitch)
         {
-            for (loop.x = 0; loop.x < lenght; ++loop.x) {
-                for (loop.y = 0; loop.y < hight; ++loop.y) {
+            for (loop.x = 0; loop.x < length; ++loop.x) {
+                for (loop.y = 0; loop.y < height; ++loop.y) {
 
                     // Draw text
                     std::string numStr = std::to_string(Intmap[loop.x][loop.y]);
@@ -362,18 +415,22 @@ void City::start() {
     }
 }
 
-// it's for the funny // I see people hating me for this
-bool operator==(Entity& entity, Building& building) {
-    if (!building.getGlobalBounds().contains(entity.getPosition())){
-        return false;
-    }
-    
-    std::cout << entity.getTargetTile() << std::endl;
-    if (entity.getTargetTile()!=building.getTile())
-    {
 
-        return false;
-    }
+
+
+
+
+
+
+
+
+
+bool operator==(Entity& entity, Building& building) {
+    
+    
+    
+    
+    entity.setTarget(entity.getPosition());
     switch (entity.getType())
     {
     case human:
@@ -401,7 +458,7 @@ bool operator==(Entity& entity, Building& building) {
             //ENTITY GETS Money
             entity.setMoney(entity.getMoney() + building.getProductValue());
             //BUILDING GETS MONEY
-            building.setMoney(building.getMoney() + building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
+            building.setMoney(building.getMoney() - building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
             break;
         }
         case LiqourShopTile:

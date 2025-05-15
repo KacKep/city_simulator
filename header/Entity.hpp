@@ -58,16 +58,18 @@ public:
 
 	void setType(EntityList label);
 	EntityList getType()const;
+
 	//------methods------
 
 	bool checkBoundry(unsigned int dystance, Direction direction);
 
-	
+	void chooseTarget();
+	//virtual void behavior();
 
 
 	//--------interface methods----------
 
-	/*virtual void fight(Entity& enemy)=0;*/
+	virtual void fight(Entity& enemy)=0;
 	
 	virtual void walk() = 0;
 
@@ -89,6 +91,7 @@ private:
 	static unsigned int entity_count;
 	static long unsigned int building_interaction_count;
 	unsigned int ID;
+
 	
 };
 

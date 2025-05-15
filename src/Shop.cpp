@@ -4,7 +4,7 @@ Shop::Shop ()
 	: Building("Shop", ShopTile){
 	
 	setPosition({ 0,0 });
-	setSize( sf::Vector2f{10,10});
+	setSize( sf::Vector2f{20,20});
 	setFillColor(sf::Color::Blue);
 	setMoney(0);
 	//price = (rand() % 10 + 1) * 10;

@@ -21,10 +21,17 @@ public:
 private:
 
 	sf::Texture giveTexture(std::string path);
-	void background(sf::RenderWindow& window, int seed);
+
 	void cross(int* level, int width, int height);
 
-	std::vector<std::vector<int>> Intmap;
+
+
+	long unsigned int numHumans;
+	long unsigned int numBuildings;
+	long unsigned int height;
+	long unsigned int length;
+	bool ValueSwitch2;
+	bool ValueSwitch;
 };
 
 //getMap:

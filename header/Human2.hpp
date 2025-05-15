@@ -7,10 +7,11 @@ public:
 	Human2();
 	~Human2();
 
-	//void interact(Building& building) override;
+	
 	void walk() override;
-
+	void fight(Entity& enemy) override;
 private:
-	void chooseTarget();
+	sf::Texture secrete;
+	void behavior();
 };
 

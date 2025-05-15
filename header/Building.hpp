@@ -6,7 +6,6 @@
 #include <iostream>
 #include <string>
 
-
 class Building : public sf::RectangleShape
 {
 public:
