@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 #include <iostream>
-#include "BuildingList.hpp"
+#include "EnumList.hpp"
 
 
 class Human : public sf::Drawable, public sf::Transformable {

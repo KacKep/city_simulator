@@ -4,11 +4,13 @@
 #include "TileMap.hpp"
 #include "Building.hpp"
 #include "Shop.hpp"
+#include "Hospital.hpp"
+#include "OfficeBuilding.hpp"
 #include <iostream>
 #include "Entity.hpp"
 #include "Human2.hpp"
 
-
+bool operator== (Entity&  entity, Building& building);
 
 class City 
 {

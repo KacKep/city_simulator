@@ -1,15 +1,15 @@
-- zrobić plansze
-- wyświetlać planszę
-- zrobić obiekt human
-- human ma chodzić po planszy
-- human ma interakt z innym human, gdy wchodzą na tę samo kratkę
-- dodać różne cechy do human
-- dodać stałe obiekty na plansze
-- sprawić by human zmieniał swoje efekty, gdy wejdzie na plansze
-- zrobić obiekt car
-- zrobić pathfinding dla human i car
-- zrobić interakcje human i car
-- zrobić zapis danej ery (tury) do jakiegoś pliku 
+- zrobić plansze -yos
+- wyświetlać planszę -yos
+- zrobić obiekt human -yos
+- human ma chodzić po planszy -yos
+- human ma interakt z innym human, gdy wchodzą na tę samo kratkę -jescze nie ale zaraz
+- dodać różne cechy do human -coś tam jest
+- dodać stałe obiekty na plansze -yos
+- sprawić by human zmieniał swoje efekty, gdy wejdzie na plansze -statistics it is
+- zrobić obiekt car nuuh
+- zrobić pathfinding dla human i car nuuh
+- zrobić interakcje human i car nuuh
+- zrobić zapis danej ery (tury) do jakiegoś pliku  maybe
 - zrobić wybieranie zmiennych na początku uruchamiania programu
-- * generacja mapy na podstawie seed
-- * zmiana mapy przez ludzi z specyficznymi cechami
+- * generacja mapy na podstawie seed lol pierwsze było
+- * zmiana mapy przez ludzi z specyficznymi cechami noooooooooooooooo00o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0oooooooooooooooooooooooooooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO000000000000000000000000000000000000000000000000000000000000000000000

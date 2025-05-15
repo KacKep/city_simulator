@@ -7,6 +7,7 @@ Building::Building(const std::string& name, const BuildingList& construct)
 	this->construct =construct;
 	this->money = 0;
 	this->productValue = 0;
+	this->price = 1;
 }
 Building::Building()
 	: sf::RectangleShape({ 10,10 })
@@ -15,6 +16,7 @@ Building::Building()
 	this->construct = GrassTile;
 	this->money = -1;
 	this->productValue = -1;
+	this->price = -999;
 	setPosition({ 0, 0 });
 	setFillColor(sf::Color::Transparent);
 }
@@ -26,21 +28,21 @@ std::string Building::getName() const {
 void Building::setProductValue(int value) {
 	this->productValue = value;
  }
-int Building::getProdactValue() {
+int Building::getProductValue()const {
 	return productValue;
 }
 
 void Building::setPrice(int price) {
 	this->price = price;
 }
-int Building::getPrice() {
+int Building::getPrice()const {
 	return price;
 }
 
 void Building::setMoney(double money) {
 	this->money += money;
 }
-double Building::getMoney() {
+double Building::getMoney()const {
 	return money;
 }
 

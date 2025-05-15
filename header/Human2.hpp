@@ -7,7 +7,7 @@ public:
 	Human2();
 	~Human2();
 
-	
+	//void interact(Building& building) override;
 	void walk() override;
 
 private:

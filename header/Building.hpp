@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
-#include "BuildingList.hpp"
+#include "EnumList.hpp"
 #include <iostream>
 #include <string>
 
@@ -17,13 +17,13 @@ public:
 	std::string getName() const;
 
 	void setProductValue(int value);
-	int getProdactValue();
+	int getProductValue()const;
 
 	void setPrice(int price);
-	int getPrice();
+	int getPrice() const;
 
 	void setMoney(double money);
-	double getMoney();
+	double getMoney() const;
 
 	
 	int getTile() ;
@@ -31,7 +31,7 @@ public:
 
 
 	 bool Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yBoundry) ;
-
+	 
 private:
 	double money;
 	int productValue;

@@ -103,7 +103,7 @@ void Human::BasicWalk() {
 	if (TargetPosition.x < Position.x)
 	{
 		Position.x += -10.f;
-		std::cout << "go left";
+		//std::cout << "go left";
 
 	}
 	else if (TargetPosition.x > Position.x) {

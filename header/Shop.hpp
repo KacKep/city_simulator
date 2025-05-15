@@ -9,10 +9,6 @@ public:
 
 
 private:
-	
-	int foodValue;
-	int price;
-	
 
 };
 

@@ -11,17 +11,26 @@ Human2::Human2()
 		chooseTarget();
 		setPosition(getTarget());
 	}
-	
-	
-	
+	setDead(false);
+	setType(human);
 	setHealth(100);
 	setHunger(100);
 	setAttack(5);
+	setMoney((double)100);
 }
 Human2::~Human2(){
 }
 
 void Human2::walk() {
+	if (getDead())
+	{
+		//std::cout <<"\tx:" << getPosition().x << " \ty:" << getPosition().y << std::endl;
+		return;
+	}
+	if (getHealth() <= 0) {
+		setDead(true);
+		setFillColor(sf::Color::Transparent);
+	}
 	chooseTarget();
 	
 	if (getTarget().x < getPosition().x)//Left
@@ -45,18 +54,46 @@ void Human2::walk() {
 	return;
 }
 
+
+
 void Human2::chooseTarget() {
 
 	if (getTarget()==getPosition())
 	{
-		BuildingList place;
-		if (getHunger() < 50)
+		if (getHunger() - 10 <= 0)
 		{
-			place = ShopTile;
+			setHunger(0);
+			setHealth(getHealth() - 2);
+		}
+		setHunger(getHunger() - 10);
+		std::cout <<"Hunger:" << getHunger() << std::endl;
+		std::cout << "Health:" << getHealth() << std::endl;
+		std::cout << "Money:" << getMoney() << std::endl;
+		BuildingList place;
+		
+		if (getHealth()<40&& getMoney() > 1000)
+		{
+			setTargetTile(HospitalTile); 
+		}
+		else if (getHunger() < 50 && getMoney()>150)
+		{
+			setTargetTile(ShopTile);
+		}
+		else if (getMoney()<100)
+		{
+			setTargetTile(OfficeBuildingTile);
 		}
 		else
 		{
-			place = PavementTile;
+			if (rand()%4==0)
+			{
+				setTargetTile(OfficeBuildingTile);
+			}
+			else
+			{
+				setTargetTile(PavementTile);
+			}
+			
 		}
 		for (size_t i = 0; i < 3; i++)
 		{
@@ -73,7 +110,7 @@ void Human2::chooseTarget() {
 				{
 					X2 = (xMap + x) % (getBoundry().x);
 					Y2 = (yMap + y) % (getBoundry().y);
-					if (getMap()[X2][Y2] == place) {
+					if (getMap()[X2][Y2] == getTargetTile()) {
 						//std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
 						setTarget( sf::Vector2f(Y2 * 10, X2 * 10));
 						//setTarget();
@@ -84,17 +121,17 @@ void Human2::chooseTarget() {
 			}
 			if (i == 0)
 			{
-				place = PavementTile;
+				setTargetTile(PavementTile);
 			}
 			else
 			{
 				switch (rand() % 2)
 				{
 				case 0:
-					place = GrassTile;
+					setTargetTile(GrassTile);
 					break;
 				default:
-					place = FlowersTile;
+					setTargetTile(FlowersTile);
 					break;
 				}
 			}
@@ -102,10 +139,10 @@ void Human2::chooseTarget() {
 		}
 
 	}
-	if (getTarget()==getPosition() /*|| ++unstuck == (getBoundry().x * getBoundry().y) / 4*/) {
-		setPosition( getTarget());
-		//unstuck = 0;
-		setHunger(getHunger() - 10);
-		//setTarget(false);
-	}
+	//if (getTarget()==getPosition() /*|| ++unstuck == (getBoundry().x * getBoundry().y) / 4*/) {
+	//	setPosition( getTarget());
+	//	//unstuck = 0;
+	//	
+	//	//setTarget(false);
+	//}
 }

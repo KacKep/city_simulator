@@ -10,7 +10,7 @@ Shop::Shop ()
 	//price = (rand() % 10 + 1) * 10;
 	//foodValue = (rand() % 5 + 1) * 10;
 
-	setPrice((rand() % 10 + 1) * 10);
+	setPrice((rand() % 10 + 1) * (-10));
 	setProductValue((rand() % 5 + 1) * 10);
 }
 Shop::~Shop()
