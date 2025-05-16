@@ -14,7 +14,10 @@ int main() {
         std::cerr << "Fatal error: " << e.what() << '\n';
         return 1;
     }
+    //std::cout << "Program exit complete\n";
     return 0;
+
 }
+
 
 

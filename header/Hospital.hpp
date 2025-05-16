@@ -5,7 +5,7 @@ class Hospital : public Building
 {
 public:
 	Hospital();
-	~Hospital();
+	~Hospital() override = default;
 
 
 private:

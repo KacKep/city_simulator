@@ -5,7 +5,7 @@ class OfficeBuilding : public Building
 {
 public:
 	OfficeBuilding();
-	~OfficeBuilding();
+	~OfficeBuilding() override = default;
 
 
 private:

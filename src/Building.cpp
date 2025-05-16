@@ -9,17 +9,7 @@ Building::Building(const std::string& name, const BuildingList& construct)
 	this->productValue = 0;
 	this->price = 1;
 }
-Building::Building()
-	: sf::RectangleShape({ 10,10 })
-{
-	this->name = "ghost";
-	this->construct = GrassTile;
-	this->money = -1;
-	this->productValue = -1;
-	this->price = -999;
-	setPosition({ 0, 0 });
-	setFillColor(sf::Color::Transparent);
-}
+
 
 std::string Building::getName() const {
 	return this->name;

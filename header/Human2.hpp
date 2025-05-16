@@ -5,7 +5,7 @@ class Human2 : public Entity
 {
 public:
 	Human2();
-	~Human2();
+	~Human2()override;
 
 	
 	void walk() override;

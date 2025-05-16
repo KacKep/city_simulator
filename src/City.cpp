@@ -1,13 +1,13 @@
 #include "City.hpp"
 
-City::City() {
-    numHumans=1000;
-    numBuildings=10;
-    height = 128;
-    length = 72;
-    ValueSwitch2 = false;
-    ValueSwitch = false;
-}
+City::City()
+    :numHumans(100),
+    numBuildings(10),
+    height(128),
+    length(72),
+    ValueSwitch(false)
+    //Intmap(length, std::vector<int>(height, 0))
+{ }
 City::~City() {
 
 }
@@ -106,10 +106,75 @@ void City::cross(int* level, int width, int height) {
 }
 
 
+void City::createBuildings() {
+  /*  for (int i = 0; i < numBuildings; ++i) {
+        switch (i % 4)
+        {
+        case 0: {
+            auto shop = std::make_unique<Shop>();
+            if (shop->Build(Intmap, length, height)) {
+                buildings.push_back(std::move(shop));
+            }
+            break;
+        }
+        case 1: {
+            auto hospital = std::make_unique<Hospital>();
+            if (hospital->Build(Intmap, length, height)) {
+                buildings.push_back(std::move(hospital));
+            }
+            break;
+        }
+        case 2: {
+            auto Office = std::make_unique<OfficeBuilding>();
+            if (Office->Build(Intmap, length, height)) {
+                buildings.push_back(std::move(Office));
+            }
+            break;
+        }
+        case 3: {
+            std::cout << "imnotthere";
+            break;
+        }
+        default: {
+            break;
+        }
+        }*/
+
+    //}
+}
+
+void City::interactionEntities() {
+    for (size_t i = 0; i < entities.size(); i++)
+    {
+        //goes throu list faster
+        if (entities[i]->getDead())
+        {
+            continue;
+        }
+        for (size_t j = i + 1; j < entities.size(); j++) {
+
+            if (entities[j]->getDead())
+            {
+                continue;
+            }
+            //real check
+            if (entities[i]->getPosition() == entities[j]->getPosition())
+            {
+                if (rand() % 10 == 0)
+                {
+                    std::cout << "Fight between:" << entities[i]->getID() << " and " << entities[j]->getID() << std::endl;
+                    entities[i]->fight(*entities[j]);
+                }
+            }
+        }
+    }
+}
+
+
+
 void City::start() {
 
-    bool ValueSwitch2 = false;
-    bool ValueSwitch = false;
+    
     
 
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
@@ -135,10 +200,10 @@ void City::start() {
     //minimapView.setViewport(sf::FloatRect({ 0.75f, 0.f }, { 0.25f, 0.25f }));
 
     //human duplication glitch
-    std::vector<std::unique_ptr<Entity>> entities;
+   
  
 
-    std::vector<std::unique_ptr<Building>> buildings;
+    
     
     //maps
     
@@ -147,12 +212,11 @@ void City::start() {
     std::vector<int> level(length * height);
     std::vector<std::vector<int>> Intmap(length, std::vector<int>(height));
 
-
     for (int i = 0; i < length * height; ++i) {
         level[i] = std::rand() % 2;
     }
 
-    cross(level.data(), height, length);
+    cross(level.data(),  height, length);
 
     for (int y = 0; y < length; ++y) {
         for (int x = 0; x < height; ++x) {
@@ -167,7 +231,7 @@ void City::start() {
 
 
     
-    buildings.push_back(std::make_unique<Building>());
+    //buildings.push_back(std::make_unique<Building>());
 
     for (int i = 0; i < numBuildings; ++i) {
         switch (i%4)
@@ -206,9 +270,9 @@ void City::start() {
     std::cout << buildings.size();
 
     //map for entitie, yes i'm lazy but the project does not require ultimate efficiency
-    Human2 *mapper = new Human2();
-    mapper->setMap(Intmap, sf::Vector2i(length, height));
-    delete mapper;
+    Human2 mapper ;
+    mapper.setMap(Intmap, sf::Vector2i(length, height));
+    
     
     
 
@@ -290,22 +354,17 @@ void City::start() {
                 }
                 
             }
+
+
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num0))
             {
-                sf::sleep(sf::milliseconds(100));
-                if (!ValueSwitch2)
-                {
-                    ValueSwitch2 = true;
-                }
-                else
-                {
-                    ValueSwitch2 = false;
-                }
+                view = window.getDefaultView();
                 
             }
             
         }
         
+        //interact
         for (size_t i = 0; i < entities.size(); i++)
         {
 
@@ -318,42 +377,37 @@ void City::start() {
                 continue;
             }
             for (size_t j = 0; j < buildings.size(); j++) {
-                if (entities[i]->getTargetTile() != buildings[j]->getTile())
+                switch (entities[i]->getType())
                 {
-
-                    continue;
-                }
-                if (!buildings[j]->getGlobalBounds().contains(entities[i]->getPosition())) {
-                    continue;
-                }
-
-
-            }
-        }
-
-        for (size_t i = 0; i < entities.size(); i++)
-        {
-            if (entities[i]->getDead())
-            {
-                continue;
-            }
-            for (size_t j = i+1; j < entities.size(); j++) {
-
-                if (entities[j]->getDead())
-                {
-                    continue;
-                }
-                if (entities[i]->getPosition() == entities[j]->getPosition())
-                {
-                    if (rand()%10==0)
+                    case human: 
                     {
-                        std::cout<<"Fight between:"<< entities[i]->getID()<<" and "<<entities[j]->getID()<<std::endl;
-                        entities[i]->fight(*entities[j]);
+                        if (entities[i]->getTargetTile() != buildings[j]->getTile())
+                        {
+
+                            continue;
+                        }
+                        if (!buildings[j]->getGlobalBounds().contains(entities[i]->getPosition())) {
+                            continue;
+                        }
+                        interactionHumanBuilding(*entities[i], *buildings[j]);
+                        break;
                     }
+                    case animal:
+                    {
+                        break;
+                    }
+                    default:
+                        break;
                 }
+                
+
             }
         }
 
+
+        //fight
+        
+        interactionEntities();
     
 
         //makes program slower
@@ -419,59 +473,40 @@ void City::start() {
 
 
 
-
-
-
-
-
-
-bool operator==(Entity& entity, Building& building) {
-    
-    
-    
-    
+void City::interactionHumanBuilding(Entity& entity, Building& building) {
     entity.setTarget(entity.getPosition());
-    switch (entity.getType())
+    switch (building.getTile())
     {
-    case human:
-        switch (building.getTile())
-        {
-        case ShopTile: {
-            //ENTITY GETS food
-            entity.setHunger(entity.getHunger() + building.getProductValue());
-            //ENTITY PAYS THE PRICE
-            entity.setMoney(entity.getMoney() + building.getPrice());
-            //BUILDING GETS MONEY
-            building.setMoney(building.getMoney() - building.getMoney());
-            break;
-        }
-        case HospitalTile: {
-            //ENTITY GETS health
-            entity.setHealth(entity.getHealth() + building.getProductValue());
-            //ENTITY PAYS THE PRICE
-            entity.setMoney(entity.getMoney() + building.getPrice());
-            //BUILDING GETS MONEY
-            building.setMoney(building.getMoney() - building.getMoney());
-            break;
-        }
-        case OfficeBuildingTile: {
-            //ENTITY GETS Money
-            entity.setMoney(entity.getMoney() + building.getProductValue());
-            //BUILDING GETS MONEY
-            building.setMoney(building.getMoney() - building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
-            break;
-        }
-        case LiqourShopTile:
-            return true;
-        default:
-            return true;
-            
-        }
-        break;
-    case animal:
-    default:
-        break;
+    case ShopTile: {
+        //ENTITY GETS food
+        entity.setHunger(entity.getHunger() + building.getProductValue());
+        //ENTITY PAYS THE PRICE
+        entity.setMoney(entity.getMoney() + building.getPrice());
+        //BUILDING GETS MONEY
+        building.setMoney(building.getMoney() - building.getMoney());
+        return;
     }
+    case HospitalTile: {
+        //ENTITY GETS health
+        entity.setHealth(entity.getHealth() + building.getProductValue());
+        //ENTITY PAYS THE PRICE
+        entity.setMoney(entity.getMoney() + building.getPrice());
+        //BUILDING GETS MONEY
+        building.setMoney(building.getMoney() - building.getMoney());
+        return;
+    }
+    case OfficeBuildingTile: {
+        //ENTITY GETS Money
+        entity.setMoney(entity.getMoney() + building.getProductValue());
+        //BUILDING GETS MONEY
+        building.setMoney(building.getMoney() - building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
+        return;
+    }
+    case LiqourShopTile:
+        return;
+    default:
+        return;
 
-    return true;
+    }
 }
+

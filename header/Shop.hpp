@@ -5,7 +5,7 @@ class Shop: public Building
 {
 public:
 	Shop ();
-	~Shop ();
+	~Shop () override = default;
 
 
 private:

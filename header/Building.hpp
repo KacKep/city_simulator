@@ -10,8 +10,8 @@ class Building : public sf::RectangleShape
 {
 public:
 	Building(const std::string& name, const BuildingList& construct);
-	~Building() = default;
-	Building();
+	virtual ~Building() = default;
+	
 
 	std::string getName() const;
 
