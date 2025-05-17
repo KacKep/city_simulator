@@ -3,12 +3,12 @@
 City::City()
     :numHumans(100),
     numBuildings(10),
-    height(200),
-    length(20),
+    length(128),
+    height(72),
     ValueSwitch(false),
     ValueSwitch2(false),
     seed(0)
-    //Intmap(length, std::vector<int>(height, 0))
+    //Intmap(height, std::vector<int>(length, 0))
 { }
 City::~City() {
 
@@ -19,9 +19,9 @@ sf::Texture City::giveTexture(std::string path) {
 }
 
 
-void City::cross(int* level, int width, int height) {
+void City::cross(int* level, int width, int length) {
 
-    if (width<=9||height<=9)
+    if (width<=9||length<=9)
     {
         std::cout << "no road today";
         return;
@@ -36,7 +36,7 @@ void City::cross(int* level, int width, int height) {
     {
 
         //walk of 2
-        for (int i = 0; i < height; ++i) {
+        for (int i = 0; i < length; ++i) {
             level[i * width + roadColumna] = 2;
 
             level[i * width + roadColumna + 3] = 2;
@@ -49,7 +49,7 @@ void City::cross(int* level, int width, int height) {
         }
 
 
-        if (roadColumnb + 15 < height - 3) {
+        if (roadColumnb + 15 < length - 3) {
             roadColumnb += 15;
         }
         else
@@ -76,7 +76,7 @@ void City::cross(int* level, int width, int height) {
     {
 
         //road of 3
-        for (int i = 0; i < height; ++i) {
+        for (int i = 0; i < length; ++i) {
             level[i * width + roadColumna + 1] = 3;
             level[i * width + roadColumna + 2] = 3;
         }
@@ -87,7 +87,7 @@ void City::cross(int* level, int width, int height) {
             level[(roadColumnb + 2) * width + i] = 3;
         }
 
-        if (roadColumnb + 15 < height - 3) {
+        if (roadColumnb + 15 < length - 3) {
             roadColumnb += 15;
         }
         else
@@ -142,7 +142,7 @@ void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
         }
         
         }
-        if (building->Build(Intmap, length, height)) {
+        if (building->Build(Intmap, height, length)) {
             buildings.push_back(std::move(building));
         }
 
@@ -403,18 +403,18 @@ void City::start() {
     
 
     //Do not touch
-    std::vector<int> level(length * height);
-    std::vector<std::vector<int>> Intmap(length, std::vector<int>(height));
+    std::vector<int> level(height * length);
+    std::vector<std::vector<int>> Intmap(height, std::vector<int>(length));
 
-    for (int i = 0; i < length * height; ++i) {
+    for (int i = 0; i < height * length; ++i) {
         level[i] = std::rand() % 2;
     }
 
-    cross(level.data(),  height, length);
+    cross(level.data(),  length, height);
 
-    for (int y = 0; y < length; ++y) {
-        for (int x = 0; x < height; ++x) {
-            Intmap[y][x] = level[y * height + x];
+    for (int y = 0; y < height; ++y) {
+        for (int x = 0; x < length; ++x) {
+            Intmap[y][x] = level[y * length + x];
         }
     }
 
@@ -431,13 +431,13 @@ void City::start() {
 
     //map for entitie, yes i'm lazy but the project does not require ultimate efficiency
     Human mapper ;
-    mapper.setMap(Intmap, sf::Vector2i(length, height));
+    mapper.setMap(Intmap, sf::Vector2i(height, length));
     
     createEntities();
 
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), height, length)) {
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), length, height)) {
         std::cout << "Map faild to load";
     }
     
@@ -487,8 +487,8 @@ void City::start() {
         // debug purposes and it's a lag machine
         if (ValueSwitch)
         {
-            for (loop.x = 0; loop.x < length; ++loop.x) {
-                for (loop.y = 0; loop.y < height; ++loop.y) {
+            for (loop.x = 0; loop.x < height; ++loop.x) {
+                for (loop.y = 0; loop.y < length; ++loop.y) {
 
                     // Draw text
                     numStr = std::to_string(Intmap[loop.x][loop.y]);
@@ -543,7 +543,10 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     }
     case LiqourShopTile: {
         //ENTITY GETS drunk
-        entity.addDrunkness(building.getProductValue());
+        if (rand()%10==0)
+        {
+            entity.addDrunkness(building.getProductValue());
+        }
         //ENTITY PAYS THE PRICE
         entity.addMoney(building.getPrice());
         //BUILDING GETS MONEY

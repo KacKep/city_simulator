@@ -55,12 +55,12 @@ void Human::fight(Entity* enemy) {
 	for (;;) {
 
 		// there is <=  becaus item will add to zero so there is no problem with swiftness 9999 
-		if (rand() % 10 <= 0+enemy->getSwiftness()) {
+		if (rand() % 100 <= 0+enemy->getSwiftness()) {
 			enemy->walk();
 			break;
 		}
 
-		if (rand() % 10 <= 0+ getSwiftness()) {
+		if (rand() % 100 <= 0+ getSwiftness()) {
 			walk();
 			break;
 		}
