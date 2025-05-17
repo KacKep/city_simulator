@@ -2,6 +2,7 @@
 #include "Building.hpp"
 #include "EnumList.hpp"
 #include <iostream>
+#include "Item.hpp"
 
 enum Direction
 {
@@ -24,18 +25,24 @@ public:
 	//-----------------Dead---------------------
 	void setDead(bool yes);
 	bool isDead() const;
-	//----------------Hunger-----------------
 
+	//----------------Drunkness--------------
+	int getDrunkness() const; //I prefere getDrunk 
+	void addDrunkness(int drunkness);
+	//----------------Hunger-----------------
 	int getHunger() const;
-	void setHunger(int hunger);
+	void addHunger(int hunger);
 	//----------------Health----------------
 	int getHealth() const;
-	void setHealth(int health);
+	void addHealth(int health);
 	//---------------Attack-----------------
 	virtual int getAttack()const;
 	void setAttack(int attack);
+	//-------------Swiftness----------------
+	virtual int getSwiftness()const;
+	void setSwiftness(int swiftness);
 	//---------------Money------------------
-	void setMoney(double money);
+	void addMoney(double money);
 	double getMoney()const;
 	//--------------Target------------------
 	sf::Vector2f getTarget()const;
@@ -67,6 +74,9 @@ public:
 	void chooseTarget();
 	//virtual void behavior();
 
+	void basicWalk();
+
+	
 
 	//--------interface methods----------
 
@@ -78,21 +88,24 @@ public:
 
 
 private:
+	//everyone has some
+	
 	
 	bool dead;
-	int health;
+	int drunkness;
 	int hunger;
+	int health;
 	int attack;
+	int swiftness;
 	double money;
+	sf::Vector2f target;
 	BuildingList place;
 	EntityList entity_type;
-	sf::Vector2f target;
-	static sf::Vector2i boundry;
-	static std::vector<std::vector<int>> map;
-	static unsigned int entity_count;
-	static long unsigned int building_interaction_count;
 	unsigned int ID;
-
-	
+	static long unsigned int entity_count;
+	static long unsigned int building_interaction_count;
+	static std::vector<std::vector<int>> map;
+	static sf::Vector2i boundry;
+	virtual void behavior() = 0;
 };
 

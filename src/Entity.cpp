@@ -2,7 +2,7 @@
 //it's static and it must be implemented beafor using it so long gaybowser
 sf::Vector2i Entity::boundry = { 10,10 };
  std::vector<std::vector<int>> Entity::map;
- unsigned int Entity::entity_count=0;
+ long unsigned int Entity::entity_count=0;
  long unsigned int Entity::building_interaction_count =0;
  
 
@@ -12,28 +12,42 @@ Entity::Entity()
 	health(100),
 	hunger(100),
 	attack(5),
-	dead(false)
-{}
-//----------Getters and Seters------------
+	dead(false),
+	ID(0),
+	entity_type(human),
+	drunkness(0),
+	place(PavementTile),
+	swiftness(0)
+{
+	
+}
+//----------Getters, Seters or Adders------------
 //------------------Dead------------------
  bool Entity::isDead() const {
 	 return dead;
  }
- void Entity::setDead(bool yes) {
+ void Entity::setDead(bool yes) {	// zmobies won't be comming to the town anytime soon
 	 this->dead = yes;
 }
+ //----------------Drunkness--------------
+ int Entity::getDrunkness() const {
+	 return drunkness;
+ }
+ void Entity::addDrunkness(int drunkness) {
+	 this->drunkness += drunkness;
+ }
  //----------------Hunger-----------------
  int Entity::getHunger() const {
 	 return hunger;
 }
- void Entity::setHunger(int hunger) {
+ void Entity::addHunger(int hunger) {
 	 this->hunger += hunger;
 }
  //----------------Health----------------
  int Entity::getHealth() const {
 	 return health;
 }
- void Entity::setHealth(int health) {
+ void Entity::addHealth(int health) {
 	 this->health += health;
 }
  //---------------Attack-----------------
@@ -43,8 +57,15 @@ Entity::Entity()
  void Entity::setAttack(int attack) {
 	 this->attack = attack;
 }
+ //-------------Swiftness----------------
+ int Entity::getSwiftness()const {
+	 return swiftness;
+ }
+ void Entity::setSwiftness(int Swiftness) {
+	 this->swiftness = Swiftness;
+ }
  //---------------Money------------------
- void Entity::setMoney(double money) {
+ void Entity::addMoney(double money) {
 	 this->money += money;
  }
  double Entity::getMoney()const {
@@ -109,6 +130,31 @@ Entity::Entity()
  //------------------methods------------------
  
  
+  //checks if the boundry is in given direction. Probably will be used in path finding 
+bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
+
+	switch (direction) {
+		case left: { 
+			//std::cout << check << "- left\n";
+			return (int)getPosition().x / 10 > dystance;
+		}
+		case right: {
+			//std::cout << check << "- right\n";
+			return (int)getPosition().x / 10 < getBoundry().x - dystance;
+		}
+		case up: { 
+			//std::cout << check << "- up\n";
+			return (int)getPosition().y / 10 > dystance;
+		}
+		case down: {
+			//std::cout << check << "- down\n";
+			return (int)getPosition().y / 10 < getBoundry().y - dystance;
+		}
+		default: {
+			return false;
+		}
+	 }
+ }
 
  // choose some target on map but the target(mostly buildings) is decided by behavior wich is contained by the corresponding class
  void Entity::chooseTarget() {
@@ -158,25 +204,56 @@ Entity::Entity()
 	 }
  }
 	 
- 
+ void Entity::basicWalk() {
 
- //checks if the boundry is in given direction. Probably will be used in path finding 
- bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 
-	 switch (direction) {
-	 case left: // Left
-		 //std::cout << check << "- left\n";
-		 return (int)getPosition().x / 10 > dystance + 1;
-	 case right: // Right
-		 //std::cout << check << "- right\n";
-		 return (int)getPosition().x / 10 < getBoundry().x - dystance - 1;
-	 case up: // Up
-		 //std::cout << check << "- up\n";
-		 return (int)getPosition().y / 10 > dystance + 1;
-	 case down: // Down
-		 //std::cout << check << "- down\n";
-		 return (int)getPosition().y / 10 < getBoundry().y - dystance - 1;
-	 default:
-		 return false;
+	 if (getDrunkness()>=5)
+	 {
+		 addDrunkness(-5);
+		 if (!checkBoundry(1,left)||!checkBoundry(1,right)||!checkBoundry(1,down)||!checkBoundry(1,up))
+		 {
+			 return;
+		 }
+		 
+		 switch (rand()%4)
+		 {
+		 case left: {
+			 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
+			 return;
+		 }
+		 case right: {
+			 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
+			 return;
+		 }
+		 case down: {
+			 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
+			 return;
+		 }
+		 case up: {
+			 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
+			 return;
+		 }
+		 default:
+			 return;
+		 }
+	 }
+
+	 if (getTarget().x < getPosition().x)//Left
+	 {
+		 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
+
+	 }
+	 else if (getTarget().x > getPosition().x)//Right
+	 {
+		 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
+	 }
+	 else if (getTarget().y < getPosition().y)//Down
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
+	 }
+	 else if (getTarget().y > getPosition().y) //Up
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
 	 }
  }
+

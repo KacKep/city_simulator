@@ -3,10 +3,11 @@
 City::City()
     :numHumans(100),
     numBuildings(10),
-    height(50),
-    length(50),
+    height(200),
+    length(20),
     ValueSwitch(false),
-    ValueSwitch2(false)
+    ValueSwitch2(false),
+    seed(0)
     //Intmap(length, std::vector<int>(height, 0))
 { }
 City::~City() {
@@ -109,36 +110,40 @@ void City::cross(int* level, int width, int height) {
 
 void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
     for (long unsigned int i = 0; i < numBuildings; ++i) {
+        std::unique_ptr<Building> building;
         switch (i % 4)
         {
-        case 0: {
-            auto shop = std::make_unique<Shop>();
-            if (shop->Build(Intmap, length, height)) {
-                buildings.push_back(std::move(shop));
+        case 0:
+        {
+            building = std::make_unique<Shop>();
+            break;
+        }
+        case 1:
+        {
+             building = std::make_unique<Hospital>();
+            
+            break;
+        }
+        case 2:
+        {
+            building = std::make_unique<OfficeBuilding>();
+            
+            break;
+        }
+        case 3:
+        {
+            if (rand()%2!=0)
+            {
+                continue;
             }
+             building = std::make_unique<LiqourShop>();
+            
             break;
         }
-        case 1: {
-            auto hospital = std::make_unique<Hospital>();
-            if (hospital->Build(Intmap, length, height)) {
-                buildings.push_back(std::move(hospital));
-            }
-            break;
+        
         }
-        case 2: {
-            auto Office = std::make_unique<OfficeBuilding>();
-            if (Office->Build(Intmap, length, height)) {
-                buildings.push_back(std::move(Office));
-            }
-            break;
-        }
-        case 3: {
-            std::cout << "imnotthere";
-            break;
-        }
-        default: {
-            break;
-        }
+        if (building->Build(Intmap, length, height)) {
+            buildings.push_back(std::move(building));
         }
 
     }
@@ -147,18 +152,68 @@ void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
 void City::createEntities() {
 
     for (long unsigned int i = 0; i < numHumans; ++i) {
-        auto human = std::make_unique<Human>();
-        //hmmm I hate this fact 
-        //raw pointer is needed
-        Human* owner = human.get();
-        auto animal = std::make_unique<Animal>(owner);
-        //yeah the structer realy matters at least now we know first interaction of animal is always an owner preatty nice
-        entities.push_back(std::move(animal));
-        entities.push_back(std::move(human));
+        auto person = std::make_unique<Human>();
+        if (rand()%10==0)
+        {
+            Human* owner = person.get();
+            //animal needs raw pointer just like meet
+            auto animal = std::make_unique<Dog>(owner);
+            entities.push_back(std::move(animal));
+        }
+        else if (rand()%5==0)
+        {
+            Human* owner = person.get();
+            //animal needs raw pointer just like meet
+            auto animal = std::make_unique<Cat>(owner);
+            entities.push_back(std::move(animal));
+        }
+        
+        entities.push_back(std::move(person));
 
         
     }
 
+}
+
+void City::interactionBuilding() {
+    for (size_t i = 0; i < entities.size(); i++)
+    {
+
+        if (entities[i]->isDead())
+        {
+            continue;
+        }
+        if (entities[i]->getTargetTile() <= 3)
+        {
+            continue;
+        }
+        for (size_t j = 0; j < buildings.size(); j++) {
+            switch (entities[i]->getType())
+            {
+            case human:
+            {
+                if (entities[i]->getTargetTile() != buildings[j]->getTile())
+                {
+
+                    continue;
+                }
+                if (!buildings[j]->getGlobalBounds().contains(entities[i]->getPosition())) {
+                    continue;
+                }
+                interactionHumanBuilding(*entities[i], *buildings[j]);
+                break;
+            }
+            case animal:
+            {
+                break;
+            }
+            default:
+                break;
+            }
+
+
+        }
+    }
 }
 
 void City::interactionEntities() {
@@ -209,14 +264,14 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
             window.close();
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
-        {
-            sf::sleep(sf::milliseconds(10));
-            view.zoom(1.25f);
-        }
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
         {
-            sf::sleep(sf::milliseconds(10));
+            
+            view.zoom(1.25f);
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
+        {
+            
             view.zoom(0.8f);
         }
 
@@ -242,19 +297,7 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
         }
 
         // shows number tiles
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
-        {
-            sf::sleep(sf::milliseconds(100));
-            if (!ValueSwitch)
-            {
-                ValueSwitch = true;
-            }
-            else
-            {
-                ValueSwitch = false;
-            }
-
-        }
+        
 
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num0))
@@ -264,12 +307,68 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
         }
 
     }
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
+    {
+        sf::sleep(sf::milliseconds(20));
+        if (!ValueSwitch)
+        {
+            ValueSwitch = true;
+        }
+        else
+        {
+            ValueSwitch = false;
+        }
+
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F))
+    {
+        sf::sleep(sf::milliseconds(20));
+        if (!ValueSwitch2)
+        {
+            ValueSwitch2 = true;
+        }
+        else
+        {
+            ValueSwitch2 = false;
+        }
+
+    }
+
 }
+
+void City::drawScreen(sf::RenderWindow& window, sf::View& view) {
+    //building area
+    for (size_t i = 0; i < buildings.size(); i++)
+    {
+        //draw wants to know your refrence, not your mobile number
+        window.draw(*buildings[i]);
+    }
+
+
+    for (size_t i = 0; i < entities.size(); i++)
+    {
+        if (entities[i]->getType() == human)
+        {
+            entities[i]->walk();
+        }
+    }
+
+    for (size_t i = 0; i < entities.size(); i++)
+    {
+        if (entities[i]->getType() != human)
+        {
+            entities[i]->walk();
+        }
+        window.draw(*entities[i]);
+    }
+}
+
 
 void City::start() {
 
-    
-    
+    float textX,textY;
+    std::string numStr;
 
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
     //pwr logo
@@ -281,8 +380,9 @@ void City::start() {
     pwr.setScale(sf::Vector2f(0.25f, 0.25f));
 
     //seed lol
-    srand(time(0));
-
+    //std::cout << time(0) << std::endl;
+    srand(0);
+    //std::cout << seed << std::endl;
 
     // size of the window and name
     sf::RenderWindow window(sf::VideoMode({ 1280, 720 }), "City Simulator");
@@ -350,45 +450,8 @@ void City::start() {
        
         
         //interact
-        for (size_t i = 0; i < entities.size(); i++)
-        {
-
-            if (entities[i]->isDead())
-            {
-                continue;
-            }
-            if (entities[i]->getTargetTile() <= 3) 
-            {
-                continue;
-            }
-            for (size_t j = 0; j < buildings.size(); j++) {
-                switch (entities[i]->getType())
-                {
-                    case human: 
-                    {
-                        if (entities[i]->getTargetTile() != buildings[j]->getTile())
-                        {
-
-                            continue;
-                        }
-                        if (!buildings[j]->getGlobalBounds().contains(entities[i]->getPosition())) {
-                            continue;
-                        }
-                        interactionHumanBuilding(*entities[i], *buildings[j]);
-                        break;
-                    }
-                    case animal:
-                    {
-                        break;
-                    }
-                    default:
-                        break;
-                }
-                
-
-            }
-        }
-
+       
+        interactionBuilding();
 
         //fight
         
@@ -396,7 +459,11 @@ void City::start() {
     
 
         //makes program slower
-        //sf::sleep(sf::milliseconds(100));
+        if (ValueSwitch2)
+        {
+            sf::sleep(sf::milliseconds(50));
+        }
+        
        
         
         
@@ -414,20 +481,9 @@ void City::start() {
         
         //window.draw(pwr);
 
-        //building area
-        for (size_t i = 0; i < buildings.size(); i++)
-        {
-            //draw wants to know your refrence, not your mobile number
-            window.draw(*buildings[i]);
-        }
-        
-        
-        for (size_t i = 0; i < entities.size(); i++)
-        {
-            entities[i]->walk();
-            window.draw(*entities[i]);
-        }
-        
+        drawScreen(window, view);
+
+
         // debug purposes and it's a lag machine
         if (ValueSwitch)
         {
@@ -435,19 +491,20 @@ void City::start() {
                 for (loop.y = 0; loop.y < height; ++loop.y) {
 
                     // Draw text
-                    std::string numStr = std::to_string(Intmap[loop.x][loop.y]);
+                    numStr = std::to_string(Intmap[loop.x][loop.y]);
                     text.setString(numStr);
                     
-                    float textX = loop.x * 10 + (10 / 2.0f)-2;
-                    float textY = loop.y * 10 + (10 / 2.0f)-1; 
+                    textX = loop.x * 10 + (10 / 2.0f)-2;
+                    textY = loop.y * 10 + (10 / 2.0f)-1; 
                     text.setPosition(sf::Vector2f(textY, textX));
                     window.draw(text);
                 }
             }
             loop = { 0,0 };
+            
         }
-
         window.display();
+        
     }
 }
 
@@ -461,31 +518,38 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     {
     case ShopTile: {
         //ENTITY GETS food
-        entity.setHunger( building.getProductValue());
+        entity.addHunger( building.getProductValue());
         //ENTITY PAYS THE PRICE
-        entity.setMoney( building.getPrice());
+        entity.addMoney( building.getPrice());
         //BUILDING GETS MONEY
-        building.setMoney(-building.getPrice());
+        building.addMoney(-building.getPrice());
         return;
     }
     case HospitalTile: {
         //ENTITY GETS health
-        entity.setHealth( building.getProductValue());
+        entity.addHealth( building.getProductValue());
         //ENTITY PAYS THE PRICE
-        entity.setMoney( building.getPrice());
+        entity.addMoney( building.getPrice());
         //BUILDING GETS MONEY
-        building.setMoney( -building.getPrice());
+        building.addMoney( -building.getPrice());
         return;
     }
     case OfficeBuildingTile: {
-        //ENTITY GETS Money
-        entity.setMoney(building.getProductValue());
+        //ENTITY GETS money
+        entity.addMoney(building.getProductValue());
         //BUILDING GETS MONEY
-        building.setMoney(building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
+        building.addMoney(building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
         return;
     }
-    case LiqourShopTile:
+    case LiqourShopTile: {
+        //ENTITY GETS drunk
+        entity.addDrunkness(building.getProductValue());
+        //ENTITY PAYS THE PRICE
+        entity.addMoney(building.getPrice());
+        //BUILDING GETS MONEY
+        building.addMoney(-building.getPrice());
         return;
+    }
     default:
         return;
 

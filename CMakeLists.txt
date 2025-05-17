@@ -26,10 +26,14 @@ add_library(draw_lib
     src/Shop.cpp
     src/City.cpp
     src/Entity.cpp
-    src/Human.cpp
+    
     src/Hospital.cpp 
     src/OfficeBuilding.cpp
-    src/Animal.cpp
+    src/Dog.cpp
+    src/LiqourShop.cpp
+    src/Cat.cpp
+    src/Item.cpp
+    src/Human.cpp
 )
 
 # Include directories for the library

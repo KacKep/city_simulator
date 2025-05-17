@@ -2,18 +2,24 @@
 #include "Entity.hpp"
 #include "Human.hpp"
 
-class Animal : public Entity
+class Dog : public Entity
 {
 public:
-	Animal(Human* human);
-	~Animal()override;
+	Dog(Human* human);
+	~Dog()override;
 
 
 	void walk() override;
 	void fight(Entity* enemy) override;
-private:
+	Human* getOwner() const;
+	void hunt();
+protected:
 	sf::Texture texture;
-	void behavior();
+	
+private:
+	void behavior()override;
+
+	
 	Human* owner;
 	sf::Vector2f followPosition;
 };

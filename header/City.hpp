@@ -1,14 +1,18 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
+#include <iostream>
+
 #include "Human.hpp"
 #include "TileMap.hpp"
 #include "Building.hpp"
 #include "Shop.hpp"
 #include "Hospital.hpp"
 #include "OfficeBuilding.hpp"
-#include <iostream>
+#include "LiqourShop.hpp"
 #include "Entity.hpp"
-#include "Animal.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
+#include "Item.hpp"
 
 
 
@@ -26,6 +30,8 @@ private:
 
 	void cross(int* level, int width, int height);
 
+	void interactionBuilding();
+
 	void interactionHumanBuilding(Entity& entity, Building& building);
 
 	void createBuildings(std::vector<std::vector<int>>& Intmap );
@@ -35,6 +41,8 @@ private:
 	void interactionEntities();
 
 	void camera(sf::RenderWindow& window, sf::View& view);
+
+	void drawScreen(sf::RenderWindow& window, sf::View& view);
 	//_----------Variables-------
 
 	std::vector<std::unique_ptr<Building>> buildings;
@@ -43,6 +51,7 @@ private:
 	long unsigned int numBuildings;
 	long unsigned int height;
 	long unsigned int length;
+	float seed;
 	
 	//std::vector<std::vector<int>> Intmap;
 

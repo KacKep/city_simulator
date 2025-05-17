@@ -5,6 +5,7 @@
 #include "EnumList.hpp"
 #include <iostream>
 #include <string>
+#include <cmath>
 
 class Building : public sf::RectangleShape
 {
@@ -21,7 +22,7 @@ public:
 	void setPrice(int price);
 	int getPrice() const;
 
-	void setMoney(double money);
+	void addMoney(double money);
 	double getMoney() const;
 
 	
