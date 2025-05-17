@@ -6,26 +6,26 @@ Item::Item()
 	switch (rand() % 5)
 	{
 		case 0: {
-			attack = 5;
+			attack = 7;
 			swiftness = 0;
 			name = "baseball bat";
 			break;
 		}
 		case 1: {
-			attack = 1;
-			swiftness = 4;
+			attack = 2;
+			swiftness = 40;
 			name = "rock";
 			break;
 		}
 		case 2: {
-			attack = 3;
-			swiftness = 2;
+			attack = 5;
+			swiftness = 20;
 			name = "scissors";
 			break;
 		}
 		case 3: {
 			attack = 0;
-			swiftness = 5;
+			swiftness = 50;
 			name = "boots";
 			break;
 		}

@@ -23,8 +23,9 @@ Human::Human()
 		setOutlineThickness(1);
 	}
 	setFillColor(sf::Color(rand() % 256, rand() % 256, rand() % 256, 255));
-
-
+	std::cout << item.getAttack1() << std::endl;
+	setAttack(getAttack() + item.getAttack1());
+	setSwiftness(getSwiftness() + item.getSwiftness());
 }
 
 
@@ -54,12 +55,12 @@ void Human::fight(Entity* enemy) {
 	for (;;) {
 
 		// there is <=  becaus item will add to zero so there is no problem with swiftness 9999 
-		if (rand() % 10 <= 0) {
+		if (rand() % 10 <= 0+enemy->getSwiftness()) {
 			enemy->walk();
 			break;
 		}
 
-		if (rand() % 10 <= 0) {
+		if (rand() % 10 <= 0+ getSwiftness()) {
 			walk();
 			break;
 		}

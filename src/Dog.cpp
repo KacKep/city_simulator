@@ -3,7 +3,8 @@
 Dog::Dog(Human* human)
 	:Entity(),
 	owner(human), //that's the only way, said the yt guy about agregations (he was talking about using refrence in the constructor)
-	followPosition(human->getPosition())
+	followPosition(human->getPosition()),
+	name("Dog")
 {
 	setID();
 		setTarget(owner->getTarget());
@@ -18,9 +19,15 @@ Dog::Dog(Human* human)
 		
 	}
 	setType(animal);
-	
+	setAttack(10);
 }
 
+std::string Dog::getName() {
+	return name;
+}
+void Dog::setName(std::string name) {
+	this->name = name;
+}
 
 Dog::~Dog() {
 	owner = nullptr;
@@ -127,12 +134,12 @@ void Dog::fight(Entity* enemy) {
 	for (;;) {
 
 		// there is <=  because of items will add to zero so there is no problem with swiftness 9999 
-		if (rand() % 10 <= 0) {
+		if (rand() % 100 <= 0  + enemy->getSwiftness()) {
 			enemy->walk();
 			break;
 		}
 
-		if (rand() % 10 <= 0) {
+		if (rand() % 100 <= 0 + getSwiftness()) {
 			walk();
 			break;
 		}

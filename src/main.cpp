@@ -10,8 +10,8 @@ int main() {
         City symulation;
         symulation.start();
     }
-    catch (const std::exception& e) {
-        std::cerr << "Fatal error: " << e.what() << '\n';
+    catch (const std::exception& lambert) {
+        std::cerr << "Fatal error: " << lambert.what() << '\n';
         return 1;
     }
     //std::cout << "Program exit complete\n";

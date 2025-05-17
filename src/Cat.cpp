@@ -13,6 +13,8 @@ Cat::Cat(Human* owner)
 		setTexture(&texture);
 
 	}
+	setSwiftness(50);
+	setName("Cat");
 }
 
 void Cat::behavior() {
