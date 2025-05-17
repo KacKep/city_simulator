@@ -2,33 +2,40 @@
 
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
-#include "BuildingList.hpp"
+#include "EnumList.hpp"
 #include <iostream>
 #include <string>
-
+#include <cmath>
 
 class Building : public sf::RectangleShape
 {
 public:
 	Building(const std::string& name, const BuildingList& construct);
-	~Building() = default;
-	Building();
+	virtual ~Building() = default;
+	
 
 	std::string getName() const;
+
 	void setProductValue(int value);
+	int getProductValue()const;
 
-	void setMoney(int money);
+	void setPrice(int price);
+	int getPrice() const;
 
-	int getProdactValue() ;
+	void addMoney(double money);
+	double getMoney() const;
+
+	
 	int getTile() ;
 
 
 
 	 bool Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yBoundry) ;
-
+	 
 private:
 	double money;
 	int productValue;
+	int price;
 	std::string name;
 	BuildingList construct;
 };

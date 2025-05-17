@@ -5,14 +5,10 @@ class Shop: public Building
 {
 public:
 	Shop ();
-	~Shop ();
+	~Shop () override = default;
 
 
 private:
-	
-	int foodValue;
-	int price;
-	
 
 };
 

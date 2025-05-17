@@ -7,14 +7,17 @@
 
 int main() {
     try {
-        City app;
-        app.start();
+        City symulation;
+        symulation.start();
     }
     catch (const std::exception& e) {
         std::cerr << "Fatal error: " << e.what() << '\n';
         return 1;
     }
+    //std::cout << "Program exit complete\n";
     return 0;
+
 }
+
 
 
