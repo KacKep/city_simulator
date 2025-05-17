@@ -21,45 +21,46 @@ public:
 	virtual ~Entity() = default;
 
 	//------Getters and Seters------------
-
+	//-----------------Dead---------------------
 	void setDead(bool yes);
-	bool getDead() const;
+	bool isDead() const;
+	//----------------Hunger-----------------
 
 	int getHunger() const;
 	void setHunger(int hunger);
-
+	//----------------Health----------------
 	int getHealth() const;
 	void setHealth(int health);
-
+	//---------------Attack-----------------
 	virtual int getAttack()const;
 	void setAttack(int attack);
-
+	//---------------Money------------------
 	void setMoney(double money);
 	double getMoney()const;
-
+	//--------------Target------------------
 	sf::Vector2f getTarget()const;
 	void setTarget(sf::Vector2f target);
-
+	//------------Target Tile---------------
 	BuildingList getTargetTile()const;
 	void setTargetTile(BuildingList tile);
-
+	//-----------ID and countig--------------
 	void setID();
 	unsigned int getID() const;
 	unsigned int getEntityCount();
 
-	//it's more like a counting method at this point
-	void interact();
+	//------building interaction stats-------
+	void interactionCount();
 	const long unsigned int getBuiildingInteractionCount();
-
+	//-------------------map set up-------------------
 	void setMap(std::vector<std::vector<int>>& map, sf::Vector2i boundry);
 	const std::vector<std::vector<int>>& getMap()const;
 	const sf::Vector2i& getBoundry ()const;
 
-
+	//------Type of entity (maps don't exist 100%)----
 	void setType(EntityList label);
 	EntityList getType()const;
 
-	//------methods------
+	//------------------methods------------------
 
 	bool checkBoundry(unsigned int dystance, Direction direction);
 
@@ -69,7 +70,7 @@ public:
 
 	//--------interface methods----------
 
-	virtual void fight(Entity& enemy)=0;
+	virtual void fight(Entity* enemy)=0;
 	
 	virtual void walk() = 0;
 

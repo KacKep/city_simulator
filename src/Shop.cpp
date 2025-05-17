@@ -6,16 +6,14 @@ Shop::Shop ()
 	setPosition({ 0,0 });
 	setSize( sf::Vector2f{20,20});
 	setFillColor(sf::Color::Blue);
-	setMoney(0);
-	//price = (rand() % 10 + 1) * 10;
-	//foodValue = (rand() % 5 + 1) * 10;
 
 	setPrice((rand() % 10 + 1) * (-10));
-	setProductValue((rand() % 5 + 1) * 10);
+	setProductValue((rand() % 8 + 3) * 10);
 }
-Shop::~Shop()
-{
-}
+
+//Shop::~Shop()
+//{
+//}
 
 
 

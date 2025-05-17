@@ -8,7 +8,7 @@
 #include "OfficeBuilding.hpp"
 #include <iostream>
 #include "Entity.hpp"
-#include "Human2.hpp"
+#include "Animal.hpp"
 
 
 
@@ -28,9 +28,13 @@ private:
 
 	void interactionHumanBuilding(Entity& entity, Building& building);
 
-	void createBuildings();
+	void createBuildings(std::vector<std::vector<int>>& Intmap );
+
+	void createEntities();
 
 	void interactionEntities();
+
+	void camera(sf::RenderWindow& window, sf::View& view);
 	//_----------Variables-------
 
 	std::vector<std::unique_ptr<Building>> buildings;

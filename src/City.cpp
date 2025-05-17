@@ -3,9 +3,10 @@
 City::City()
     :numHumans(100),
     numBuildings(10),
-    height(128),
-    length(72),
-    ValueSwitch(false)
+    height(50),
+    length(50),
+    ValueSwitch(false),
+    ValueSwitch2(false)
     //Intmap(length, std::vector<int>(height, 0))
 { }
 City::~City() {
@@ -106,8 +107,8 @@ void City::cross(int* level, int width, int height) {
 }
 
 
-void City::createBuildings() {
-  /*  for (int i = 0; i < numBuildings; ++i) {
+void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
+    for (long unsigned int i = 0; i < numBuildings; ++i) {
         switch (i % 4)
         {
         case 0: {
@@ -138,22 +139,39 @@ void City::createBuildings() {
         default: {
             break;
         }
-        }*/
+        }
 
-    //}
+    }
+}
+
+void City::createEntities() {
+
+    for (long unsigned int i = 0; i < numHumans; ++i) {
+        auto human = std::make_unique<Human>();
+        //hmmm I hate this fact 
+        //raw pointer is needed
+        Human* owner = human.get();
+        auto animal = std::make_unique<Animal>(owner);
+        //yeah the structer realy matters at least now we know first interaction of animal is always an owner preatty nice
+        entities.push_back(std::move(animal));
+        entities.push_back(std::move(human));
+
+        
+    }
+
 }
 
 void City::interactionEntities() {
     for (size_t i = 0; i < entities.size(); i++)
     {
         //goes throu list faster
-        if (entities[i]->getDead())
+        if (entities[i]->isDead())
         {
             continue;
         }
         for (size_t j = i + 1; j < entities.size(); j++) {
 
-            if (entities[j]->getDead())
+            if (entities[j]->isDead())
             {
                 continue;
             }
@@ -162,15 +180,91 @@ void City::interactionEntities() {
             {
                 if (rand() % 10 == 0)
                 {
-                    std::cout << "Fight between:" << entities[i]->getID() << " and " << entities[j]->getID() << std::endl;
-                    entities[i]->fight(*entities[j]);
+                    if (entities[i]->getType()!=human)
+                    {
+                        entities[i]->fight(entities[j].get());
+                    }
+                    else
+                    {
+                        entities[j]->fight(entities[i].get());
+                    }
+                    //std::cout << "Fight between:" << entities[i]->getID() << " and " << entities[j]->getID() << std::endl;
+                    
                 }
             }
         }
     }
 }
 
+void City::camera(sf::RenderWindow& window, sf::View& view) {
+    while (const std::optional event = window.pollEvent())
+    {
+        // closing window with the "X" button top right corner
+        if (event->is<sf::Event::Closed>())
+            window.close();
 
+        // closing window with escape key
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
+        {
+            window.close();
+        }
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
+        {
+            sf::sleep(sf::milliseconds(10));
+            view.zoom(1.25f);
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
+        {
+            sf::sleep(sf::milliseconds(10));
+            view.zoom(0.8f);
+        }
+
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
+        {
+
+            view.move(sf::Vector2f(-20, 0));
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
+        {
+
+            view.move(sf::Vector2f(20, 0));
+        }if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down))
+        {
+            //sf::sleep(sf::milliseconds(100));
+            view.move(sf::Vector2f(0, 20));
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up))
+        {
+            //sf::sleep(sf::milliseconds(100));
+            view.move(sf::Vector2f(0, -20));
+        }
+
+        // shows number tiles
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
+        {
+            sf::sleep(sf::milliseconds(100));
+            if (!ValueSwitch)
+            {
+                ValueSwitch = true;
+            }
+            else
+            {
+                ValueSwitch = false;
+            }
+
+        }
+
+
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num0))
+        {
+            view = window.getDefaultView();
+
+        }
+
+    }
+}
 
 void City::start() {
 
@@ -231,59 +325,15 @@ void City::start() {
 
 
     
-    //buildings.push_back(std::make_unique<Building>());
 
-    for (int i = 0; i < numBuildings; ++i) {
-        switch (i%4)
-        {
-        case 0: {
-            auto shop = std::make_unique<Shop>();
-                if (shop->Build(Intmap, length, height)) {
-                buildings.push_back(std::move(shop));
-                }
-            break;
-            }
-        case 1: {
-            auto hospital = std::make_unique<Hospital>();
-                if (hospital->Build(Intmap, length, height)) {
-                    buildings.push_back(std::move(hospital));
-                }
-            break;
-            }
-        case 2: {
-                auto Office = std::make_unique<OfficeBuilding>();
-                if (Office->Build(Intmap, length, height)) {
-                buildings.push_back(std::move(Office));
-                }
-            break;
-            }
-        case 3: {
-            std::cout << "imnotthere";
-            break;
-            }
-        default: {
-            break;
-            }
-        }
-        
-    }
+    createBuildings(Intmap);
     std::cout << buildings.size();
 
     //map for entitie, yes i'm lazy but the project does not require ultimate efficiency
-    Human2 mapper ;
+    Human mapper ;
     mapper.setMap(Intmap, sf::Vector2i(length, height));
     
-    
-    
-
- 
-
-    for (int i = 0; i < numHumans; ++i) {
-        auto human = std::make_unique<Human2>();
-        entities.push_back(std::move(human));
-    }
-
-
+    createEntities();
 
     // create the tilemap from the level definition
     TileMap map;
@@ -296,79 +346,14 @@ void City::start() {
     // main loop nothing works without it
     while (window.isOpen())
     {
-        while (const std::optional event = window.pollEvent())
-        {
-            // closing window with the "X" button top right corner
-            if (event->is<sf::Event::Closed>())
-                window.close();
-
-            // closing window with escape key
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
-            {
-                window.close();
-            }
-
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
-            {
-                sf::sleep(sf::milliseconds(10));
-                view.zoom(1.25f);
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
-            {
-                sf::sleep(sf::milliseconds(10));
-                view.zoom(0.8f);
-            }
-            
-
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
-            {
-                
-                view.move(sf::Vector2f(-10,0));
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
-            {
-                
-                view.move(sf::Vector2f(10, 0));
-            }if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down))
-            {
-                //sf::sleep(sf::milliseconds(100));
-                view.move(sf::Vector2f(0, 10));
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up))
-            {
-                //sf::sleep(sf::milliseconds(100));
-                view.move(sf::Vector2f(0, -10));
-            }
-
-            // shows number tiles
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
-            {
-                sf::sleep(sf::milliseconds(100));
-                if (!ValueSwitch)
-                {
-                    ValueSwitch = true;
-                }
-                else
-                {
-                    ValueSwitch = false;
-                }
-                
-            }
-
-
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num0))
-            {
-                view = window.getDefaultView();
-                
-            }
-            
-        }
+        camera(window,view);
+       
         
         //interact
         for (size_t i = 0; i < entities.size(); i++)
         {
 
-            if (entities[i]->getDead())
+            if (entities[i]->isDead())
             {
                 continue;
             }
@@ -411,19 +396,17 @@ void City::start() {
     
 
         //makes program slower
-        //sf::sleep(sf::milliseconds(10));
+        //sf::sleep(sf::milliseconds(100));
        
-        if (ValueSwitch2)
-        {
-            window.setView(window.getDefaultView());
-        }
-        else {
-            window.setView(view);
-        }
+        
+        
+        
+        window.setView(view);
+        
 
         
         
-        // drawing the shape
+        // drawing shapes
         window.clear();
 
         window.draw(map);
@@ -434,19 +417,18 @@ void City::start() {
         //building area
         for (size_t i = 0; i < buildings.size(); i++)
         {
+            //draw wants to know your refrence, not your mobile number
             window.draw(*buildings[i]);
         }
         
         
-        
-
         for (size_t i = 0; i < entities.size(); i++)
         {
             entities[i]->walk();
             window.draw(*entities[i]);
         }
         
-
+        // debug purposes and it's a lag machine
         if (ValueSwitch)
         {
             for (loop.x = 0; loop.x < length; ++loop.x) {
@@ -479,27 +461,27 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     {
     case ShopTile: {
         //ENTITY GETS food
-        entity.setHunger(entity.getHunger() + building.getProductValue());
+        entity.setHunger( building.getProductValue());
         //ENTITY PAYS THE PRICE
-        entity.setMoney(entity.getMoney() + building.getPrice());
+        entity.setMoney( building.getPrice());
         //BUILDING GETS MONEY
-        building.setMoney(building.getMoney() - building.getMoney());
+        building.setMoney(-building.getPrice());
         return;
     }
     case HospitalTile: {
         //ENTITY GETS health
-        entity.setHealth(entity.getHealth() + building.getProductValue());
+        entity.setHealth( building.getProductValue());
         //ENTITY PAYS THE PRICE
-        entity.setMoney(entity.getMoney() + building.getPrice());
+        entity.setMoney( building.getPrice());
         //BUILDING GETS MONEY
-        building.setMoney(building.getMoney() - building.getMoney());
+        building.setMoney( -building.getPrice());
         return;
     }
     case OfficeBuildingTile: {
         //ENTITY GETS Money
-        entity.setMoney(entity.getMoney() + building.getProductValue());
+        entity.setMoney(building.getProductValue());
         //BUILDING GETS MONEY
-        building.setMoney(building.getMoney() - building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
+        building.setMoney(building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
         return;
     }
     case LiqourShopTile:

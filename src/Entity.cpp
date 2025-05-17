@@ -7,57 +7,64 @@ sf::Vector2i Entity::boundry = { 10,10 };
  
 
 Entity::Entity()
-	: sf::RectangleShape({10,10}){}
-//--------------------------------------
- bool Entity::getDead() const {
+	: sf::RectangleShape({10,10}),
+	money(1000),
+	health(100),
+	hunger(100),
+	attack(5),
+	dead(false)
+{}
+//----------Getters and Seters------------
+//------------------Dead------------------
+ bool Entity::isDead() const {
 	 return dead;
  }
  void Entity::setDead(bool yes) {
 	 this->dead = yes;
 }
- //--------------------------------------
+ //----------------Hunger-----------------
  int Entity::getHunger() const {
 	 return hunger;
 }
  void Entity::setHunger(int hunger) {
-	 this->hunger = hunger;
+	 this->hunger += hunger;
 }
- //--------------------------------------
+ //----------------Health----------------
  int Entity::getHealth() const {
 	 return health;
 }
  void Entity::setHealth(int health) {
-	 this->health = health;
+	 this->health += health;
 }
- //--------------------------------------
+ //---------------Attack-----------------
  int Entity::getAttack()const {
 	 return attack;
 }
  void Entity::setAttack(int attack) {
 	 this->attack = attack;
 }
- //--------------------------------------
+ //---------------Money------------------
  void Entity::setMoney(double money) {
-	 this->money = money;
+	 this->money += money;
  }
  double Entity::getMoney()const {
 	 return money;
  }
- //--------------------------------------
+ //--------------Target------------------
+ sf::Vector2f Entity::getTarget()const {
+	 return target;
+ }
+ void Entity::setTarget(sf::Vector2f target) {
+	 this->target = target;
+ }
+ //------------Target Tile---------------
  BuildingList Entity::getTargetTile()const {
 	 return place;
  }
  void Entity::setTargetTile(BuildingList tile) {
 	 this->place = tile;
  }
- //--------------------------------------
- sf::Vector2f Entity::getTarget()const {
-	 return target;
-}
- void Entity::setTarget(sf::Vector2f target) {
-	 this->target = target;
-}
- //--------------------------------------
+ //-----------ID and countig--------------
  void Entity::setID() {
 	 this->ID = entity_count++;
  }
@@ -67,16 +74,16 @@ Entity::Entity()
  unsigned int Entity::getEntityCount() {
 	return entity_count;
  }
- //--------------------------------------
+ //------building interaction stats-------
   //I mean it's not wrong but not right either. Btw there is operator overloading in City.cpp at the bottom
- void Entity::interact() {
+ void Entity::interactionCount() {
 	 building_interaction_count++;
  }
 
  const long unsigned int Entity::getBuiildingInteractionCount() {
 	 return building_interaction_count;
  }
- //--------------------------------------
+ //-------------------map set up-------------------
  void Entity::setMap(std::vector<std::vector<int>>& map, sf::Vector2i boundry) {
 	 this->map = map;
 	 this->boundry = boundry;
@@ -87,7 +94,7 @@ Entity::Entity()
  const sf::Vector2i& Entity::getBoundry()const {
 	 return boundry;
  }
- //--------------------------------------
+ //------Type of entity (maps don't exist 100%)----
 
 
  void Entity::setType(EntityList label) {
@@ -99,15 +106,11 @@ Entity::Entity()
  }
 
 
- //--------methods-------
- //void Entity::behavior() {
-	// setTargetTile(GrassTile);
-	// return;
- //}
-	 
+ //------------------methods------------------
+ 
  
 
-
+ // choose some target on map but the target(mostly buildings) is decided by behavior wich is contained by the corresponding class
  void Entity::chooseTarget() {
 	 for (size_t i = 0; i < 3; i++)//it only exist for no pavment tiles
 	 {
@@ -133,12 +136,14 @@ Entity::Entity()
 			 }
 
 		 }
+		 //fail save if there is no buildings
 		 if (i == 0)
 		 {
 			 setTargetTile(PavementTile);
 		 }
 		 else
 		 {
+			 //if there is no road, useful in 9 by 9 map
 			 if (rand() % 2 == 0)
 			 {
 				 setTargetTile(GrassTile);
@@ -155,12 +160,7 @@ Entity::Entity()
 	 
  
 
-
-
-
-
-
-
+ //checks if the boundry is in given direction. Probably will be used in path finding 
  bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 
 	 switch (direction) {
@@ -180,26 +180,3 @@ Entity::Entity()
 		 return false;
 	 }
  }
-
-
-
-
-
-
-
-
- //if (TargetPosition.x < getPosition().x)
- //{
-	// setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
-
- //}
- //else if (TargetPosition.x > getPosition().x) {
-	// setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
- //}
- //else if (TargetPosition.y < getPosition().y)
- //{
-	// setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
- //}
- //else if (TargetPosition.y > getPosition().y) {
-	// setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
- //}

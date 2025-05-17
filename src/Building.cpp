@@ -1,20 +1,20 @@
 #include "Building.hpp"
 
 Building::Building(const std::string& name, const BuildingList& construct)
-	: sf::RectangleShape({ 10,10 })
-{
-	this->name=name;
-	this->construct =construct;
-	this->money = 0;
-	this->productValue = 0;
-	this->price = 1;
-}
+	: sf::RectangleShape({ 10,10 }),
+	money(0),
+	productValue(0),
+	price(0),
+	name(name),
+	construct(construct)
+{}//to do: put price and produktVal as constructor initializer or whatever it is
 
-
+//-----------setters and getters----------
 std::string Building::getName() const {
 	return this->name;
 }
 
+//------------setProductValue-----------
 void Building::setProductValue(int value) {
 	this->productValue = value;
  }
@@ -22,6 +22,7 @@ int Building::getProductValue()const {
 	return productValue;
 }
 
+//--------------Price---------
 void Building::setPrice(int price) {
 	this->price = price;
 }
@@ -29,6 +30,7 @@ int Building::getPrice()const {
 	return price;
 }
 
+//----------money---------
 void Building::setMoney(double money) {
 	this->money += money;
 }
@@ -36,7 +38,7 @@ double Building::getMoney()const {
 	return money;
 }
 
-
+//-----------Tile-------------
 int Building::getTile()  {
 	return construct;
 }
