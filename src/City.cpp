@@ -331,12 +331,12 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
             window.close();
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Hyphen))
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Hyphen)|| sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
         {
             
             view.zoom(1.25f);
         }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Equal))
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Equal)|| sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
         {
             
             view.zoom(0.8f);
