@@ -708,7 +708,7 @@ void City :: save() {
         deathsPerIteration[entities[i]->getDeathIteration()]++;
     }
 
-    file << "\nDeaths per Iteration:\nID,Deaths,Remaining Entities\n";
+    file << "\nDeaths per Iteration:\nIteration,Deaths,Remaining Entities\n";
     alive = entities.size();
     for (int i = 0; i < deathsPerIteration.size(); ++i) {
         if (deathsPerIteration[i] > 0) {
