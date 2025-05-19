@@ -1,0 +1,3 @@
+C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate.dir
+C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/rebuild_cache.dir

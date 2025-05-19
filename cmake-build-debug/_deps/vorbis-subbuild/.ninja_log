@@ -1,0 +1,21 @@
+# ninja log v6
+11117	11326	7692871682393074	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	ea181f728044cd3d
+13	140	7692871570492782	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir	75af8bf69828179d
+10912	11114	7692871680194995	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	e7753383091ab87d
+13	140	7692871570492782	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir	75af8bf69828179d
+9797	10393	7692871667214015	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	a7d69eb648037fe6
+142	9792	7692871666992347	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download	e67912fb7b9706d0
+10394	10703	7692871676068454	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	c0347a72f6ff0447
+142	9792	7692871666992347	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download	e67912fb7b9706d0
+11592	11876	7692871687852788	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate-complete	25b4ee46b2e76496
+10394	10703	7692871676068454	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	c0347a72f6ff0447
+10705	10909	7692871678164117	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	af9d038fa611f618
+9797	10393	7692871667214015	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	a7d69eb648037fe6
+10705	10909	7692871678164117	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	af9d038fa611f618
+11117	11326	7692871682393074	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	ea181f728044cd3d
+10912	11114	7692871680194995	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	e7753383091ab87d
+11328	11590	7692871684966795	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	65aeba90c1e60505
+11328	11590	7692871684966795	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	65aeba90c1e60505
+11592	11876	7692871687852788	CMakeFiles/vorbis-populate-complete	25b4ee46b2e76496
+11592	11876	7692871687852788	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	25b4ee46b2e76496
+11592	11876	7692871687852788	C:/Users/Mateusz/Documents/GitHub/city_simulator/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	25b4ee46b2e76496
