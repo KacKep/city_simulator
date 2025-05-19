@@ -2,14 +2,13 @@
 project lol
 
 =======
-Skład:
+Authors:
 Kacper Krzekotowski (lider),
 Mateusz Grzywa
 
-Temat: Symulacja Miasta
+Subject: City Simulator
 
-Opis: Projekt polega na symulacji miasta, które składa się z ulicy oraz kilku budynków. W mieście mieszka możliwa do zmiany liczba ludzi. Mają oni różne wylosowane cechy, których prawdopodobieństwo można określić. Te cechy wpływają na ich zachowanie. Mieszkańcy poruszają się między budynkami. Przebywanie w konkretnym budynku wpływa na różne sposoby na mieszkańca, np. po przebywaniu w politechnice traci chęć do życia, a przebywanie w monopolowym ma określoną szansę zmienić go w pijaka. Mieszkańcy mają też interakcje między sobą: dwóch pijaków może się np. pobić, pieszy może wpaść pod samochód itd.
-
+Opis: The project consists of simulating a city with a street and several buildings. The city is inhabited by a changeable number of people. They have various randomly selected characteristics. These characteristics affect their interactions. Residents move between buildings. Being in a specific building affects a resident in various ways, e.g. being in a liquor store has a certain chance of turning him into a drunkard. Residents also interact with each other.
 Język programowania:
 
 C++

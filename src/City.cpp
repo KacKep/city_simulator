@@ -459,6 +459,10 @@ void City::start() {
 
     //human duplication glitch
 
+
+
+
+
     //maps
     
 

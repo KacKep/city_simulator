@@ -1,8 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 #include <iostream>
-#include <fstream>
-#include <sstream>
 
 #include "Human.hpp"
 #include "TileMap.hpp"

@@ -1,27 +1,27 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.3.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0" version="27.0.4">
   <diagram name="Page-1" id="ANd9UBdg9Va4SjEbYT9p">
-    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NuQ17-txd15SUuRDfE32-17" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-17" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="775" y="120" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NuQ17-txd15SUuRDfE32-22" target="NuQ17-txd15SUuRDfE32-31">
+        <mxCell id="NuQ17-txd15SUuRDfE32-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-22" target="NuQ17-txd15SUuRDfE32-31" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="185" y="70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-22" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-22" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="50" y="55" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-26" value="walking" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-26" value="walking" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
           <mxGeometry x="450" y="40" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-27" value="go to target" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="NuQ17-txd15SUuRDfE32-26">
+        <mxCell id="NuQ17-txd15SUuRDfE32-27" value="go to target" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="NuQ17-txd15SUuRDfE32-26" vertex="1">
           <mxGeometry y="30" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-28" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-26" parent="1" target="NuQ17-txd15SUuRDfE32-35">
+        <mxCell id="NuQ17-txd15SUuRDfE32-28" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-26" target="NuQ17-txd15SUuRDfE32-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="530" y="160" as="targetPoint" />
             <Array as="points">
@@ -30,13 +30,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-30" value="idle" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-30" value="idle" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
           <mxGeometry x="190" y="40" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-31" value="no Target" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="NuQ17-txd15SUuRDfE32-30">
+        <mxCell id="NuQ17-txd15SUuRDfE32-31" value="no target" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="NuQ17-txd15SUuRDfE32-30" vertex="1">
           <mxGeometry y="30" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-32" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-31" parent="1" target="NuQ17-txd15SUuRDfE32-27">
+        <mxCell id="NuQ17-txd15SUuRDfE32-32" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-31" target="NuQ17-txd15SUuRDfE32-27" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="270" y="160" as="targetPoint" />
             <Array as="points">
@@ -45,15 +45,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-34" value="find target" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NuQ17-txd15SUuRDfE32-32">
+        <mxCell id="NuQ17-txd15SUuRDfE32-34" value="find target" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NuQ17-txd15SUuRDfE32-32" vertex="1" connectable="0">
           <mxGeometry x="-0.392" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-35" value="met someone" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-35" value="met someone" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="470" y="160" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-36" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-35" parent="1" target="NuQ17-txd15SUuRDfE32-43">
+        <mxCell id="NuQ17-txd15SUuRDfE32-36" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-35" target="NuQ17-txd15SUuRDfE32-43" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="670" y="180" as="targetPoint" />
             <Array as="points">
@@ -61,27 +61,27 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-37" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-35" parent="1" target="NuQ17-txd15SUuRDfE32-50">
+        <mxCell id="NuQ17-txd15SUuRDfE32-37" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-35" target="NuQ17-txd15SUuRDfE32-50" edge="1">
           <mxGeometry x="0.1347" y="10" relative="1" as="geometry">
             <mxPoint x="530" y="250" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-43" value="Event" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-43" value="event" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
           <mxGeometry x="570" y="200" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-44" value="somthing happends" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="NuQ17-txd15SUuRDfE32-43">
+        <mxCell id="NuQ17-txd15SUuRDfE32-44" value="something happens" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="NuQ17-txd15SUuRDfE32-43" vertex="1">
           <mxGeometry y="30" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-45" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-43" parent="1" target="NuQ17-txd15SUuRDfE32-46">
+        <mxCell id="NuQ17-txd15SUuRDfE32-45" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-43" target="NuQ17-txd15SUuRDfE32-46" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="750" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-46" value="is bad" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-46" value="is bad" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="750" y="210" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-47" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-46" parent="1" target="NuQ17-txd15SUuRDfE32-50">
+        <mxCell id="NuQ17-txd15SUuRDfE32-47" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-46" target="NuQ17-txd15SUuRDfE32-50" edge="1">
           <mxGeometry x="-0.0149" y="-10" relative="1" as="geometry">
             <mxPoint x="610" y="300" as="targetPoint" />
             <Array as="points">
@@ -91,17 +91,17 @@
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-48" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-46" parent="1" target="NuQ17-txd15SUuRDfE32-17">
+        <mxCell id="NuQ17-txd15SUuRDfE32-48" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-46" target="NuQ17-txd15SUuRDfE32-17" edge="1">
           <mxGeometry x="-0.5833" y="-20" relative="1" as="geometry">
             <mxPoint x="750" y="380" as="targetPoint" />
             <Array as="points" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-50" value="is on target" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+        <mxCell id="NuQ17-txd15SUuRDfE32-50" value="is on target" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="490" y="280" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-51" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-50" parent="1" target="NuQ17-txd15SUuRDfE32-27">
+        <mxCell id="NuQ17-txd15SUuRDfE32-51" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-50" target="NuQ17-txd15SUuRDfE32-27" edge="1">
           <mxGeometry x="-0.4182" y="-10" relative="1" as="geometry">
             <mxPoint x="450" y="260" as="targetPoint" />
             <Array as="points">
@@ -111,7 +111,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NuQ17-txd15SUuRDfE32-52" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="NuQ17-txd15SUuRDfE32-50" parent="1" target="NuQ17-txd15SUuRDfE32-31">
+        <mxCell id="NuQ17-txd15SUuRDfE32-52" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NuQ17-txd15SUuRDfE32-50" target="NuQ17-txd15SUuRDfE32-31" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="500" y="380" as="targetPoint" />
             <mxPoint x="530" y="390" as="sourcePoint" />
@@ -120,6 +120,12 @@
               <mxPoint x="270" y="390" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ZOZhzY-QMxbbyj2HK4jy-1" value="death" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="790" y="150" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZOZhzY-QMxbbyj2HK4jy-2" value="simulation starts" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="70" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
