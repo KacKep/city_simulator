@@ -155,7 +155,7 @@ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 	switch (direction) {
 		case left: { 
 			//std::cout << check << "- left\n";
-			return (int)getPosition().x / 10 > dystance;
+			return (int)getPosition().x / 10 >= dystance;
 		}
 		case right: {
 			//std::cout << check << "- right\n";
@@ -163,7 +163,7 @@ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 		}
 		case up: { 
 			//std::cout << check << "- up\n";
-			return (int)getPosition().y / 10 > dystance;
+			return (int)getPosition().y / 10 >= dystance;
 		}
 		case down: {
 			//std::cout << check << "- down\n";

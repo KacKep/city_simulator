@@ -100,13 +100,13 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 			{ continue; }  //  now everybode hates me for this as they should but it works lol
 	
 
-				std::cout << "\n1 first check;" << Intmap[X2][Y2] << ", " << Intmap[X2 + xSize - 1][Y2] << ", " <<  // max left building check
-					"\n2 second check;" << Intmap[X2][Y2 + ySize - 1] << ", " << Intmap[X2 + xSize - 1][Y2 + ySize - 1] << ", " << //max right building check
-					//"expert" checks
-					"\n3 xMidSize check;" << Intmap[X2 + xMidSize][Y2] << ", " << Intmap[X2 + xMidSize][Y2 + ySize - 1] << ", " << // middle top and middle bottom check
-					"\n4  yMidSize check;" << Intmap[X2][Y2 + yMidSize] << ", " << Intmap[X2 + xSize - 1][Y2 + yMidSize] << ", " <<//middle left and middle right check  //  now everybode hates me for this as they should but it works lol
-					//final check for walkable surface
-					"\n pevment check;" << Intmap[X2 - 1][Y2 - 1] << ", " << Intmap[X2 + xSize][Y2 + ySize];
+				//std::cout << "\n1 first check;" << Intmap[X2][Y2] << ", " << Intmap[X2 + xSize - 1][Y2] << ", " <<  // max left building check
+				//	"\n2 second check;" << Intmap[X2][Y2 + ySize - 1] << ", " << Intmap[X2 + xSize - 1][Y2 + ySize - 1] << ", " << //max right building check
+				//	//"expert" checks
+				//	"\n3 xMidSize check;" << Intmap[X2 + xMidSize][Y2] << ", " << Intmap[X2 + xMidSize][Y2 + ySize - 1] << ", " << // middle top and middle bottom check
+				//	"\n4  yMidSize check;" << Intmap[X2][Y2 + yMidSize] << ", " << Intmap[X2 + xSize - 1][Y2 + yMidSize] << ", " <<//middle left and middle right check  //  now everybode hates me for this as they should but it works lol
+				//	//final check for walkable surface
+				//	"\n pevment check;" << Intmap[X2 - 1][Y2 - 1] << ", " << Intmap[X2 + xSize][Y2 + ySize];
 
 				for (int i = 0; i < xSize; ++i) {
 					for (int j = 0; j < ySize; ++j) {
@@ -117,9 +117,9 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 						Intmap[X2 + i][Y2 + j] = getTile();
 					}
 				}
-				std::cout << "\nXmap" << xMap << " ,Ymap " << yMap
+				/*std::cout << "\nXmap" << xMap << " ,Ymap " << yMap
 					<< "\nX2:" << X2 << " ,Y2:" << Y2
-					<< "\nxMid" << xMidSize << " , yMid" << yMidSize << std::endl;
+					<< "\nxMid" << xMidSize << " , yMid" << yMidSize << std::endl;*/
 
 
 

@@ -14,15 +14,17 @@
 */
 
 City::City()
-    : ValueSwitch(false),
-      ValueSwitch2(false) {
+    :ValueSwitch(false),
+     ValueSwitch2(false), 
+     numHumans(100),
+     numBuildings(10),
+     length(128),
+     height(72),
+     seed(0),
+     maxIterations(0){
     // Default Values to be used if something goes wrong
-    numHumans = 100;
-    numBuildings = 10;
-    maxIterations = 100;
-    height = 50;
-    length = 50;
 
+   
     std::ifstream file(std::string(RESOURCE_DIR) + "/config.csv");
     if (file.is_open()) {
         std::string line;
@@ -39,38 +41,41 @@ City::City()
                 numHumans = std::stoi(value);
             }
             else {
-                std::cerr << "Incorrect number of humans! \n";
+                std::cout << "Incorrect number of humans! \n";
             }
             std::getline(ss, value, ',');
             if (std::stoi(value) >= 0) {
                 numBuildings = std::stoi(value);
             }
             else {
-                std::cerr << "Incorrect number of buildings! \n";
+                std::cout << "Incorrect number of buildings! \n";
             }
             std::getline(ss, value, ',');
             maxIterations = std::stoi(value);
             std::getline(ss, value, ',');
-
+            if (maxIterations == 0) {
+                std::cout << "Iteration has no limit. Please, press escape to exit simulation \n";
+            }
             if (std::stoi(value) > 0) {
                 height = std::stoi(value);
             }
             else {
-                std::cerr << "Incorrect height!\n";
+                std::cout << "Incorrect height!\n";
             }
             std::getline(ss, value, ',');
             if (std::stoi(value) > 0) {
                 length = std::stoi(value);
             }
             else {
-                std::cerr << "Incorrect length!\n";
+                std::cout << "Incorrect length!\n";
             }
         }
 
         file.close();
     } else {
-        std::cerr << "Failed to open file, using default values.\n";
+        std::cout << "Failed to open file, using default values.\n";
     }
+    srand(time(0));
 }
 City::~City() {
 
@@ -410,20 +415,11 @@ void City::drawScreen(sf::RenderWindow& window, sf::View& view) {
 
     for (size_t i = 0; i < entities.size(); i++)
     {
-        if (entities[i]->getType() == human)
-        {
-            entities[i]->walk();
-        }
+        
+        window.draw(*entities[i]);
+        
     }
 
-    for (size_t i = 0; i < entities.size(); i++)
-    {
-        if (entities[i]->getType() != human)
-        {
-            entities[i]->walk();
-        }
-        window.draw(*entities[i]);
-    }
 }
 
 
@@ -445,7 +441,7 @@ void City::start() {
 
     //seed lol
     //std::cout << time(0) << std::endl;
-    srand(0);
+   
     //std::cout << seed << std::endl;
 
     // size of the window and name
@@ -573,6 +569,14 @@ void City::start() {
         }
         window.display();
         
+        for (size_t i = 0; i < entities.size(); i++)
+        {
+            
+            entities[i]->walk();
+
+        }
+        
+
     }
     save();
 }

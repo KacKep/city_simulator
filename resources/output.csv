@@ -1,68 +1,85 @@
 Map Data:
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2
+1,2,3,3,2,0,0,0,0,0,1,0,0,0,0
+1,2,3,3,2,5,5,1,0,1,0,0,1,1,0
+1,2,3,3,2,5,5,1,0,1,0,0,0,0,0
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2
-2,3,3,2,7,7,7,7,4,4,4,4,4,4,0
-2,3,3,2,7,7,7,7,4,4,4,4,4,4,1
-2,3,3,2,7,7,7,7,4,4,4,4,4,4,1
-2,3,3,2,4,4,0,1,4,4,4,4,0,0,0
-2,3,3,2,4,4,0,0,4,4,4,4,0,0,0
-2,3,3,2,5,5,5,5,5,0,1,0,0,1,0
-2,3,3,2,5,5,5,5,5,1,0,1,0,0,1
-2,3,3,2,5,5,5,5,5,0,1,0,1,1,0
-2,3,3,2,5,5,5,5,5,1,0,1,1,1,0
-2,3,3,2,1,0,0,1,0,0,0,0,1,1,1
-2,3,3,2,0,1,1,1,0,0,1,0,1,1,0
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+1,2,3,3,2,1,1,1,0,5,5,5,5,5,1
+0,2,3,3,2,4,4,4,4,5,5,5,5,5,0
+0,2,3,3,2,4,4,4,4,5,5,5,5,5,0
+1,2,3,3,2,4,4,4,4,5,5,5,5,5,1
+0,2,3,3,2,4,4,4,4,5,5,5,5,5,1
+0,2,3,3,2,4,4,4,4,1,1,1,0,1,0
+1,2,3,3,2,0,0,1,0,0,0,1,0,0,1
+1,2,3,3,2,0,1,0,1,0,1,0,1,1,0
 
 Final Stats per Entity
 ID,Type,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness
-1,Human,Alive,48,40,5,50,930,0
-2,Human,Alive,90,80,5,0,800,0
-3,Human,Alive,83,80,5,50,800,0
+1,Human,Dead
+2,Human,Dead
+3,Animal,Alive,32,100,10,0
 4,Human,Dead
-5,Human,Dead
-6,Human,Alive,76,40,12,0,860,0
-7,Human,Alive,88,100,7,40,760,0
-8,Human,Alive,41,110,7,40,830,0
-9,Animal,Alive,80,100,10,0
-10,Human,Alive,35,70,7,40,830,0
-11,Human,Alive,49,40,5,50,830,0
-12,Human,Alive,81,100,12,0,730,0
-13,Human,Dead
-14,Human,Alive,50,60,7,40,830,0
-15,Human,Alive,43,90,10,20,830,0
-16,Human,Alive,100,130,5,50,660,0
-17,Human,Alive,100,80,10,20,830,0
-18,Animal,Alive,100,20,10,50
-19,Human,Alive,86,40,12,0,900,0
-20,Animal,Alive,101,85,10,50
-21,Human,Alive,90,70,5,0,790,0
-22,Human,Alive,53,90,7,40,760,0
-23,Human,Alive,78,60,12,0,800,0
+5,Animal,Alive,95,55,10,50
+6,Human,Dead
+7,Animal,Alive,51,15,10,50
+8,Human,Dead
+9,Human,Dead
+10,Human,Dead
+11,Human,Alive,75,100,5,50,720,0
+12,Human,Alive,9,90,5,50,730,0
+13,Animal,Dead
+14,Human,Dead
+15,Human,Dead
+16,Human,Alive,13,100,5,50,710,0
+17,Animal,Dead
+18,Human,Dead
+19,Human,Dead
+20,Human,Dead
+21,Human,Dead
+22,Human,Dead
+23,Animal,Alive,96,75,10,50
+24,Human,Alive,40,90,5,50,830,0
+25,Human,Dead
+26,Human,Dead
 
 Final Stats per Building
 ID,Name,Price,Product Value,Total Money Earned
-1,Shop,-100,60,1800
-2,Hospital,-700,20,0
-3,LiqourShop,-800,100,0
-4,Shop,-70,40,350
-5,Shop,-70,80,980
+1,Shop,-10,100,1560
+2,Hospital,-1200,50,0
+3,Hospital,-500,20,0
+4,Hospital,-900,10,0
 
 Final global stats:
-Total number of entities: 23
+Total number of entities: 26
 Total number of humans: 20
-Total number of animals: 3
-Alive entities:20
-Deaths: 3
-Alive humans: 17
-Dead humans: 3
-Alive animals: 3
-Dead animals: 0
-Total number of buildings: 5
+Total number of animals: 6
+Alive entities:8
+Deaths: 18
+Alive humans: 4
+Dead humans: 16
+Alive animals: 4
+Dead animals: 2
+Total number of buildings: 4
 
 Deaths per Iteration:
 ID,Deaths,Remaining Entities
-5,1,22
-21,1,21
-46,1,20
+4,1,25
+7,1,24
+25,1,23
+40,1,22
+151,1,21
+204,1,20
+209,1,19
+240,1,18
+247,1,17
+290,1,16
+501,1,15
+535,1,14
+548,1,13
+557,1,12
+636,1,11
+690,1,10
+769,1,9
+1353,1,8
