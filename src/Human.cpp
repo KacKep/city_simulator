@@ -23,7 +23,7 @@ Human::Human()
 		setOutlineThickness(1);
 	}
 	setFillColor(sf::Color(rand() % 256, rand() % 256, rand() % 256, 255));
-	std::cout << item.getAttack1() << std::endl;
+	//std::cout << item.getAttack1() << std::endl;
 	setAttack(getAttack() + item.getAttack1());
 	setSwiftness(getSwiftness() + item.getSwiftness());
 }

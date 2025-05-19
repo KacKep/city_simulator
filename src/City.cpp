@@ -35,14 +35,14 @@ City::City()
             std::string value;
 
             std::getline(ss, value, ',');
-            if (std::stoi(value) > 0) {
+            if (std::stoi(value) >= 0) {
                 numHumans = std::stoi(value);
             }
             else {
                 std::cerr << "Incorrect number of humans! \n";
             }
             std::getline(ss, value, ',');
-            if (std::stoi(value) > 0) {
+            if (std::stoi(value) >= 0) {
                 numBuildings = std::stoi(value);
             }
             else {
@@ -648,7 +648,7 @@ void City :: save() {
     }
 
     // --- Final stats of each entity ---
-    file << "\nFinal Stats per Entity\nNumber,Type,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness\n";
+    file << "\nFinal Stats per Entity\nID,Type,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness\n";
     for (int i = 0; i < entities.size(); i++) {
         file << i+1 << ","
             //IDs are not in order because of the way animals generate so I used the index instead of getID
@@ -673,7 +673,7 @@ void City :: save() {
         }
     }
     // --- Final stats of each building ---
-    file << "\nFinal Stats per Building\nNumber,Name,Price,Product Value,Total Money Earned\n";
+    file << "\nFinal Stats per Building\nID,Name,Price,Product Value,Total Money Earned\n";
     for (int i = 0; i < buildings.size(); i++) {
         file << i+1 << ","
         << buildings[i]->getName() << ","
@@ -704,7 +704,7 @@ void City :: save() {
         deathsPerIteration[entities[i]->getDeathIteration()]++;
     }
 
-    file << "\nDeaths per Iteration:\nNumber,Deaths,Remaining Entities\n";
+    file << "\nDeaths per Iteration:\nID,Deaths,Remaining Entities\n";
     alive = entities.size();
     for (int i = 0; i < deathsPerIteration.size(); ++i) {
         if (deathsPerIteration[i] > 0) {
