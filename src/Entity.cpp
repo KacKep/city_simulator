@@ -19,7 +19,8 @@ Entity::Entity()
 	drunkness(0),
 	place(PavementTile),
 	swiftness(0),
-	deathIteration(0)
+	deathIteration(0),
+	dir(neutral)
 {
 	
 }
@@ -276,3 +277,26 @@ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 	 }
  }
 
+
+ void Entity::circleWalk() {
+	 if (getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] == PavementTile && dir != up) //Down 
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
+		 dir = down;
+	 }
+	 else if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] == PavementTile && dir != left)//Right
+	 {
+		 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
+		 dir = right;
+	 }
+	 else if (getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] == PavementTile && dir != down)//UP
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
+		 dir = up;
+	 }
+	 else if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] <= PavementTile && dir != right)//Left
+	 {
+		 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
+		 dir = left;
+	 }
+ }

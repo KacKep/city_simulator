@@ -73,9 +73,9 @@ void Dog::behavior() {
 			setPosition(followPosition);
 			return;
 		}*/
-		
-		setPosition(followPosition);
 		followPosition = owner->getPosition();
+		setPosition(followPosition);
+		
 		return;
 	}
 	if (getTarget() == getPosition())

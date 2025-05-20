@@ -6,10 +6,11 @@
 
 enum Direction
 {
-	left=0,
-	right=1,
-	down=2,
-	up=3
+	left = 0,
+	right = 1,
+	down = 2,
+	up = 3,
+	neutral = 4
 
 };
 
@@ -81,6 +82,8 @@ public:
 
 	void basicWalk();
 
+	void circleWalk();
+
 	
 
 	//--------interface methods----------
@@ -103,6 +106,7 @@ private:
 	int attack;
 	int swiftness;
 	double money;
+	Direction dir;
 	sf::Vector2f target;
 	BuildingList place;
 	EntityList entity_type;

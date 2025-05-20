@@ -11,7 +11,10 @@ Human::Human()
 	{
 		chooseTarget();
 		setPosition(getTarget());
-
+		std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] << std::endl;//left
+		std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] << std::endl;//right
+		std::cout << getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] << std::endl;//up
+		std::cout << getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] << std::endl;//down
 		/*if (!secrete.loadFromFile(std::string(RESOURCE_DIR) + "/pobrane.png")) {
 
 		}
@@ -26,6 +29,8 @@ Human::Human()
 	//std::cout << item.getAttack1() << std::endl;
 	setAttack(getAttack() + item.getAttack1());
 	setSwiftness(getSwiftness() + item.getSwiftness());
+	//setPosition(sf::Vector2f(10, 10));
+	
 }
 
 
@@ -44,8 +49,20 @@ void Human::walk() {
 		setFillColor(sf::Color::Transparent);
 		setOutlineThickness(0);
 	}
-	behavior();
-	basicWalk();
+	//behavior();
+
+	if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up))
+	{
+		basicWalk();
+		
+	}
+	else
+	{
+		
+		circleWalk();
+		
+	}
+	
 
 	return;
 }
