@@ -283,6 +283,50 @@ void City::interactionBuilding() {
     }
 }
 
+void City::interactionHumanBuilding(Entity& entity, Building& building) {
+    entity.setTarget(entity.getPosition());
+    switch (building.getTile())
+    {
+    case ShopTile: {
+        //ENTITY GETS food
+        entity.addHunger(building.getProductValue());
+        //ENTITY PAYS THE PRICE
+        entity.addMoney(building.getPrice());
+        //BUILDING GETS MONEY
+        building.addMoney(-building.getPrice());
+        return;
+    }
+    case HospitalTile: {
+        //ENTITY GETS health
+        entity.addHealth(building.getProductValue());
+        //ENTITY PAYS THE PRICE
+        entity.addMoney(building.getPrice());
+        //BUILDING GETS MONEY
+        building.addMoney(-building.getPrice());
+        return;
+    }
+    case OfficeBuildingTile: {
+        //ENTITY GETS money
+        entity.addMoney(building.getProductValue());
+        //BUILDING GETS MONEY
+        building.addMoney(building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
+        return;
+    }
+    case LiqourShopTile: {
+        //ENTITY GETS drunk
+        entity.addDrunkness(building.getProductValue());
+        //ENTITY PAYS THE PRICE
+        entity.addMoney(building.getPrice());
+        //BUILDING GETS MONEY
+        building.addMoney(-building.getPrice());
+        return;
+    }
+    default:
+        return;
+
+    }
+}
+
 void City::interactionEntities() {
     for (size_t i = 0; i < entities.size(); i++)
     {
@@ -480,7 +524,7 @@ void City::start() {
     
 
     createBuildings(Intmap);
-    std::cout << buildings.size();
+    //std::cout << buildings.size();
 
     //map for entitie, yes i'm lazy but the project does not require ultimate efficiency
     Human mapper ;
@@ -504,16 +548,6 @@ void City::start() {
         entities[0]->setIteration(iteration);
 
         camera(window,view);
-       
-        
-        //interact
-       
-        interactionBuilding();
-
-        //fight
-        
-        interactionEntities();
-
 
         //makes program slower
         if (ValueSwitch2)
@@ -521,14 +555,9 @@ void City::start() {
             sf::sleep(sf::milliseconds(100));
         }
         
-       
-        
-        
-        
         window.setView(view);
         
 
-        
         
         // drawing shapes
         window.clear();
@@ -562,6 +591,16 @@ void City::start() {
         }
         window.display();
         
+        //interact
+
+        interactionBuilding();
+
+        //fight
+
+        interactionEntities();
+
+        //walking
+
         for (size_t i = 0; i < entities.size(); i++)
         {
             
@@ -578,49 +617,7 @@ void City::start() {
 
 
 
-void City::interactionHumanBuilding(Entity& entity, Building& building) {
-    entity.setTarget(entity.getPosition());
-    switch (building.getTile())
-    {
-    case ShopTile: {
-        //ENTITY GETS food
-        entity.addHunger( building.getProductValue());
-        //ENTITY PAYS THE PRICE
-        entity.addMoney( building.getPrice());
-        //BUILDING GETS MONEY
-        building.addMoney(-building.getPrice());
-        return;
-    }
-    case HospitalTile: {
-        //ENTITY GETS health
-        entity.addHealth( building.getProductValue());
-        //ENTITY PAYS THE PRICE
-        entity.addMoney( building.getPrice());
-        //BUILDING GETS MONEY
-        building.addMoney( -building.getPrice());
-        return;
-    }
-    case OfficeBuildingTile: {
-        //ENTITY GETS money
-        entity.addMoney(building.getProductValue());
-        //BUILDING GETS MONEY
-        building.addMoney(building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
-        return;
-    }
-    case LiqourShopTile: {
-        //ENTITY GETS drunk
-        entity.addDrunkness(building.getProductValue());
-        //ENTITY PAYS THE PRICE
-        entity.addMoney(building.getPrice());
-        //BUILDING GETS MONEY
-        building.addMoney(-building.getPrice());
-        return;
-    }
-    default:
-        return;
 
-    }
-}
 
 void City :: save(std::vector<std::vector<int>>& Intmap) {
     
