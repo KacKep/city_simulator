@@ -1,31 +1,18 @@
 #pragma once
+#include "Animal.hpp"
 #include "Entity.hpp"
-#include "Human.hpp"
 
-class Dog : public Entity
+class Dog :public Animal
 {
 public:
-	Dog(Human* human);
-	~Dog()override;
+	Dog(Human* owner);
+	~Dog()override = default;
 
-
-	void walk() override;
-	void fight(Entity* enemy) override;
-	Human* getOwner() const;
-	//when no owner for dogs and allway for cats
-	void hunt();
-
-	std::string getName();
-	void setName(std::string name);
-protected:
-	//making dog and cat in difffrent object classes and giving them static textures would be better
-	sf::Texture texture;
-	
 private:
+
+	static sf::Texture texture;
+	sf::Vector2f followPosition;
+	int circle_timer;
 	void behavior()override;
 
-	std::string name;
-	Human* owner;
-	sf::Vector2f followPosition;
 };
-

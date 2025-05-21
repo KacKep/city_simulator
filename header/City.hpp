@@ -12,8 +12,9 @@
 #include "OfficeBuilding.hpp"
 #include "LiqourShop.hpp"
 #include "Entity.hpp"
-#include "Dog.hpp"
+#include "Animal.hpp"
 #include "Cat.hpp"
+#include "Dog.hpp"
 #include "Item.hpp"
 
 
@@ -46,7 +47,7 @@ private:
 
 	void drawScreen(sf::RenderWindow& window, sf::View& view);
 
-	void save();
+	void save(std::vector<std::vector<int>>& Intmap);
 	//_----------Variables-------
 
 	std::vector<std::unique_ptr<Building>> buildings;

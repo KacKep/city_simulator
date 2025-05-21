@@ -41,7 +41,7 @@ int Entity::getIteration() {
 	 this->dead = yes;
 	death_count++;
 	this->deathIteration = this->iteration;
-	std::cout << this->deathIteration << " ";
+	//std::cout << this->deathIteration << " ";
 }
 int Entity::getDeathCount() {
 	return death_count;
@@ -150,34 +150,11 @@ int Entity::getDeathIteration() {
  //------------------methods------------------
  
  
-  //checks if the boundry is in given direction. Probably will be used in path finding 
-bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 
-	switch (direction) {
-		case left: { 
-			//std::cout << check << "- left\n";
-			return (int)getPosition().x / 10 >= dystance;
-		}
-		case right: {
-			//std::cout << check << "- right\n";
-			return (int)getPosition().x / 10 < getBoundry().x - dystance;
-		}
-		case up: { 
-			//std::cout << check << "- up\n";
-			return (int)getPosition().y / 10 >= dystance;
-		}
-		case down: {
-			//std::cout << check << "- down\n";
-			return (int)getPosition().y / 10 < getBoundry().y - dystance;
-		}
-		default: {
-			return false;
-		}
-	 }
- }
 
  // choose some target on map but the target(mostly buildings) is decided by behavior wich is contained by the corresponding class
  void Entity::chooseTarget() {
+	 dir = neutral;
 	 for (size_t i = 0; i < 3; i++)//it only exist for no pavment tiles
 	 {
 
@@ -194,7 +171,7 @@ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 				 X2 = (xMap + x) % (getBoundry().x);
 				 Y2 = (yMap + y) % (getBoundry().y);
 				 if (getMap()[X2][Y2] == getTargetTile()) {
-					 //std::cout << "\n Targetx" << TargetPosition.x << " ,Targety" << TargetPosition.y;
+					 //std::cout << "\n Targetx" << getTarget().x << " ,Targety" << getTarget().y;
 					 setTarget(sf::Vector2f(Y2 * 10, X2 * 10));
 					 //setTarget();
 					 return;
@@ -223,80 +200,158 @@ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 		 }
 	 }
  }
-	 
- void Entity::basicWalk() {
 
+ //checks if the boundry is in given direction. Probably will be used in path finding 
+ bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
 
-	 if (getDrunkness()>=5)
-	 {
-		 addDrunkness(-5);
-		 if (!checkBoundry(1,left)||!checkBoundry(1,right)||!checkBoundry(1,down)||!checkBoundry(1,up))
-		 {
-			 return;
-		 }
-		 
-		 switch (rand()%4)
-		 {
-		 case left: {
-			 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
-			 return;
-		 }
-		 case right: {
-			 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
-			 return;
-		 }
-		 case down: {
-			 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
-			 return;
-		 }
-		 case up: {
-			 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
-			 return;
-		 }
-		 default:
-			 return;
-		 }
+	 switch (direction) {
+	 case left: {
+		 //std::cout << check << "- left\n";
+		 return (int)getPosition().x / 10 >= dystance;
 	 }
+	 case right: {
+		 //std::cout << check << "- right\n";
+		 return (int)getPosition().x / 10 < getBoundry().x - dystance;
+	 }
+	 case up: {
+		 //std::cout << check << "- up\n";
+		 return (int)getPosition().y / 10 >= dystance;
+	 }
+	 case down: {
+		 //std::cout << check << "- down\n";
+		 return (int)getPosition().y / 10 < getBoundry().y - dystance;
+	 }
+	 default: {
+		 return false;
+	 }
+	 }
+ }
+
+ void Entity::walkBasic() {
+
 
 	 if (getTarget().x < getPosition().x)//Left
 	 {
 		 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
+		 dir = left;
 
 	 }
 	 else if (getTarget().x > getPosition().x)//Right
 	 {
 		 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
-	 }
-	 else if (getTarget().y < getPosition().y)//Down
-	 {
-		 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
-	 }
-	 else if (getTarget().y > getPosition().y) //Up
-	 {
-		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
-	 }
- }
-
-
- void Entity::circleWalk() {
-	 if (getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] == PavementTile && dir != up) //Down 
-	 {
-		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
-		 dir = down;
-	 }
-	 else if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] == PavementTile && dir != left)//Right
-	 {
-		 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
 		 dir = right;
 	 }
-	 else if (getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] == PavementTile && dir != down)//UP
+	 else if (getTarget().y < getPosition().y)//Up
 	 {
 		 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
 		 dir = up;
 	 }
-	 else if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] <= PavementTile && dir != right)//Left
+	 else if (getTarget().y > getPosition().y) //Down
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
+		 dir = down;
+	 }
+ }
+
+ void Entity::walkDrunk() {
+	 addDrunkness(-5);
+	 if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up))
+	 {
+		 return;
+	 }
+	 switch (rand() % 4)
+	 {
+	 case left: {
+		 if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] <= RoadTile)
+		 {
+			 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
+		 }
+		 return;
+	 }
+	 case right: {
+		 if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] <= RoadTile)
+		 {
+			 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
+		 }
+		 return;
+	 }
+	 case down: {
+		 if (getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] <= RoadTile)
+		 {
+			 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
+		 }
+		 return;
+	 }
+	 case up: {
+		 if (getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] <= RoadTile)
+		 {
+			 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
+		 }
+		 return;
+	 }
+	 default:
+		 return;
+	 }
+ }
+
+
+ bool Entity::walkCircle(BuildingList checked_tile) {
+	 if ( getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] == checked_tile && dir != up) //Down 
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
+		 dir = down;
+		 return true;
+	 }
+	 else if ( getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] == checked_tile && dir != left)//Right
+	 {
+		 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
+		 dir = right;
+		 return true;
+	 }
+	 else if ( getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] == checked_tile && dir != down)//UP
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
+		 dir = up;
+		 return true;
+	 }
+	 else if ( getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] == checked_tile && dir != right)//Left
 	 {
 		 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
 		 dir = left;
+		 return true;
 	 }
+	 
+	 return false;
+ }
+
+ bool Entity::walkSpecific(BuildingList checked_tile) {
+	 if (getTarget().y > getPosition().y && getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] == checked_tile && dir != up) //Down 
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
+		 dir = down;
+		 //std::cout << "down" << std::endl;
+		 return true;
+	 }
+	 else if (getTarget().x > getPosition().x && getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] == checked_tile && dir != left)//Right
+	 {
+		 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
+		 dir = right;
+		 //std::cout << "right" << std::endl;
+		 return true;
+	 }
+	 else if (getTarget().y < getPosition().y && getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] == checked_tile && dir != down)//UP
+	 {
+		 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
+		 dir = up;
+		 //std::cout << "up" << std::endl;
+		 return true;
+	 }
+	 else if (getTarget().x < getPosition().x && getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] == checked_tile && dir != right)//Left
+	 {
+		 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
+		 dir = left;
+		 //std::cout << "left" << std::endl;
+		 return true;
+	 }
+	 return false;
  }

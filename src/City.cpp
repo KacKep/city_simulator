@@ -75,7 +75,7 @@ City::City()
     } else {
         std::cout << "Failed to open file, using default values.\n";
     }
-    srand(time(0));
+    srand(1);
 }
 City::~City() {
 
@@ -199,10 +199,10 @@ void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
         }
         case 3:
         {
-            if (rand()%2!=0)
+            /*if (rand()%2!=0)
             {
                 continue;
-            }
+            }*/
              building = std::make_unique<LiqourShop>();
             
             break;
@@ -220,20 +220,20 @@ void City::createEntities() {
 
     for (long unsigned int i = 0; i < numHumans; ++i) {
         auto person = std::make_unique<Human>();
-        if (rand()%10==0)
-        {
+        /*if (rand()%10==0)
+        {*/
             Human* owner = person.get();
             //animal needs raw pointer just like meet
             auto animal = std::make_unique<Dog>(owner);
             entities.push_back(std::move(animal));
-        }
-        else if (rand()%5==0)
-        {
-            Human* owner = person.get();
-            //animal needs raw pointer just like meet
-            auto animal = std::make_unique<Cat>(owner);
-            entities.push_back(std::move(animal));
-        }
+        //}
+        //else if (rand()%5==0)
+        //{
+        //    Human* owner = person.get();
+        //    //animal needs raw pointer just like meet
+        //    auto animal = std::make_unique<Cat>(owner);
+        //    entities.push_back(std::move(animal));
+        //}
         
         entities.push_back(std::move(person));
 
@@ -331,12 +331,12 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
             window.close();
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Hyphen)|| sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Hyphen) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Subtract))
         {
             
             view.zoom(1.25f);
         }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Equal)|| sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Equal) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Add))
         {
             
             view.zoom(0.8f);
@@ -433,27 +433,20 @@ void City::start() {
     //std::string texturePath = std::string(RESOURCE_DIR) + "/ROLF1.png";
     //pwr logo
     sf::Texture texture = giveTexture("pwr-logo.png");
-
     sf::Sprite pwr(texture);
     sf::Color currentColor = pwr.getColor();
     pwr.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, currentColor.a - 150));
     pwr.setScale(sf::Vector2f(0.25f, 0.25f));
 
-    //seed lol
-    //std::cout << time(0) << std::endl;
-   
-    //std::cout << seed << std::endl;
+
 
     // size of the window and name
     sf::RenderWindow window(sf::VideoMode({ 1280, 720 }), "City Simulator");
     window.setFramerateLimit(60);
 
     sf::View view = window.getDefaultView();
-    //view.setViewport(sf::FloatRect({ 0.f, 0.f }, { 1.f, 1.f }));
     sf::View minimapView = window.getDefaultView();
-    //minimapView.setViewport(sf::FloatRect({ 0.75f, 0.f }, { 0.25f, 0.25f }));
-
-    //human duplication glitch
+    
 
 
 
@@ -525,7 +518,7 @@ void City::start() {
         //makes program slower
         if (ValueSwitch2)
         {
-            sf::sleep(sf::milliseconds(50));
+            sf::sleep(sf::milliseconds(100));
         }
         
        
@@ -578,7 +571,7 @@ void City::start() {
         
 
     }
-    save();
+    //save(Intmap);
 }
 
 
@@ -616,10 +609,7 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     }
     case LiqourShopTile: {
         //ENTITY GETS drunk
-        if (rand()%10==0)
-        {
-            entity.addDrunkness(building.getProductValue());
-        }
+        entity.addDrunkness(building.getProductValue());
         //ENTITY PAYS THE PRICE
         entity.addMoney(building.getPrice());
         //BUILDING GETS MONEY
@@ -632,8 +622,8 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     }
 }
 
-void City :: save() {
-    std::vector<std::vector<int>>Intmap = entities[0]->getMap();
+void City :: save(std::vector<std::vector<int>>& Intmap) {
+    
     int alive = entities.size() - entities[0]->getDeathCount();
     int alivehumans = 0;
     //vector to store all deaths per each iteration
@@ -643,8 +633,8 @@ void City :: save() {
 
     // --- MAP ---
     file << "Map Data:\n";
-    for (int y = 0; y < height; ++y) {
-        for (int x = 0; x < length; ++x) {
+    for (long  int y = 0; y < height; ++y) {
+        for (long long int x = 0; x < length; ++x) {
             file << Intmap[y][x];
             if (x < length - 1) file << ",";
         }
@@ -653,7 +643,7 @@ void City :: save() {
 
     // --- Final stats of each entity ---
     file << "\nFinal Stats per Entity\nID,Type,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness\n";
-    for (int i = 0; i < entities.size(); i++) {
+    for (long int i = 0; i < entities.size(); i++) {
         file << i+1 << ","
             //IDs are not in order because of the way animals generate so I used the index instead of getID
             << (entities[i]->getType() ? "Animal" : "Human") << ","
@@ -678,7 +668,7 @@ void City :: save() {
     }
     // --- Final stats of each building ---
     file << "\nFinal Stats per Building\nID,Name,Price,Product Value,Total Money Earned\n";
-    for (int i = 0; i < buildings.size(); i++) {
+    for (long int i = 0; i < buildings.size(); i++) {
         file << i+1 << ","
         << buildings[i]->getName() << ","
         << buildings[i]->getPrice() << ","
@@ -701,8 +691,8 @@ void City :: save() {
 
     // --- Stats per each iteration ---
 
-    for (int i = 0; i < entities.size(); i++) {
-        if (entities[i]->isDead() == 0) {
+    for (long int i = 0; i < entities.size(); i++) {
+        if (!entities[i]->isDead()) {
             continue;
         }
         deathsPerIteration[entities[i]->getDeathIteration()]++;
@@ -710,7 +700,7 @@ void City :: save() {
 
     file << "\nDeaths per Iteration:\nIteration,Deaths,Remaining Entities\n";
     alive = entities.size();
-    for (int i = 0; i < deathsPerIteration.size(); ++i) {
+    for (long int i = 0; i < deathsPerIteration.size(); ++i) {
         if (deathsPerIteration[i] > 0) {
             alive -= deathsPerIteration[i];
             file << i + 1 << ","

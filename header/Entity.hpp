@@ -7,8 +7,8 @@
 enum Direction
 {
 	left = 0,
-	right = 1,
-	down = 2,
+	down = 1,
+	right = 2,
 	up = 3,
 	neutral = 4
 
@@ -80,11 +80,12 @@ public:
 	void chooseTarget();
 	//virtual void behavior();
 
-	void basicWalk();
+	void walkBasic();
+	void walkDrunk();
 
-	void circleWalk();
+	bool walkCircle(BuildingList checked_tile);
 
-	
+	bool walkSpecific(BuildingList checked_tile);
 
 	//--------interface methods----------
 
@@ -108,6 +109,7 @@ private:
 	double money;
 	Direction dir;
 	sf::Vector2f target;
+	//tile of the buildings mostly
 	BuildingList place;
 	EntityList entity_type;
 	unsigned int ID;

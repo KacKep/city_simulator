@@ -1,13 +1,14 @@
 #pragma once
-#include "Dog.hpp"
+#include "Animal.hpp"
 #include "Entity.hpp"
 
-class Cat :public Dog
+class Cat :public Animal
 {
 public:
 	Cat(Human* owner);
 	~Cat()override=default;
 
 private:
+	static sf::Texture texture;
 	void behavior()override;
 };

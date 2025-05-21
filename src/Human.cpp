@@ -1,7 +1,8 @@
 #include "Human.hpp"
 
 Human::Human()
-	:Entity()
+	:Entity(),
+	circle_timer(0)
 {
 	//std::cout << "Texture path: " << std::string(RESOURCE_DIR) + "/brick1.png" << std::endl;
 	setID();
@@ -11,10 +12,10 @@ Human::Human()
 	{
 		chooseTarget();
 		setPosition(getTarget());
-		std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] << std::endl;//left
-		std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] << std::endl;//right
-		std::cout << getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] << std::endl;//up
-		std::cout << getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] << std::endl;//down
+		//std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] << std::endl;//left
+		//std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] << std::endl;//right
+		//std::cout << getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] << std::endl;//up
+		//std::cout << getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] << std::endl;//down
 		/*if (!secrete.loadFromFile(std::string(RESOURCE_DIR) + "/pobrane.png")) {
 
 		}
@@ -49,18 +50,49 @@ void Human::walk() {
 		setFillColor(sf::Color::Transparent);
 		setOutlineThickness(0);
 	}
-	//behavior();
 
-	if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up))
+	if (getTarget() == getPosition())
 	{
-		basicWalk();
+		behavior();
+	}
+
+	if (getDrunkness()>5)
+	{
+		walkDrunk();
+		return;
+	}
+	else if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up)||getTargetTile()<=1)
+	{
+		walkBasic();
+		//the most important uselles return lol
+		return;
+	}
+	else if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
+	{
+
+	}
+	else if (--circle_timer>0)
+	{
+		if (!walkCircle(PavementTile))
+		{
+			walkBasic();
+		}
 		
+	}
+	else if (walkSpecific (PavementTile) )
+	{
+		
+	}
+	else if (walkSpecific (RoadTile) ) {
+		
+	}
+	else if (circle_timer <= 0)
+	{
+		circle_timer = 6;
 	}
 	else
 	{
-		
-		circleWalk();
-		
+		walkBasic();
 	}
 	
 
@@ -73,12 +105,12 @@ void Human::fight(Entity* enemy) {
 
 		// there is <=  becaus item will add to zero so there is no problem with swiftness 9999 
 		if (rand() % 100 <= 0+enemy->getSwiftness()) {
-			enemy->walk();
+			//enemy->walk();
 			break;
 		}
 
 		if (rand() % 100 <= 0+ getSwiftness()) {
-			walk();
+			//walk();
 			break;
 		}
 
@@ -100,8 +132,7 @@ void Human::fight(Entity* enemy) {
 
 void Human::behavior() {
 	//check if it's in correct place
-	if (getTarget() == getPosition())
-	{
+	
 		// in 9x9 there is no buildings so you probably want to check who survives the longest
 		if (getBoundry().x > 9 && getBoundry().y > 9)
 		{
@@ -121,37 +152,38 @@ void Human::behavior() {
 		std::cout << "Health:" << getHealth() << std::endl;
 		std::cout << "Money:" << getMoney() << std::endl;*/
 
-		if (getHealth() < 40 && getMoney() > 1500)
+	if (getHealth() < 40 && getMoney() > 1500)
+	{
+		setTargetTile(HospitalTile);
+	}
+	else if (getHunger() < 50 && getMoney() > 150)
+	{
+		setTargetTile(ShopTile);
+	}
+	else if (getMoney() < 100)
+	{
+		setTargetTile(OfficeBuildingTile);
+	}
+	else
+	{
+		if (rand() % 4 == 0 && getMoney() > 1000)
 		{
-			setTargetTile(HospitalTile);
+			setTargetTile(LiqourShopTile);
 		}
-		else if (getHunger() < 50 && getMoney() > 150)
-		{
-			setTargetTile(ShopTile);
-		}
-		else if (getMoney() < 100)
+		else if (rand() % 4 == 0)
 		{
 			setTargetTile(OfficeBuildingTile);
 		}
 		else
 		{
-			if (rand() % 4 == 0 && getMoney() > 1000)
-			{
-				setTargetTile(LiqourShopTile);
-			}
-			else if (rand() % 4 == 0)
-			{
-				setTargetTile(OfficeBuildingTile);
-			}
-			else
-			{
-				setTargetTile(PavementTile);
-			}
-
+			setTargetTile(PavementTile);
 		}
-		chooseTarget();
 
 	}
+	chooseTarget();
+
+
+	
 	//if (getTarget()==getPosition() /*|| ++unstuck == (getBoundry().x * getBoundry().y) / 4*/) {
 	//	setPosition( getTarget());
 	//	//unstuck = 0;

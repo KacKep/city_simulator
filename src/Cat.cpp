@@ -1,18 +1,14 @@
 #include "Cat.hpp"
-#include "Dog.hpp"
+#include "Animal.hpp"
 #include "Entity.hpp"
 
-Cat::Cat(Human* owner)
-	:Dog(owner)
-{
-	if (!texture.loadFromFile(std::string(RESOURCE_DIR) + "/Cat.png")) {
-		setFillColor(sf::Color::Magenta);
-		std::cout << "no animal texture" << std::endl;
-	}
-	else {
-		setTexture(&texture);
+sf::Texture Cat::texture(std::string(RESOURCE_DIR) + "/Cat.png");
 
-	}
+Cat::Cat(Human* owner)
+	:Animal(owner)
+{
+
+	setTexture(&texture);
 	setSwiftness(50);
 	setName("Cat");
 }
@@ -52,5 +48,5 @@ void Cat::behavior() {
 		chooseTarget();
 	}
 
-	basicWalk();
+	walkBasic();
 }

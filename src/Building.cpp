@@ -123,7 +123,7 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 
 
 
-				// i know i'ts confusing but just resources/Vector_shenanigens.png open for explenation
+				// i know i'ts confusing 
 				this->setPosition(sf::Vector2f(Y2 * 10, X2 * 10));
 				return true;
 			
