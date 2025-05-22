@@ -220,20 +220,20 @@ void City::createEntities() {
 
     for (long unsigned int i = 0; i < numHumans; ++i) {
         auto person = std::make_unique<Human>();
-        /*if (rand()%10==0)
-        {*/
+        if (rand()%10==0)
+        {
             Human* owner = person.get();
             //animal needs raw pointer just like meet
             auto animal = std::make_unique<Dog>(owner);
             entities.push_back(std::move(animal));
-        //}
-        //else if (rand()%5==0)
-        //{
-        //    Human* owner = person.get();
-        //    //animal needs raw pointer just like meet
-        //    auto animal = std::make_unique<Cat>(owner);
-        //    entities.push_back(std::move(animal));
-        //}
+        }
+        else if (rand()%5==0)
+        {
+            Human* owner = person.get();
+            //animal needs raw pointer just like meet
+            auto animal = std::make_unique<Cat>(owner);
+            entities.push_back(std::move(animal));
+        }
         
         entities.push_back(std::move(person));
 

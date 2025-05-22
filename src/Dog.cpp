@@ -1,6 +1,4 @@
 #include "Dog.hpp"
-#include "Animal.hpp"
-#include "Entity.hpp"
 sf::Texture Dog::texture(std::string(RESOURCE_DIR) + "/Dog.png");
 
 Dog::Dog(Human* owner)

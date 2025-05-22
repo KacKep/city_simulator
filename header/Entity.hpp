@@ -1,8 +1,9 @@
 #pragma once
-#include "Building.hpp"
+#include <SFML/Graphics/RectangleShape.hpp>
+#include <SFML/Graphics/Texture.hpp>
 #include "EnumList.hpp"
 #include <iostream>
-#include "Item.hpp"
+
 
 enum Direction
 {

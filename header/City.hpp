@@ -6,16 +6,12 @@
 #include <sstream>
 #include "Human.hpp"
 #include "TileMap.hpp"
-#include "Building.hpp"
 #include "Shop.hpp"
 #include "Hospital.hpp"
 #include "OfficeBuilding.hpp"
 #include "LiqourShop.hpp"
-#include "Entity.hpp"
-#include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
-#include "Item.hpp"
 
 
 
@@ -48,7 +44,7 @@ private:
 	void drawScreen(sf::RenderWindow& window, sf::View& view);
 
 	void save(std::vector<std::vector<int>>& Intmap);
-	//_----------Variables-------
+	//-----------Variables-------
 
 	std::vector<std::unique_ptr<Building>> buildings;
 	std::vector<std::unique_ptr<Entity>> entities;

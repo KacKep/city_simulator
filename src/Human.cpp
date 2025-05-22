@@ -12,17 +12,6 @@ Human::Human()
 	{
 		chooseTarget();
 		setPosition(getTarget());
-		//std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] << std::endl;//left
-		//std::cout << getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] << std::endl;//right
-		//std::cout << getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] << std::endl;//up
-		//std::cout << getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] << std::endl;//down
-		/*if (!secrete.loadFromFile(std::string(RESOURCE_DIR) + "/pobrane.png")) {
-
-		}
-		else {
-			setTexture(&secrete);
-
-		}*/
 		setOutlineColor(sf::Color::Black);
 		setOutlineThickness(1);
 	}
@@ -64,8 +53,6 @@ void Human::walk() {
 	else if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up)||getTargetTile()<=1)
 	{
 		walkBasic();
-		//the most important uselles return lol
-		return;
 	}
 	else if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
 	{

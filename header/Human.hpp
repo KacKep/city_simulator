@@ -16,8 +16,5 @@ private:
 	int circle_timer;
 	Item item;
 	void behavior()override;
-	sf::Texture secrete;
-	
-
 };
 

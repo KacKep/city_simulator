@@ -1,6 +1,5 @@
 #include "Cat.hpp"
-#include "Animal.hpp"
-#include "Entity.hpp"
+
 
 sf::Texture Cat::texture(std::string(RESOURCE_DIR) + "/Cat.png");
 

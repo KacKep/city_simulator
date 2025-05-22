@@ -1,9 +1,6 @@
-
-
 #include "City.hpp"
+#include <iostream>
 
-//constexpr int hight = 128;
-//constexpr int lenght = 72;
 
 int main() {
     try {

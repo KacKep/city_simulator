@@ -9,7 +9,7 @@ Animal::Animal(Human* human)
 	setTarget(owner->getTarget());
 	setPosition(getTarget());
 	setType(animal);
-	
+	addMoney(-getMoney());
 }
 
 std::string Animal::getName() {

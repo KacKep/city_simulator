@@ -1,6 +1,5 @@
 #pragma once
 #include "Animal.hpp"
-#include "Entity.hpp"
 
 class Dog :public Animal
 {
