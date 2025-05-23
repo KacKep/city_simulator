@@ -20,7 +20,7 @@ City::City()
      numBuildings(10),
      length(128),
      height(72),
-     seed(0),
+     seed(321),
      maxIterations(0){
     // Default Values to be used if something goes wrong
 
@@ -36,6 +36,8 @@ City::City()
             std::stringstream ss(line);
             std::string value;
 
+            std::getline(ss, value, ',');
+            seed = std::stoi(value);
             std::getline(ss, value, ',');
             if (std::stoi(value) >= 0) {
                 numHumans = std::stoi(value);
@@ -75,7 +77,7 @@ City::City()
     } else {
         std::cout << "Failed to open file, using default values.\n";
     }
-    srand(1);
+    srand(seed);
 }
 City::~City() {
 
@@ -610,7 +612,7 @@ void City::start() {
         
 
     }
-    //save(Intmap);
+    save(Intmap);
 }
 
 
@@ -624,53 +626,51 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     int alive = entities.size() - entities[0]->getDeathCount();
     int alivehumans = 0;
     //vector to store all deaths per each iteration
-    std::vector<int> deathsPerIteration(entities[0]->getIteration(), 0);
+    std::vector<int> deathsPerIteration(entities[0]->getIteration()+1, 0);
 
     std::ofstream file(std::string(RESOURCE_DIR) + "/output.csv");
 
-    // --- MAP ---
-    file << "Map Data:\n";
-    for (long  int y = 0; y < height; ++y) {
-        for (long long int x = 0; x < length; ++x) {
-            file << Intmap[y][x];
-            if (x < length - 1) file << ",";
-        }
-        file << "\n";
-    }
+    //--- Initial Parameters ----
 
-    // --- Final stats of each entity ---
-    file << "\nFinal Stats per Entity\nID,Type,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness\n";
-    for (long int i = 0; i < entities.size(); i++) {
-        file << i+1 << ","
-            //IDs are not in order because of the way animals generate so I used the index instead of getID
-            << (entities[i]->getType() ? "Animal" : "Human") << ","
-            << (entities[i]->isDead() ? "Dead" : "Alive");
-        if (entities[i]->isDead() == 0 ) {
-            file << "," << entities[i]->getHealth() << ","
-            << entities[i]->getHunger() << ","
-            << entities[i]->getAttack() << ","
-            << entities[i]->getSwiftness();
-            if (entities[i]->getType() == 0) {
-                alivehumans++;
-                file << "," << entities[i]->getMoney() << ","
-                << entities[i]->getDrunkness() << "\n";
-            }
-            else {
-                file << "\n";
-            }
-        }
-        else {
-            file << "\n";
-        }
+    file << "Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length\n";
+    file << seed << "," << numHumans << "," << numBuildings << ",";
+    if (maxIterations == 0) {
+        file << "infinity";
     }
+    else {
+        file << maxIterations;
+    }
+    file << "," << length << "," << height << "\n";
+
     // --- Final stats of each building ---
     file << "\nFinal Stats per Building\nID,Name,Price,Product Value,Total Money Earned\n";
     for (long int i = 0; i < buildings.size(); i++) {
-        file << i+1 << ","
+        file << buildings[i]->getID() << ","
         << buildings[i]->getName() << ","
         << buildings[i]->getPrice() << ","
         << buildings[i]->getProductValue() << ","
         << buildings[i]->getMoney() << "\n";
+    }
+
+    // --- Final stats of each human ---
+    file << "\nFinal Stats of each Human\nID,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness,Item\n";
+    for (long int i = 0; i < entities.size(); i++) {
+        if (!entities[i]->getType()) {
+            //getting data from toSave method
+            file << entities[i]->toSave() << "\n";
+            if (!entities[i]->isDead()) {
+                alivehumans++;
+            }
+        }
+    }
+
+    // --- Final stats of each animal ---
+    file << "\nFinal Stats of each Animal\nID,Type,Owner ID,Status,Health,Hunger,Attack,Swiftness\n";
+    for (long int i = 0; i < entities.size(); i++) {
+        if (entities[i]->getType()) {
+            //getting data from toSave method
+            file << entities[i]->toSave() << "\n";
+        }
     }
 
     // --- Final global stats ---
@@ -697,13 +697,23 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
 
     file << "\nDeaths per Iteration:\nIteration,Deaths,Remaining Entities\n";
     alive = entities.size();
-    for (long int i = 0; i < deathsPerIteration.size(); ++i) {
+    for (long int i = 0; i < deathsPerIteration.size(); i++) {
         if (deathsPerIteration[i] > 0) {
             alive -= deathsPerIteration[i];
-            file << i + 1 << ","
+            file << i << ","
             << deathsPerIteration[i] << ","
             << alive << "\n";
         }
+    }
+
+    // --- MAP ---
+    file << "\nMap Data:\n";
+    for (long  int y = 0; y < height; ++y) {
+        for (long long int x = 0; x < length; ++x) {
+            file << Intmap[y][x];
+            if (x < length - 1) file << ",";
+        }
+        file << "\n";
     }
 
     file.close();

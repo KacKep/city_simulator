@@ -1,4 +1,5 @@
 #include "Building.hpp"
+long unsigned int Building::building_count=0;
 
 Building::Building(const std::string& name, const BuildingList& construct)
 	: sf::RectangleShape({ 10,10 }),
@@ -6,13 +7,23 @@ Building::Building(const std::string& name, const BuildingList& construct)
 	productValue(0),
 	price(0),
 	name(name),
+	ID(0),
 	construct(construct)
-	{}
+{
+	setID();
+}
 //to do: put price and produktVal as constructor initializer or whatever it is
 
 //-----------setters and getters----------
 std::string Building::getName() const {
 	return this->name;
+}
+//----------ID---------
+void Building::setID() {
+	this->ID = building_count++;
+}
+int Building::getID() {
+	return this->ID;
 }
 
 //------------setProductValue-----------
@@ -131,7 +142,7 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 
 		
 	}
-	std::cout << "No space for the: " << getName() << std::endl;
+	std::cout << "No space for the " << getName() << " (ID: " << getID() << ")" << std::endl;
 	return false;
 }
 

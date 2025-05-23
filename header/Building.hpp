@@ -13,6 +13,8 @@ public:
 	Building(const std::string& name, const BuildingList& construct);
 	virtual ~Building() = default;
 	
+	void setID();
+	int getID();
 
 	std::string getName() const;
 
@@ -36,6 +38,8 @@ private:
 	double money;
 	int productValue;
 	int price;
+	unsigned int ID;
+	static long unsigned int building_count;
 	std::string name;
 	BuildingList construct;
 };

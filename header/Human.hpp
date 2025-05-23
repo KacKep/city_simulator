@@ -11,6 +11,8 @@ public:
 	//int getAttack()const override;
 	void walk() override;
 	void fight(Entity* enemy) override;
+	std::string toSave()override;
+
 
 private:
 	int circle_timer;

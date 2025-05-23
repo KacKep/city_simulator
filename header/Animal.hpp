@@ -18,6 +18,8 @@ public:
 	std::string getName();
 	void setName(std::string name);
 	//making dog and cat in difffrent object classes and giving them static textures would be better
+
+	std::string toSave()override;
 	
 	
 private:

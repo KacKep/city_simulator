@@ -4,7 +4,6 @@
 #include "EnumList.hpp"
 #include <iostream>
 
-
 enum Direction
 {
 	left = 0,
@@ -75,6 +74,8 @@ public:
 	EntityList getType()const;
 
 	//------------------methods------------------
+
+	virtual std::string toSave();
 
 	bool checkBoundry(unsigned int dystance, Direction direction);
 

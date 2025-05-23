@@ -8,32 +8,32 @@ Item::Item()
 		case 0: {
 			attack = 7;
 			swiftness = 0;
-			name = "baseball bat";
+			name = "Baseball Bat";
 			break;
 		}
 		case 1: {
 			attack = 2;
 			swiftness = 40;
-			name = "rock";
+			name = "Rock";
 			break;
 		}
 		case 2: {
 			attack = 5;
 			swiftness = 20;
-			name = "scissors";
+			name = "Scissors";
 			break;
 		}
 		case 3: {
 			attack = 0;
 			swiftness = 50;
-			name = "boots";
+			name = "Boots";
 			break;
 		}
 		case 4: {
 				
 			attack = 0;
 			swiftness = 0;
-			name = "indomitable human spirit";
+			name = "Indomitable Human Spirit";
 			break;
 
 		}
@@ -49,3 +49,6 @@ Item::Item()
 	int Item::getAttack1() const {
 		return attack;
 	}
+	std:: string Item::getName() const {
+	return name;
+}

@@ -271,3 +271,32 @@ if (!(X2 > 0 && X2 + xSize < xBoundry && Y2 > 0 && Y2 + ySize < yBoundry)) {
 				// i know i'ts confusing but just resources/Vector_shenanigens.png open for explenation
 				setPosition( sf::Vector2f(Y2 * 10, X2 * 10)); 
 				return true;
+
+
+				/*
+                    // --- Final stats of each entity old version ---
+                    file << "\nFinal Stats per Entity\nID,Type,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness\n";
+                    for (long int i = 0; i < entities.size(); i++) {
+                        file << i+1 << ","
+                            //IDs are not in order because of the way animals generate so I used the index instead of getID
+                            << (entities[i]->getType() ? "Animal" : "Human") << ","
+                            << (entities[i]->isDead() ? "Dead" : "Alive");
+                        if (entities[i]->isDead() == 0 ) {
+                            file << "," << entities[i]->getHealth() << ","
+                            << entities[i]->getHunger() << ","
+                            << entities[i]->getAttack() << ","
+                            << entities[i]->getSwiftness();
+                            if (entities[i]->getType() == 0) {
+                  //              alivehumans++;
+                                file << "," << entities[i]->getMoney() << ","
+                                << entities[i]->getDrunkness() << "\n";
+                            }
+                            else {
+                                file << "\n";
+                            }
+                        }
+                        else {
+                            file << "\n";
+                        }
+                    }
+                */

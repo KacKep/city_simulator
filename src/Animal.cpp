@@ -144,3 +144,18 @@ void Animal::hunt() {
 		addHealth(1);//it's enought for a cat to survive
 	}
 }
+
+std::string Animal::toSave() {
+	std::stringstream toSave;
+	toSave << getID() << ","
+	<<getName() << ","
+	<< getOwner()->getID() << ","
+	<< (isDead() ? "Dead" : "Alive");
+	if (isDead() == 0 ) {
+		toSave << "," << getHealth() << ","
+		<< getHunger() << ","
+		<< getAttack() << ","
+		<< getSwiftness();
+	}
+	return toSave.str();
+}

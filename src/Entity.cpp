@@ -1,4 +1,5 @@
 #include "Entity.hpp"
+
 //it's static and it must be implemented beafor using it so long gaybowser
 sf::Vector2i Entity::boundry = { 10,10 };
  std::vector<std::vector<int>> Entity::map;
@@ -149,7 +150,14 @@ int Entity::getDeathIteration() {
 
  //------------------methods------------------
  
- 
+ //getting data from getters to be saved
+
+std::string Entity::toSave() {
+	std::stringstream toSave;
+//	toSave << ID << " " << entity_type << " " << dead << " " << health << " " << hunger
+//	   << " " << attack << " " << swiftness << " " << money << " " << drunkness;
+	return toSave.str();
+}
 
 
  // choose some target on map but the target(mostly buildings) is decided by behavior wich is contained by the corresponding class

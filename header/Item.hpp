@@ -13,5 +13,6 @@ public:
 	~Item();
 	int getAttack1() const;
 	int getSwiftness() const;
+	std:: string getName() const;
 };
 

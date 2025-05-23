@@ -177,4 +177,22 @@ void Human::behavior() {
 	//	
 	//	//setTarget(false);
 	//}
+
+
+}
+
+std::string Human::toSave() {
+	std::stringstream toSave;
+	toSave << getID() << ","
+	<< (isDead() ? "Dead" : "Alive");
+	if (isDead() == 0 ) {
+		toSave << "," << getHealth() << ","
+		<< getHunger() << ","
+		<< getAttack() << ","
+		<< getSwiftness() << ","
+		<< getMoney() << ","
+		<< getDrunkness() << ","
+		<<item.getName();
+	}
+	return toSave.str();
 }
