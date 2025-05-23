@@ -11,7 +11,6 @@ private:
 
 	static sf::Texture texture;
 	sf::Vector2f followPosition;
-	int circle_timer;
 	void behavior()override;
 
 };

@@ -528,7 +528,7 @@ void City::start() {
 
     //map for entitie, yes i'm lazy but the project does not require ultimate efficiency
     Human mapper ;
-    mapper.setMap(Intmap, sf::Vector2i(height, length));
+    mapper.setMap(Intmap, sf::Vector2i( length, height));
     
     createEntities();
 

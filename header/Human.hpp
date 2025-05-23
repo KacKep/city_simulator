@@ -15,7 +15,6 @@ public:
 
 
 private:
-	int circle_timer;
 	Item item;
 	void behavior()override;
 };

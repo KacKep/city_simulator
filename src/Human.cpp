@@ -1,8 +1,7 @@
 #include "Human.hpp"
 
 Human::Human()
-	:Entity(),
-	circle_timer(0)
+	:Entity()
 {
 	//std::cout << "Texture path: " << std::string(RESOURCE_DIR) + "/brick1.png" << std::endl;
 	setID();
@@ -41,7 +40,6 @@ void Human::walk() {
 	}
 
 	if (getHealth() > 100) {
-		//std::cout << "animal nr " << getID() << " died" << std::endl;
 		addHealth(100 - getHealth());
 	}
 
@@ -55,45 +53,36 @@ void Human::walk() {
 		walkBasic();
 		return;
 	}
-	//std::cout << "i'walk" << std::endl;
-	if (getDrunkness()>5)
-	{
-		//std::cout << "i'mdrunk" << std::endl;
-		walkDrunk();
-		return;
-	}
 	
-	if ( checkBoundry(1, left)==false || checkBoundry(1, right)== false || checkBoundry(1, down)== false || checkBoundry(1, up)== false || getTargetTile()<PavementTile )
+
+	if ( checkBoundry(1, left)== false || checkBoundry(1, right)== false || checkBoundry(1, down)== false || checkBoundry(1, up)== false)
 	{
-		//std::cout << "i'mbad" << std::endl;
 		walkBasic();
 		return;
 	}
-	//std::cout << "i'weballin" << std::endl;
-	std::cout << getPosition().x << "," << getPosition().y << std::endl;
-	if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
+	if (getDrunkness() > 5)
 	{
-		//std::cout << "i'spec" << std::endl;
+		walkDrunk();
 	}
-	else if (--circle_timer>0)
+	else if (getTargetTile() != PavementTile && walkCircle(getTargetTile()))
 	{
-		if (!walkCircle(PavementTile))
-		{
-			//std::cout << "i'cir" << std::endl;
-			walkBasic();
-		}
-		
+
+	}
+	else if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
+	{
+	
 	}
 	else if (walkSpecific (PavementTile) )
 	{
-		
+	
 	}
-	else if (walkSpecific (RoadTile) ) {
-		
-	}
-	else if (circle_timer <= 0)
+	else if (walkSpecific (RoadTile) ) 
 	{
-		circle_timer = 6;
+	
+	}
+	else if (walkCircle(PavementTile))
+	{
+
 	}
 	else
 	{
@@ -110,24 +99,20 @@ void Human::fight(Entity* enemy) {
 
 		// there is <=  becaus item will add to zero so there is no problem with swiftness 9999 
 		if (rand() % 100 <= 0+enemy->getSwiftness()) {
-			//enemy->walk();
 			break;
 		}
 
 		if (rand() % 100 <= 0+ getSwiftness()) {
-			//walk();
 			break;
 		}
 
 		enemy->addHealth(-getAttack());
 		if (enemy->getHealth() <= 0) {
-
 			break;
 		}
 
 		addHealth(-enemy->getAttack());
 		if (getHealth() <= 0) {
-
 			break;
 		}
 	}
