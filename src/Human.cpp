@@ -194,5 +194,9 @@ std::string Human::toSave() {
 		<< getDrunkness() << ","
 		<<item.getName();
 	}
+	else
+	{
+		toSave << " at itration " << getDeathIteration();
+	}
 	return toSave.str();
 }

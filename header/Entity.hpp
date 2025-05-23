@@ -3,7 +3,7 @@
 #include <SFML/Graphics/Texture.hpp>
 #include "EnumList.hpp"
 #include <iostream>
-
+#include <sstream>
 enum Direction
 {
 	left = 0,

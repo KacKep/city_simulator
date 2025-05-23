@@ -157,5 +157,9 @@ std::string Animal::toSave() {
 		<< getAttack() << ","
 		<< getSwiftness();
 	}
+	else
+	{
+		toSave << " at itration " << getDeathIteration();
+	}
 	return toSave.str();
 }
