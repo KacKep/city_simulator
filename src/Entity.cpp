@@ -163,24 +163,37 @@ std::string Entity::toSave() {
  // choose some target on map but the target(mostly buildings) is decided by behavior wich is contained by the corresponding class
  void Entity::chooseTarget() {
 	 dir = neutral;
-	 for (size_t i = 0; i < 3; i++)//it only exist for no pavment tiles
+	 int xMap = rand() % getBoundry().x;
+	 int yMap = rand() % getBoundry().y;
+	 int X2=0;
+	 int Y2=0;
+	 for (int i = 0; i < 3; i++)//it only exist for no pavment tiles
 	 {
 
 
 		 //setTarget(sf::Vector2f({ rand() % getBoundry().x, rand() % getBoundry().y }));
-		 int xMap = rand() % getBoundry().x;
-		 int yMap = rand() % getBoundry().y;
-		 int X2;
-		 int Y2;
+		 
 		 for (int y = 0; y < getBoundry().y; y++)
 		 {
+			 Y2 = (yMap + y) % (getBoundry().y ) ;
+			 if (Y2 < 0 || Y2  >= getBoundry().y)
+			 {
+				 continue;
+			 }
+
 			 for (int x = 0; x < getBoundry().x; x++)
 			 {
 				 X2 = (xMap + x) % (getBoundry().x);
-				 Y2 = (yMap + y) % (getBoundry().y);
+				 if (X2 < 0 || X2  >= getBoundry().x)
+				 {
+					 continue;
+				 }
+				 //std::cout << X2 << "," << Y2 << std::endl;
+				 //std::cout << getMap()[X2][Y2] << std::endl;
 				 if (getMap()[X2][Y2] == getTargetTile()) {
-					 //std::cout << "\n Targetx" << getTarget().x << " ,Targety" << getTarget().y;
+					 
 					 setTarget(sf::Vector2f(Y2 * 10, X2 * 10));
+					 //std::cout << "\n Targetx" << getTarget().x << " ,Targety" << getTarget().y << std::endl;
 					 //setTarget();
 					 return;
 				 }
@@ -219,7 +232,7 @@ std::string Entity::toSave() {
 	 }
 	 case right: {
 		 //std::cout << check << "- right\n";
-		 return (int)getPosition().x / 10 < getBoundry().x - dystance;
+		 return abs(getBoundry().x - (int)getPosition().x / 10) < dystance;
 	 }
 	 case up: {
 		 //std::cout << check << "- up\n";
@@ -227,7 +240,7 @@ std::string Entity::toSave() {
 	 }
 	 case down: {
 		 //std::cout << check << "- down\n";
-		 return (int)getPosition().y / 10 < getBoundry().y - dystance;
+		 return abs(getBoundry().y - (int)getPosition().y / 10) < dystance;
 	 }
 	 default: {
 		 return false;

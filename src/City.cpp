@@ -55,7 +55,7 @@ City::City()
             std::getline(ss, value, ',');
             maxIterations = std::stoi(value);
             std::getline(ss, value, ',');
-            if (maxIterations == 0) {
+            if (maxIterations <= 0) {
                 std::cout << "Iteration has no limit. Please, press escape to exit simulation \n";
             }
             if (std::stoi(value) > 0) {
@@ -593,15 +593,15 @@ void City::start() {
         
         //interact
 
-        interactionBuilding();
+        (buildings.size()>0)?interactionBuilding():0;
 
         //fight
 
-        interactionEntities();
+        (entities.size() > 1) ? interactionEntities() : 0;
 
         //walking
 
-        for (size_t i = 0; i < entities.size(); i++)
+        for (int i = 0; i < entities.size(); i++)
         {
             
             entities[i]->walk();

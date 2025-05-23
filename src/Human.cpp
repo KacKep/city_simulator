@@ -40,28 +40,46 @@ void Human::walk() {
 		setOutlineThickness(0);
 	}
 
+	if (getHealth() > 100) {
+		//std::cout << "animal nr " << getID() << " died" << std::endl;
+		addHealth(100 - getHealth());
+	}
+
 	if (getTarget() == getPosition())
 	{
 		behavior();
 	}
 
+	if ( getBoundry().x < 10 || getBoundry().y < 10)
+	{
+		walkBasic();
+		return;
+	}
+	//std::cout << "i'walk" << std::endl;
 	if (getDrunkness()>5)
 	{
+		//std::cout << "i'mdrunk" << std::endl;
 		walkDrunk();
 		return;
 	}
-	else if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up)||getTargetTile()<=1)
+	
+	if ( checkBoundry(1, left)==false || checkBoundry(1, right)== false || checkBoundry(1, down)== false || checkBoundry(1, up)== false || getTargetTile()<PavementTile )
 	{
+		//std::cout << "i'mbad" << std::endl;
 		walkBasic();
+		return;
 	}
-	else if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
+	//std::cout << "i'weballin" << std::endl;
+	std::cout << getPosition().x << "," << getPosition().y << std::endl;
+	if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
 	{
-
+		//std::cout << "i'spec" << std::endl;
 	}
 	else if (--circle_timer>0)
 	{
 		if (!walkCircle(PavementTile))
 		{
+			//std::cout << "i'cir" << std::endl;
 			walkBasic();
 		}
 		
@@ -168,17 +186,8 @@ void Human::behavior() {
 
 	}
 	chooseTarget();
-
-
-	
-	//if (getTarget()==getPosition() /*|| ++unstuck == (getBoundry().x * getBoundry().y) / 4*/) {
-	//	setPosition( getTarget());
-	//	//unstuck = 0;
-	//	
-	//	//setTarget(false);
-	//}
-
-
+	//std::cout << "chosen" << std::endl;
+	return;
 }
 
 std::string Human::toSave() {

@@ -48,7 +48,7 @@ void Dog::behavior() {
 		chooseTarget();
 	}
 	
-	if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up) )
+	if (checkBoundry(1, left) == false || checkBoundry(1, right) == false || checkBoundry(1, down) == false || checkBoundry(1, up) == false)
 	{
 		walkBasic();
 		//the most important uselles return lol
