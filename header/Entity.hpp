@@ -47,6 +47,9 @@ public:
 	//-------------Swiftness----------------
 	virtual int getSwiftness()const;
 	void setSwiftness(int swiftness);
+	//-------------Defence----------------
+	int getDefence()const;
+	void setDefence(int defence);
 	//---------------Money------------------
 	void addMoney(double money);
 	double getMoney()const;
@@ -107,6 +110,7 @@ private:
 	int hunger;
 	int health;
 	int attack;
+	int defence;
 	int swiftness;
 	double money;
 	Direction dir;

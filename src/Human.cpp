@@ -91,25 +91,34 @@ void Human::fight(Entity* enemy) {
 	for (;;) {
 
 		// there is <=  becaus item will add to zero so there is no problem with swiftness 9999 
-		if (rand() % 100 <= 0+enemy->getSwiftness()) {
-			//enemy->walk();
+		// Check if enemy escapes based on swiftness
+		if (rand() % 100 <= enemy->getSwiftness()) {
 			break;
 		}
 
-		if (rand() % 100 <= 0+ getSwiftness()) {
-			//walk();
+		//same for the other entity
+		if (rand() % 100 <= getSwiftness()) {
 			break;
 		}
 
-		enemy->addHealth(-getAttack());
+		// Entity1 attacks entity 2, damage is reduced by a random number from 0 to enemy defence
+		int enemyDefRoll = rand() % (enemy->getDefence() + 1);
+		if (getAttack() > enemyDefRoll) {
+			enemy->addHealth(-getAttack() + enemyDefRoll);
+		}
+
+		// Check if enemy is dead
 		if (enemy->getHealth() <= 0) {
-
 			break;
 		}
 
-		addHealth(-enemy->getAttack());
-		if (getHealth() <= 0) {
+		// Enemy retaliates
+		int entity1DefRoll = rand() % (getDefence() + 1);
+		if (enemy->getAttack() > entity1DefRoll) {
+			addHealth(-enemy->getAttack() + entity1DefRoll);
+		}
 
+		if (getHealth() <= 0) {
 			break;
 		}
 	}
@@ -183,16 +192,19 @@ void Human::behavior() {
 
 std::string Human::toSave() {
 	std::stringstream toSave;
-	toSave << getID() << ","
-	<< (isDead() ? "Dead" : "Alive");
+	toSave << getID() << ",";
 	if (isDead() == 0 ) {
-		toSave << "," << getHealth() << ","
+		toSave << "Alive," << getHealth() << ","
 		<< getHunger() << ","
 		<< getAttack() << ","
+		<< getDefence() << ","
 		<< getSwiftness() << ","
 		<< getMoney() << ","
 		<< getDrunkness() << ","
 		<<item.getName();
+	}
+	else {
+		toSave << "Dead (Died on iteration " << getDeathIteration() << ")";
 	}
 	return toSave.str();
 }

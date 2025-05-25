@@ -1,107 +1,240 @@
 Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length
-2137,30,10,infinity,20,20
+2137,100,10,infinity,20,20
 
 Final Stats per Building
 ID,Name,Price,Product Value,Total Money Earned
-0,Shop,-30,70,60
-1,Hospital,-1200,30,2400
-2,OfficeBuilding,50,1300,1450
-3,LiqourShop,-300,40,6000
-4,Shop,-30,80,630
-5,Hospital,-1400,40,0
-6,OfficeBuilding,40,500,960
-7,LiqourShop,-1000,30,6000
-8,Shop,-70,100,560
+0,Shop,-30,80,870
+1,Hospital,-700,50,14700
+2,OfficeBuilding,30,900,4290
+3,LiqourShop,-900,80,43200
+4,Shop,-40,50,3240
+5,Hospital,-1200,30,20400
+7,LiqourShop,-700,80,9800
 
 Final Stats of each Human
-ID,Status,Health,Hunger,Attack,Swiftness,Money,Drunkness,Item
-1,Alive,40,90,5,50,970,0,Boots
-2,Alive,86,50,10,20,1970,5,Scissors
-4,Dead
-6,Alive,95,80,5,50,1930,5,Boots
-7,Alive,100,130,7,40,930,0,Rock
-8,Alive,100,60,5,50,2370,40,Boots
-9,Alive,50,90,10,20,2270,0,Scissors
-10,Alive,33,90,10,20,2270,0,Scissors
-11,Dead
-13,Dead
-14,Alive,100,100,7,40,1900,20,Rock
-15,Alive,100,50,5,50,1170,5,Boots
-17,Alive,85,70,5,50,930,0,Boots
-19,Alive,50,100,7,40,2240,5,Rock
-21,Alive,88,90,12,0,2270,0,Baseball Bat
-22,Alive,50,40,10,20,1470,0,Scissors
-23,Alive,85,100,5,50,2530,5,Boots
-25,Alive,5,80,5,0,2470,5,Indomitable Human Spirit
-26,Alive,50,60,5,50,2970,5,Boots
-27,Alive,100,40,5,50,3300,5,Boots
-29,Alive,100,90,5,0,970,5,Indomitable Human Spirit
-30,Alive,79,70,5,50,1070,5,Boots
-32,Alive,80,70,7,40,2640,5,Rock
-34,Alive,80,40,7,40,3600,0,Rock
-35,Alive,55,60,7,40,3230,0,Rock
-36,Alive,85,70,7,40,2270,0,Rock
-37,Alive,53,40,5,50,3300,5,Boots
-39,Alive,40,170,7,40,4040,0,Rock
-40,Dead
-42,Alive,25,130,5,0,930,0,Indomitable Human Spirit
+ID,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item
+1,Alive,53,40,6,0,45,1530,5,Sharp Pencil
+2,Dead (Died on iteration 185)
+3,Dead (Died on iteration 39)
+4,Dead (Died on iteration 2)
+6,Alive,3,80,7,0,40,220,5,Rock
+7,Dead (Died on iteration 4)
+8,Dead (Died on iteration 45)
+10,Alive,82,70,7,0,30,2600,0,Glass Bottle
+12,Dead (Died on iteration 82)
+13,Dead (Died on iteration 39)
+14,Dead (Died on iteration 2)
+16,Alive,87,80,7,0,40,1940,0,Rock
+17,Dead (Died on iteration 54)
+18,Dead (Died on iteration 180)
+19,Dead (Died on iteration 147)
+20,Alive,40,50,7,0,30,2270,5,Glass Bottle
+22,Alive,24,50,11,0,35,1620,5,Knife
+24,Alive,68,60,5,0,50,1130,5,Boots
+25,Alive,48,70,7,0,30,3630,5,Glass Bottle
+26,Alive,38,50,7,0,30,1980,5,Glass Bottle
+28,Alive,2,100,6,0,10,1630,5,Riot Shield
+29,Dead (Died on iteration 3)
+30,Dead (Died on iteration 5)
+31,Dead (Died on iteration 100)
+32,Dead (Died on iteration 76)
+33,Alive,34,50,6,0,45,970,5,Sharp Pencil
+34,Dead (Died on iteration 12)
+35,Dead (Died on iteration 161)
+37,Alive,51,60,7,0,40,1320,5,Rock
+39,Dead (Died on iteration 31)
+40,Dead (Died on iteration 57)
+41,Dead (Died on iteration 137)
+42,Dead (Died on iteration 155)
+44,Alive,25,50,7,0,40,1170,5,Rock
+45,Dead (Died on iteration 1)
+46,Dead (Died on iteration 246)
+47,Alive,61,70,5,0,50,2880,5,Boots
+48,Alive,46,60,6,0,45,220,5,Sharp Pencil
+49,Dead (Died on iteration 248)
+50,Alive,54,70,6,0,45,1080,5,Sharp Pencil
+52,Dead (Died on iteration 145)
+54,Dead (Died on iteration 60)
+55,Alive,23,110,7,0,30,590,0,Glass Bottle
+56,Alive,53,70,11,0,35,1190,5,Knife
+58,Dead (Died on iteration 52)
+59,Dead (Died on iteration 19)
+60,Alive,11,60,7,0,30,130,5,Glass Bottle
+61,Alive,46,70,10,0,20,1130,5,Scissors
+62,Alive,14,100,10,0,20,1340,0,Scissors
+63,Dead (Died on iteration 94)
+64,Alive,51,40,11,0,35,1330,5,Knife
+65,Alive,89,40,5,0,50,1120,5,Boots
+66,Dead (Died on iteration 43)
+67,Dead (Died on iteration 20)
+68,Dead (Died on iteration 1)
+70,Alive,38,40,11,0,35,1520,0,Knife
+71,Dead (Died on iteration 184)
+72,Dead (Died on iteration 250)
+73,Alive,54,50,6,0,45,1120,5,Sharp Pencil
+75,Alive,71,70,11,0,35,430,5,Knife
+77,Dead (Died on iteration 121)
+78,Dead (Died on iteration 5)
+79,Dead (Died on iteration 65)
+80,Dead (Died on iteration 23)
+81,Alive,56,50,11,0,35,580,0,Knife
+83,Dead (Died on iteration 84)
+84,Alive,31,50,11,0,35,630,5,Knife
+85,Alive,45,50,7,0,40,2530,35,Rock
+86,Dead (Died on iteration 26)
+88,Dead (Died on iteration 20)
+89,Alive,89,60,7,0,30,1780,5,Glass Bottle
+90,Dead (Died on iteration 9)
+92,Dead (Died on iteration 22)
+94,Alive,74,40,11,0,35,4420,5,Knife
+95,Alive,43,80,11,0,35,840,5,Knife
+96,Dead (Died on iteration 6)
+97,Dead (Died on iteration 31)
+98,Dead (Died on iteration 2)
+100,Dead (Died on iteration 44)
+101,Dead (Died on iteration 52)
+102,Alive,79,110,6,0,45,2300,0,Sharp Pencil
+103,Dead (Died on iteration 19)
+104,Dead (Died on iteration 72)
+105,Dead (Died on iteration 7)
+107,Dead (Died on iteration 13)
+108,Alive,10,60,6,0,45,1520,5,Sharp Pencil
+110,Alive,66,60,6,0,45,2030,0,Sharp Pencil
+111,Dead (Died on iteration 109)
+112,Dead (Died on iteration 208)
+113,Dead (Died on iteration 28)
+114,Dead (Died on iteration 3)
+116,Dead (Died on iteration 9)
+117,Dead (Died on iteration 4)
+119,Dead (Died on iteration 75)
+121,Alive,83,70,6,0,45,2030,0,Sharp Pencil
+123,Dead (Died on iteration 202)
+124,Dead (Died on iteration 1)
+126,Dead (Died on iteration 24)
+127,Alive,32,70,7,0,40,220,5,Rock
+128,Dead (Died on iteration 30)
 
 Final Stats of each Animal
-ID,Type,Owner ID,Status,Health,Hunger,Attack,Swiftness
-3,Dog,2,Alive,14,100,10,0
-5,Dog,4,Dead
-12,Cat,11,Alive,88,45,5,50
-16,Cat,15,Alive,100,55,5,50
-18,Cat,17,Alive,100,50,5,50
-20,Cat,19,Alive,101,45,5,50
-24,Dog,23,Dead
-28,Cat,27,Alive,101,70,5,50
-31,Cat,30,Alive,100,55,5,50
-33,Cat,32,Alive,100,65,5,50
-38,Cat,37,Alive,90,55,5,50
-41,Dog,4,Dead
-43,Cat,42,Alive,100,60,5,50
+ID,Type,Owner ID,Status,Health,Hunger,Attack,Defence,Swiftness
+5,Cat,4,Alive,98,35,5,0,50
+9,Dog,8,Dead (Died on iteration 59)
+11,Cat,10,Alive,88,25,5,0,50
+15,Dog,14,Dead (Died on iteration 19)
+21,Cat,97,Alive,98,10,5,0,50
+23,Dog,28,Alive,78,100,10,0,0
+27,Dog,94,Dead (Died on iteration 35)
+36,Dog,35,Dead (Died on iteration 1)
+38,Cat,37,Alive,101,90,5,0,50
+43,Cat,42,Alive,101,25,5,0,50
+51,Dog,42,Dead (Died on iteration 265)
+53,Dog,41,Alive,71,0,10,0,0
+57,Cat,56,Alive,96,35,5,0,50
+69,Cat,68,Alive,100,50,5,0,50
+74,Cat,73,Alive,100,50,5,0,50
+76,Cat,75,Alive,100,60,5,0,50
+82,Dog,39,Dead (Died on iteration 28)
+87,Dog,86,Dead (Died on iteration 40)
+91,Cat,90,Alive,92,60,5,0,50
+93,Cat,22,Alive,89,75,5,0,50
+99,Dog,42,Alive,39,0,10,0,0
+106,Dog,105,Dead (Died on iteration 25)
+109,Dog,26,Dead (Died on iteration 13)
+115,Dog,18,Dead (Died on iteration 23)
+118,Cat,117,Alive,49,65,5,0,50
+120,Dog,119,Dead (Died on iteration 162)
+122,Dog,8,Dead (Died on iteration 236)
+125,Cat,124,Alive,46,40,5,0,50
 
 Final global stats:
-Total number of entities: 43
-Total number of humans: 30
-Total number of animals: 13
-Alive entities:36
-Deaths: 7
-Alive humans: 26
-Dead humans: 4
-Alive animals: 10
-Dead animals: 3
-Total number of buildings: 9
+Total number of entities: 128
+Total number of humans: 100
+Total number of animals: 28
+Alive entities:53
+Deaths: 75
+Alive humans: 37
+Dead humans: 63
+Alive animals: 16
+Dead animals: 12
+Total number of buildings: 7
 
 Deaths per Iteration:
-Iteration,Deaths,Remaining Entities
-4,1,42
-30,1,41
-90,1,40
-107,1,39
-123,1,38
-135,1,37
-137,1,36
+Iteration,Total Deaths,Total Remaining Entities,Human Deaths,Remaining Humans,Animal Deaths,Remaining Animals
+1,4,124,3,97,1,27
+2,3,121,3,94,0,27
+3,2,119,2,92,0,27
+4,2,117,2,90,0,27
+5,2,115,2,88,0,27
+6,1,114,1,87,0,27
+7,1,113,1,86,0,27
+9,2,111,2,84,0,27
+12,1,110,1,83,0,27
+13,2,108,1,82,1,26
+19,3,105,2,80,1,25
+20,2,103,2,78,0,25
+22,1,102,1,77,0,25
+23,2,100,1,76,1,24
+24,1,99,1,75,0,24
+25,1,98,0,75,1,23
+26,1,97,1,74,0,23
+28,2,95,1,73,1,22
+30,1,94,1,72,0,22
+31,2,92,2,70,0,22
+35,1,91,0,70,1,21
+39,2,89,2,68,0,21
+40,1,88,0,68,1,20
+43,1,87,1,67,0,20
+44,1,86,1,66,0,20
+45,1,85,1,65,0,20
+52,2,83,2,63,0,20
+54,1,82,1,62,0,20
+57,1,81,1,61,0,20
+59,1,80,0,61,1,19
+60,1,79,1,60,0,19
+65,1,78,1,59,0,19
+72,1,77,1,58,0,19
+75,1,76,1,57,0,19
+76,1,75,1,56,0,19
+82,1,74,1,55,0,19
+84,1,73,1,54,0,19
+94,1,72,1,53,0,19
+100,1,71,1,52,0,19
+109,1,70,1,51,0,19
+121,1,69,1,50,0,19
+137,1,68,1,49,0,19
+145,1,67,1,48,0,19
+147,1,66,1,47,0,19
+155,1,65,1,46,0,19
+161,1,64,1,45,0,19
+162,1,63,0,45,1,18
+180,1,62,1,44,0,18
+184,1,61,1,43,0,18
+185,1,60,1,42,0,18
+202,1,59,1,41,0,18
+208,1,58,1,40,0,18
+236,1,57,0,40,1,17
+246,1,56,1,39,0,17
+248,1,55,1,38,0,17
+250,1,54,1,37,0,17
+265,1,53,0,37,1,16
 
 Map Data:
-2,3,3,2,0,0,0,1,0,1,0,1,1,1,0,2,3,3,2,0
-2,3,3,2,4,4,4,4,4,4,4,6,6,6,6,2,3,3,2,0
-2,3,3,2,4,4,4,4,4,4,4,6,6,6,6,2,3,3,2,1
-2,3,3,2,1,0,0,1,4,4,4,6,6,6,6,2,3,3,2,0
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2
+1,0,0,2,3,3,2,1,0,1,0,0,0,0,0,1,0,0,0,0
+0,1,0,2,3,3,2,0,0,1,1,0,0,1,1,1,1,0,0,0
+2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2
-2,3,3,2,5,5,5,7,7,7,5,5,5,5,0,2,3,3,2,1
-2,3,3,2,5,5,5,7,7,7,5,5,5,5,1,2,3,3,2,1
-2,3,3,2,5,5,5,0,0,0,5,5,5,5,1,2,3,3,2,1
-2,3,3,2,5,5,5,0,0,0,5,5,5,5,0,2,3,3,2,0
-2,3,3,2,5,5,5,1,0,1,5,5,5,5,0,2,3,3,2,1
-2,3,3,2,6,6,6,6,6,6,0,0,7,7,7,2,3,3,2,0
-2,3,3,2,6,6,6,6,6,6,1,0,7,7,7,2,3,3,2,1
-2,3,3,2,6,6,6,6,6,6,0,0,7,7,7,2,3,3,2,1
-2,3,3,2,6,6,6,6,6,6,0,1,1,4,4,2,3,3,2,0
-2,3,3,2,6,6,6,6,6,6,0,1,1,4,4,2,3,3,2,0
-2,3,3,2,6,6,6,6,6,6,0,0,1,4,4,2,3,3,2,1
-2,3,3,2,0,0,1,1,0,1,1,0,1,1,1,2,3,3,2,1
+2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+1,7,7,2,3,3,2,4,4,4,0,4,4,4,4,5,5,5,5,0
+0,7,7,2,3,3,2,4,4,4,1,4,4,4,4,5,5,5,5,1
+1,7,7,2,3,3,2,5,5,5,1,4,4,4,4,5,5,5,5,0
+1,7,7,2,3,3,2,5,5,5,1,4,4,4,4,5,5,5,5,1
+0,7,7,2,3,3,2,5,5,5,0,1,1,1,0,0,0,0,0,0
+0,0,1,2,3,3,2,5,5,5,1,1,1,1,1,1,0,0,1,1
+1,0,0,2,3,3,2,5,5,5,1,1,1,1,1,0,0,1,0,0
+0,1,0,2,3,3,2,1,0,1,1,1,0,0,1,0,1,0,1,0
+0,1,1,2,3,3,2,6,6,6,6,6,6,1,0,0,1,1,1,0
+1,0,1,2,3,3,2,6,6,6,6,6,6,1,1,1,0,1,1,0
+0,1,0,2,3,3,2,6,6,6,6,6,6,0,1,0,1,1,1,1
+1,0,0,2,3,3,2,0,1,0,0,0,1,1,0,1,1,0,1,1
+1,1,1,2,3,3,2,1,1,0,0,1,1,0,0,1,1,0,1,0
+1,1,0,2,3,3,2,1,0,0,0,1,1,1,1,1,1,1,1,1

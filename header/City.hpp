@@ -59,6 +59,8 @@ private:
 
 	bool ValueSwitch2;
 	bool ValueSwitch;
+
+	std::string outputfile;
 };
 
 //getMap:

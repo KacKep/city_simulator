@@ -14,6 +14,7 @@ Entity::Entity()
 	health(100),
 	hunger(100),
 	attack(5),
+	defence(0),
 	dead(false),
 	ID(0),
 	entity_type(human),
@@ -85,6 +86,13 @@ int Entity::getDeathIteration() {
  void Entity::setSwiftness(int Swiftness) {
 	 this->swiftness = Swiftness;
  }
+ //-------------Defence----------------
+ int Entity::getDefence()const{
+	return defence;
+ }
+void Entity::setDefence(int defence) {
+	this->defence = defence;
+}
  //---------------Money------------------
  void Entity::addMoney(double money) {
 	 this->money += money;

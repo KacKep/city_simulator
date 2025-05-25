@@ -7,6 +7,7 @@ class Item
 private:
 	std::string name;
 	int attack;
+	int defence;
 	int swiftness;
 public:
 	Item();

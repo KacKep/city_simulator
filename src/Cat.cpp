@@ -40,7 +40,6 @@ void Cat::behavior() {
 		else {
 			setTargetTile(GrassTile);
 		}
-		// his is the 'hunt' method for animals. It will be added later to animal rn it's sprint to deliver the class hierarchy.
 		hunt();
 
 		
