@@ -8,7 +8,7 @@ Human::Human()
 	//std::cout << "Texture path: " << std::string(RESOURCE_DIR) + "/brick1.png" << std::endl;
 	setID();
 	//std::cout << "\nID:" << getID();
-
+	setName();
 	if (getID() > 0)
 	{
 		chooseTarget();
@@ -22,7 +22,6 @@ Human::Human()
 	setSwiftness(getSwiftness() + item.getSwiftness());
 	setDefence(getDefence() + item.getDefence());
 	//setPosition(sf::Vector2f(10, 10));
-	setName();
 }
 
 
@@ -233,16 +232,23 @@ void Human:: setName() {
 	if (name == "Stanislaw Poniatowski") {
 		this->name = "Stanislaw August Poniatowski";
 	}
-	//Divine protection
 	if (name == "Karol Wojtyla") {
+		//Divine protection
 		this->setDefence(10);
 		setFillColor(sf::Color::White);
 		setTexture(&texture);
-		
-
 	}
 	if (name == "Stachu Jones") {
 		this->setAttack(15);
 		addDrunkness(1000);
+	}
+
+	if (name == "John Pork") {
+		this->setSwiftness(this->getSwiftness()+25);
+		setFillColor(sf::Color(255, 105, 180));
+	}
+	if (name == "Vladimir Bialy") {
+		this->addMoney(5000);
+		this->setAttack(this->getAttack()+3);
 	}
 }

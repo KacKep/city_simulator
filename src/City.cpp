@@ -36,10 +36,14 @@ City::City()
     }
     std:: cout << "Input the full path where the output file should be generated, leave blank for default (.../resources/output.csv)\n";
     std::getline(std::cin, userInput);
-    if (!userInput.empty()) {
+    std::ifstream filetest (userInput);
+    if (filetest.is_open()) {
         outputfile = userInput;
     }
-
+    filetest.close();
+    //if (!userInput.empty()) {
+    //    outputfile = userInput;
+    //}
     std::ifstream file(inputfile);
     if (file.is_open()) {
         std::string line;
