@@ -747,5 +747,5 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     }
 
     file.close();
-    std::cout << "elp7" << std::endl;
+    //std::cout << "elp7" << std::endl;
 }
