@@ -219,7 +219,7 @@ std::string Human::getName() {
 
 void Human:: setName() {
 	static std::vector<std::string> firstNames = {
-		"John", "Radomir", "Grzmislaw", "Gniewomir", "Genowefa", "Christopher", "Kunegunda", "Brajan", "Bozydar", "Alfred", "Jessica", "Michel", "Steve", "Zygmunt", "Nikolai","Jerry","Alexander","Ihor","Karol","Denis","Stanislaw","Vladimir","Tim"
+		"John", "Radomir", "Grzmislaw", "Gniewomir", "Genowefa", "Christopher", "Kunegunda", "Brajan", "Bozydar", "Alfred", "Jessica", "Michel", "Steve", "Zygmunt", "Nikolai","Jerry","Alexander","Ihor","Karol","Denis","Stanislaw","Vladimir","Tim","Stachu"
 	};
 	static std::vector<std::string> lastNames = {
 		"Smith","Pork", "Jobs","Sunbed","Jones","Nowak", "Kowalski", "Jaroszewicz", "Baranowicz", "Prudnicka","Dudek","Shrimpus","Wojtyla","Poniatowski","Bialy","Cheese"
@@ -240,5 +240,9 @@ void Human:: setName() {
 		setTexture(&texture);
 		
 
+	}
+	if (name == "Stachu Jones") {
+		this->setAttack(15);
+		addDrunkness(1000);
 	}
 }
