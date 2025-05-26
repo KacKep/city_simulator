@@ -16,6 +16,7 @@ public:
 
 private:
 	Item item;
+	static sf::Texture texture;
 	std::string name;
 	void setName();
 	void behavior()override;

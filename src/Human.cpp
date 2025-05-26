@@ -1,5 +1,7 @@
 #include "Human.hpp"
 
+sf::Texture Human::texture(std::string(RESOURCE_DIR) + "/Karol_Wojtyla.png");
+
 Human::Human()
 	:Entity()
 {
@@ -234,6 +236,7 @@ void Human:: setName() {
 	//Divine protection
 	if (name == "Karol Wojtyla") {
 		this->setDefence(10);
-		setFillColor(sf::Color::Yellow);
+		setTexture(&texture);
+
 	}
 }
