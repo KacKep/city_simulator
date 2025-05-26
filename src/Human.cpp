@@ -95,6 +95,8 @@ void Human::walk() {
 
 
 void Human::fight(Entity* enemy) {
+	int entity1DefRoll;
+	int enemyDefRoll;
 	for (;;) {
 
 		// there is <=  becaus item will add to zero so there is no problem with swiftness 9999 
@@ -109,7 +111,7 @@ void Human::fight(Entity* enemy) {
 		}
 
 		// Entity1 attacks entity 2, damage is reduced by a random number from 0 to enemy defence
-		int enemyDefRoll = rand() % (enemy->getDefence() + 1);
+		enemyDefRoll = rand() % (enemy->getDefence() + 1);
 		if (getAttack() > enemyDefRoll) {
 			enemy->addHealth(-getAttack() + enemyDefRoll);
 		}
@@ -120,7 +122,7 @@ void Human::fight(Entity* enemy) {
 		}
 
 		// Enemy retaliates
-		int entity1DefRoll = rand() % (getDefence() + 1);
+		entity1DefRoll = rand() % (getDefence() + 1);
 		if (enemy->getAttack() > entity1DefRoll) {
 			addHealth(-enemy->getAttack() + entity1DefRoll);
 		}

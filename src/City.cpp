@@ -560,7 +560,12 @@ void City::start() {
     {
         //set a new iteration
         iteration++;
-        (entities.size() <= 0 ? 0 : entities[0]->setIteration(iteration));
+        if (entities.size() > 0)
+        {
+            entities[0]->setIteration(iteration);
+        }
+        
+  
 
         camera(window,view);
 
@@ -636,7 +641,7 @@ void City::start() {
 
 void City :: save(std::vector<std::vector<int>>& Intmap) {
     std::cout << "elp1" << std::endl;
-    int alive = entities.size() - (entities.size()<=0?0: entities[0]->getDeathCount());
+    int alive = entities.size() - (entities.size()<= 0 ? 0 : entities[0]->getDeathCount());
     int alivehumans = 0;
     //vector to store all deaths per each iteration
     std::vector<int> deathsPerIteration((entities.size() <= 0 ? 0 : (int)entities[0]->getIteration()) + 1, 0);
