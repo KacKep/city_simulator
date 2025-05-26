@@ -3,8 +3,7 @@ sf::Texture Dog::texture(std::string(RESOURCE_DIR) + "/Dog.png");
 
 Dog::Dog(Human* owner)
 	:Animal(owner),
-	followPosition(getOwner()->getPosition()),
-	circle_timer(0)
+	followPosition(getOwner()->getPosition())
 {
 
 	setTexture(&texture);
@@ -47,37 +46,30 @@ void Dog::behavior() {
 		//hunt();
 		chooseTarget();
 	}
+
 	
-	if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up) )
+	if (checkBoundry(1, left) == false || checkBoundry(1, right) == false || checkBoundry(1, down) == false || checkBoundry(1, up) == false)
 	{
 		walkBasic();
 		//the most important uselles return lol
 		return;
 	}
-	else if (--circle_timer > 0)
-	{
-		if (!walkCircle(PavementTile))
-		{
-			walkBasic();
-		}
-
-	}
 	else if (walkSpecific(PavementTile))
 	{
 
 	}
-	else if (walkSpecific(RoadTile)) {
+	else if (walkSpecific(RoadTile))
+	{
 
 	}
-	else if (circle_timer <= 0)
+	else if (walkCircle(PavementTile))
 	{
-		circle_timer = 6;
+
 	}
 	else
 	{
 		walkBasic();
 	}
 
-	/*walkBasic();*/
 
 }

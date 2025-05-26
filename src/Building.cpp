@@ -77,14 +77,15 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 	int freeSpaces = 0;
 	for (int y = 0; y < yBoundry; ++y) {
 		Y2 = (y + yMap) % (yBoundry);
+		if (Y2 <= 0 || Y2 + ySize >= yBoundry)
+		{
+			continue;
+		}
 		for (int x = 0; x < xBoundry; ++x) {
 			X2 = (x + xMap) % (xBoundry  );
 			
 
-			if (Y2 <= 0 || Y2 + ySize >= yBoundry)
-			{
-				continue;
-			}
+			
 			if (X2 <= 0 || X2 + xSize >= xBoundry)
 			{
 				continue;

@@ -42,6 +42,10 @@ void Animal::walk() {
 		setFillColor(sf::Color::Transparent);
 		setOutlineThickness(0);
 	}
+	if (getHealth() > 100) {
+		//std::cout << "animal nr " << getID() << " died" << std::endl;
+		addHealth(100 - getHealth());
+	}
 	behavior();
 
 
@@ -142,7 +146,7 @@ void Animal::fight(Entity* enemy) {
 			break;
 		}
 
-
+		
 	}
 }
 

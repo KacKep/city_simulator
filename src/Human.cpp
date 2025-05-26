@@ -1,8 +1,7 @@
 #include "Human.hpp"
 
 Human::Human()
-	:Entity(),
-	circle_timer(0)
+	:Entity()
 {
 	//std::cout << "Texture path: " << std::string(RESOURCE_DIR) + "/brick1.png" << std::endl;
 	setID();
@@ -40,42 +39,50 @@ void Human::walk() {
 		setOutlineThickness(0);
 	}
 
+	if (getHealth() > 100) {
+		addHealth(100 - getHealth());
+	}
+
 	if (getTarget() == getPosition())
 	{
 		behavior();
 	}
 
-	if (getDrunkness()>5)
-	{
-		walkDrunk();
-		return;
-	}
-	else if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up)||getTargetTile()<=1)
+	if ( getBoundry().x < 10 || getBoundry().y < 10)
 	{
 		walkBasic();
+		return;
+	}
+
+
+	if ( checkBoundry(1, left)== false || checkBoundry(1, right)== false || checkBoundry(1, down)== false || checkBoundry(1, up)== false)
+	{
+		walkBasic();
+		return;
+	}
+	if (getDrunkness() > 5)
+	{
+		walkDrunk();
+	}
+	else if (getTargetTile() != PavementTile && walkCircle(getTargetTile()))
+	{
+
 	}
 	else if (getTargetTile() > RoadTile && walkCircle(getTargetTile()))
 	{
 
 	}
-	else if (--circle_timer>0)
-	{
-		if (!walkCircle(PavementTile))
-		{
-			walkBasic();
-		}
-		
-	}
 	else if (walkSpecific (PavementTile) )
 	{
-		
+
 	}
-	else if (walkSpecific (RoadTile) ) {
-		
-	}
-	else if (circle_timer <= 0)
+	else if (walkSpecific (RoadTile) )
 	{
-		circle_timer = 6;
+
+	}
+	else if (walkCircle(PavementTile))
+	{
+
 	}
 	else
 	{
@@ -177,17 +184,8 @@ void Human::behavior() {
 
 	}
 	chooseTarget();
-
-
-	
-	//if (getTarget()==getPosition() /*|| ++unstuck == (getBoundry().x * getBoundry().y) / 4*/) {
-	//	setPosition( getTarget());
-	//	//unstuck = 0;
-	//	
-	//	//setTarget(false);
-	//}
-
-
+	//std::cout << "chosen" << std::endl;
+	return;
 }
 
 std::string Human::toSave() {

@@ -171,24 +171,30 @@ std::string Entity::toSave() {
  // choose some target on map but the target(mostly buildings) is decided by behavior wich is contained by the corresponding class
  void Entity::chooseTarget() {
 	 dir = neutral;
-	 for (size_t i = 0; i < 3; i++)//it only exist for no pavment tiles
+	 int yMap = rand() % getBoundry().y;
+	 int xMap = rand() % getBoundry().x;
+	 int Y2=0;
+	 int X2=0;
+	 for (int i = 0; i <= 2; i++)//it only exist for no pavment tiles
 	 {
 
 
 		 //setTarget(sf::Vector2f({ rand() % getBoundry().x, rand() % getBoundry().y }));
-		 int xMap = rand() % getBoundry().x;
-		 int yMap = rand() % getBoundry().y;
-		 int X2;
-		 int Y2;
-		 for (int y = 0; y < getBoundry().y; y++)
+		 
+		 for (int x = 0; x < getBoundry().x; x++)
 		 {
-			 for (int x = 0; x < getBoundry().x; x++)
+			 X2 = (xMap + x) % (getBoundry().x ) ;
+
+			 for (int y = 0; y < getBoundry().y; y++)
 			 {
-				 X2 = (xMap + x) % (getBoundry().x);
 				 Y2 = (yMap + y) % (getBoundry().y);
-				 if (getMap()[X2][Y2] == getTargetTile()) {
-					 //std::cout << "\n Targetx" << getTarget().x << " ,Targety" << getTarget().y;
-					 setTarget(sf::Vector2f(Y2 * 10, X2 * 10));
+				 
+				 //std::cout << X2 << "," << Y2 << std::endl;
+				 //std::cout << getMap()[X2][Y2] << std::endl;
+				 if (getMap()[Y2][X2] == getTargetTile()) {
+					 
+					 setTarget(sf::Vector2f(X2 * 10, Y2 * 10));
+					 //std::cout << "\n Targetx" << getTarget().x << " ,Targety" << getTarget().y << std::endl;
 					 //setTarget();
 					 return;
 				 }
@@ -223,19 +229,19 @@ std::string Entity::toSave() {
 	 switch (direction) {
 	 case left: {
 		 //std::cout << check << "- left\n";
-		 return (int)getPosition().x / 10 >= dystance;
+		 return ((int)getPosition().x / 10) >= dystance;
 	 }
 	 case right: {
 		 //std::cout << check << "- right\n";
-		 return (int)getPosition().x / 10 < getBoundry().x - dystance;
+		 return abs(getBoundry().x - (int)getPosition().x / 10) > dystance;
 	 }
 	 case up: {
 		 //std::cout << check << "- up\n";
-		 return (int)getPosition().y / 10 >= dystance;
+		 return ((int)getPosition().y / 10) >= dystance;
 	 }
 	 case down: {
 		 //std::cout << check << "- down\n";
-		 return (int)getPosition().y / 10 < getBoundry().y - dystance;
+		 return abs(getBoundry().y - (int)getPosition().y / 10) > dystance;
 	 }
 	 default: {
 		 return false;
@@ -271,35 +277,35 @@ std::string Entity::toSave() {
 
  void Entity::walkDrunk() {
 	 addDrunkness(-5);
-	 if (!checkBoundry(1, left) || !checkBoundry(1, right) || !checkBoundry(1, down) || !checkBoundry(1, up))
+	 if (checkBoundry(1, left) == false || checkBoundry(1, right) == false || checkBoundry(1, down) == false || checkBoundry(1, up) == false)
 	 {
 		 return;
 	 }
 	 switch (rand() % 4)
 	 {
 	 case left: {
-		 if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] <= RoadTile)
+		 if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) - 1] < ShopTile)
 		 {
 			 setPosition(sf::Vector2f(getPosition().x - 10.f, getPosition().y));
 		 }
 		 return;
 	 }
 	 case right: {
-		 if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] <= RoadTile)
+		 if (getMap()[(getPosition().y / 10)][(getPosition().x / 10) + 1] < ShopTile)
 		 {
 			 setPosition(sf::Vector2f(getPosition().x + 10.f, getPosition().y));
 		 }
 		 return;
 	 }
 	 case down: {
-		 if (getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] <= RoadTile)
+		 if (getMap()[(getPosition().y / 10) + 1][(getPosition().x / 10)] < ShopTile)
 		 {
 			 setPosition(sf::Vector2f(getPosition().x, getPosition().y + 10.f));
 		 }
 		 return;
 	 }
 	 case up: {
-		 if (getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] <= RoadTile)
+		 if (getMap()[(getPosition().y / 10) - 1][(getPosition().x / 10)] < ShopTile)
 		 {
 			 setPosition(sf::Vector2f(getPosition().x, getPosition().y - 10.f));
 		 }
