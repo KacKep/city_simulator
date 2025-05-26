@@ -549,7 +549,7 @@ void City::start() {
 
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load(std::string(RESOURCE_DIR) + "/tileset2.png", level.data(), length, height)) {
+    if (!map.load(std::string(RESOURCE_DIR) + "/tileset3.png", level.data(), length, height)) {
         std::cout << "Map faild to load";
     }
     
@@ -640,7 +640,7 @@ void City::start() {
 
 
 void City :: save(std::vector<std::vector<int>>& Intmap) {
-    std::cout << "elp1" << std::endl;
+    //std::cout << "elp1" << std::endl;
     int alive = entities.size() - (entities.size()<= 0 ? 0 : entities[0]->getDeathCount());
     int alivehumans = 0;
     //vector to store all deaths per each iteration
@@ -652,7 +652,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     std::ofstream file(outputfile);
 
     //--- Initial Parameters ----
-    std::cout << "elp2" << std::endl;
+    //std::cout << "elp2" << std::endl;
     file << "Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length\n";
     file << seed << "," << numHumans << "," << numBuildings << ",";
     if (maxIterations == 0) {
@@ -672,7 +672,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
         << buildings[i]->getProductValue() << ","
         << buildings[i]->getMoney() << "\n";
     }
-    std::cout << "elp3" << std::endl;
+    //std::cout << "elp3" << std::endl;
     // --- Final stats of each human ---
     file << "\nFinal Stats of each Human\nID,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item\n";
     for (long int i = 0; i < entities.size(); i++) {
@@ -693,7 +693,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
             file << entities[i]->toSave() << "\n";
         }
     }
-    std::cout << "elp4" << std::endl;
+    //std::cout << "elp4" << std::endl;
     // --- Final global stats ---
     file << "\nFinal global stats:\n";
     file << "Total number of entities: " << entities.size() << "\n"
@@ -708,7 +708,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     << "Total number of buildings: " << buildings.size() << "\n";
 
     // --- Stats per each iteration ---
-    std::cout << "elp5" << std::endl;
+    //std::cout << "elp5" << std::endl;
     for (long int i = 0; i < entities.size(); i++) {
         if (!entities[i]->isDead()) {
             continue;
@@ -735,7 +735,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
             << alive - alivehumans << "\n";
         }
     }
-    std::cout << "elp6" << std::endl;
+    //std::cout << "elp6" << std::endl;
     // --- MAP ---
     file << "\nMap Data:\n";
     for (long  int y = 0; y < height; y++) {
