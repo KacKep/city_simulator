@@ -1,385 +1,3300 @@
 Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length
-12,100,100,infinity,128,72
+12,2137,100,500,75,75
 
 Final Stats per Building
 ID,Name,Price,Product Value,Total Money Earned
-0,Shop,20,70,1500
-1,Hospital,600,10,3000
-2,OfficeBuilding,20,1300,460
-3,LiqourShop,800,30,34400
-4,Shop,40,40,400
-5,Hospital,1100,40,5500
-6,OfficeBuilding,10,1100,120
-7,LiqourShop,700,40,2800
-8,Shop,50,40,100
-9,Hospital,700,50,1400
-10,OfficeBuilding,40,1400,280
-11,LiqourShop,300,90,8700
-12,Shop,70,30,3150
-13,Hospital,1000,10,5000
-14,OfficeBuilding,10,800,10
-15,LiqourShop,600,90,14400
-16,Shop,10,60,270
-17,Hospital,800,10,5600
-18,OfficeBuilding,10,800,400
-19,LiqourShop,300,40,2700
-20,Shop,20,90,840
-21,Hospital,1200,20,2400
-22,OfficeBuilding,10,500,760
-23,LiqourShop,1000,70,29000
-24,Shop,50,80,2300
-25,Hospital,1000,30,6000
-26,OfficeBuilding,20,500,420
-27,LiqourShop,600,60,5400
-28,Shop,70,80,2730
-29,Hospital,500,30,1000
-30,OfficeBuilding,50,500,1700
-31,LiqourShop,1000,30,32000
-32,Shop,80,50,1600
-33,Hospital,800,20,5600
-34,OfficeBuilding,40,1300,440
-35,LiqourShop,400,100,16400
-36,Shop,70,30,1190
-37,Hospital,800,30,4800
-38,OfficeBuilding,20,800,580
-39,LiqourShop,700,70,27300
-40,Shop,50,70,1950
-41,Hospital,1300,40,2600
-42,OfficeBuilding,40,700,2720
-43,LiqourShop,900,40,30600
-44,Shop,70,50,4550
-45,Hospital,1000,40,11000
-46,OfficeBuilding,40,700,1560
-47,LiqourShop,500,60,26500
-48,Shop,30,30,1320
-49,Hospital,1400,50,4200
-50,OfficeBuilding,20,1000,740
-51,LiqourShop,700,60,25900
-52,Shop,20,100,180
-53,Hospital,1200,20,14400
-54,OfficeBuilding,30,1400,1260
-55,LiqourShop,1000,30,5000
-56,Shop,60,100,1440
-57,Hospital,1200,50,0
-58,OfficeBuilding,20,900,1240
-59,LiqourShop,400,40,20800
-60,Shop,30,50,600
-61,Hospital,800,40,1600
-62,OfficeBuilding,20,1400,1120
-63,LiqourShop,900,80,41400
-64,Shop,10,80,180
-65,Hospital,1300,40,0
-66,OfficeBuilding,30,800,1380
-67,LiqourShop,1000,90,28000
-68,Shop,80,70,2080
-69,Hospital,1000,10,1000
-70,OfficeBuilding,10,800,220
-71,LiqourShop,600,100,10800
-72,Shop,90,80,630
-73,Hospital,1200,40,1200
-74,OfficeBuilding,30,500,120
-75,LiqourShop,100,60,4300
-76,Shop,20,50,760
-77,Hospital,700,50,1400
-78,OfficeBuilding,10,800,580
-79,LiqourShop,600,30,34200
-80,Shop,50,50,450
-81,Hospital,1300,10,16900
-82,OfficeBuilding,20,1400,840
-83,LiqourShop,900,90,20700
-84,Shop,60,90,3240
-85,Hospital,900,20,900
-86,OfficeBuilding,30,1100,750
-87,LiqourShop,700,50,2100
-88,Shop,90,90,2970
-89,Hospital,500,40,5500
-90,OfficeBuilding,50,900,2100
-91,LiqourShop,300,100,12600
-92,Shop,20,70,280
-93,Hospital,600,20,600
-94,OfficeBuilding,50,900,1950
-95,LiqourShop,200,50,11400
-96,Shop,40,90,600
-97,Hospital,1100,40,3300
-98,OfficeBuilding,40,900,880
-99,LiqourShop,800,60,24800
+0,Shop,80,70,4720
+1,Hospital,900,50,18900
+2,OfficeBuilding,50,1000,1050
+3,LiqourShop,600,50,4200
+4,Shop,80,30,3760
+5,Hospital,600,50,5400
+6,OfficeBuilding,40,1400,3560
+7,LiqourShop,300,50,2100
+8,Shop,100,30,3700
+9,Hospital,800,40,24800
+10,OfficeBuilding,10,600,690
+11,LiqourShop,100,90,700
+12,Shop,30,100,360
+13,Hospital,1000,30,30000
+14,OfficeBuilding,30,1300,3000
+15,LiqourShop,900,40,14400
+16,Shop,80,100,720
+17,Hospital,600,50,3000
+18,OfficeBuilding,40,900,1040
+19,LiqourShop,700,50,25200
+20,Shop,10,70,80
+21,Hospital,1000,40,6000
+22,OfficeBuilding,40,800,2080
+23,LiqourShop,1000,100,19000
+24,Shop,90,30,360
+25,Hospital,1100,10,27500
+26,OfficeBuilding,30,600,1710
+27,LiqourShop,700,90,37800
+28,Shop,50,100,1550
+29,Hospital,800,50,0
+30,OfficeBuilding,40,1200,2960
+31,LiqourShop,400,60,16000
+32,Shop,60,50,1260
+33,Hospital,1300,30,19500
+34,OfficeBuilding,50,1000,3750
+35,LiqourShop,600,100,3600
+36,Shop,80,90,6640
+37,Hospital,600,10,2400
+38,OfficeBuilding,10,1000,820
+39,LiqourShop,800,90,16000
+40,Shop,90,70,6840
+41,Hospital,500,10,17500
+42,OfficeBuilding,50,500,4200
+43,LiqourShop,100,90,600
+44,Shop,70,40,2800
+45,Hospital,600,50,10800
+46,OfficeBuilding,40,1200,880
+47,LiqourShop,800,80,22400
+48,Shop,40,80,520
+49,Hospital,1400,30,68600
+50,OfficeBuilding,50,700,2400
+51,LiqourShop,1000,40,23000
+52,Shop,100,90,2200
+53,Hospital,1300,10,49400
+54,OfficeBuilding,30,800,3690
+55,LiqourShop,900,100,4500
+56,Shop,70,70,280
+57,Hospital,1000,50,15000
+58,OfficeBuilding,50,1000,750
+59,LiqourShop,1000,100,71000
+60,Shop,90,80,1350
+61,Hospital,1200,50,7200
+62,OfficeBuilding,50,1300,2650
+63,LiqourShop,500,80,2500
+64,Shop,80,40,960
+65,Hospital,1200,10,18000
+66,OfficeBuilding,10,1300,880
+67,LiqourShop,900,100,23400
+68,Shop,60,70,1140
+69,Hospital,600,20,19800
+70,OfficeBuilding,50,500,6250
+71,LiqourShop,600,60,1200
+72,Shop,60,40,3360
+73,Hospital,900,10,42300
+74,OfficeBuilding,50,500,450
+75,LiqourShop,1000,40,0
+76,Shop,100,60,5200
+77,Hospital,1100,30,16500
+78,OfficeBuilding,20,600,720
+79,LiqourShop,600,60,12000
+80,Shop,10,70,280
+81,Hospital,500,30,1500
+82,OfficeBuilding,30,1000,1170
+83,LiqourShop,900,50,45000
+84,Shop,80,30,1280
+85,Hospital,1000,50,10000
+86,OfficeBuilding,40,900,2360
+87,LiqourShop,900,50,45000
+88,Shop,100,40,4000
+89,Hospital,1200,40,40800
+90,OfficeBuilding,40,500,3960
+91,LiqourShop,300,60,11100
+92,Shop,20,60,140
+93,Hospital,1200,50,4800
+94,OfficeBuilding,10,1300,200
+95,LiqourShop,700,30,7000
+96,Shop,90,30,990
+97,Hospital,1300,20,5200
+98,OfficeBuilding,30,700,3000
+99,LiqourShop,700,40,16800
 
 Final Stats of each Human
-ID,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item
-1,Dead (Died on iteration 820)
-3,Alive,52,70,12,0,0,2450,5,Baseball Bat
-4,Dead (Died on iteration 2009)
-6,Alive,9,50,5,0,50,810,5,Boots
-7,Dead (Died on iteration 331)
-8,Alive,78,40,5,0,50,4860,5,Boots
-9,Alive,41,60,7,0,40,4700,5,Rock
-10,Dead (Died on iteration 787)
-11,Dead (Died on iteration 132)
-12,Dead (Died on iteration 3974)
-13,Dead (Died on iteration 1053)
-14,Alive,45,70,7,0,40,3860,5,Rock
-15,Dead (Died on iteration 259)
-16,Dead (Died on iteration 2370)
-18,Alive,47,60,10,0,20,6200,5,Scissors
-19,Alive,49,50,6,0,45,730,5,Sharp Pencil
-20,Dead (Died on iteration 1891)
-21,Dead (Died on iteration 991)
-22,Alive,45,40,7,0,40,1450,5,Rock
-23,Alive,67,90,7,0,30,1610,5,Glass Bottle
-25,Dead (Died on iteration 2010)
-26,Dead (Died on iteration 3128)
-28,Alive,71,50,10,0,20,2600,5,Scissors
-30,Dead (Died on iteration 81)
-32,Dead (Died on iteration 186)
-33,Dead (Died on iteration 226)
-35,Alive,42,70,11,0,35,1740,75,Knife
-37,Dead (Died on iteration 2052)
-38,Alive,58,120,5,0,50,5480,5,Boots
-39,Alive,87,60,6,0,45,3250,5,Sharp Pencil
-40,Dead (Died on iteration 3566)
-41,Dead (Died on iteration 115)
-42,Dead (Died on iteration 672)
-44,Alive,13,80,11,0,35,440,5,Knife
-45,Dead (Died on iteration 2295)
-46,Alive,62,120,6,0,45,2170,5,Sharp Pencil
-47,Alive,48,70,7,0,40,7730,5,Rock
-48,Alive,59,40,10,0,20,8410,5,Scissors
-49,Dead (Died on iteration 1143)
-50,Alive,45,50,7,0,40,9670,5,Rock
-51,Dead (Died on iteration 23)
-53,Alive,53,90,10,0,20,4450,5,Scissors
-54,Alive,89,120,5,0,50,7240,5,Boots
-55,Dead (Died on iteration 1979)
-57,Dead (Died on iteration 1212)
-58,Alive,77,100,7,0,30,1990,5,Glass Bottle
-59,Alive,51,90,10,0,20,290,5,Scissors
-60,Alive,51,60,11,0,35,900,5,Knife
-62,Dead (Died on iteration 450)
-63,Dead (Died on iteration 692)
-65,Alive,85,80,7,0,40,6360,5,Rock
-66,Dead (Died on iteration 1029)
-67,Dead (Died on iteration 980)
-68,Alive,47,40,11,0,35,6850,5,Knife
-70,Dead (Died on iteration 606)
-71,Dead (Died on iteration 666)
-73,Alive,62,40,5,0,50,850,5,Boots
-74,Dead (Died on iteration 2010)
-76,Dead (Died on iteration 931)
-77,Alive,74,80,6,0,45,2330,5,Sharp Pencil
-78,Dead (Died on iteration 552)
-79,Dead (Died on iteration 1201)
-81,Alive,61,40,5,0,50,1690,5,Boots
-82,Dead (Died on iteration 180)
-84,Alive,47,60,6,0,10,4860,5,Riot Shield
-85,Alive,83,70,6,0,45,4020,5,Sharp Pencil
-87,Alive,55,90,5,0,50,600,5,Boots
-89,Alive,43,90,7,0,40,1180,5,Rock
-91,Alive,48,60,11,0,35,880,5,Knife
-93,Alive,15,80,7,0,30,1190,5,Glass Bottle
-95,Alive,43,90,10,0,20,8500,5,Scissors
-96,Alive,59,50,6,0,45,40,5,Sharp Pencil
-97,Alive,56,80,7,0,30,2920,5,Glass Bottle
-98,Alive,57,50,7,0,30,2710,5,Glass Bottle
-99,Dead (Died on iteration 280)
-101,Alive,57,40,7,0,40,2340,5,Rock
-103,Dead (Died on iteration 1726)
-105,Alive,63,60,12,0,0,4550,5,Baseball Bat
-106,Alive,74,60,10,0,20,3080,5,Scissors
-107,Alive,60,50,5,0,50,2120,5,Boots
-108,Alive,48,60,6,0,45,2160,5,Sharp Pencil
-109,Alive,58,60,11,0,35,4030,5,Knife
-110,Dead (Died on iteration 1006)
-112,Dead (Died on iteration 2692)
-113,Alive,47,60,7,0,30,1140,5,Glass Bottle
-115,Alive,40,60,7,0,30,940,5,Glass Bottle
-117,Alive,60,70,6,0,45,4130,5,Sharp Pencil
-119,Dead (Died on iteration 2669)
-121,Alive,65,70,5,0,50,1830,10,Boots
-122,Alive,76,80,7,0,40,2440,5,Rock
-123,Dead (Died on iteration 1641)
-124,Dead (Died on iteration 2448)
-125,Dead (Died on iteration 2795)
-126,Dead (Died on iteration 2152)
-127,Dead (Died on iteration 3360)
-128,Alive,31,40,6,0,45,250,5,Sharp Pencil
-129,Alive,79,70,11,0,35,3710,5,Knife
-130,Dead (Died on iteration 825)
-131,Dead (Died on iteration 3018)
-132,Alive,28,90,7,0,40,2870,5,Rock
+ID,Name,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item
+1,Gniewomir Dudek,Dead (Died on iteration 7)
+2,Denis Pork,Dead (Died on iteration 91)
+3,Michel Sunbed,Alive,46,40,6,0,45,2820,5,Sharp Pencil
+4,Radomir Bialy,Dead (Died on iteration 111)
+5,Brajan Nowak,Dead (Died on iteration 11)
+6,Gniewomir Wojtyla,Alive,5,120,5,1,50,1180,5,Boots
+8,Stanislaw Sunbed,Alive,40,60,5,1,50,380,5,Boots
+9,Stanislaw Cheese,Dead (Died on iteration 195)
+10,Bozydar Baranowicz,Alive,44,70,5,1,50,910,0,Boots
+12,Karol Kowalski,Dead (Died on iteration 55)
+14,Denis Prudnicka,Dead (Died on iteration 99)
+15,Karol Dudek,Dead (Died on iteration 18)
+16,Alexander Pork,Dead (Died on iteration 5)
+18,Bozydar Wojtyla,Dead (Died on iteration 6)
+20,Gniewomir Baranowicz,Dead (Died on iteration 70)
+22,Denis Baranowicz,Dead (Died on iteration 164)
+23,Vladimir Jaroszewicz,Dead (Died on iteration 177)
+25,Radomir Pork,Dead (Died on iteration 468)
+27,Kunegunda Poniatowski,Dead (Died on iteration 5)
+28,Gniewomir Nowak,Dead (Died on iteration 27)
+29,Brajan Pork,Alive,56,70,6,0,45,410,5,Sharp Pencil
+30,John Prudnicka,Dead (Died on iteration 22)
+32,Alexander Baranowicz,Dead (Died on iteration 254)
+33,Steve Wojtyla,Dead (Died on iteration 10)
+35,Gniewomir Bialy,Dead (Died on iteration 146)
+36,John Bialy,Alive,56,50,5,1,50,1150,5,Boots
+38,Christopher Kowalski,Dead (Died on iteration 113)
+40,Nikolai Cheese,Dead (Died on iteration 406)
+41,Alfred Bialy,Dead (Died on iteration 12)
+42,Nikolai Jones,Dead (Died on iteration 304)
+43,Denis Kowalski,Dead (Died on iteration 164)
+44,Genowefa Pork,Dead (Died on iteration 19)
+46,Steve Poniatowski,Dead (Died on iteration 118)
+48,Alexander Baranowicz,Dead (Died on iteration 206)
+49,John Bialy,Dead (Died on iteration 5)
+50,Grzmislaw Jaroszewicz,Alive,7,40,11,0,35,1000,0,Knife
+51,Vladimir Prudnicka,Dead (Died on iteration 39)
+53,Jessica Smith,Dead (Died on iteration 33)
+54,Jerry Shrimpus,Dead (Died on iteration 87)
+55,Zygmunt Sunbed,Dead (Died on iteration 295)
+56,Stanislaw Shrimpus,Dead (Died on iteration 24)
+58,Vladimir Prudnicka,Dead (Died on iteration 65)
+60,Stanislaw Nowak,Dead (Died on iteration 33)
+61,Michel Prudnicka,Dead (Died on iteration 25)
+62,Bozydar Shrimpus,Dead (Died on iteration 46)
+63,Zygmunt Dudek,Dead (Died on iteration 29)
+64,Denis Prudnicka,Dead (Died on iteration 71)
+65,Bozydar Pork,Alive,21,50,6,0,45,320,5,Sharp Pencil
+67,Michel Prudnicka,Dead (Died on iteration 7)
+68,Gniewomir Bialy,Dead (Died on iteration 185)
+70,Vladimir Jones,Dead (Died on iteration 23)
+71,Denis Pork,Dead (Died on iteration 60)
+72,Grzmislaw Pork,Dead (Died on iteration 42)
+74,John Shrimpus,Dead (Died on iteration 45)
+75,Vladimir Nowak,Dead (Died on iteration 19)
+77,Bozydar Cheese,Dead (Died on iteration 4)
+78,Radomir Jones,Dead (Died on iteration 27)
+79,Christopher Dudek,Dead (Died on iteration 30)
+80,Jessica Jobs,Dead (Died on iteration 33)
+82,Steve Poniatowski,Dead (Died on iteration 183)
+83,Alexander Wojtyla,Dead (Died on iteration 133)
+85,Jessica Jaroszewicz,Dead (Died on iteration 14)
+86,Steve Jaroszewicz,Dead (Died on iteration 55)
+87,Christopher Pork,Alive,30,50,5,1,50,1440,0,Boots
+89,Karol Shrimpus,Dead (Died on iteration 29)
+90,Michel Pork,Dead (Died on iteration 369)
+91,Christopher Dudek,Alive,37,110,5,1,50,4680,5,Boots
+92,John Jaroszewicz,Dead (Died on iteration 14)
+93,Brajan Jaroszewicz,Dead (Died on iteration 27)
+94,Denis Jaroszewicz,Dead (Died on iteration 21)
+95,Bozydar Sunbed,Dead (Died on iteration 28)
+96,Christopher Jaroszewicz,Dead (Died on iteration 28)
+97,Alfred Pork,Dead (Died on iteration 220)
+98,Vladimir Poniatowski,Dead (Died on iteration 189)
+100,Alexander Sunbed,Dead (Died on iteration 66)
+101,Denis Cheese,Dead (Died on iteration 183)
+103,Alfred Baranowicz,Dead (Died on iteration 16)
+104,John Bialy,Dead (Died on iteration 13)
+105,Zygmunt Wojtyla,Dead (Died on iteration 455)
+107,Stanislaw Jones,Dead (Died on iteration 3)
+109,Gniewomir Sunbed,Dead (Died on iteration 249)
+110,John Cheese,Dead (Died on iteration 224)
+111,Zygmunt Jaroszewicz,Dead (Died on iteration 139)
+112,Genowefa Pork,Alive,60,50,5,1,50,2560,5,Boots
+113,Stanislaw Dudek,Dead (Died on iteration 25)
+114,Vladimir Jobs,Dead (Died on iteration 8)
+115,Steve Nowak,Dead (Died on iteration 4)
+116,Genowefa Nowak,Alive,29,60,5,1,50,720,0,Boots
+117,Grzmislaw Jobs,Dead (Died on iteration 176)
+118,Karol Pork,Dead (Died on iteration 391)
+120,Gniewomir Dudek,Alive,32,80,5,1,50,910,5,Boots
+121,Radomir Baranowicz,Dead (Died on iteration 102)
+123,Nikolai Jaroszewicz,Dead (Died on iteration 22)
+125,Gniewomir Dudek,Dead (Died on iteration 174)
+126,Tim Pork,Dead (Died on iteration 236)
+128,Genowefa Nowak,Dead (Died on iteration 59)
+130,Alfred Cheese,Dead (Died on iteration 26)
+131,Christopher Kowalski,Dead (Died on iteration 292)
+133,Alfred Poniatowski,Dead (Died on iteration 303)
+134,Bozydar Bialy,Dead (Died on iteration 3)
+135,Denis Kowalski,Dead (Died on iteration 4)
+137,John Kowalski,Dead (Died on iteration 5)
+138,Alexander Shrimpus,Dead (Died on iteration 2)
+139,Steve Bialy,Dead (Died on iteration 11)
+140,Gniewomir Nowak,Dead (Died on iteration 493)
+141,Tim Shrimpus,Dead (Died on iteration 169)
+142,Zygmunt Poniatowski,Dead (Died on iteration 1)
+143,Bozydar Shrimpus,Dead (Died on iteration 12)
+144,Steve Bialy,Dead (Died on iteration 208)
+145,Tim Kowalski,Dead (Died on iteration 62)
+147,Christopher Prudnicka,Dead (Died on iteration 158)
+148,Karol Cheese,Dead (Died on iteration 64)
+149,Zygmunt Pork,Dead (Died on iteration 12)
+151,Jerry Dudek,Dead (Died on iteration 326)
+152,Christopher Bialy,Dead (Died on iteration 2)
+154,Grzmislaw Nowak,Dead (Died on iteration 155)
+155,Stanislaw Wojtyla,Dead (Died on iteration 215)
+156,Steve Sunbed,Dead (Died on iteration 26)
+157,Christopher Prudnicka,Alive,41,80,6,0,45,240,0,Sharp Pencil
+158,Jessica Pork,Dead (Died on iteration 37)
+159,Grzmislaw Bialy,Dead (Died on iteration 1)
+161,Radomir Jobs,Dead (Died on iteration 69)
+163,Brajan Bialy,Alive,36,60,7,0,30,1000,5,Glass Bottle
+165,Jerry Cheese,Alive,36,100,7,0,40,1070,0,Rock
+166,Vladimir Baranowicz,Dead (Died on iteration 74)
+168,Nikolai Dudek,Dead (Died on iteration 423)
+169,Christopher Sunbed,Dead (Died on iteration 124)
+170,Alexander Nowak,Dead (Died on iteration 3)
+171,Kunegunda Poniatowski,Alive,84,40,5,1,50,2020,5,Boots
+172,Grzmislaw Sunbed,Alive,22,80,5,1,50,820,0,Boots
+173,Grzmislaw Cheese,Dead (Died on iteration 456)
+174,Nikolai Bialy,Alive,45,90,5,1,50,480,5,Boots
+176,Bozydar Wojtyla,Dead (Died on iteration 449)
+178,Christopher Shrimpus,Dead (Died on iteration 25)
+179,John Baranowicz,Dead (Died on iteration 244)
+180,Jessica Cheese,Dead (Died on iteration 6)
+182,Stanislaw Jaroszewicz,Dead (Died on iteration 3)
+183,John Jones,Dead (Died on iteration 237)
+185,Kunegunda Cheese,Dead (Died on iteration 115)
+186,Michel Prudnicka,Dead (Died on iteration 403)
+187,Denis Dudek,Dead (Died on iteration 410)
+188,Brajan Jobs,Dead (Died on iteration 8)
+189,Radomir Sunbed,Dead (Died on iteration 47)
+190,Alexander Sunbed,Dead (Died on iteration 162)
+191,Ihor Shrimpus,Dead (Died on iteration 51)
+192,Gniewomir Bialy,Dead (Died on iteration 31)
+193,Nikolai Cheese,Dead (Died on iteration 119)
+194,Gniewomir Prudnicka,Dead (Died on iteration 4)
+196,John Prudnicka,Dead (Died on iteration 7)
+198,Bozydar Sunbed,Dead (Died on iteration 22)
+199,Kunegunda Nowak,Dead (Died on iteration 133)
+200,Brajan Jaroszewicz,Dead (Died on iteration 146)
+202,Nikolai Jobs,Dead (Died on iteration 1)
+203,Steve Nowak,Dead (Died on iteration 5)
+204,Ihor Smith,Alive,31,30,5,1,50,610,0,Boots
+205,Kunegunda Bialy,Alive,43,100,5,1,50,2220,5,Boots
+206,Bozydar Bialy,Dead (Died on iteration 356)
+207,Radomir Dudek,Dead (Died on iteration 2)
+209,Grzmislaw Wojtyla,Dead (Died on iteration 41)
+211,Gniewomir Jones,Dead (Died on iteration 136)
+212,Brajan Cheese,Dead (Died on iteration 65)
+213,Ihor Baranowicz,Dead (Died on iteration 295)
+215,Grzmislaw Sunbed,Dead (Died on iteration 25)
+216,Kunegunda Prudnicka,Dead (Died on iteration 29)
+217,Bozydar Smith,Dead (Died on iteration 49)
+218,Karol Pork,Dead (Died on iteration 234)
+219,Radomir Prudnicka,Dead (Died on iteration 196)
+220,Radomir Kowalski,Dead (Died on iteration 150)
+221,Michel Kowalski,Dead (Died on iteration 53)
+222,Jerry Shrimpus,Dead (Died on iteration 13)
+223,Tim Jaroszewicz,Dead (Died on iteration 96)
+224,Bozydar Kowalski,Dead (Died on iteration 61)
+226,Brajan Jaroszewicz,Dead (Died on iteration 31)
+228,Alfred Jobs,Dead (Died on iteration 28)
+229,Vladimir Jones,Dead (Died on iteration 263)
+230,Tim Nowak,Dead (Died on iteration 464)
+231,Radomir Bialy,Dead (Died on iteration 7)
+232,Genowefa Jones,Dead (Died on iteration 230)
+233,John Poniatowski,Dead (Died on iteration 29)
+234,Radomir Jones,Dead (Died on iteration 85)
+236,Jessica Sunbed,Dead (Died on iteration 25)
+237,Jessica Shrimpus,Dead (Died on iteration 14)
+238,Zygmunt Prudnicka,Dead (Died on iteration 245)
+239,Vladimir Smith,Dead (Died on iteration 434)
+240,Tim Baranowicz,Alive,47,70,7,0,40,3450,0,Rock
+241,Christopher Wojtyla,Dead (Died on iteration 311)
+242,Steve Nowak,Dead (Died on iteration 45)
+243,Kunegunda Smith,Dead (Died on iteration 1)
+244,John Kowalski,Dead (Died on iteration 253)
+246,Alfred Sunbed,Dead (Died on iteration 45)
+247,Brajan Nowak,Alive,53,80,6,0,45,2320,5,Sharp Pencil
+249,Gniewomir Jobs,Dead (Died on iteration 2)
+251,Steve Baranowicz,Dead (Died on iteration 199)
+253,John Kowalski,Dead (Died on iteration 39)
+254,Brajan Smith,Dead (Died on iteration 38)
+256,Radomir Kowalski,Dead (Died on iteration 15)
+258,Brajan Shrimpus,Dead (Died on iteration 21)
+259,Alfred Wojtyla,Dead (Died on iteration 21)
+261,Bozydar Jones,Dead (Died on iteration 98)
+263,Genowefa Nowak,Alive,1,100,11,0,35,2320,5,Knife
+264,Steve Prudnicka,Dead (Died on iteration 25)
+266,Brajan Kowalski,Dead (Died on iteration 2)
+267,Kunegunda Jobs,Dead (Died on iteration 21)
+269,Brajan Kowalski,Dead (Died on iteration 273)
+270,Genowefa Poniatowski,Dead (Died on iteration 432)
+271,Bozydar Cheese,Dead (Died on iteration 8)
+272,Steve Prudnicka,Dead (Died on iteration 26)
+274,Denis Jones,Dead (Died on iteration 65)
+276,John Jaroszewicz,Dead (Died on iteration 58)
+277,Denis Smith,Alive,27,50,6,0,45,1310,0,Sharp Pencil
+279,Radomir Shrimpus,Dead (Died on iteration 235)
+280,Alfred Baranowicz,Dead (Died on iteration 21)
+281,Tim Jones,Dead (Died on iteration 372)
+283,Ihor Jaroszewicz,Dead (Died on iteration 11)
+284,Kunegunda Jones,Dead (Died on iteration 261)
+285,Jessica Jones,Dead (Died on iteration 29)
+286,Alexander Pork,Alive,63,80,5,1,50,1740,5,Boots
+287,Christopher Cheese,Dead (Died on iteration 4)
+288,Christopher Kowalski,Dead (Died on iteration 36)
+289,Bozydar Poniatowski,Dead (Died on iteration 80)
+290,Tim Bialy,Dead (Died on iteration 171)
+291,Stanislaw Baranowicz,Alive,43,80,5,1,50,840,0,Boots
+292,Radomir Cheese,Dead (Died on iteration 135)
+294,Karol Poniatowski,Dead (Died on iteration 27)
+296,Gniewomir Sunbed,Dead (Died on iteration 10)
+297,Gniewomir Kowalski,Dead (Died on iteration 204)
+299,Alfred Sunbed,Dead (Died on iteration 61)
+300,Vladimir Shrimpus,Dead (Died on iteration 14)
+302,Denis Nowak,Alive,42,80,5,1,50,1260,0,Boots
+303,Nikolai Bialy,Alive,64,70,5,1,50,230,5,Boots
+304,Nikolai Shrimpus,Dead (Died on iteration 12)
+306,Alfred Shrimpus,Dead (Died on iteration 257)
+307,Karol Jaroszewicz,Dead (Died on iteration 90)
+309,Vladimir Poniatowski,Dead (Died on iteration 6)
+310,Denis Prudnicka,Dead (Died on iteration 4)
+311,Alexander Kowalski,Dead (Died on iteration 137)
+312,Bozydar Shrimpus,Dead (Died on iteration 191)
+313,Gniewomir Baranowicz,Dead (Died on iteration 11)
+315,Bozydar Dudek,Dead (Died on iteration 22)
+316,Stanislaw Baranowicz,Dead (Died on iteration 24)
+317,Nikolai Dudek,Dead (Died on iteration 81)
+318,Gniewomir Jones,Dead (Died on iteration 5)
+319,Denis Jones,Alive,40,100,6,0,45,870,0,Sharp Pencil
+320,Alexander Pork,Dead (Died on iteration 24)
+321,Alfred Sunbed,Dead (Died on iteration 347)
+322,Karol Jaroszewicz,Dead (Died on iteration 141)
+323,Zygmunt Cheese,Dead (Died on iteration 20)
+325,Jerry Pork,Dead (Died on iteration 21)
+326,Vladimir Prudnicka,Dead (Died on iteration 35)
+327,Jerry Cheese,Alive,44,120,5,1,50,1240,0,Boots
+329,Stanislaw Baranowicz,Dead (Died on iteration 3)
+330,Jerry Bialy,Dead (Died on iteration 23)
+331,Bozydar Sunbed,Dead (Died on iteration 87)
+332,Genowefa Dudek,Alive,21,60,6,0,45,540,5,Sharp Pencil
+334,Genowefa Smith,Dead (Died on iteration 63)
+336,Alfred Jobs,Dead (Died on iteration 85)
+337,John Dudek,Dead (Died on iteration 18)
+338,Stanislaw August Poniatowski,Dead (Died on iteration 12)
+339,Alexander Smith,Dead (Died on iteration 59)
+340,Stanislaw Jobs,Dead (Died on iteration 18)
+341,Tim Wojtyla,Dead (Died on iteration 94)
+342,Brajan Shrimpus,Dead (Died on iteration 264)
+343,Steve Sunbed,Alive,44,110,5,1,50,1020,5,Boots
+344,Alexander Jaroszewicz,Dead (Died on iteration 20)
+345,Michel Kowalski,Dead (Died on iteration 1)
+347,Kunegunda Kowalski,Dead (Died on iteration 83)
+348,Bozydar Jobs,Dead (Died on iteration 12)
+349,Steve Dudek,Dead (Died on iteration 76)
+351,Zygmunt Wojtyla,Dead (Died on iteration 38)
+353,Alexander Prudnicka,Dead (Died on iteration 37)
+355,Ihor Poniatowski,Dead (Died on iteration 55)
+357,Ihor Poniatowski,Dead (Died on iteration 65)
+359,Genowefa Dudek,Dead (Died on iteration 26)
+360,Bozydar Nowak,Dead (Died on iteration 14)
+361,Gniewomir Cheese,Alive,6,50,7,0,40,400,5,Rock
+362,John Nowak,Dead (Died on iteration 129)
+364,John Nowak,Alive,14,60,5,1,50,2250,5,Boots
+365,Jerry Wojtyla,Alive,28,40,11,0,35,1110,5,Knife
+366,Nikolai Jones,Dead (Died on iteration 1)
+367,Michel Wojtyla,Dead (Died on iteration 231)
+368,Stanislaw Smith,Dead (Died on iteration 86)
+369,Brajan Shrimpus,Dead (Died on iteration 6)
+370,Gniewomir Dudek,Alive,19,40,7,0,30,390,0,Glass Bottle
+372,Nikolai Kowalski,Dead (Died on iteration 232)
+373,Genowefa Nowak,Dead (Died on iteration 36)
+374,Bozydar Prudnicka,Dead (Died on iteration 48)
+375,Michel Shrimpus,Dead (Died on iteration 10)
+376,Stanislaw Wojtyla,Dead (Died on iteration 19)
+377,Genowefa Pork,Dead (Died on iteration 147)
+378,Ihor Cheese,Dead (Died on iteration 60)
+379,Zygmunt Jaroszewicz,Dead (Died on iteration 39)
+380,Ihor Prudnicka,Alive,13,70,7,0,30,230,5,Glass Bottle
+382,Genowefa Jones,Dead (Died on iteration 111)
+384,Brajan Wojtyla,Dead (Died on iteration 15)
+385,John Jobs,Alive,32,40,7,0,30,2540,0,Glass Bottle
+387,Nikolai Sunbed,Dead (Died on iteration 240)
+388,Michel Prudnicka,Dead (Died on iteration 79)
+389,Kunegunda Nowak,Dead (Died on iteration 120)
+390,Denis Sunbed,Dead (Died on iteration 43)
+392,Stanislaw Kowalski,Dead (Died on iteration 72)
+394,Tim Jobs,Dead (Died on iteration 40)
+395,Steve Pork,Dead (Died on iteration 117)
+397,Zygmunt Kowalski,Alive,55,80,6,0,45,1710,5,Sharp Pencil
+398,Jerry Smith,Alive,12,100,7,0,30,840,0,Glass Bottle
+400,Christopher Poniatowski,Dead (Died on iteration 46)
+401,Alfred Kowalski,Dead (Died on iteration 117)
+403,Christopher Prudnicka,Dead (Died on iteration 40)
+405,Bozydar Baranowicz,Dead (Died on iteration 61)
+406,Alfred Bialy,Dead (Died on iteration 4)
+408,Steve Jobs,Dead (Died on iteration 3)
+410,Kunegunda Sunbed,Dead (Died on iteration 27)
+411,Genowefa Shrimpus,Dead (Died on iteration 78)
+413,Jessica Jobs,Dead (Died on iteration 100)
+415,Vladimir Nowak,Alive,44,80,5,1,50,910,5,Boots
+416,Tim Prudnicka,Dead (Died on iteration 159)
+417,Tim Wojtyla,Dead (Died on iteration 43)
+418,Radomir Bialy,Dead (Died on iteration 29)
+419,Jessica Jones,Dead (Died on iteration 33)
+421,Kunegunda Kowalski,Dead (Died on iteration 31)
+422,John Nowak,Dead (Died on iteration 138)
+423,Kunegunda Bialy,Dead (Died on iteration 129)
+424,Grzmislaw Sunbed,Dead (Died on iteration 1)
+426,Zygmunt Wojtyla,Alive,31,50,5,1,50,2010,5,Boots
+427,Michel Jones,Dead (Died on iteration 342)
+428,Vladimir Shrimpus,Alive,41,40,5,1,50,1150,5,Boots
+429,Alfred Jones,Dead (Died on iteration 156)
+431,John Dudek,Dead (Died on iteration 47)
+432,Bozydar Sunbed,Dead (Died on iteration 71)
+433,John Jobs,Dead (Died on iteration 159)
+434,Karol Cheese,Dead (Died on iteration 54)
+435,Ihor Prudnicka,Dead (Died on iteration 100)
+436,Tim Jobs,Dead (Died on iteration 1)
+438,Radomir Jones,Dead (Died on iteration 54)
+440,Zygmunt Wojtyla,Dead (Died on iteration 17)
+441,Tim Pork,Dead (Died on iteration 28)
+442,John Sunbed,Dead (Died on iteration 24)
+443,Alexander Nowak,Alive,81,100,7,0,40,3550,0,Rock
+444,Radomir Prudnicka,Alive,45,60,7,0,40,3330,5,Rock
+445,Vladimir Jobs,Dead (Died on iteration 10)
+446,Kunegunda Cheese,Dead (Died on iteration 23)
+448,Bozydar Poniatowski,Dead (Died on iteration 38)
+449,Gniewomir Prudnicka,Alive,3,80,5,1,50,860,0,Boots
+450,Alexander Cheese,Dead (Died on iteration 345)
+451,Steve Pork,Dead (Died on iteration 23)
+452,Tim Dudek,Dead (Died on iteration 18)
+453,Gniewomir Smith,Dead (Died on iteration 320)
+455,Genowefa Bialy,Dead (Died on iteration 40)
+456,Christopher Prudnicka,Dead (Died on iteration 10)
+457,Bozydar Shrimpus,Dead (Died on iteration 20)
+458,Karol Baranowicz,Dead (Died on iteration 268)
+460,Nikolai Prudnicka,Dead (Died on iteration 18)
+462,Gniewomir Shrimpus,Dead (Died on iteration 149)
+463,Ihor Kowalski,Dead (Died on iteration 56)
+464,Kunegunda Cheese,Dead (Died on iteration 53)
+465,Zygmunt Smith,Dead (Died on iteration 3)
+466,Radomir Bialy,Dead (Died on iteration 33)
+467,Stanislaw Sunbed,Dead (Died on iteration 6)
+468,Radomir Kowalski,Dead (Died on iteration 63)
+470,Alfred Jones,Dead (Died on iteration 142)
+471,Denis Poniatowski,Dead (Died on iteration 112)
+472,Kunegunda Cheese,Dead (Died on iteration 460)
+473,Bozydar Sunbed,Dead (Died on iteration 48)
+474,Genowefa Bialy,Dead (Died on iteration 42)
+475,Stanislaw Prudnicka,Alive,22,70,7,0,40,1210,0,Rock
+476,Michel Shrimpus,Dead (Died on iteration 139)
+477,Gniewomir Smith,Dead (Died on iteration 27)
+478,Steve Kowalski,Dead (Died on iteration 34)
+480,Vladimir Nowak,Alive,56,30,5,1,50,530,0,Boots
+481,Brajan Dudek,Dead (Died on iteration 7)
+482,Michel Shrimpus,Dead (Died on iteration 350)
+484,Stanislaw August Poniatowski,Dead (Died on iteration 26)
+485,Denis Baranowicz,Alive,35,70,7,0,40,1340,5,Rock
+486,Zygmunt Kowalski,Dead (Died on iteration 23)
+488,Denis Jones,Dead (Died on iteration 360)
+489,Zygmunt Sunbed,Alive,12,90,6,0,45,720,0,Sharp Pencil
+490,Radomir Cheese,Dead (Died on iteration 1)
+491,Nikolai Shrimpus,Dead (Died on iteration 53)
+492,Kunegunda Jobs,Alive,53,40,7,0,40,1920,0,Rock
+493,Brajan Pork,Dead (Died on iteration 31)
+494,Genowefa Baranowicz,Dead (Died on iteration 1)
+496,Christopher Dudek,Dead (Died on iteration 43)
+498,Genowefa Smith,Dead (Died on iteration 14)
+499,Kunegunda Poniatowski,Dead (Died on iteration 315)
+501,Zygmunt Sunbed,Alive,62,90,11,0,35,990,0,Knife
+503,Zygmunt Pork,Dead (Died on iteration 12)
+505,Gniewomir Jones,Dead (Died on iteration 13)
+506,Tim Dudek,Alive,32,60,6,0,45,810,5,Sharp Pencil
+507,Kunegunda Shrimpus,Dead (Died on iteration 91)
+508,Denis Bialy,Dead (Died on iteration 3)
+509,Alexander Bialy,Dead (Died on iteration 9)
+511,Bozydar Smith,Dead (Died on iteration 34)
+512,Nikolai Jaroszewicz,Dead (Died on iteration 158)
+513,Karol Smith,Dead (Died on iteration 14)
+514,Genowefa Jones,Dead (Died on iteration 2)
+515,Alexander Nowak,Alive,26,70,7,0,40,810,0,Rock
+516,Zygmunt Jaroszewicz,Dead (Died on iteration 14)
+517,Jerry Shrimpus,Dead (Died on iteration 18)
+518,Brajan Shrimpus,Dead (Died on iteration 45)
+519,Radomir Prudnicka,Dead (Died on iteration 42)
+520,Alfred Prudnicka,Dead (Died on iteration 38)
+521,Ihor Nowak,Dead (Died on iteration 253)
+523,Bozydar Shrimpus,Dead (Died on iteration 40)
+524,Vladimir Shrimpus,Dead (Died on iteration 16)
+525,Genowefa Smith,Dead (Died on iteration 56)
+526,Christopher Wojtyla,Dead (Died on iteration 3)
+527,John Smith,Dead (Died on iteration 179)
+528,Kunegunda Sunbed,Dead (Died on iteration 143)
+529,Karol Jobs,Dead (Died on iteration 161)
+530,Michel Bialy,Dead (Died on iteration 40)
+531,Genowefa Wojtyla,Dead (Died on iteration 238)
+532,Grzmislaw Dudek,Dead (Died on iteration 39)
+533,Brajan Shrimpus,Dead (Died on iteration 34)
+534,Kunegunda Bialy,Dead (Died on iteration 267)
+535,Jessica Jones,Dead (Died on iteration 57)
+536,Brajan Poniatowski,Dead (Died on iteration 47)
+537,Karol Prudnicka,Dead (Died on iteration 4)
+538,Nikolai Kowalski,Dead (Died on iteration 58)
+540,Tim Bialy,Dead (Died on iteration 35)
+541,Bozydar Poniatowski,Dead (Died on iteration 345)
+543,Vladimir Shrimpus,Dead (Died on iteration 8)
+544,Alexander Jobs,Dead (Died on iteration 22)
+545,Zygmunt Jones,Dead (Died on iteration 30)
+546,Genowefa Wojtyla,Dead (Died on iteration 5)
+547,Radomir Kowalski,Dead (Died on iteration 19)
+548,Grzmislaw Jones,Dead (Died on iteration 23)
+549,Jessica Jaroszewicz,Alive,43,40,5,1,50,700,0,Boots
+550,Ihor Jobs,Dead (Died on iteration 67)
+551,Bozydar Dudek,Dead (Died on iteration 61)
+553,Michel Kowalski,Dead (Died on iteration 29)
+554,Zygmunt Nowak,Dead (Died on iteration 1)
+555,Zygmunt Shrimpus,Dead (Died on iteration 36)
+556,Nikolai Sunbed,Dead (Died on iteration 162)
+558,Genowefa Shrimpus,Dead (Died on iteration 137)
+559,Steve Smith,Dead (Died on iteration 75)
+560,Stanislaw Prudnicka,Dead (Died on iteration 8)
+561,Nikolai Prudnicka,Dead (Died on iteration 24)
+562,Denis Wojtyla,Dead (Died on iteration 100)
+564,Ihor Prudnicka,Dead (Died on iteration 13)
+566,Brajan Cheese,Dead (Died on iteration 358)
+568,Tim Pork,Dead (Died on iteration 46)
+570,Alexander Kowalski,Dead (Died on iteration 84)
+571,Nikolai Baranowicz,Dead (Died on iteration 53)
+572,Nikolai Smith,Alive,72,40,5,1,50,1310,5,Boots
+574,Michel Pork,Dead (Died on iteration 48)
+575,Grzmislaw Jobs,Dead (Died on iteration 2)
+577,Nikolai Nowak,Dead (Died on iteration 62)
+578,Nikolai Kowalski,Dead (Died on iteration 222)
+580,Christopher Kowalski,Dead (Died on iteration 49)
+581,Kunegunda Nowak,Dead (Died on iteration 65)
+582,Jerry Nowak,Dead (Died on iteration 160)
+583,Jerry Sunbed,Dead (Died on iteration 22)
+584,Brajan Smith,Dead (Died on iteration 65)
+585,Michel Dudek,Dead (Died on iteration 22)
+586,Stanislaw Smith,Alive,29,40,5,1,50,300,5,Boots
+587,Alexander Prudnicka,Dead (Died on iteration 37)
+588,John Jones,Dead (Died on iteration 24)
+590,Gniewomir Poniatowski,Dead (Died on iteration 89)
+592,Michel Wojtyla,Dead (Died on iteration 5)
+593,Bozydar Bialy,Alive,36,30,6,0,45,540,0,Sharp Pencil
+595,Kunegunda Jobs,Alive,65,40,6,0,45,1460,5,Sharp Pencil
+596,Denis Pork,Dead (Died on iteration 131)
+597,Zygmunt Kowalski,Dead (Died on iteration 50)
+598,Stanislaw Dudek,Dead (Died on iteration 5)
+599,Karol Jaroszewicz,Dead (Died on iteration 343)
+600,Bozydar Jobs,Dead (Died on iteration 28)
+601,Nikolai Jones,Dead (Died on iteration 19)
+602,Christopher Kowalski,Dead (Died on iteration 4)
+603,Alexander Jaroszewicz,Dead (Died on iteration 133)
+605,Alfred Jobs,Dead (Died on iteration 4)
+607,Christopher Baranowicz,Dead (Died on iteration 394)
+609,Ihor Dudek,Dead (Died on iteration 31)
+610,Ihor Pork,Alive,55,90,11,0,35,3880,5,Knife
+612,Grzmislaw Jobs,Dead (Died on iteration 82)
+613,Denis Baranowicz,Dead (Died on iteration 191)
+614,Zygmunt Wojtyla,Dead (Died on iteration 3)
+615,Vladimir Wojtyla,Dead (Died on iteration 29)
+616,Tim Cheese,Dead (Died on iteration 202)
+617,Genowefa Smith,Alive,19,50,7,0,40,800,5,Rock
+618,Christopher Jones,Dead (Died on iteration 71)
+619,Kunegunda Baranowicz,Dead (Died on iteration 75)
+620,Denis Shrimpus,Dead (Died on iteration 45)
+622,Gniewomir Nowak,Dead (Died on iteration 86)
+623,Jerry Cheese,Dead (Died on iteration 16)
+624,Vladimir Jones,Dead (Died on iteration 327)
+626,Vladimir Shrimpus,Dead (Died on iteration 11)
+627,John Pork,Dead (Died on iteration 30)
+628,Jerry Bialy,Alive,47,80,11,0,35,320,5,Knife
+630,Denis Pork,Dead (Died on iteration 98)
+631,Nikolai Wojtyla,Dead (Died on iteration 55)
+633,John Smith,Alive,61,50,5,1,50,1680,5,Boots
+634,Nikolai Jaroszewicz,Dead (Died on iteration 1)
+635,Tim Jaroszewicz,Dead (Died on iteration 491)
+636,Karol Poniatowski,Dead (Died on iteration 168)
+637,Genowefa Jobs,Dead (Died on iteration 4)
+638,Bozydar Sunbed,Dead (Died on iteration 1)
+639,Kunegunda Smith,Dead (Died on iteration 382)
+640,Alfred Sunbed,Dead (Died on iteration 6)
+641,Zygmunt Wojtyla,Dead (Died on iteration 58)
+643,John Smith,Dead (Died on iteration 131)
+644,John Kowalski,Dead (Died on iteration 67)
+645,Radomir Cheese,Dead (Died on iteration 136)
+646,Christopher Jones,Dead (Died on iteration 64)
+647,Radomir Jones,Dead (Died on iteration 4)
+648,Radomir Wojtyla,Alive,59,80,6,0,45,1420,55,Sharp Pencil
+649,Grzmislaw Shrimpus,Dead (Died on iteration 229)
+650,Radomir Baranowicz,Alive,15,90,7,0,40,650,5,Rock
+651,Kunegunda Wojtyla,Dead (Died on iteration 189)
+653,Stanislaw Nowak,Dead (Died on iteration 34)
+654,John Wojtyla,Dead (Died on iteration 14)
+656,Genowefa Poniatowski,Dead (Died on iteration 1)
+657,Alexander Prudnicka,Dead (Died on iteration 115)
+658,Kunegunda Baranowicz,Alive,13,50,5,1,50,820,5,Boots
+659,Steve Kowalski,Dead (Died on iteration 102)
+660,Karol Bialy,Dead (Died on iteration 70)
+662,Zygmunt Kowalski,Dead (Died on iteration 203)
+664,Bozydar Dudek,Dead (Died on iteration 47)
+666,Zygmunt Jones,Alive,44,30,5,1,50,710,5,Boots
+667,Genowefa Bialy,Dead (Died on iteration 37)
+668,Michel Sunbed,Dead (Died on iteration 339)
+669,Grzmislaw Shrimpus,Dead (Died on iteration 49)
+670,Tim Poniatowski,Dead (Died on iteration 11)
+671,Michel Nowak,Dead (Died on iteration 79)
+672,Karol Smith,Dead (Died on iteration 93)
+673,Genowefa Pork,Dead (Died on iteration 25)
+674,Alexander Poniatowski,Dead (Died on iteration 30)
+676,Christopher Prudnicka,Dead (Died on iteration 315)
+677,Kunegunda Pork,Dead (Died on iteration 30)
+678,Denis Baranowicz,Dead (Died on iteration 280)
+680,Ihor Jones,Dead (Died on iteration 34)
+681,Christopher Jobs,Dead (Died on iteration 138)
+682,Brajan Smith,Alive,46,60,5,1,50,1410,0,Boots
+683,Grzmislaw Jobs,Dead (Died on iteration 1)
+685,Tim Sunbed,Dead (Died on iteration 416)
+686,John Dudek,Alive,61,40,6,0,45,50,5,Sharp Pencil
+687,Michel Baranowicz,Dead (Died on iteration 105)
+689,Steve Bialy,Alive,53,40,11,0,35,2830,0,Knife
+691,Christopher Baranowicz,Dead (Died on iteration 22)
+692,Vladimir Bialy,Dead (Died on iteration 225)
+693,Vladimir Smith,Dead (Died on iteration 100)
+694,Brajan Bialy,Dead (Died on iteration 131)
+695,Karol Baranowicz,Alive,54,120,6,0,45,2150,5,Sharp Pencil
+696,Karol Wojtyla,Dead (Died on iteration 134)
+697,Nikolai Sunbed,Alive,69,60,11,0,35,830,5,Knife
+698,Nikolai Jones,Dead (Died on iteration 38)
+700,Michel Shrimpus,Dead (Died on iteration 51)
+701,Karol Bialy,Dead (Died on iteration 24)
+702,Genowefa Nowak,Dead (Died on iteration 248)
+704,Jerry Dudek,Dead (Died on iteration 164)
+705,Christopher Jobs,Dead (Died on iteration 53)
+706,Gniewomir Cheese,Dead (Died on iteration 54)
+707,Denis Jaroszewicz,Dead (Died on iteration 38)
+709,John Smith,Alive,4,90,5,1,50,860,0,Boots
+710,Brajan Bialy,Dead (Died on iteration 30)
+711,Alexander Cheese,Alive,55,80,5,1,50,1120,0,Boots
+713,Ihor Bialy,Dead (Died on iteration 22)
+714,Jessica Kowalski,Dead (Died on iteration 11)
+715,Grzmislaw Baranowicz,Dead (Died on iteration 63)
+716,Kunegunda Sunbed,Dead (Died on iteration 16)
+718,Denis Sunbed,Dead (Died on iteration 122)
+720,Zygmunt Sunbed,Dead (Died on iteration 211)
+721,Kunegunda Wojtyla,Dead (Died on iteration 5)
+723,Michel Shrimpus,Dead (Died on iteration 34)
+724,Alfred Cheese,Alive,18,100,6,0,45,1530,0,Sharp Pencil
+725,Bozydar Nowak,Dead (Died on iteration 26)
+726,Gniewomir Jones,Dead (Died on iteration 103)
+727,Ihor Prudnicka,Dead (Died on iteration 10)
+728,Karol Baranowicz,Dead (Died on iteration 36)
+730,Bozydar Cheese,Dead (Died on iteration 11)
+731,Karol Bialy,Dead (Died on iteration 481)
+733,Grzmislaw Nowak,Dead (Died on iteration 57)
+735,Genowefa Bialy,Alive,23,90,5,1,50,1520,5,Boots
+736,Radomir Jones,Dead (Died on iteration 41)
+737,Bozydar Dudek,Dead (Died on iteration 6)
+738,Bozydar Cheese,Dead (Died on iteration 31)
+739,Alfred Kowalski,Dead (Died on iteration 29)
+740,Radomir Poniatowski,Dead (Died on iteration 256)
+741,Nikolai Baranowicz,Alive,56,30,7,0,40,920,5,Rock
+742,Tim Prudnicka,Dead (Died on iteration 65)
+743,Radomir Poniatowski,Dead (Died on iteration 10)
+745,Zygmunt Jaroszewicz,Alive,44,90,6,0,45,470,5,Sharp Pencil
+746,Alexander Bialy,Dead (Died on iteration 37)
+748,Grzmislaw Prudnicka,Dead (Died on iteration 1)
+749,Vladimir Jobs,Dead (Died on iteration 20)
+750,Ihor Sunbed,Dead (Died on iteration 247)
+751,Radomir Nowak,Dead (Died on iteration 239)
+752,Karol Shrimpus,Dead (Died on iteration 13)
+753,Stanislaw Prudnicka,Dead (Died on iteration 399)
+754,Brajan Jones,Dead (Died on iteration 461)
+756,Tim Wojtyla,Dead (Died on iteration 226)
+757,Brajan Wojtyla,Dead (Died on iteration 24)
+758,Kunegunda Dudek,Alive,33,70,6,0,45,1500,5,Sharp Pencil
+759,Kunegunda Jones,Dead (Died on iteration 1)
+760,Christopher Jones,Dead (Died on iteration 11)
+761,Stanislaw Smith,Dead (Died on iteration 66)
+762,Grzmislaw Smith,Dead (Died on iteration 41)
+763,Tim Cheese,Dead (Died on iteration 55)
+765,Gniewomir Jobs,Alive,19,110,5,1,50,720,0,Boots
+766,Jessica Poniatowski,Alive,14,60,5,1,50,980,5,Boots
+768,Tim Wojtyla,Dead (Died on iteration 13)
+769,Zygmunt Jaroszewicz,Dead (Died on iteration 51)
+770,Steve Pork,Alive,41,70,7,0,40,510,5,Rock
+771,Christopher Bialy,Alive,4,120,6,0,45,920,0,Sharp Pencil
+772,Steve Cheese,Dead (Died on iteration 121)
+774,Gniewomir Bialy,Dead (Died on iteration 1)
+775,Genowefa Poniatowski,Dead (Died on iteration 14)
+776,Bozydar Pork,Dead (Died on iteration 1)
+778,Zygmunt Wojtyla,Dead (Died on iteration 28)
+779,Zygmunt Cheese,Dead (Died on iteration 20)
+780,Denis Wojtyla,Dead (Died on iteration 23)
+781,Stanislaw August Poniatowski,Dead (Died on iteration 141)
+782,Nikolai Shrimpus,Alive,30,60,5,1,50,620,0,Boots
+783,Bozydar Bialy,Alive,4,90,5,1,50,1320,5,Boots
+785,Jerry Wojtyla,Dead (Died on iteration 89)
+787,Zygmunt Prudnicka,Dead (Died on iteration 21)
+788,Karol Bialy,Dead (Died on iteration 95)
+790,Steve Pork,Dead (Died on iteration 211)
+791,Christopher Baranowicz,Dead (Died on iteration 235)
+793,Jerry Baranowicz,Dead (Died on iteration 13)
+795,Stanislaw Kowalski,Dead (Died on iteration 262)
+797,Michel Jaroszewicz,Dead (Died on iteration 26)
+799,Jessica Jones,Dead (Died on iteration 73)
+800,Michel Baranowicz,Dead (Died on iteration 348)
+801,Nikolai Baranowicz,Dead (Died on iteration 29)
+802,Jessica Bialy,Dead (Died on iteration 192)
+804,Jerry Prudnicka,Dead (Died on iteration 19)
+805,Gniewomir Sunbed,Dead (Died on iteration 465)
+806,Genowefa Jaroszewicz,Alive,50,90,7,0,40,120,5,Rock
+807,Stanislaw Smith,Dead (Died on iteration 158)
+809,Brajan Jones,Dead (Died on iteration 13)
+810,Radomir Shrimpus,Alive,67,40,10,0,20,1700,0,Scissors
+812,Steve Kowalski,Dead (Died on iteration 142)
+813,Brajan Jones,Dead (Died on iteration 6)
+814,Christopher Bialy,Dead (Died on iteration 101)
+815,Brajan Dudek,Dead (Died on iteration 10)
+816,Michel Poniatowski,Dead (Died on iteration 196)
+817,Steve Jones,Dead (Died on iteration 88)
+818,Ihor Prudnicka,Dead (Died on iteration 32)
+820,Jessica Kowalski,Dead (Died on iteration 62)
+821,Zygmunt Sunbed,Dead (Died on iteration 139)
+823,Brajan Kowalski,Dead (Died on iteration 21)
+825,John Bialy,Dead (Died on iteration 29)
+826,Jerry Nowak,Dead (Died on iteration 16)
+827,Kunegunda Nowak,Dead (Died on iteration 98)
+828,Nikolai Jones,Dead (Died on iteration 15)
+830,Michel Jaroszewicz,Alive,90,50,7,0,30,120,5,Glass Bottle
+831,Grzmislaw Cheese,Dead (Died on iteration 6)
+832,Jessica Jaroszewicz,Alive,37,90,6,0,45,150,5,Sharp Pencil
+833,Ihor Baranowicz,Alive,35,40,5,1,50,1400,5,Boots
+834,Stanislaw Shrimpus,Dead (Died on iteration 16)
+836,Zygmunt Dudek,Dead (Died on iteration 83)
+837,Nikolai Nowak,Dead (Died on iteration 19)
+839,Jessica Wojtyla,Dead (Died on iteration 69)
+841,Jerry Smith,Alive,44,60,7,0,30,710,5,Glass Bottle
+842,Bozydar Baranowicz,Dead (Died on iteration 2)
+843,Jerry Wojtyla,Dead (Died on iteration 10)
+844,Alfred Shrimpus,Dead (Died on iteration 27)
+845,Radomir Shrimpus,Alive,26,70,6,0,45,410,5,Sharp Pencil
+847,Christopher Sunbed,Dead (Died on iteration 81)
+848,Radomir Jobs,Dead (Died on iteration 10)
+849,Gniewomir Baranowicz,Alive,47,60,7,0,40,2020,5,Rock
+850,Steve Poniatowski,Dead (Died on iteration 185)
+851,Bozydar Shrimpus,Dead (Died on iteration 137)
+852,Jerry Wojtyla,Alive,5,40,7,0,40,820,5,Rock
+853,Ihor Sunbed,Alive,14,70,6,2,10,1850,5,Riot Shield
+854,Alexander Wojtyla,Dead (Died on iteration 15)
+855,Grzmislaw Jaroszewicz,Dead (Died on iteration 430)
+856,Karol Prudnicka,Dead (Died on iteration 34)
+857,Tim Poniatowski,Dead (Died on iteration 2)
+858,Alfred Jobs,Dead (Died on iteration 6)
+859,Gniewomir Pork,Dead (Died on iteration 235)
+860,Grzmislaw Poniatowski,Alive,12,90,5,1,50,1630,0,Boots
+861,Radomir Prudnicka,Dead (Died on iteration 19)
+863,Alfred Jaroszewicz,Dead (Died on iteration 48)
+864,Radomir Dudek,Alive,31,20,6,0,45,1020,5,Sharp Pencil
+865,Jerry Nowak,Dead (Died on iteration 182)
+866,Nikolai Poniatowski,Dead (Died on iteration 147)
+867,Brajan Kowalski,Dead (Died on iteration 28)
+868,Zygmunt Poniatowski,Alive,65,70,6,0,45,9040,0,Sharp Pencil
+869,John Smith,Dead (Died on iteration 2)
+871,Michel Smith,Dead (Died on iteration 85)
+872,Steve Baranowicz,Dead (Died on iteration 37)
+873,Bozydar Wojtyla,Dead (Died on iteration 144)
+875,Nikolai Wojtyla,Dead (Died on iteration 31)
+876,Bozydar Jaroszewicz,Dead (Died on iteration 13)
+878,Steve Nowak,Dead (Died on iteration 199)
+879,Vladimir Dudek,Dead (Died on iteration 16)
+880,Michel Poniatowski,Dead (Died on iteration 17)
+881,Gniewomir Bialy,Dead (Died on iteration 49)
+882,Kunegunda Smith,Dead (Died on iteration 65)
+883,Grzmislaw Cheese,Dead (Died on iteration 15)
+885,Radomir Cheese,Dead (Died on iteration 263)
+887,Steve Jobs,Dead (Died on iteration 47)
+888,Karol Shrimpus,Dead (Died on iteration 211)
+889,Genowefa Jobs,Dead (Died on iteration 52)
+891,Bozydar Bialy,Dead (Died on iteration 475)
+893,Tim Baranowicz,Dead (Died on iteration 4)
+895,Radomir Kowalski,Dead (Died on iteration 97)
+896,Jerry Bialy,Alive,72,60,11,0,35,730,5,Knife
+897,Jessica Poniatowski,Dead (Died on iteration 17)
+899,John Baranowicz,Alive,11,70,7,0,40,900,0,Rock
+900,Denis Kowalski,Dead (Died on iteration 119)
+901,Ihor Shrimpus,Alive,41,50,5,1,50,2420,5,Boots
+902,Vladimir Bialy,Dead (Died on iteration 3)
+904,Karol Nowak,Dead (Died on iteration 254)
+905,Steve Jaroszewicz,Dead (Died on iteration 46)
+907,Michel Dudek,Dead (Died on iteration 78)
+908,John Baranowicz,Dead (Died on iteration 471)
+909,Grzmislaw Baranowicz,Alive,9,90,7,0,40,610,5,Rock
+910,Christopher Cheese,Dead (Died on iteration 50)
+911,Michel Baranowicz,Dead (Died on iteration 19)
+912,Michel Pork,Dead (Died on iteration 27)
+913,Michel Bialy,Dead (Died on iteration 18)
+914,Ihor Pork,Dead (Died on iteration 67)
+915,Radomir Wojtyla,Dead (Died on iteration 11)
+917,Zygmunt Shrimpus,Dead (Died on iteration 182)
+919,Stanislaw Jaroszewicz,Alive,40,80,6,0,45,1820,5,Sharp Pencil
+920,Vladimir Prudnicka,Dead (Died on iteration 312)
+921,Alfred Smith,Dead (Died on iteration 105)
+923,Michel Jones,Dead (Died on iteration 267)
+924,Denis Kowalski,Dead (Died on iteration 16)
+925,Christopher Prudnicka,Dead (Died on iteration 149)
+926,Alfred Wojtyla,Dead (Died on iteration 82)
+927,Genowefa Sunbed,Dead (Died on iteration 53)
+929,Nikolai Bialy,Dead (Died on iteration 403)
+930,Steve Baranowicz,Dead (Died on iteration 14)
+931,Nikolai Shrimpus,Dead (Died on iteration 22)
+932,Radomir Dudek,Dead (Died on iteration 52)
+933,Genowefa Poniatowski,Dead (Died on iteration 357)
+935,Steve Dudek,Alive,68,50,5,1,50,5160,0,Boots
+936,Ihor Jones,Dead (Died on iteration 494)
+937,Karol Poniatowski,Dead (Died on iteration 7)
+938,Steve Jaroszewicz,Dead (Died on iteration 330)
+939,Grzmislaw Kowalski,Dead (Died on iteration 90)
+940,Denis Cheese,Dead (Died on iteration 23)
+941,Steve Dudek,Dead (Died on iteration 47)
+942,Zygmunt Jobs,Dead (Died on iteration 8)
+943,Alfred Smith,Alive,63,80,5,1,50,720,5,Boots
+944,Genowefa Sunbed,Dead (Died on iteration 15)
+946,Ihor Baranowicz,Dead (Died on iteration 142)
+947,Kunegunda Jaroszewicz,Dead (Died on iteration 230)
+948,Jessica Poniatowski,Alive,20,70,7,0,40,2720,5,Rock
+949,Vladimir Shrimpus,Dead (Died on iteration 184)
+951,Steve Jaroszewicz,Dead (Died on iteration 182)
+952,Genowefa Baranowicz,Dead (Died on iteration 37)
+953,Jessica Baranowicz,Dead (Died on iteration 154)
+955,Michel Pork,Dead (Died on iteration 16)
+956,Brajan Prudnicka,Dead (Died on iteration 65)
+957,Brajan Prudnicka,Dead (Died on iteration 357)
+958,Michel Jones,Dead (Died on iteration 65)
+959,Genowefa Jobs,Dead (Died on iteration 73)
+961,Zygmunt Jaroszewicz,Dead (Died on iteration 191)
+962,Alfred Jobs,Dead (Died on iteration 33)
+964,Brajan Baranowicz,Alive,26,40,5,1,50,910,0,Boots
+966,Ihor Cheese,Alive,56,40,6,0,45,420,5,Sharp Pencil
+967,Tim Poniatowski,Dead (Died on iteration 42)
+968,Jessica Dudek,Dead (Died on iteration 398)
+969,Steve Wojtyla,Dead (Died on iteration 19)
+971,Radomir Shrimpus,Alive,18,110,5,1,50,1850,5,Boots
+973,Radomir Smith,Dead (Died on iteration 79)
+974,Alexander Poniatowski,Dead (Died on iteration 392)
+975,Ihor Poniatowski,Alive,29,90,6,0,45,750,0,Sharp Pencil
+977,Christopher Shrimpus,Dead (Died on iteration 20)
+979,Steve Nowak,Dead (Died on iteration 2)
+980,Alfred Dudek,Dead (Died on iteration 74)
+982,Denis Shrimpus,Dead (Died on iteration 22)
+983,Kunegunda Baranowicz,Dead (Died on iteration 347)
+984,Michel Baranowicz,Dead (Died on iteration 71)
+985,Stanislaw Kowalski,Dead (Died on iteration 71)
+986,Denis Wojtyla,Dead (Died on iteration 26)
+987,Alexander Pork,Dead (Died on iteration 157)
+989,Zygmunt Kowalski,Dead (Died on iteration 11)
+991,Kunegunda Kowalski,Dead (Died on iteration 9)
+992,Alexander Jaroszewicz,Dead (Died on iteration 16)
+993,Alfred Jaroszewicz,Dead (Died on iteration 66)
+994,Gniewomir Sunbed,Dead (Died on iteration 145)
+995,Brajan Baranowicz,Dead (Died on iteration 5)
+996,Gniewomir Prudnicka,Dead (Died on iteration 19)
+997,John Cheese,Dead (Died on iteration 13)
+998,Alfred Nowak,Dead (Died on iteration 361)
+999,Vladimir Shrimpus,Dead (Died on iteration 77)
+1001,Steve Sunbed,Dead (Died on iteration 22)
+1003,Nikolai Sunbed,Dead (Died on iteration 39)
+1005,Karol Baranowicz,Dead (Died on iteration 39)
+1006,Zygmunt Wojtyla,Dead (Died on iteration 66)
+1007,Gniewomir Nowak,Dead (Died on iteration 298)
+1008,Alexander Prudnicka,Alive,14,90,7,0,30,520,5,Glass Bottle
+1009,Vladimir Jobs,Dead (Died on iteration 1)
+1010,Steve Cheese,Dead (Died on iteration 12)
+1011,Grzmislaw Pork,Alive,43,80,6,0,45,5460,5,Sharp Pencil
+1012,Kunegunda Dudek,Dead (Died on iteration 21)
+1013,Tim Jobs,Alive,7,80,5,1,50,1420,0,Boots
+1014,Christopher Smith,Dead (Died on iteration 10)
+1015,Tim Baranowicz,Dead (Died on iteration 278)
+1016,Genowefa Pork,Dead (Died on iteration 381)
+1018,Zygmunt Kowalski,Dead (Died on iteration 224)
+1019,Karol Cheese,Dead (Died on iteration 176)
+1020,Gniewomir Pork,Dead (Died on iteration 190)
+1022,Zygmunt Wojtyla,Dead (Died on iteration 67)
+1023,Bozydar Jobs,Dead (Died on iteration 43)
+1024,Michel Jobs,Dead (Died on iteration 18)
+1025,Gniewomir Prudnicka,Dead (Died on iteration 125)
+1026,Brajan Jones,Dead (Died on iteration 277)
+1027,Kunegunda Jones,Dead (Died on iteration 84)
+1028,Karol Shrimpus,Dead (Died on iteration 21)
+1029,Alfred Smith,Dead (Died on iteration 83)
+1031,Gniewomir Jobs,Dead (Died on iteration 9)
+1032,Steve Kowalski,Dead (Died on iteration 3)
+1033,Alexander Baranowicz,Dead (Died on iteration 23)
+1034,Steve Smith,Dead (Died on iteration 85)
+1035,Stanislaw Dudek,Dead (Died on iteration 492)
+1037,Nikolai Jobs,Alive,22,60,5,1,50,700,5,Boots
+1038,Kunegunda Jobs,Dead (Died on iteration 14)
+1039,Ihor Prudnicka,Dead (Died on iteration 9)
+1040,John Smith,Dead (Died on iteration 207)
+1041,Christopher Jones,Dead (Died on iteration 6)
+1042,Nikolai Jaroszewicz,Dead (Died on iteration 42)
+1043,Alfred Jobs,Dead (Died on iteration 177)
+1045,Karol Baranowicz,Dead (Died on iteration 11)
+1046,Gniewomir Shrimpus,Dead (Died on iteration 81)
+1047,John Pork,Dead (Died on iteration 149)
+1048,Stanislaw Kowalski,Dead (Died on iteration 227)
+1050,Vladimir Wojtyla,Dead (Died on iteration 36)
+1051,Tim Dudek,Dead (Died on iteration 6)
+1052,Alexander Prudnicka,Dead (Died on iteration 51)
+1054,Genowefa Pork,Dead (Died on iteration 214)
+1055,Brajan Cheese,Dead (Died on iteration 114)
+1057,Zygmunt Sunbed,Dead (Died on iteration 20)
+1058,Karol Bialy,Alive,64,100,11,0,35,1330,0,Knife
+1059,Vladimir Pork,Alive,73,70,5,1,50,1430,5,Boots
+1060,Genowefa Baranowicz,Dead (Died on iteration 40)
+1061,Tim Cheese,Dead (Died on iteration 249)
+1062,Christopher Pork,Dead (Died on iteration 114)
+1063,Steve Baranowicz,Dead (Died on iteration 153)
+1064,Bozydar Jones,Dead (Died on iteration 198)
+1065,Radomir Wojtyla,Dead (Died on iteration 177)
+1066,Denis Jaroszewicz,Dead (Died on iteration 193)
+1067,Alexander Poniatowski,Dead (Died on iteration 17)
+1068,Christopher Pork,Dead (Died on iteration 436)
+1069,Steve Dudek,Dead (Died on iteration 231)
+1070,John Shrimpus,Dead (Died on iteration 19)
+1071,John Shrimpus,Dead (Died on iteration 26)
+1072,Jessica Jones,Dead (Died on iteration 111)
+1073,Jerry Bialy,Dead (Died on iteration 36)
+1074,Kunegunda Prudnicka,Dead (Died on iteration 240)
+1075,Steve Smith,Dead (Died on iteration 296)
+1077,Steve Jones,Dead (Died on iteration 56)
+1078,John Cheese,Dead (Died on iteration 14)
+1079,Grzmislaw Jones,Dead (Died on iteration 12)
+1080,Ihor Cheese,Dead (Died on iteration 22)
+1081,Steve Poniatowski,Dead (Died on iteration 4)
+1082,Gniewomir Shrimpus,Dead (Died on iteration 51)
+1083,Ihor Smith,Dead (Died on iteration 19)
+1084,Vladimir Cheese,Alive,21,50,6,0,45,500,5,Sharp Pencil
+1085,John Bialy,Dead (Died on iteration 38)
+1086,Jerry Sunbed,Dead (Died on iteration 108)
+1087,Ihor Prudnicka,Dead (Died on iteration 252)
+1088,Karol Prudnicka,Dead (Died on iteration 15)
+1089,Nikolai Shrimpus,Alive,9,120,5,1,50,920,0,Boots
+1090,Radomir Shrimpus,Dead (Died on iteration 203)
+1091,Brajan Shrimpus,Dead (Died on iteration 2)
+1092,Steve Bialy,Dead (Died on iteration 55)
+1093,Brajan Wojtyla,Dead (Died on iteration 32)
+1094,Michel Shrimpus,Dead (Died on iteration 164)
+1096,Alexander Jaroszewicz,Dead (Died on iteration 234)
+1097,Grzmislaw Cheese,Dead (Died on iteration 39)
+1098,John Wojtyla,Dead (Died on iteration 296)
+1099,Kunegunda Pork,Dead (Died on iteration 314)
+1101,Vladimir Nowak,Dead (Died on iteration 18)
+1102,Denis Jones,Dead (Died on iteration 201)
+1103,Grzmislaw Shrimpus,Alive,67,50,5,1,50,1500,5,Boots
+1104,Bozydar Wojtyla,Dead (Died on iteration 60)
+1106,Tim Wojtyla,Dead (Died on iteration 13)
+1107,Ihor Kowalski,Alive,34,90,5,1,50,930,0,Boots
+1108,Jessica Wojtyla,Dead (Died on iteration 11)
+1109,Michel Sunbed,Dead (Died on iteration 22)
+1110,Jessica Shrimpus,Alive,1,60,7,0,40,890,5,Rock
+1112,John Jones,Dead (Died on iteration 6)
+1113,Nikolai Baranowicz,Dead (Died on iteration 42)
+1114,Bozydar Wojtyla,Dead (Died on iteration 14)
+1116,Steve Jones,Dead (Died on iteration 26)
+1118,Genowefa Kowalski,Dead (Died on iteration 56)
+1119,Zygmunt Cheese,Dead (Died on iteration 10)
+1120,Nikolai Cheese,Dead (Died on iteration 84)
+1121,Tim Pork,Alive,5,90,6,0,45,1210,5,Sharp Pencil
+1122,Alfred Jaroszewicz,Dead (Died on iteration 27)
+1123,Jerry Bialy,Dead (Died on iteration 42)
+1124,Nikolai Prudnicka,Dead (Died on iteration 5)
+1125,Bozydar Jobs,Dead (Died on iteration 3)
+1126,Grzmislaw Bialy,Dead (Died on iteration 176)
+1127,John Nowak,Dead (Died on iteration 1)
+1128,Denis Jobs,Dead (Died on iteration 175)
+1129,Steve Baranowicz,Dead (Died on iteration 103)
+1130,Stanislaw Jaroszewicz,Dead (Died on iteration 72)
+1131,Karol Bialy,Alive,28,60,5,1,50,650,5,Boots
+1132,Stanislaw Prudnicka,Dead (Died on iteration 11)
+1134,Bozydar Poniatowski,Dead (Died on iteration 152)
+1135,Karol Pork,Dead (Died on iteration 30)
+1137,Kunegunda Jones,Alive,42,60,7,0,40,520,5,Rock
+1139,Radomir Wojtyla,Alive,43,50,5,1,50,5320,5,Boots
+1140,Tim Kowalski,Dead (Died on iteration 353)
+1142,Tim Shrimpus,Alive,3,90,11,0,35,960,0,Knife
+1143,Vladimir Cheese,Dead (Died on iteration 5)
+1144,John Bialy,Dead (Died on iteration 142)
+1145,Kunegunda Nowak,Dead (Died on iteration 2)
+1146,Brajan Nowak,Dead (Died on iteration 3)
+1148,John Shrimpus,Dead (Died on iteration 34)
+1150,Brajan Shrimpus,Dead (Died on iteration 1)
+1152,Denis Baranowicz,Alive,20,40,6,0,45,600,5,Sharp Pencil
+1153,Ihor Poniatowski,Dead (Died on iteration 202)
+1154,Jerry Dudek,Alive,21,90,5,1,50,1360,5,Boots
+1156,Bozydar Bialy,Dead (Died on iteration 42)
+1157,Alfred Shrimpus,Dead (Died on iteration 38)
+1158,Michel Pork,Alive,31,40,5,1,50,1440,0,Boots
+1159,Genowefa Jones,Dead (Died on iteration 14)
+1160,John Prudnicka,Dead (Died on iteration 317)
+1162,Ihor Dudek,Dead (Died on iteration 97)
+1164,Steve Shrimpus,Dead (Died on iteration 161)
+1165,Karol Bialy,Dead (Died on iteration 255)
+1166,Alfred Dudek,Dead (Died on iteration 438)
+1167,Christopher Shrimpus,Dead (Died on iteration 9)
+1169,John Baranowicz,Alive,41,40,7,0,30,590,5,Glass Bottle
+1170,Stanislaw Jaroszewicz,Dead (Died on iteration 44)
+1171,Tim Nowak,Alive,8,60,7,0,30,990,5,Glass Bottle
+1173,Christopher Shrimpus,Dead (Died on iteration 42)
+1174,Alfred Jones,Dead (Died on iteration 2)
+1175,Karol Poniatowski,Alive,22,80,11,0,35,2600,0,Knife
+1176,Michel Prudnicka,Dead (Died on iteration 10)
+1177,Brajan Jaroszewicz,Dead (Died on iteration 64)
+1178,Christopher Shrimpus,Dead (Died on iteration 2)
+1179,Alexander Bialy,Dead (Died on iteration 146)
+1180,Genowefa Shrimpus,Alive,20,40,5,1,50,940,0,Boots
+1181,Kunegunda Jaroszewicz,Dead (Died on iteration 24)
+1182,Nikolai Prudnicka,Dead (Died on iteration 34)
+1184,Gniewomir Jones,Dead (Died on iteration 12)
+1186,Michel Prudnicka,Dead (Died on iteration 19)
+1187,Nikolai Smith,Dead (Died on iteration 14)
+1188,Zygmunt Cheese,Dead (Died on iteration 90)
+1190,Jessica Prudnicka,Alive,5,70,6,0,45,850,5,Sharp Pencil
+1191,Grzmislaw Sunbed,Dead (Died on iteration 49)
+1192,Genowefa Smith,Dead (Died on iteration 68)
+1193,Gniewomir Prudnicka,Dead (Died on iteration 3)
+1194,Michel Prudnicka,Dead (Died on iteration 46)
+1195,Brajan Dudek,Dead (Died on iteration 4)
+1197,Tim Prudnicka,Dead (Died on iteration 46)
+1198,Christopher Jones,Dead (Died on iteration 463)
+1199,Jerry Jones,Dead (Died on iteration 81)
+1200,Kunegunda Sunbed,Dead (Died on iteration 100)
+1202,Grzmislaw Kowalski,Dead (Died on iteration 183)
+1203,Bozydar Nowak,Dead (Died on iteration 35)
+1205,Vladimir Nowak,Alive,8,70,6,0,45,510,5,Sharp Pencil
+1206,Brajan Dudek,Dead (Died on iteration 6)
+1208,Steve Kowalski,Dead (Died on iteration 5)
+1209,Nikolai Shrimpus,Dead (Died on iteration 8)
+1210,Tim Cheese,Dead (Died on iteration 416)
+1211,Ihor Poniatowski,Dead (Died on iteration 32)
+1212,Jessica Poniatowski,Dead (Died on iteration 21)
+1213,Radomir Nowak,Dead (Died on iteration 44)
+1214,Brajan Jaroszewicz,Dead (Died on iteration 48)
+1216,Grzmislaw Jones,Dead (Died on iteration 42)
+1218,Alfred Nowak,Dead (Died on iteration 10)
+1219,Alexander Jobs,Dead (Died on iteration 195)
+1220,Michel Smith,Dead (Died on iteration 411)
+1221,Alexander Poniatowski,Dead (Died on iteration 13)
+1222,Radomir Poniatowski,Dead (Died on iteration 14)
+1224,Gniewomir Wojtyla,Dead (Died on iteration 17)
+1225,Jerry Wojtyla,Dead (Died on iteration 15)
+1226,Kunegunda Poniatowski,Dead (Died on iteration 7)
+1227,Ihor Dudek,Dead (Died on iteration 10)
+1228,Tim Kowalski,Dead (Died on iteration 320)
+1229,Kunegunda Nowak,Dead (Died on iteration 12)
+1231,Kunegunda Smith,Dead (Died on iteration 212)
+1232,Vladimir Prudnicka,Dead (Died on iteration 209)
+1234,Grzmislaw Nowak,Dead (Died on iteration 273)
+1235,Denis Smith,Dead (Died on iteration 179)
+1237,Michel Poniatowski,Dead (Died on iteration 314)
+1238,Kunegunda Prudnicka,Dead (Died on iteration 63)
+1239,Tim Jaroszewicz,Dead (Died on iteration 124)
+1241,Karol Baranowicz,Alive,38,100,5,1,50,360,0,Boots
+1242,Ihor Baranowicz,Dead (Died on iteration 36)
+1243,Jessica Baranowicz,Dead (Died on iteration 157)
+1244,Nikolai Smith,Dead (Died on iteration 25)
+1245,Kunegunda Jones,Dead (Died on iteration 1)
+1247,Radomir Cheese,Dead (Died on iteration 194)
+1248,Ihor Kowalski,Alive,32,60,11,0,35,620,0,Knife
+1250,John Dudek,Dead (Died on iteration 5)
+1251,Denis Cheese,Dead (Died on iteration 5)
+1252,Jessica Jones,Dead (Died on iteration 120)
+1253,Alexander Jaroszewicz,Dead (Died on iteration 24)
+1254,Ihor Shrimpus,Dead (Died on iteration 4)
+1255,Gniewomir Shrimpus,Dead (Died on iteration 125)
+1256,Gniewomir Poniatowski,Dead (Died on iteration 10)
+1257,Vladimir Jobs,Dead (Died on iteration 22)
+1258,Ihor Bialy,Dead (Died on iteration 55)
+1259,Karol Sunbed,Dead (Died on iteration 37)
+1260,Vladimir Jaroszewicz,Dead (Died on iteration 19)
+1261,Denis Kowalski,Dead (Died on iteration 41)
+1262,Vladimir Smith,Dead (Died on iteration 133)
+1263,Michel Prudnicka,Dead (Died on iteration 126)
+1264,Brajan Pork,Dead (Died on iteration 167)
+1266,Alfred Dudek,Dead (Died on iteration 73)
+1267,Alexander Sunbed,Dead (Died on iteration 5)
+1269,Alexander Bialy,Dead (Died on iteration 46)
+1270,Ihor Dudek,Dead (Died on iteration 28)
+1271,Karol Bialy,Dead (Died on iteration 194)
+1272,Vladimir Pork,Dead (Died on iteration 20)
+1273,Brajan Dudek,Dead (Died on iteration 136)
+1274,Michel Sunbed,Alive,45,30,6,0,45,1440,5,Sharp Pencil
+1276,Radomir Jones,Dead (Died on iteration 19)
+1277,Grzmislaw Baranowicz,Dead (Died on iteration 55)
+1278,Tim Kowalski,Alive,30,70,6,2,10,450,5,Riot Shield
+1279,Radomir Jaroszewicz,Dead (Died on iteration 15)
+1280,Genowefa Smith,Dead (Died on iteration 24)
+1281,Christopher Sunbed,Alive,22,100,7,0,30,940,0,Glass Bottle
+1282,Brajan Shrimpus,Dead (Died on iteration 204)
+1283,Bozydar Sunbed,Dead (Died on iteration 11)
+1284,Nikolai Poniatowski,Dead (Died on iteration 221)
+1285,Nikolai Shrimpus,Alive,28,100,7,0,40,1510,5,Rock
+1286,Michel Smith,Alive,29,50,11,0,35,260,50,Knife
+1287,Steve Sunbed,Alive,76,70,7,0,40,1100,0,Rock
+1288,Zygmunt Cheese,Dead (Died on iteration 31)
+1289,Karol Dudek,Dead (Died on iteration 33)
+1290,Denis Jobs,Dead (Died on iteration 10)
+1292,Genowefa Shrimpus,Dead (Died on iteration 70)
+1293,John Wojtyla,Dead (Died on iteration 92)
+1294,Karol Cheese,Dead (Died on iteration 17)
+1295,Tim Jobs,Dead (Died on iteration 1)
+1296,Jerry Nowak,Dead (Died on iteration 21)
+1298,Jessica Dudek,Dead (Died on iteration 51)
+1299,Alexander Jaroszewicz,Dead (Died on iteration 38)
+1300,Steve Pork,Dead (Died on iteration 179)
+1301,Gniewomir Cheese,Dead (Died on iteration 226)
+1303,Alfred Jaroszewicz,Dead (Died on iteration 1)
+1304,Steve Dudek,Dead (Died on iteration 106)
+1306,Karol Kowalski,Dead (Died on iteration 330)
+1307,Ihor Cheese,Alive,66,90,7,0,40,530,5,Rock
+1308,Tim Baranowicz,Alive,68,60,6,0,45,1020,0,Sharp Pencil
+1309,John Dudek,Dead (Died on iteration 65)
+1310,Michel Nowak,Dead (Died on iteration 100)
+1312,Denis Sunbed,Dead (Died on iteration 9)
+1313,Christopher Smith,Dead (Died on iteration 188)
+1314,Michel Kowalski,Dead (Died on iteration 34)
+1315,Bozydar Sunbed,Dead (Died on iteration 253)
+1316,Jerry Bialy,Dead (Died on iteration 3)
+1317,Vladimir Jaroszewicz,Dead (Died on iteration 39)
+1318,Genowefa Sunbed,Dead (Died on iteration 327)
+1319,Jessica Baranowicz,Alive,21,90,6,0,45,910,5,Sharp Pencil
+1320,Nikolai Kowalski,Dead (Died on iteration 79)
+1322,Alexander Baranowicz,Dead (Died on iteration 105)
+1324,Steve Dudek,Alive,29,80,6,0,45,810,5,Sharp Pencil
+1325,Genowefa Prudnicka,Dead (Died on iteration 299)
+1326,Nikolai Bialy,Alive,65,40,5,1,50,5530,5,Boots
+1327,Genowefa Kowalski,Alive,43,70,7,0,40,410,5,Rock
+1329,Tim Wojtyla,Dead (Died on iteration 20)
+1330,Brajan Jaroszewicz,Dead (Died on iteration 38)
+1331,Stanislaw Shrimpus,Dead (Died on iteration 72)
+1332,Zygmunt Shrimpus,Dead (Died on iteration 47)
+1333,Brajan Baranowicz,Dead (Died on iteration 24)
+1334,Gniewomir Baranowicz,Dead (Died on iteration 45)
+1335,Grzmislaw Jaroszewicz,Dead (Died on iteration 5)
+1336,Tim Smith,Dead (Died on iteration 359)
+1338,Michel Wojtyla,Dead (Died on iteration 186)
+1339,Genowefa Jones,Alive,7,50,5,0,0,1100,5,Indomitable Human Spirit
+1340,Ihor Shrimpus,Dead (Died on iteration 375)
+1342,Jerry Jaroszewicz,Alive,58,60,5,1,50,630,15,Boots
+1343,Kunegunda Wojtyla,Dead (Died on iteration 45)
+1344,Zygmunt Nowak,Dead (Died on iteration 385)
+1346,Stanislaw Sunbed,Dead (Died on iteration 31)
+1347,Radomir Nowak,Dead (Died on iteration 142)
+1348,Tim Cheese,Alive,17,50,11,0,35,1400,5,Knife
+1349,Denis Poniatowski,Dead (Died on iteration 326)
+1350,Steve Smith,Dead (Died on iteration 207)
+1352,Denis Poniatowski,Dead (Died on iteration 187)
+1354,Ihor Kowalski,Dead (Died on iteration 15)
+1356,Tim Jaroszewicz,Alive,34,80,5,1,50,730,5,Boots
+1357,Ihor Baranowicz,Dead (Died on iteration 184)
+1358,Vladimir Smith,Dead (Died on iteration 86)
+1359,Steve Pork,Dead (Died on iteration 20)
+1360,Genowefa Jones,Dead (Died on iteration 242)
+1362,Ihor Smith,Alive,49,80,7,0,30,3070,5,Glass Bottle
+1363,John Poniatowski,Dead (Died on iteration 43)
+1364,Kunegunda Jaroszewicz,Dead (Died on iteration 6)
+1365,Alexander Jones,Dead (Died on iteration 381)
+1367,Stanislaw Pork,Dead (Died on iteration 2)
+1368,John Pork,Dead (Died on iteration 1)
+1369,Grzmislaw Smith,Dead (Died on iteration 398)
+1370,Nikolai Sunbed,Dead (Died on iteration 4)
+1371,Denis Wojtyla,Dead (Died on iteration 8)
+1373,Alexander Kowalski,Dead (Died on iteration 70)
+1374,Alfred Jaroszewicz,Dead (Died on iteration 308)
+1375,Michel Sunbed,Dead (Died on iteration 152)
+1376,Radomir Bialy,Dead (Died on iteration 377)
+1377,Jessica Smith,Dead (Died on iteration 4)
+1378,Jessica Jaroszewicz,Dead (Died on iteration 28)
+1379,Grzmislaw Dudek,Dead (Died on iteration 78)
+1380,Ihor Jones,Dead (Died on iteration 365)
+1381,Radomir Cheese,Dead (Died on iteration 11)
+1382,Genowefa Smith,Dead (Died on iteration 85)
+1384,Genowefa Nowak,Dead (Died on iteration 186)
+1385,Alexander Shrimpus,Dead (Died on iteration 62)
+1387,Karol Cheese,Alive,73,40,6,0,45,1920,5,Sharp Pencil
+1389,Alexander Baranowicz,Dead (Died on iteration 394)
+1390,Zygmunt Nowak,Dead (Died on iteration 40)
+1391,John Jones,Dead (Died on iteration 477)
+1392,Stanislaw Shrimpus,Alive,53,40,7,0,40,120,5,Rock
+1394,Christopher Jaroszewicz,Dead (Died on iteration 55)
+1395,Jerry Cheese,Alive,12,50,6,0,45,790,5,Sharp Pencil
+1397,Stanislaw Dudek,Dead (Died on iteration 305)
+1399,Kunegunda Jaroszewicz,Dead (Died on iteration 41)
+1400,Denis Baranowicz,Dead (Died on iteration 33)
+1401,Jerry Pork,Dead (Died on iteration 1)
+1402,Karol Prudnicka,Dead (Died on iteration 30)
+1403,Michel Cheese,Dead (Died on iteration 348)
+1404,Gniewomir Sunbed,Dead (Died on iteration 462)
+1405,Jerry Dudek,Dead (Died on iteration 102)
+1406,Denis Poniatowski,Alive,62,60,10,0,20,2620,5,Scissors
+1407,Grzmislaw Kowalski,Dead (Died on iteration 22)
+1409,Bozydar Smith,Dead (Died on iteration 50)
+1410,Ihor Kowalski,Dead (Died on iteration 157)
+1411,Vladimir Poniatowski,Dead (Died on iteration 1)
+1412,Steve Dudek,Dead (Died on iteration 176)
+1413,Denis Dudek,Dead (Died on iteration 7)
+1414,Brajan Nowak,Dead (Died on iteration 1)
+1416,Steve Dudek,Dead (Died on iteration 45)
+1418,Alfred Bialy,Dead (Died on iteration 33)
+1420,Karol Pork,Dead (Died on iteration 5)
+1421,Tim Nowak,Dead (Died on iteration 141)
+1423,Karol Poniatowski,Dead (Died on iteration 92)
+1424,Michel Shrimpus,Dead (Died on iteration 320)
+1425,John Jones,Alive,51,40,5,1,50,1700,5,Boots
+1427,Nikolai Prudnicka,Dead (Died on iteration 318)
+1428,John Jobs,Alive,50,60,6,0,45,750,5,Sharp Pencil
+1429,Christopher Smith,Alive,7,100,5,1,50,920,0,Boots
+1430,Christopher Wojtyla,Dead (Died on iteration 80)
+1431,Ihor Sunbed,Dead (Died on iteration 11)
+1432,Christopher Bialy,Dead (Died on iteration 23)
+1433,Tim Sunbed,Dead (Died on iteration 13)
+1434,Vladimir Pork,Dead (Died on iteration 204)
+1435,Grzmislaw Smith,Alive,42,60,5,1,50,1520,5,Boots
+1436,Jessica Pork,Dead (Died on iteration 144)
+1437,Steve Bialy,Dead (Died on iteration 42)
+1438,Michel Bialy,Dead (Died on iteration 51)
+1439,Grzmislaw Kowalski,Dead (Died on iteration 51)
+1441,Jerry Smith,Dead (Died on iteration 77)
+1442,John Bialy,Dead (Died on iteration 34)
+1443,Jessica Smith,Alive,52,70,5,1,50,1580,15,Boots
+1444,John Shrimpus,Dead (Died on iteration 34)
+1445,Kunegunda Jones,Dead (Died on iteration 7)
+1446,Michel Nowak,Dead (Died on iteration 59)
+1447,Christopher Dudek,Dead (Died on iteration 56)
+1448,John Shrimpus,Dead (Died on iteration 446)
+1449,Michel Prudnicka,Dead (Died on iteration 3)
+1451,John Sunbed,Alive,51,90,6,0,45,1470,5,Sharp Pencil
+1453,Vladimir Wojtyla,Dead (Died on iteration 10)
+1455,Nikolai Shrimpus,Dead (Died on iteration 77)
+1457,Michel Kowalski,Dead (Died on iteration 114)
+1458,Genowefa Jaroszewicz,Dead (Died on iteration 27)
+1459,Karol Dudek,Dead (Died on iteration 16)
+1460,Brajan Baranowicz,Dead (Died on iteration 349)
+1462,Christopher Cheese,Dead (Died on iteration 9)
+1464,Gniewomir Jobs,Dead (Died on iteration 1)
+1465,Denis Baranowicz,Dead (Died on iteration 11)
+1467,Tim Jaroszewicz,Dead (Died on iteration 227)
+1468,Alexander Dudek,Dead (Died on iteration 402)
+1470,Tim Pork,Dead (Died on iteration 94)
+1471,Steve Prudnicka,Dead (Died on iteration 52)
+1473,Karol Nowak,Alive,56,70,5,1,50,1950,0,Boots
+1475,Ihor Shrimpus,Dead (Died on iteration 112)
+1477,Alfred Poniatowski,Dead (Died on iteration 163)
+1478,Alexander Nowak,Dead (Died on iteration 265)
+1479,Brajan Nowak,Dead (Died on iteration 78)
+1481,Nikolai Smith,Dead (Died on iteration 5)
+1483,Nikolai Shrimpus,Dead (Died on iteration 27)
+1484,Vladimir Kowalski,Dead (Died on iteration 86)
+1486,Jerry Jaroszewicz,Dead (Died on iteration 146)
+1487,Karol Nowak,Dead (Died on iteration 384)
+1488,Christopher Jaroszewicz,Dead (Died on iteration 17)
+1489,Brajan Nowak,Alive,37,70,6,0,45,4700,0,Sharp Pencil
+1490,Christopher Wojtyla,Dead (Died on iteration 66)
+1491,Alfred Jones,Dead (Died on iteration 6)
+1492,Karol Jobs,Dead (Died on iteration 6)
+1493,Alfred Smith,Dead (Died on iteration 13)
+1494,Nikolai Sunbed,Dead (Died on iteration 174)
+1495,Stanislaw Kowalski,Dead (Died on iteration 18)
+1496,Jerry Poniatowski,Dead (Died on iteration 2)
+1497,Brajan Prudnicka,Alive,58,40,10,0,20,3200,0,Scissors
+1499,Tim Kowalski,Dead (Died on iteration 50)
+1500,Bozydar Nowak,Alive,9,50,6,0,45,900,0,Sharp Pencil
+1502,Jerry Cheese,Dead (Died on iteration 5)
+1503,Denis Kowalski,Dead (Died on iteration 5)
+1505,Gniewomir Jobs,Dead (Died on iteration 257)
+1507,Karol Jobs,Dead (Died on iteration 59)
+1509,Ihor Jaroszewicz,Dead (Died on iteration 92)
+1510,Tim Smith,Dead (Died on iteration 188)
+1511,Alfred Cheese,Dead (Died on iteration 20)
+1512,Denis Kowalski,Dead (Died on iteration 51)
+1513,Jessica Sunbed,Alive,62,60,6,0,45,1120,5,Sharp Pencil
+1514,Alexander Prudnicka,Dead (Died on iteration 20)
+1515,Ihor Wojtyla,Dead (Died on iteration 73)
+1516,Denis Baranowicz,Dead (Died on iteration 346)
+1517,Michel Smith,Dead (Died on iteration 77)
+1519,Genowefa Dudek,Dead (Died on iteration 50)
+1521,Kunegunda Cheese,Dead (Died on iteration 16)
+1522,Karol Jones,Dead (Died on iteration 96)
+1523,Alfred Smith,Dead (Died on iteration 17)
+1524,Grzmislaw Wojtyla,Dead (Died on iteration 10)
+1526,Gniewomir Pork,Dead (Died on iteration 1)
+1527,Denis Smith,Dead (Died on iteration 370)
+1528,Michel Jobs,Alive,41,60,5,1,50,2040,0,Boots
+1529,Stanislaw Baranowicz,Dead (Died on iteration 42)
+1530,Bozydar Prudnicka,Dead (Died on iteration 2)
+1531,Christopher Dudek,Dead (Died on iteration 16)
+1533,Christopher Kowalski,Dead (Died on iteration 104)
+1534,Grzmislaw Pork,Dead (Died on iteration 1)
+1535,Alfred Jaroszewicz,Dead (Died on iteration 43)
+1536,Kunegunda Cheese,Dead (Died on iteration 146)
+1537,Ihor Poniatowski,Dead (Died on iteration 131)
+1538,Denis Sunbed,Dead (Died on iteration 113)
+1539,Karol Bialy,Dead (Died on iteration 10)
+1540,Brajan Poniatowski,Dead (Died on iteration 121)
+1541,John Wojtyla,Alive,38,110,11,0,35,260,0,Knife
+1542,Brajan Pork,Dead (Died on iteration 119)
+1543,Tim Nowak,Dead (Died on iteration 34)
+1544,Jessica Shrimpus,Dead (Died on iteration 93)
+1545,Brajan Wojtyla,Alive,62,40,5,1,50,730,35,Boots
+1546,Tim Jobs,Alive,38,130,7,0,40,980,5,Rock
+1547,Steve Baranowicz,Dead (Died on iteration 11)
+1548,Michel Bialy,Alive,7,60,7,0,30,240,0,Glass Bottle
+1549,Denis Dudek,Dead (Died on iteration 4)
+1550,Kunegunda Bialy,Dead (Died on iteration 4)
+1551,Ihor Jones,Dead (Died on iteration 85)
+1552,Michel Nowak,Dead (Died on iteration 102)
+1553,Kunegunda Baranowicz,Dead (Died on iteration 177)
+1554,Genowefa Nowak,Dead (Died on iteration 10)
+1556,Denis Cheese,Alive,59,70,6,0,45,1040,0,Sharp Pencil
+1557,Denis Cheese,Dead (Died on iteration 16)
+1558,Alfred Shrimpus,Dead (Died on iteration 53)
+1559,Christopher Baranowicz,Dead (Died on iteration 28)
+1560,Tim Poniatowski,Alive,8,100,5,1,50,1020,0,Boots
+1561,Jerry Cheese,Alive,50,50,5,1,50,1500,5,Boots
+1562,Steve Shrimpus,Dead (Died on iteration 2)
+1564,Michel Bialy,Dead (Died on iteration 337)
+1565,Bozydar Wojtyla,Dead (Died on iteration 105)
+1566,Grzmislaw Cheese,Dead (Died on iteration 2)
+1567,Karol Nowak,Dead (Died on iteration 221)
+1568,Alfred Smith,Dead (Died on iteration 41)
+1569,Radomir Prudnicka,Dead (Died on iteration 159)
+1570,Zygmunt Prudnicka,Dead (Died on iteration 37)
+1571,Kunegunda Wojtyla,Dead (Died on iteration 23)
+1572,Bozydar Poniatowski,Dead (Died on iteration 204)
+1573,Brajan Prudnicka,Dead (Died on iteration 8)
+1574,Vladimir Smith,Alive,23,40,5,1,50,1350,5,Boots
+1575,Christopher Jones,Dead (Died on iteration 77)
+1576,Genowefa Baranowicz,Dead (Died on iteration 30)
+1577,Bozydar Pork,Dead (Died on iteration 5)
+1578,Alexander Nowak,Dead (Died on iteration 59)
+1579,Karol Kowalski,Dead (Died on iteration 87)
+1580,Alexander Nowak,Dead (Died on iteration 112)
+1581,Ihor Bialy,Dead (Died on iteration 7)
+1583,Jessica Sunbed,Dead (Died on iteration 56)
+1584,Vladimir Cheese,Dead (Died on iteration 38)
+1586,Jessica Cheese,Dead (Died on iteration 4)
+1587,Genowefa Jones,Dead (Died on iteration 14)
+1588,Alexander Jones,Dead (Died on iteration 78)
+1590,Nikolai Nowak,Dead (Died on iteration 12)
+1591,Michel Nowak,Dead (Died on iteration 26)
+1592,Nikolai Shrimpus,Dead (Died on iteration 169)
+1593,Christopher Kowalski,Dead (Died on iteration 28)
+1595,Radomir Baranowicz,Alive,34,70,6,0,45,1410,0,Sharp Pencil
+1596,Radomir Nowak,Alive,41,80,11,0,35,950,5,Knife
+1597,Michel Sunbed,Dead (Died on iteration 19)
+1598,Tim Prudnicka,Dead (Died on iteration 46)
+1599,Genowefa Prudnicka,Dead (Died on iteration 69)
+1601,Genowefa Bialy,Dead (Died on iteration 74)
+1602,Stanislaw Bialy,Dead (Died on iteration 75)
+1603,Grzmislaw Sunbed,Dead (Died on iteration 100)
+1605,Stanislaw Prudnicka,Alive,84,60,5,1,50,1060,0,Boots
+1606,Tim Jones,Dead (Died on iteration 50)
+1607,Alfred Jaroszewicz,Dead (Died on iteration 105)
+1609,Christopher Jaroszewicz,Dead (Died on iteration 329)
+1610,Zygmunt Wojtyla,Dead (Died on iteration 46)
+1611,Kunegunda Poniatowski,Dead (Died on iteration 65)
+1612,John Poniatowski,Dead (Died on iteration 21)
+1614,Tim Jobs,Dead (Died on iteration 41)
+1615,Gniewomir Jaroszewicz,Alive,30,60,6,0,45,2910,5,Sharp Pencil
+1616,Brajan Jobs,Dead (Died on iteration 18)
+1617,Christopher Cheese,Dead (Died on iteration 250)
+1618,Radomir Bialy,Dead (Died on iteration 150)
+1620,Tim Dudek,Dead (Died on iteration 130)
+1621,Tim Cheese,Dead (Died on iteration 235)
+1622,Stanislaw August Poniatowski,Dead (Died on iteration 37)
+1624,Brajan Prudnicka,Dead (Died on iteration 9)
+1625,Ihor Jaroszewicz,Dead (Died on iteration 2)
+1626,Grzmislaw Sunbed,Dead (Died on iteration 21)
+1627,Tim Poniatowski,Alive,65,40,5,1,50,3910,5,Boots
+1628,Nikolai Kowalski,Dead (Died on iteration 144)
+1629,Zygmunt Kowalski,Dead (Died on iteration 306)
+1630,John Jones,Dead (Died on iteration 12)
+1631,John Baranowicz,Dead (Died on iteration 8)
+1632,Gniewomir Shrimpus,Dead (Died on iteration 66)
+1633,Vladimir Pork,Dead (Died on iteration 40)
+1634,Radomir Prudnicka,Dead (Died on iteration 91)
+1635,John Dudek,Dead (Died on iteration 45)
+1636,Denis Pork,Alive,48,60,5,1,50,2410,5,Boots
+1638,Vladimir Baranowicz,Dead (Died on iteration 83)
+1639,Ihor Bialy,Dead (Died on iteration 82)
+1640,Kunegunda Nowak,Alive,51,70,6,0,45,900,5,Sharp Pencil
+1641,Grzmislaw Jaroszewicz,Dead (Died on iteration 444)
+1642,Michel Bialy,Alive,27,90,6,0,45,840,5,Sharp Pencil
+1643,Jerry Sunbed,Alive,50,70,6,0,45,620,5,Sharp Pencil
+1645,Christopher Bialy,Dead (Died on iteration 18)
+1647,Christopher Dudek,Dead (Died on iteration 9)
+1648,Kunegunda Jaroszewicz,Dead (Died on iteration 194)
+1650,Jessica Shrimpus,Dead (Died on iteration 15)
+1651,Tim Sunbed,Dead (Died on iteration 17)
+1652,Jessica Kowalski,Dead (Died on iteration 55)
+1654,Kunegunda Kowalski,Dead (Died on iteration 68)
+1656,Radomir Pork,Dead (Died on iteration 238)
+1658,Karol Cheese,Dead (Died on iteration 65)
+1659,Jerry Dudek,Alive,76,40,5,1,50,2040,5,Boots
+1661,Bozydar Wojtyla,Dead (Died on iteration 60)
+1662,Jerry Jobs,Dead (Died on iteration 28)
+1663,Grzmislaw Wojtyla,Dead (Died on iteration 11)
+1664,Radomir Jones,Dead (Died on iteration 32)
+1665,Stanislaw Dudek,Alive,29,60,5,1,50,900,5,Boots
+1667,Alfred Dudek,Dead (Died on iteration 48)
+1669,Steve Pork,Dead (Died on iteration 50)
+1670,Stanislaw Jobs,Dead (Died on iteration 25)
+1671,John Baranowicz,Dead (Died on iteration 3)
+1672,Jessica Jobs,Dead (Died on iteration 15)
+1673,Nikolai Shrimpus,Dead (Died on iteration 116)
+1674,Jerry Sunbed,Dead (Died on iteration 47)
+1675,Genowefa Smith,Alive,25,40,5,1,50,720,5,Boots
+1677,Alfred Jaroszewicz,Dead (Died on iteration 21)
+1678,Grzmislaw Pork,Dead (Died on iteration 139)
+1679,Genowefa Smith,Dead (Died on iteration 367)
+1681,Michel Dudek,Dead (Died on iteration 120)
+1683,Bozydar Jobs,Dead (Died on iteration 23)
+1685,Christopher Cheese,Dead (Died on iteration 5)
+1686,Stanislaw Nowak,Dead (Died on iteration 4)
+1687,Karol Poniatowski,Dead (Died on iteration 122)
+1688,Alfred Pork,Alive,53,80,7,0,40,140,5,Rock
+1690,Vladimir Wojtyla,Dead (Died on iteration 62)
+1691,Alexander Jobs,Dead (Died on iteration 211)
+1693,Alfred Sunbed,Alive,54,50,6,0,45,660,5,Sharp Pencil
+1694,Steve Jaroszewicz,Dead (Died on iteration 2)
+1695,Genowefa Smith,Dead (Died on iteration 10)
+1696,Grzmislaw Nowak,Alive,18,50,6,0,45,420,5,Sharp Pencil
+1697,Tim Pork,Dead (Died on iteration 24)
+1698,Brajan Kowalski,Dead (Died on iteration 2)
+1699,Bozydar Smith,Dead (Died on iteration 62)
+1700,Kunegunda Cheese,Dead (Died on iteration 108)
+1701,Bozydar Jones,Dead (Died on iteration 19)
+1703,Steve Jones,Dead (Died on iteration 11)
+1705,Christopher Nowak,Dead (Died on iteration 32)
+1706,Ihor Cheese,Dead (Died on iteration 70)
+1707,Genowefa Cheese,Dead (Died on iteration 299)
+1708,Alexander Poniatowski,Dead (Died on iteration 90)
+1709,Gniewomir Shrimpus,Dead (Died on iteration 3)
+1711,Stanislaw Shrimpus,Dead (Died on iteration 13)
+1713,Tim Dudek,Dead (Died on iteration 287)
+1715,Alexander Jobs,Dead (Died on iteration 4)
+1716,Michel Jobs,Dead (Died on iteration 79)
+1717,Tim Bialy,Dead (Died on iteration 253)
+1718,Christopher Bialy,Dead (Died on iteration 1)
+1719,Alfred Jones,Dead (Died on iteration 40)
+1720,Karol Pork,Dead (Died on iteration 10)
+1721,Alfred Jones,Dead (Died on iteration 253)
+1722,Steve Shrimpus,Dead (Died on iteration 139)
+1723,Brajan Poniatowski,Dead (Died on iteration 11)
+1725,Ihor Prudnicka,Dead (Died on iteration 11)
+1726,Grzmislaw Sunbed,Dead (Died on iteration 22)
+1728,Stanislaw Nowak,Dead (Died on iteration 298)
+1730,Gniewomir Wojtyla,Dead (Died on iteration 76)
+1731,Steve Kowalski,Dead (Died on iteration 4)
+1732,John Baranowicz,Dead (Died on iteration 71)
+1733,Brajan Pork,Alive,86,70,7,0,40,1050,0,Rock
+1734,Vladimir Smith,Dead (Died on iteration 237)
+1735,Nikolai Sunbed,Dead (Died on iteration 39)
+1737,Stanislaw Jaroszewicz,Dead (Died on iteration 49)
+1739,Ihor Nowak,Dead (Died on iteration 30)
+1741,Alfred Baranowicz,Dead (Died on iteration 35)
+1742,Denis Jones,Alive,3,80,7,0,30,300,5,Glass Bottle
+1743,Nikolai Dudek,Dead (Died on iteration 9)
+1744,Ihor Nowak,Dead (Died on iteration 54)
+1746,Alexander Jones,Dead (Died on iteration 341)
+1747,Gniewomir Shrimpus,Dead (Died on iteration 128)
+1749,Tim Bialy,Dead (Died on iteration 27)
+1750,Alexander Bialy,Dead (Died on iteration 312)
+1751,John Shrimpus,Dead (Died on iteration 500)
+1752,Vladimir Jobs,Dead (Died on iteration 14)
+1754,Michel Jobs,Dead (Died on iteration 15)
+1755,Radomir Wojtyla,Dead (Died on iteration 61)
+1756,Alfred Jones,Dead (Died on iteration 119)
+1757,Stanislaw Shrimpus,Dead (Died on iteration 162)
+1758,Radomir Smith,Dead (Died on iteration 61)
+1759,Jerry Dudek,Dead (Died on iteration 406)
+1761,Tim Shrimpus,Dead (Died on iteration 17)
+1763,Gniewomir Jaroszewicz,Alive,54,40,7,0,40,3110,5,Rock
+1764,Genowefa Jaroszewicz,Dead (Died on iteration 17)
+1765,Kunegunda Poniatowski,Dead (Died on iteration 77)
+1767,Alfred Dudek,Dead (Died on iteration 249)
+1768,Jerry Jaroszewicz,Dead (Died on iteration 123)
+1769,John Shrimpus,Dead (Died on iteration 198)
+1770,Michel Smith,Dead (Died on iteration 18)
+1771,Grzmislaw Jones,Alive,14,50,7,0,40,1410,5,Rock
+1773,Kunegunda Jones,Dead (Died on iteration 137)
+1774,Kunegunda Dudek,Dead (Died on iteration 1)
+1775,Jessica Pork,Dead (Died on iteration 16)
+1777,Michel Dudek,Dead (Died on iteration 14)
+1779,Zygmunt Sunbed,Dead (Died on iteration 89)
+1780,Vladimir Smith,Dead (Died on iteration 132)
+1781,Karol Cheese,Dead (Died on iteration 110)
+1783,Ihor Smith,Dead (Died on iteration 2)
+1784,Ihor Jaroszewicz,Dead (Died on iteration 4)
+1785,Denis Prudnicka,Dead (Died on iteration 40)
+1787,Nikolai Jones,Dead (Died on iteration 170)
+1788,Grzmislaw Poniatowski,Alive,7,60,11,0,35,1240,5,Knife
+1790,John Dudek,Dead (Died on iteration 379)
+1791,Zygmunt Bialy,Dead (Died on iteration 171)
+1792,Gniewomir Prudnicka,Dead (Died on iteration 29)
+1793,Denis Baranowicz,Dead (Died on iteration 10)
+1794,Gniewomir Jones,Dead (Died on iteration 7)
+1795,Karol Smith,Dead (Died on iteration 1)
+1797,Christopher Jobs,Dead (Died on iteration 19)
+1798,Genowefa Dudek,Dead (Died on iteration 39)
+1799,Ihor Wojtyla,Dead (Died on iteration 29)
+1800,John Cheese,Dead (Died on iteration 122)
+1801,Stanislaw Bialy,Dead (Died on iteration 423)
+1802,Jerry Smith,Dead (Died on iteration 1)
+1804,Bozydar Sunbed,Dead (Died on iteration 2)
+1805,Ihor Shrimpus,Alive,18,90,7,0,30,1340,5,Glass Bottle
+1806,Christopher Jones,Alive,86,80,5,1,50,2000,5,Boots
+1807,John Jones,Alive,37,120,5,1,50,1220,5,Boots
+1808,Ihor Bialy,Alive,54,60,11,0,35,1590,0,Knife
+1809,Radomir Bialy,Dead (Died on iteration 5)
+1810,Tim Pork,Dead (Died on iteration 50)
+1812,Vladimir Poniatowski,Dead (Died on iteration 177)
+1813,Vladimir Prudnicka,Alive,43,80,6,0,45,620,5,Sharp Pencil
+1815,Denis Nowak,Dead (Died on iteration 66)
+1816,Karol Jobs,Dead (Died on iteration 58)
+1817,Brajan Jaroszewicz,Dead (Died on iteration 140)
+1818,Vladimir Jaroszewicz,Alive,78,80,6,0,45,1220,5,Sharp Pencil
+1819,Jessica Poniatowski,Dead (Died on iteration 26)
+1820,Ihor Shrimpus,Dead (Died on iteration 75)
+1821,Nikolai Jobs,Dead (Died on iteration 55)
+1822,Steve Shrimpus,Dead (Died on iteration 141)
+1824,Jerry Prudnicka,Dead (Died on iteration 180)
+1825,Vladimir Prudnicka,Dead (Died on iteration 19)
+1827,Steve Nowak,Dead (Died on iteration 17)
+1828,Genowefa Wojtyla,Dead (Died on iteration 66)
+1829,Tim Prudnicka,Dead (Died on iteration 25)
+1830,Nikolai Kowalski,Dead (Died on iteration 32)
+1831,John Cheese,Dead (Died on iteration 18)
+1833,Steve Shrimpus,Dead (Died on iteration 22)
+1834,Tim Bialy,Dead (Died on iteration 21)
+1835,Stanislaw Dudek,Dead (Died on iteration 37)
+1836,Michel Prudnicka,Dead (Died on iteration 150)
+1837,Karol Cheese,Dead (Died on iteration 20)
+1838,Ihor Shrimpus,Alive,65,140,6,0,45,2450,5,Sharp Pencil
+1840,Alexander Pork,Dead (Died on iteration 17)
+1841,Jerry Sunbed,Dead (Died on iteration 5)
+1842,Jerry Kowalski,Alive,50,120,10,0,20,740,5,Scissors
+1844,Ihor Jaroszewicz,Dead (Died on iteration 90)
+1845,Jessica Jones,Dead (Died on iteration 9)
+1846,Alexander Kowalski,Dead (Died on iteration 30)
+1847,Jerry Wojtyla,Dead (Died on iteration 156)
+1848,Tim Jones,Dead (Died on iteration 40)
+1850,Alexander Jaroszewicz,Dead (Died on iteration 152)
+1851,Radomir Smith,Dead (Died on iteration 60)
+1853,John Prudnicka,Dead (Died on iteration 30)
+1854,Genowefa Jones,Dead (Died on iteration 185)
+1856,Jerry Wojtyla,Dead (Died on iteration 5)
+1857,Ihor Jones,Dead (Died on iteration 145)
+1858,Denis Wojtyla,Dead (Died on iteration 50)
+1860,Gniewomir Prudnicka,Dead (Died on iteration 17)
+1861,Radomir Nowak,Dead (Died on iteration 126)
+1862,Nikolai Nowak,Dead (Died on iteration 105)
+1863,Genowefa Poniatowski,Dead (Died on iteration 184)
+1865,Michel Cheese,Dead (Died on iteration 150)
+1866,Denis Smith,Dead (Died on iteration 3)
+1867,Jessica Bialy,Dead (Died on iteration 4)
+1868,Brajan Shrimpus,Dead (Died on iteration 11)
+1869,Gniewomir Sunbed,Dead (Died on iteration 64)
+1870,Nikolai Poniatowski,Dead (Died on iteration 13)
+1871,Alfred Shrimpus,Dead (Died on iteration 459)
+1873,Kunegunda Poniatowski,Dead (Died on iteration 37)
+1874,Tim Wojtyla,Dead (Died on iteration 16)
+1876,Denis Jaroszewicz,Dead (Died on iteration 30)
+1877,Tim Bialy,Dead (Died on iteration 269)
+1878,Alfred Poniatowski,Dead (Died on iteration 103)
+1880,Brajan Jobs,Dead (Died on iteration 39)
+1881,Brajan Shrimpus,Alive,11,90,5,1,50,810,0,Boots
+1883,Steve Smith,Dead (Died on iteration 61)
+1884,Alexander Pork,Dead (Died on iteration 5)
+1885,Tim Prudnicka,Dead (Died on iteration 15)
+1886,Nikolai Nowak,Alive,27,60,6,0,45,310,5,Sharp Pencil
+1888,Ihor Jaroszewicz,Dead (Died on iteration 63)
+1890,John Kowalski,Dead (Died on iteration 26)
+1892,Bozydar Nowak,Dead (Died on iteration 3)
+1893,Kunegunda Baranowicz,Dead (Died on iteration 1)
+1895,Michel Jobs,Dead (Died on iteration 129)
+1896,Karol Cheese,Dead (Died on iteration 55)
+1897,Genowefa Jones,Alive,16,50,5,1,50,1000,0,Boots
+1898,Zygmunt Baranowicz,Dead (Died on iteration 9)
+1900,Genowefa Smith,Dead (Died on iteration 148)
+1902,Radomir Nowak,Dead (Died on iteration 17)
+1903,Ihor Jaroszewicz,Dead (Died on iteration 78)
+1904,Michel Jobs,Dead (Died on iteration 222)
+1906,Radomir Jobs,Dead (Died on iteration 94)
+1907,Kunegunda Smith,Alive,40,40,6,0,45,2020,0,Sharp Pencil
+1908,Denis Jones,Dead (Died on iteration 44)
+1910,Kunegunda Jaroszewicz,Dead (Died on iteration 8)
+1911,Vladimir Jones,Dead (Died on iteration 7)
+1912,Brajan Baranowicz,Dead (Died on iteration 85)
+1913,Nikolai Cheese,Dead (Died on iteration 193)
+1915,Vladimir Cheese,Dead (Died on iteration 44)
+1916,Vladimir Jones,Dead (Died on iteration 182)
+1918,Zygmunt Nowak,Alive,10,50,5,1,50,1480,5,Boots
+1919,Brajan Smith,Dead (Died on iteration 58)
+1920,Gniewomir Shrimpus,Dead (Died on iteration 16)
+1922,Alexander Kowalski,Dead (Died on iteration 104)
+1923,Karol Sunbed,Dead (Died on iteration 54)
+1925,Alexander Sunbed,Dead (Died on iteration 9)
+1926,Ihor Pork,Dead (Died on iteration 90)
+1927,Vladimir Pork,Dead (Died on iteration 33)
+1928,Steve Jobs,Dead (Died on iteration 12)
+1929,Bozydar Dudek,Dead (Died on iteration 46)
+1930,Michel Dudek,Alive,61,60,11,0,35,360,5,Knife
+1931,Steve Cheese,Alive,86,40,6,0,45,760,5,Sharp Pencil
+1932,Christopher Jones,Alive,4,90,7,0,40,1060,0,Rock
+1934,Alfred Prudnicka,Alive,83,40,6,0,45,2240,5,Sharp Pencil
+1935,Kunegunda Nowak,Dead (Died on iteration 44)
+1936,Alfred Cheese,Dead (Died on iteration 11)
+1937,Jerry Jobs,Dead (Died on iteration 67)
+1939,Steve Bialy,Dead (Died on iteration 388)
+1940,Kunegunda Prudnicka,Dead (Died on iteration 191)
+1942,Jerry Bialy,Dead (Died on iteration 181)
+1944,Karol Poniatowski,Dead (Died on iteration 41)
+1945,Jessica Kowalski,Alive,19,50,7,0,30,1850,5,Glass Bottle
+1946,Gniewomir Kowalski,Alive,39,80,7,0,40,260,5,Rock
+1948,Grzmislaw Jones,Dead (Died on iteration 266)
+1949,Vladimir Jobs,Dead (Died on iteration 148)
+1951,Alexander Wojtyla,Dead (Died on iteration 39)
+1952,Genowefa Jobs,Dead (Died on iteration 327)
+1953,Radomir Pork,Dead (Died on iteration 32)
+1954,Vladimir Prudnicka,Dead (Died on iteration 62)
+1956,Zygmunt Prudnicka,Dead (Died on iteration 13)
+1957,Nikolai Kowalski,Dead (Died on iteration 204)
+1958,Denis Cheese,Dead (Died on iteration 23)
+1959,Bozydar Prudnicka,Dead (Died on iteration 38)
+1960,Kunegunda Nowak,Alive,69,50,6,0,45,820,5,Sharp Pencil
+1961,Alexander Pork,Dead (Died on iteration 72)
+1962,Karol Dudek,Dead (Died on iteration 72)
+1963,Denis Kowalski,Dead (Died on iteration 112)
+1964,Jerry Cheese,Dead (Died on iteration 6)
+1965,Bozydar Prudnicka,Dead (Died on iteration 263)
+1967,Alexander Cheese,Dead (Died on iteration 186)
+1968,Michel Cheese,Dead (Died on iteration 135)
+1969,John Baranowicz,Alive,50,60,5,1,50,340,5,Boots
+1970,Bozydar Poniatowski,Dead (Died on iteration 119)
+1971,Ihor Nowak,Dead (Died on iteration 15)
+1972,Radomir Baranowicz,Dead (Died on iteration 115)
+1974,Kunegunda Nowak,Dead (Died on iteration 130)
+1975,Jerry Kowalski,Dead (Died on iteration 105)
+1976,Alexander Dudek,Dead (Died on iteration 61)
+1978,Stanislaw Wojtyla,Dead (Died on iteration 220)
+1980,Nikolai Poniatowski,Alive,53,90,7,0,40,520,5,Rock
+1981,John Baranowicz,Dead (Died on iteration 135)
+1982,Jerry Prudnicka,Dead (Died on iteration 164)
+1983,Kunegunda Jones,Alive,1,60,5,1,50,1420,5,Boots
+1984,Zygmunt Jones,Dead (Died on iteration 301)
+1985,Karol Kowalski,Alive,43,80,6,0,45,720,5,Sharp Pencil
+1986,Tim Baranowicz,Alive,13,40,5,1,50,1500,0,Boots
+1988,Steve Cheese,Dead (Died on iteration 26)
+1989,Jessica Dudek,Dead (Died on iteration 139)
+1990,Michel Baranowicz,Dead (Died on iteration 5)
+1992,Michel Shrimpus,Dead (Died on iteration 26)
+1993,Grzmislaw Shrimpus,Dead (Died on iteration 131)
+1994,Zygmunt Baranowicz,Alive,12,50,7,0,40,280,5,Rock
+1995,Genowefa Jobs,Alive,49,40,7,0,40,2420,5,Rock
+1996,Gniewomir Pork,Alive,29,70,6,0,45,2920,0,Sharp Pencil
+1997,Brajan Shrimpus,Dead (Died on iteration 46)
+1998,Steve Poniatowski,Dead (Died on iteration 123)
+2000,Christopher Jaroszewicz,Alive,29,90,6,0,45,290,5,Sharp Pencil
+2001,Bozydar Jaroszewicz,Alive,23,70,11,0,35,420,5,Knife
+2002,Michel Sunbed,Dead (Died on iteration 20)
+2004,Gniewomir Baranowicz,Dead (Died on iteration 79)
+2005,Gniewomir Jaroszewicz,Dead (Died on iteration 264)
+2007,Bozydar Baranowicz,Dead (Died on iteration 40)
+2008,Zygmunt Jobs,Dead (Died on iteration 7)
+2010,Jessica Bialy,Dead (Died on iteration 97)
+2011,Alexander Jobs,Alive,55,50,7,0,30,1460,5,Glass Bottle
+2012,Ihor Pork,Alive,36,50,7,0,40,4050,5,Rock
+2014,Radomir Pork,Dead (Died on iteration 243)
+2016,Jerry Sunbed,Dead (Died on iteration 12)
+2017,Alexander Prudnicka,Dead (Died on iteration 4)
+2019,Nikolai Kowalski,Dead (Died on iteration 220)
+2020,Ihor Wojtyla,Alive,16,60,6,0,45,710,5,Sharp Pencil
+2021,Bozydar Poniatowski,Alive,19,70,6,0,45,610,5,Sharp Pencil
+2022,Radomir Wojtyla,Alive,43,70,5,1,50,1040,5,Boots
+2023,Jerry Prudnicka,Alive,51,80,5,1,50,620,0,Boots
+2024,Jessica Poniatowski,Dead (Died on iteration 9)
+2025,Gniewomir Jobs,Dead (Died on iteration 158)
+2026,Bozydar Baranowicz,Dead (Died on iteration 213)
+2027,Genowefa Sunbed,Dead (Died on iteration 178)
+2028,Brajan Smith,Dead (Died on iteration 18)
+2030,Bozydar Shrimpus,Dead (Died on iteration 81)
+2031,Brajan Dudek,Alive,75,80,5,1,50,2650,0,Boots
+2033,Brajan Pork,Dead (Died on iteration 26)
+2034,Nikolai Baranowicz,Dead (Died on iteration 79)
+2035,Alexander Jaroszewicz,Dead (Died on iteration 94)
+2037,Kunegunda Kowalski,Dead (Died on iteration 29)
+2038,Tim Jobs,Alive,36,80,10,0,20,2300,0,Scissors
+2040,Tim Wojtyla,Dead (Died on iteration 450)
+2041,Steve Jaroszewicz,Alive,51,70,6,0,45,720,40,Sharp Pencil
+2042,Jerry Pork,Dead (Died on iteration 26)
+2043,Gniewomir Shrimpus,Dead (Died on iteration 26)
+2044,John Wojtyla,Dead (Died on iteration 110)
+2045,John Bialy,Alive,36,70,7,0,40,3440,5,Rock
+2047,Gniewomir Jaroszewicz,Dead (Died on iteration 69)
+2048,Bozydar Jobs,Dead (Died on iteration 121)
+2049,Jerry Jaroszewicz,Dead (Died on iteration 1)
+2050,Gniewomir Smith,Alive,46,120,7,0,40,660,5,Rock
+2052,Alfred Shrimpus,Dead (Died on iteration 32)
+2053,Vladimir Pork,Dead (Died on iteration 148)
+2054,Alfred Cheese,Dead (Died on iteration 416)
+2056,Christopher Poniatowski,Dead (Died on iteration 8)
+2057,Tim Kowalski,Dead (Died on iteration 127)
+2058,Ihor Jobs,Alive,67,90,7,0,40,570,0,Rock
+2059,Christopher Kowalski,Dead (Died on iteration 14)
+2060,Zygmunt Prudnicka,Dead (Died on iteration 7)
+2061,Steve Nowak,Dead (Died on iteration 22)
+2062,Zygmunt Nowak,Dead (Died on iteration 285)
+2063,Michel Nowak,Dead (Died on iteration 22)
+2065,Alexander Prudnicka,Dead (Died on iteration 212)
+2067,Brajan Wojtyla,Dead (Died on iteration 24)
+2069,Stanislaw Shrimpus,Alive,21,110,6,0,45,920,5,Sharp Pencil
+2071,Tim Shrimpus,Dead (Died on iteration 5)
+2073,Steve Dudek,Dead (Died on iteration 3)
+2074,Gniewomir Poniatowski,Alive,7,80,7,0,40,1420,5,Rock
+2075,Alfred Jaroszewicz,Dead (Died on iteration 25)
+2076,Tim Jaroszewicz,Dead (Died on iteration 382)
+2077,Radomir Wojtyla,Dead (Died on iteration 2)
+2078,Zygmunt Jobs,Dead (Died on iteration 80)
+2079,Steve Sunbed,Dead (Died on iteration 78)
+2080,Grzmislaw Wojtyla,Dead (Died on iteration 32)
+2082,Radomir Prudnicka,Dead (Died on iteration 123)
+2084,Stanislaw Nowak,Dead (Died on iteration 26)
+2085,Karol Wojtyla,Alive,79,70,11,10,35,500,90,Knife
+2086,Brajan Nowak,Alive,62,70,7,0,40,880,5,Rock
+2088,Karol Prudnicka,Dead (Died on iteration 120)
+2089,Grzmislaw Jones,Dead (Died on iteration 445)
+2091,Steve Dudek,Dead (Died on iteration 38)
+2093,Tim Smith,Dead (Died on iteration 80)
+2095,Michel Pork,Alive,6,80,6,0,45,1140,5,Sharp Pencil
+2097,Tim Pork,Dead (Died on iteration 177)
+2098,Jerry Poniatowski,Dead (Died on iteration 179)
+2099,Vladimir Pork,Alive,86,70,11,0,35,2330,5,Knife
+2100,Grzmislaw Baranowicz,Dead (Died on iteration 105)
+2101,Jerry Wojtyla,Dead (Died on iteration 109)
+2102,Steve Poniatowski,Dead (Died on iteration 9)
+2103,Stanislaw Jobs,Alive,12,60,5,1,50,1080,0,Boots
+2104,John Jobs,Dead (Died on iteration 1)
+2105,Christopher Nowak,Dead (Died on iteration 36)
+2106,Michel Bialy,Dead (Died on iteration 93)
+2107,Michel Jones,Dead (Died on iteration 3)
+2108,Jessica Dudek,Dead (Died on iteration 5)
+2109,Jerry Jaroszewicz,Dead (Died on iteration 76)
+2110,Nikolai Nowak,Dead (Died on iteration 29)
+2112,Gniewomir Wojtyla,Dead (Died on iteration 199)
+2114,Radomir Wojtyla,Dead (Died on iteration 62)
+2115,Vladimir Smith,Dead (Died on iteration 71)
+2116,Steve Prudnicka,Dead (Died on iteration 10)
+2118,Radomir Pork,Dead (Died on iteration 111)
+2119,Radomir Kowalski,Alive,35,60,7,0,30,540,0,Glass Bottle
+2120,Alfred Poniatowski,Dead (Died on iteration 14)
+2122,Alexander Smith,Dead (Died on iteration 11)
+2123,Karol Poniatowski,Dead (Died on iteration 10)
+2125,Alexander Shrimpus,Dead (Died on iteration 19)
+2127,Gniewomir Bialy,Dead (Died on iteration 25)
+2128,Tim Pork,Alive,45,70,7,0,40,3320,0,Rock
+2130,Stanislaw Smith,Dead (Died on iteration 258)
+2131,Michel Jaroszewicz,Dead (Died on iteration 34)
+2132,Zygmunt Nowak,Alive,30,60,5,1,50,1410,5,Boots
+2133,Kunegunda Wojtyla,Alive,56,60,11,0,35,2120,5,Knife
+2134,Christopher Sunbed,Dead (Died on iteration 82)
+2135,Bozydar Jones,Alive,41,60,11,0,35,730,0,Knife
+2136,Jerry Smith,Dead (Died on iteration 8)
+2137,Ihor Kowalski,Dead (Died on iteration 32)
+2138,Gniewomir Prudnicka,Dead (Died on iteration 44)
+2140,Brajan Jaroszewicz,Dead (Died on iteration 22)
+2141,Kunegunda Smith,Dead (Died on iteration 249)
+2143,Genowefa Smith,Dead (Died on iteration 10)
+2145,Genowefa Jaroszewicz,Dead (Died on iteration 52)
+2146,Grzmislaw Nowak,Dead (Died on iteration 73)
+2147,Steve Kowalski,Dead (Died on iteration 88)
+2148,Steve Cheese,Dead (Died on iteration 411)
+2150,Kunegunda Kowalski,Dead (Died on iteration 22)
+2151,Christopher Shrimpus,Dead (Died on iteration 73)
+2152,Gniewomir Cheese,Dead (Died on iteration 37)
+2154,Vladimir Dudek,Dead (Died on iteration 213)
+2155,Nikolai Jaroszewicz,Dead (Died on iteration 383)
+2156,John Bialy,Dead (Died on iteration 21)
+2157,John Dudek,Dead (Died on iteration 15)
+2159,Michel Baranowicz,Dead (Died on iteration 339)
+2161,Alexander Cheese,Dead (Died on iteration 185)
+2162,Ihor Bialy,Dead (Died on iteration 209)
+2163,Grzmislaw Bialy,Dead (Died on iteration 9)
+2164,Steve Shrimpus,Dead (Died on iteration 411)
+2166,Karol Dudek,Dead (Died on iteration 44)
+2167,Zygmunt Sunbed,Dead (Died on iteration 16)
+2168,Ihor Prudnicka,Dead (Died on iteration 33)
+2169,Denis Sunbed,Alive,9,50,5,1,50,1910,5,Boots
+2170,Christopher Pork,Dead (Died on iteration 17)
+2171,Bozydar Prudnicka,Dead (Died on iteration 25)
+2173,John Nowak,Dead (Died on iteration 114)
+2174,Karol Jobs,Dead (Died on iteration 19)
+2175,Alexander Jobs,Alive,14,70,7,0,30,720,5,Glass Bottle
+2176,Christopher Sunbed,Dead (Died on iteration 39)
+2177,Tim Jones,Dead (Died on iteration 19)
+2178,Tim Wojtyla,Alive,11,110,5,1,50,1020,0,Boots
+2179,Radomir Poniatowski,Dead (Died on iteration 5)
+2181,Karol Shrimpus,Dead (Died on iteration 26)
+2182,Vladimir Jones,Dead (Died on iteration 445)
+2183,Christopher Shrimpus,Dead (Died on iteration 53)
+2185,Stanislaw Kowalski,Dead (Died on iteration 19)
+2187,Stanislaw Nowak,Dead (Died on iteration 324)
+2189,Alfred Baranowicz,Dead (Died on iteration 4)
+2190,Jerry Smith,Dead (Died on iteration 267)
+2191,Grzmislaw Pork,Dead (Died on iteration 189)
+2192,John Dudek,Dead (Died on iteration 187)
+2194,Jessica Jones,Dead (Died on iteration 26)
+2195,Genowefa Cheese,Alive,59,80,6,0,45,1370,5,Sharp Pencil
+2196,Brajan Shrimpus,Dead (Died on iteration 240)
+2197,Grzmislaw Baranowicz,Dead (Died on iteration 123)
+2198,Bozydar Poniatowski,Dead (Died on iteration 24)
+2199,Grzmislaw Jobs,Dead (Died on iteration 8)
+2200,Michel Bialy,Dead (Died on iteration 21)
+2201,Grzmislaw Prudnicka,Dead (Died on iteration 60)
+2202,Alfred Kowalski,Dead (Died on iteration 89)
+2204,Steve Baranowicz,Dead (Died on iteration 151)
+2206,Genowefa Wojtyla,Dead (Died on iteration 1)
+2208,Christopher Nowak,Dead (Died on iteration 27)
+2210,John Sunbed,Dead (Died on iteration 3)
+2211,Karol Dudek,Dead (Died on iteration 71)
+2212,Bozydar Pork,Dead (Died on iteration 15)
+2213,Alexander Shrimpus,Dead (Died on iteration 74)
+2214,Vladimir Smith,Alive,2,80,5,1,50,40,5,Boots
+2215,Radomir Smith,Alive,21,50,5,1,50,2230,0,Boots
+2216,Christopher Bialy,Dead (Died on iteration 100)
+2218,Kunegunda Dudek,Dead (Died on iteration 128)
+2219,Gniewomir Bialy,Dead (Died on iteration 20)
+2220,Vladimir Jones,Dead (Died on iteration 17)
+2221,Denis Bialy,Dead (Died on iteration 43)
+2223,Brajan Kowalski,Dead (Died on iteration 7)
+2225,Tim Shrimpus,Dead (Died on iteration 19)
+2226,Nikolai Jaroszewicz,Dead (Died on iteration 274)
+2227,Jerry Baranowicz,Dead (Died on iteration 45)
+2228,Christopher Baranowicz,Alive,43,80,6,0,45,2320,5,Sharp Pencil
+2230,Alfred Wojtyla,Dead (Died on iteration 66)
+2231,Michel Bialy,Dead (Died on iteration 141)
+2233,Stanislaw Shrimpus,Dead (Died on iteration 2)
+2234,Jerry Cheese,Dead (Died on iteration 172)
+2236,Steve Jaroszewicz,Dead (Died on iteration 99)
+2237,Brajan Sunbed,Dead (Died on iteration 73)
+2238,Ihor Bialy,Dead (Died on iteration 143)
+2239,Steve Smith,Dead (Died on iteration 20)
+2240,Jessica Shrimpus,Dead (Died on iteration 8)
+2242,Michel Shrimpus,Dead (Died on iteration 26)
+2243,Nikolai Dudek,Dead (Died on iteration 18)
+2244,Kunegunda Baranowicz,Alive,45,50,7,0,40,3310,5,Rock
+2245,Stanislaw Baranowicz,Dead (Died on iteration 25)
+2246,Tim Kowalski,Dead (Died on iteration 47)
+2247,Michel Prudnicka,Dead (Died on iteration 19)
+2249,Tim Shrimpus,Dead (Died on iteration 99)
+2250,Kunegunda Baranowicz,Dead (Died on iteration 18)
+2252,Genowefa Prudnicka,Dead (Died on iteration 4)
+2253,Michel Dudek,Dead (Died on iteration 37)
+2254,Nikolai Baranowicz,Alive,36,50,7,0,40,920,5,Rock
+2255,Vladimir Nowak,Dead (Died on iteration 110)
+2256,Christopher Sunbed,Dead (Died on iteration 498)
+2257,Stanislaw Baranowicz,Dead (Died on iteration 188)
+2258,Christopher Bialy,Dead (Died on iteration 32)
+2259,Tim Smith,Dead (Died on iteration 11)
+2260,Grzmislaw Smith,Dead (Died on iteration 3)
+2261,Karol Jones,Dead (Died on iteration 2)
+2262,Jerry Jobs,Dead (Died on iteration 22)
+2264,Bozydar Baranowicz,Dead (Died on iteration 8)
+2266,Steve Kowalski,Alive,23,120,11,0,35,1240,5,Knife
+2267,Michel Kowalski,Dead (Died on iteration 79)
+2269,Bozydar Prudnicka,Dead (Died on iteration 13)
+2270,Zygmunt Dudek,Dead (Died on iteration 160)
+2272,Vladimir Nowak,Dead (Died on iteration 30)
+2274,Alexander Nowak,Dead (Died on iteration 291)
+2275,Vladimir Pork,Alive,55,50,5,1,50,920,5,Boots
+2277,Michel Wojtyla,Dead (Died on iteration 386)
+2278,Genowefa Prudnicka,Dead (Died on iteration 39)
+2279,Michel Pork,Dead (Died on iteration 17)
+2281,Kunegunda Jobs,Dead (Died on iteration 139)
+2282,Tim Jones,Dead (Died on iteration 93)
+2284,Radomir Cheese,Dead (Died on iteration 60)
+2285,Tim Smith,Dead (Died on iteration 143)
+2287,Alexander Bialy,Dead (Died on iteration 1)
+2288,Christopher Dudek,Dead (Died on iteration 70)
+2289,Ihor Jaroszewicz,Dead (Died on iteration 105)
+2291,Kunegunda Wojtyla,Dead (Died on iteration 56)
+2292,Christopher Pork,Dead (Died on iteration 43)
+2293,Karol Bialy,Dead (Died on iteration 132)
+2294,Nikolai Shrimpus,Alive,46,70,5,1,50,6120,5,Boots
+2295,Karol Wojtyla,Alive,35,50,10,10,20,120,5,Scissors
+2296,Alfred Wojtyla,Alive,42,130,6,0,45,3470,5,Sharp Pencil
+2297,Michel Smith,Alive,10,90,11,0,35,810,5,Knife
+2298,Genowefa Jaroszewicz,Dead (Died on iteration 8)
+2300,Ihor Wojtyla,Dead (Died on iteration 81)
+2302,Zygmunt Jaroszewicz,Dead (Died on iteration 34)
+2303,Nikolai Jaroszewicz,Alive,35,100,7,0,40,560,0,Rock
+2304,Denis Smith,Alive,52,60,7,0,30,1210,0,Glass Bottle
+2306,Jerry Prudnicka,Alive,89,110,5,1,50,1170,0,Boots
+2308,Genowefa Pork,Dead (Died on iteration 7)
+2309,Gniewomir Jaroszewicz,Dead (Died on iteration 1)
+2311,Brajan Shrimpus,Dead (Died on iteration 29)
+2313,Grzmislaw Pork,Dead (Died on iteration 4)
+2314,Jerry Bialy,Dead (Died on iteration 73)
+2315,Brajan Bialy,Dead (Died on iteration 8)
+2316,John Jobs,Dead (Died on iteration 23)
+2317,John Wojtyla,Dead (Died on iteration 17)
+2318,Kunegunda Wojtyla,Alive,50,120,6,0,45,2810,5,Sharp Pencil
+2319,Jessica Jones,Dead (Died on iteration 113)
+2320,Stanislaw Dudek,Dead (Died on iteration 328)
+2322,Ihor Poniatowski,Dead (Died on iteration 437)
+2323,Grzmislaw Cheese,Dead (Died on iteration 405)
+2324,Jessica Pork,Dead (Died on iteration 5)
+2325,Genowefa Dudek,Dead (Died on iteration 2)
+2326,Christopher Cheese,Dead (Died on iteration 93)
+2327,Zygmunt Bialy,Alive,32,100,6,0,45,1110,0,Sharp Pencil
+2329,Denis Jobs,Alive,70,110,5,1,50,1970,5,Boots
+2330,Grzmislaw Poniatowski,Dead (Died on iteration 23)
+2332,Brajan Pork,Dead (Died on iteration 33)
+2333,Nikolai Nowak,Dead (Died on iteration 19)
+2335,Genowefa Baranowicz,Dead (Died on iteration 143)
+2336,John Smith,Dead (Died on iteration 23)
+2337,Jessica Jaroszewicz,Alive,41,20,5,1,50,2240,0,Boots
+2338,Tim Kowalski,Dead (Died on iteration 80)
+2339,Jerry Prudnicka,Dead (Died on iteration 59)
+2340,Gniewomir Nowak,Dead (Died on iteration 403)
+2341,Ihor Baranowicz,Dead (Died on iteration 128)
+2342,Alexander Jones,Alive,41,90,6,0,45,4470,0,Sharp Pencil
+2343,Steve Bialy,Dead (Died on iteration 10)
+2344,Alfred Sunbed,Dead (Died on iteration 37)
+2345,Zygmunt Bialy,Dead (Died on iteration 26)
+2346,Zygmunt Jaroszewicz,Dead (Died on iteration 21)
+2347,Tim Jones,Dead (Died on iteration 41)
+2349,Nikolai Jaroszewicz,Dead (Died on iteration 2)
+2350,Bozydar Sunbed,Dead (Died on iteration 43)
+2351,Gniewomir Prudnicka,Dead (Died on iteration 118)
+2352,Christopher Prudnicka,Dead (Died on iteration 18)
+2353,Christopher Dudek,Dead (Died on iteration 195)
+2354,Jessica Baranowicz,Dead (Died on iteration 11)
+2355,Vladimir Baranowicz,Dead (Died on iteration 250)
+2357,Michel Jaroszewicz,Dead (Died on iteration 199)
+2359,Genowefa Sunbed,Dead (Died on iteration 15)
+2361,Jerry Nowak,Alive,36,50,7,0,30,930,0,Glass Bottle
+2362,Kunegunda Pork,Dead (Died on iteration 19)
+2364,Stanislaw Kowalski,Dead (Died on iteration 476)
+2365,Jessica Pork,Alive,57,90,7,0,40,800,0,Rock
+2367,Vladimir Bialy,Dead (Died on iteration 39)
+2368,Zygmunt Nowak,Dead (Died on iteration 7)
+2369,Jessica Sunbed,Dead (Died on iteration 6)
+2371,Jessica Shrimpus,Alive,78,90,7,0,40,820,0,Rock
+2373,Bozydar Poniatowski,Alive,12,50,7,0,40,900,0,Rock
+2374,Christopher Smith,Dead (Died on iteration 18)
+2375,Jessica Cheese,Dead (Died on iteration 120)
+2376,Michel Baranowicz,Dead (Died on iteration 437)
+2377,Tim Smith,Dead (Died on iteration 363)
+2378,Denis Poniatowski,Dead (Died on iteration 227)
+2380,Steve Jobs,Dead (Died on iteration 10)
+2382,Nikolai Dudek,Dead (Died on iteration 27)
+2383,Zygmunt Pork,Alive,26,60,5,1,50,640,0,Boots
+2384,Nikolai Kowalski,Dead (Died on iteration 163)
+2385,Stanislaw Pork,Dead (Died on iteration 92)
+2386,Gniewomir Shrimpus,Dead (Died on iteration 93)
+2387,Denis Baranowicz,Alive,40,50,5,1,50,1000,5,Boots
+2388,Genowefa Cheese,Dead (Died on iteration 41)
+2389,Alfred Dudek,Dead (Died on iteration 9)
+2390,Michel Smith,Dead (Died on iteration 17)
+2391,Denis Jaroszewicz,Dead (Died on iteration 314)
+2393,Zygmunt Jobs,Dead (Died on iteration 204)
+2394,Grzmislaw Baranowicz,Dead (Died on iteration 499)
+2395,Alexander Smith,Dead (Died on iteration 12)
+2396,Bozydar Cheese,Dead (Died on iteration 5)
+2397,Grzmislaw Pork,Dead (Died on iteration 40)
+2398,Ihor Baranowicz,Dead (Died on iteration 25)
+2399,Tim Bialy,Alive,55,80,10,0,20,640,5,Scissors
+2400,Michel Jobs,Dead (Died on iteration 428)
+2401,Ihor Pork,Dead (Died on iteration 13)
+2402,Jerry Dudek,Dead (Died on iteration 33)
+2403,Vladimir Jaroszewicz,Dead (Died on iteration 142)
+2404,Zygmunt Baranowicz,Alive,35,40,7,0,40,2540,5,Rock
+2405,Jerry Kowalski,Dead (Died on iteration 71)
+2406,Christopher Baranowicz,Dead (Died on iteration 397)
+2407,Nikolai Smith,Dead (Died on iteration 35)
+2408,Nikolai Wojtyla,Dead (Died on iteration 69)
+2409,Nikolai Baranowicz,Dead (Died on iteration 13)
+2410,Christopher Cheese,Dead (Died on iteration 1)
+2411,Bozydar Jones,Dead (Died on iteration 99)
+2413,Zygmunt Jones,Dead (Died on iteration 3)
+2414,Karol Sunbed,Dead (Died on iteration 349)
+2415,Jerry Jones,Dead (Died on iteration 10)
+2416,Alexander Jones,Dead (Died on iteration 52)
+2417,Gniewomir Smith,Dead (Died on iteration 15)
+2419,Vladimir Jaroszewicz,Dead (Died on iteration 45)
+2420,Jerry Poniatowski,Dead (Died on iteration 42)
+2421,Zygmunt Pork,Dead (Died on iteration 102)
+2422,Jerry Kowalski,Dead (Died on iteration 80)
+2423,Denis Jobs,Alive,66,50,7,0,40,800,0,Rock
+2425,John Sunbed,Alive,52,60,6,0,45,950,5,Sharp Pencil
+2427,Jessica Wojtyla,Alive,37,90,7,0,40,3110,5,Rock
+2429,Jessica Jobs,Dead (Died on iteration 17)
+2430,Grzmislaw Sunbed,Dead (Died on iteration 183)
+2431,Kunegunda Wojtyla,Dead (Died on iteration 18)
+2432,Michel Shrimpus,Alive,31,60,6,2,10,2300,5,Riot Shield
+2434,Vladimir Jobs,Dead (Died on iteration 44)
+2435,Alexander Cheese,Dead (Died on iteration 14)
+2436,Jessica Baranowicz,Dead (Died on iteration 102)
+2437,Bozydar Sunbed,Dead (Died on iteration 161)
+2438,Tim Kowalski,Dead (Died on iteration 57)
+2439,Stanislaw Shrimpus,Dead (Died on iteration 189)
+2440,Jessica Wojtyla,Dead (Died on iteration 52)
+2441,Karol Poniatowski,Dead (Died on iteration 160)
+2443,Christopher Sunbed,Dead (Died on iteration 333)
+2444,Ihor Dudek,Alive,42,90,6,0,45,2640,0,Sharp Pencil
+2445,Grzmislaw Poniatowski,Dead (Died on iteration 29)
+2447,Stanislaw August Poniatowski,Dead (Died on iteration 392)
+2449,Radomir Baranowicz,Alive,5,70,6,0,45,560,0,Sharp Pencil
+2451,Nikolai Wojtyla,Dead (Died on iteration 41)
+2452,Brajan Jobs,Dead (Died on iteration 319)
+2453,Genowefa Jobs,Dead (Died on iteration 249)
+2455,Bozydar Jaroszewicz,Dead (Died on iteration 6)
+2456,Bozydar Shrimpus,Dead (Died on iteration 324)
+2458,Brajan Pork,Alive,18,110,5,1,50,1070,5,Boots
+2459,Christopher Jaroszewicz,Alive,15,60,7,0,30,620,5,Glass Bottle
+2460,Radomir Prudnicka,Dead (Died on iteration 8)
+2462,Alfred Cheese,Dead (Died on iteration 17)
+2463,Nikolai Sunbed,Dead (Died on iteration 211)
+2465,Zygmunt Wojtyla,Alive,56,120,7,0,30,930,5,Glass Bottle
+2466,Radomir Prudnicka,Dead (Died on iteration 13)
+2468,Grzmislaw Nowak,Dead (Died on iteration 26)
+2470,John Wojtyla,Alive,3,40,6,0,45,600,5,Sharp Pencil
+2472,Zygmunt Cheese,Dead (Died on iteration 44)
+2473,Michel Wojtyla,Dead (Died on iteration 5)
+2474,Karol Shrimpus,Dead (Died on iteration 18)
+2475,Alfred Pork,Dead (Died on iteration 27)
+2476,Zygmunt Prudnicka,Dead (Died on iteration 70)
+2477,Grzmislaw Jaroszewicz,Dead (Died on iteration 202)
+2478,Nikolai Jobs,Dead (Died on iteration 423)
+2479,Jerry Baranowicz,Dead (Died on iteration 94)
+2480,Gniewomir Smith,Dead (Died on iteration 95)
+2481,Genowefa Jaroszewicz,Dead (Died on iteration 43)
+2482,Jessica Baranowicz,Dead (Died on iteration 191)
+2483,Alfred Bialy,Alive,63,60,11,0,35,740,0,Knife
+2484,Jerry Baranowicz,Alive,42,50,10,0,20,1830,0,Scissors
+2485,Grzmislaw Jones,Alive,50,120,7,0,40,110,5,Rock
+2487,Denis Cheese,Dead (Died on iteration 174)
+2488,Jessica Jobs,Dead (Died on iteration 177)
+2489,Alexander Wojtyla,Dead (Died on iteration 163)
+2490,Jerry Jaroszewicz,Dead (Died on iteration 9)
+2491,Alfred Baranowicz,Dead (Died on iteration 58)
+2492,Jessica Dudek,Dead (Died on iteration 1)
+2494,Alfred Dudek,Dead (Died on iteration 38)
+2496,Christopher Smith,Dead (Died on iteration 4)
+2497,Brajan Smith,Dead (Died on iteration 56)
+2499,Christopher Jones,Alive,17,50,11,0,35,1400,5,Knife
+2500,Zygmunt Jobs,Dead (Died on iteration 25)
+2502,Bozydar Smith,Dead (Died on iteration 4)
+2503,Tim Pork,Dead (Died on iteration 258)
+2504,Kunegunda Pork,Dead (Died on iteration 12)
+2506,Tim Dudek,Dead (Died on iteration 54)
+2507,John Poniatowski,Dead (Died on iteration 11)
+2508,Alexander Shrimpus,Dead (Died on iteration 26)
+2509,Michel Jobs,Alive,27,40,5,1,50,720,5,Boots
+2510,Genowefa Kowalski,Dead (Died on iteration 35)
+2511,Michel Poniatowski,Dead (Died on iteration 1)
+2512,Alfred Jones,Dead (Died on iteration 5)
+2514,Jerry Cheese,Dead (Died on iteration 19)
+2515,Genowefa Wojtyla,Dead (Died on iteration 97)
+2516,Kunegunda Wojtyla,Dead (Died on iteration 128)
+2518,Vladimir Sunbed,Dead (Died on iteration 1)
+2519,Nikolai Nowak,Alive,38,50,11,0,35,400,0,Knife
+2521,Karol Bialy,Dead (Died on iteration 165)
+2522,Christopher Jobs,Dead (Died on iteration 115)
+2523,Kunegunda Jobs,Dead (Died on iteration 75)
+2525,Nikolai Sunbed,Dead (Died on iteration 39)
+2527,Tim Wojtyla,Dead (Died on iteration 41)
+2529,Christopher Poniatowski,Dead (Died on iteration 197)
+2530,Alexander Wojtyla,Dead (Died on iteration 1)
+2531,Radomir Poniatowski,Dead (Died on iteration 3)
+2532,Alfred Dudek,Dead (Died on iteration 164)
+2533,Steve Jaroszewicz,Dead (Died on iteration 13)
+2535,Brajan Poniatowski,Dead (Died on iteration 349)
+2536,Alfred Kowalski,Dead (Died on iteration 129)
+2537,Alfred Sunbed,Alive,14,60,11,0,35,810,0,Knife
+2539,Stanislaw Bialy,Dead (Died on iteration 79)
+2540,Christopher Sunbed,Dead (Died on iteration 57)
+2541,Karol Pork,Dead (Died on iteration 64)
+2542,Radomir Kowalski,Dead (Died on iteration 27)
+2543,Grzmislaw Sunbed,Dead (Died on iteration 8)
+2545,Grzmislaw Jaroszewicz,Dead (Died on iteration 15)
+2546,Bozydar Dudek,Alive,38,40,5,1,50,800,5,Boots
+2547,Tim Jaroszewicz,Alive,4,130,5,1,50,270,0,Boots
+2548,Kunegunda Prudnicka,Dead (Died on iteration 35)
+2549,Radomir Kowalski,Dead (Died on iteration 132)
+2550,Alexander Bialy,Dead (Died on iteration 15)
+2552,John Bialy,Dead (Died on iteration 16)
+2553,Christopher Dudek,Dead (Died on iteration 3)
+2554,Christopher Pork,Dead (Died on iteration 210)
+2556,Jessica Pork,Dead (Died on iteration 269)
+2558,Genowefa Kowalski,Alive,23,120,5,1,50,620,0,Boots
+2560,John Wojtyla,Alive,52,50,6,2,10,1910,0,Riot Shield
+2562,Genowefa Cheese,Dead (Died on iteration 213)
+2563,Nikolai Cheese,Dead (Died on iteration 39)
+2564,Grzmislaw Cheese,Dead (Died on iteration 27)
+2565,Karol Jaroszewicz,Dead (Died on iteration 398)
+2566,Alfred Kowalski,Dead (Died on iteration 4)
+2567,Michel Pork,Dead (Died on iteration 61)
+2569,Nikolai Poniatowski,Dead (Died on iteration 29)
+2570,Michel Jobs,Dead (Died on iteration 35)
+2572,Vladimir Wojtyla,Dead (Died on iteration 27)
+2573,Alexander Sunbed,Dead (Died on iteration 313)
+2575,Vladimir Nowak,Dead (Died on iteration 37)
+2577,Jerry Baranowicz,Dead (Died on iteration 36)
+2579,Stanislaw Baranowicz,Dead (Died on iteration 34)
+2581,Christopher Kowalski,Dead (Died on iteration 24)
+2583,Christopher Wojtyla,Dead (Died on iteration 4)
+2584,Grzmislaw Smith,Dead (Died on iteration 32)
+2586,Christopher Shrimpus,Alive,47,40,7,0,40,320,5,Rock
+2587,Jessica Pork,Dead (Died on iteration 18)
+2588,Christopher Jobs,Alive,70,70,7,0,30,310,5,Glass Bottle
+2589,Vladimir Prudnicka,Alive,81,110,5,1,50,1850,0,Boots
+2590,Zygmunt Shrimpus,Dead (Died on iteration 9)
+2592,Vladimir Baranowicz,Dead (Died on iteration 6)
+2593,Alfred Baranowicz,Dead (Died on iteration 245)
+2594,Brajan Jones,Dead (Died on iteration 11)
+2596,Bozydar Smith,Dead (Died on iteration 78)
+2597,Grzmislaw Dudek,Dead (Died on iteration 47)
+2599,Kunegunda Kowalski,Alive,58,100,11,0,35,2980,5,Knife
+2600,Genowefa Jaroszewicz,Dead (Died on iteration 8)
+2601,Nikolai Shrimpus,Alive,21,70,11,0,35,860,0,Knife
+2603,Stanislaw Prudnicka,Dead (Died on iteration 24)
+2605,Brajan Jaroszewicz,Alive,20,70,11,0,35,1700,0,Knife
+2606,Jerry Wojtyla,Dead (Died on iteration 68)
+2607,Alfred Dudek,Dead (Died on iteration 71)
+2608,Kunegunda Poniatowski,Dead (Died on iteration 178)
+2609,Denis Shrimpus,Dead (Died on iteration 4)
+2610,Alexander Jobs,Alive,28,70,6,0,45,1020,5,Sharp Pencil
+2611,Jessica Jobs,Alive,29,70,10,0,20,720,5,Scissors
+2612,Nikolai Cheese,Dead (Died on iteration 48)
+2614,Genowefa Wojtyla,Dead (Died on iteration 26)
+2616,Jerry Prudnicka,Dead (Died on iteration 17)
+2617,Zygmunt Dudek,Dead (Died on iteration 390)
+2618,Nikolai Baranowicz,Dead (Died on iteration 453)
+2619,Bozydar Cheese,Dead (Died on iteration 6)
+2621,Alexander Wojtyla,Dead (Died on iteration 127)
+2622,Zygmunt Bialy,Alive,45,70,6,0,45,410,5,Sharp Pencil
+2624,Alfred Shrimpus,Dead (Died on iteration 11)
+2625,Steve Nowak,Dead (Died on iteration 43)
+2626,Alfred Jaroszewicz,Dead (Died on iteration 12)
+2628,Michel Jones,Alive,29,50,6,0,45,900,0,Sharp Pencil
+2630,Zygmunt Dudek,Dead (Died on iteration 68)
+2631,Jessica Cheese,Dead (Died on iteration 29)
+2632,Alexander Kowalski,Dead (Died on iteration 15)
+2633,Tim Smith,Alive,32,60,5,1,50,1470,5,Boots
+2635,Steve Wojtyla,Dead (Died on iteration 7)
+2637,Steve Sunbed,Dead (Died on iteration 341)
+2638,Alfred Jaroszewicz,Dead (Died on iteration 159)
+2639,Brajan Bialy,Alive,35,120,6,0,45,1780,5,Sharp Pencil
+2640,Gniewomir Pork,Dead (Died on iteration 116)
+2642,Ihor Baranowicz,Dead (Died on iteration 22)
+2644,Karol Nowak,Dead (Died on iteration 85)
+2645,Karol Poniatowski,Dead (Died on iteration 14)
+2646,Steve Baranowicz,Dead (Died on iteration 38)
+2647,Karol Bialy,Dead (Died on iteration 38)
+2648,Tim Jaroszewicz,Dead (Died on iteration 13)
+2649,Grzmislaw Sunbed,Dead (Died on iteration 58)
+2651,Steve Jaroszewicz,Dead (Died on iteration 13)
+2652,Kunegunda Shrimpus,Dead (Died on iteration 38)
+2653,John Pork,Dead (Died on iteration 9)
+2654,Vladimir Cheese,Dead (Died on iteration 167)
+2655,Steve Smith,Dead (Died on iteration 12)
+2656,Genowefa Kowalski,Dead (Died on iteration 22)
+2657,Radomir Baranowicz,Dead (Died on iteration 237)
+2659,Genowefa Dudek,Dead (Died on iteration 301)
+2660,Brajan Baranowicz,Dead (Died on iteration 97)
+2661,Ihor Dudek,Dead (Died on iteration 22)
+2662,Zygmunt Sunbed,Dead (Died on iteration 198)
+2663,Tim Pork,Dead (Died on iteration 7)
+2664,Karol Shrimpus,Dead (Died on iteration 14)
+2665,Kunegunda Jaroszewicz,Dead (Died on iteration 87)
+2667,Christopher Cheese,Dead (Died on iteration 131)
+2668,John Kowalski,Dead (Died on iteration 7)
+2669,Nikolai Kowalski,Dead (Died on iteration 19)
+2670,Alexander Cheese,Dead (Died on iteration 53)
+2671,Grzmislaw Wojtyla,Dead (Died on iteration 5)
+2673,Tim Poniatowski,Alive,39,50,5,1,50,2020,5,Boots
+2674,Radomir Wojtyla,Dead (Died on iteration 395)
+2675,Grzmislaw Dudek,Dead (Died on iteration 11)
+2676,Gniewomir Bialy,Dead (Died on iteration 5)
+2677,Vladimir Smith,Dead (Died on iteration 38)
+2678,Jerry Jobs,Dead (Died on iteration 4)
+2679,Tim Jobs,Dead (Died on iteration 2)
+2680,Bozydar Poniatowski,Alive,45,40,6,0,45,2270,5,Sharp Pencil
+2682,Alexander Wojtyla,Dead (Died on iteration 47)
+2683,Nikolai Sunbed,Dead (Died on iteration 16)
+2685,John Baranowicz,Dead (Died on iteration 152)
+2686,Kunegunda Nowak,Alive,45,60,7,0,40,720,0,Rock
+2687,Michel Jobs,Dead (Died on iteration 2)
+2688,Brajan Poniatowski,Dead (Died on iteration 4)
+2689,Ihor Poniatowski,Dead (Died on iteration 355)
+2691,Kunegunda Jaroszewicz,Dead (Died on iteration 107)
+2692,Genowefa Kowalski,Dead (Died on iteration 24)
+2693,Nikolai Jobs,Dead (Died on iteration 13)
+2695,Stanislaw Prudnicka,Dead (Died on iteration 14)
+2696,Karol Kowalski,Alive,29,60,7,0,40,650,5,Rock
+2698,Steve Sunbed,Dead (Died on iteration 284)
+2699,Radomir Jaroszewicz,Dead (Died on iteration 65)
+2700,Bozydar Baranowicz,Alive,40,70,10,0,20,1550,0,Scissors
+2701,Stanislaw Shrimpus,Dead (Died on iteration 48)
+2703,Karol Nowak,Dead (Died on iteration 42)
+2705,Vladimir Baranowicz,Dead (Died on iteration 15)
+2706,Tim Baranowicz,Dead (Died on iteration 28)
+2707,Alexander Pork,Alive,40,40,6,0,45,910,0,Sharp Pencil
+2708,Christopher Bialy,Alive,48,60,7,0,40,1770,5,Rock
+2709,Tim Jobs,Alive,31,50,6,0,45,240,25,Sharp Pencil
+2710,Jerry Wojtyla,Dead (Died on iteration 27)
+2712,Jerry Dudek,Alive,13,80,11,0,35,1070,5,Knife
+2713,Steve Jobs,Dead (Died on iteration 6)
+2715,Denis Jobs,Dead (Died on iteration 63)
+2716,John Nowak,Alive,48,60,7,0,40,1900,0,Rock
 
 Final Stats of each Animal
 ID,Type,Owner ID,Status,Health,Hunger,Attack,Defence,Swiftness
-2,Cat,1,Alive,99,30,5,0,50
-5,Cat,4,Alive,100,25,5,0,50
-17,Dog,53,Alive,100,100,10,0,0
-24,Dog,105,Alive,82,100,10,0,0
-27,Cat,26,Alive,96,35,5,0,50
-29,Cat,28,Alive,100,15,5,0,50
-31,Cat,30,Alive,100,70,5,0,50
-34,Dog,33,Dead (Died on iteration 2571)
-36,Cat,35,Alive,85,50,5,0,50
-43,Cat,42,Alive,87,75,5,0,50
-52,Cat,55,Alive,100,80,5,0,50
-56,Dog,113,Alive,56,100,10,0,0
-61,Dog,60,Alive,100,100,10,0,0
-64,Cat,63,Alive,86,50,5,0,50
-69,Cat,68,Alive,100,55,5,0,50
-72,Cat,71,Alive,93,35,5,0,50
-75,Cat,74,Alive,98,60,5,0,50
-80,Dog,117,Alive,100,100,10,0,0
-83,Cat,82,Alive,83,50,5,0,50
-86,Dog,125,Alive,13,0,10,0,0
-88,Cat,87,Alive,99,55,5,0,50
-90,Cat,89,Alive,100,55,5,0,50
-92,Cat,91,Alive,78,20,5,0,50
-94,Dog,93,Dead (Died on iteration 1005)
-100,Dog,99,Dead (Died on iteration 256)
-102,Cat,101,Alive,62,50,5,0,50
-104,Dog,20,Dead (Died on iteration 3177)
-111,Dog,101,Alive,67,100,10,0,0
-114,Cat,113,Alive,100,35,5,0,50
-116,Cat,95,Alive,90,40,5,0,50
-118,Cat,117,Alive,100,55,5,0,50
-120,Dog,26,Dead (Died on iteration 4048)
-133,Dog,59,Alive,65,100,10,0,0
+7,Dog,881,Dead (Died on iteration 81)
+11,Cat,10,Alive,60,55,5,0,50
+13,Cat,2033,Alive,94,45,5,0,50
+17,Cat,16,Alive,100,45,5,0,50
+19,Dog,929,Alive,79,90,10,0,0
+21,Cat,390,Alive,100,55,5,0,50
+24,Cat,23,Dead (Died on iteration 13)
+26,Cat,25,Alive,100,45,5,0,50
+31,Cat,1675,Alive,100,65,5,0,50
+34,Cat,33,Alive,73,20,5,0,50
+37,Cat,1972,Alive,100,60,5,0,50
+39,Cat,38,Alive,94,75,5,0,50
+45,Dog,1749,Dead (Died on iteration 31)
+47,Cat,46,Alive,100,60,5,0,50
+52,Cat,724,Alive,91,45,5,0,50
+57,Cat,2617,Alive,100,75,5,0,50
+59,Dog,1940,Dead (Died on iteration 107)
+66,Cat,65,Alive,95,50,5,0,50
+69,Dog,398,Alive,95,100,10,0,0
+73,Cat,72,Alive,94,65,5,0,50
+76,Cat,1624,Alive,95,40,5,0,50
+81,Cat,2306,Alive,90,70,5,0,50
+84,Dog,2234,Dead (Died on iteration 102)
+88,Cat,528,Alive,94,65,5,0,50
+99,Dog,736,Dead (Died on iteration 18)
+102,Dog,1918,Alive,50,100,10,0,0
+106,Dog,702,Dead (Died on iteration 76)
+108,Dog,230,Alive,100,100,10,0,0
+119,Cat,118,Alive,89,40,5,0,50
+122,Cat,121,Alive,82,50,5,0,50
+124,Cat,123,Alive,94,60,5,0,50
+127,Dog,685,Alive,100,80,10,0,0
+129,Dog,365,Alive,90,100,10,0,0
+132,Cat,1781,Alive,100,50,5,0,50
+136,Cat,135,Alive,58,50,5,0,50
+146,Dog,2569,Dead (Died on iteration 207)
+150,Cat,323,Alive,54,55,5,0,50
+153,Dog,152,Dead (Died on iteration 27)
+160,Cat,1339,Alive,100,90,5,0,50
+162,Cat,161,Alive,91,65,5,0,50
+164,Cat,163,Alive,76,60,5,0,50
+167,Cat,166,Alive,100,65,5,0,50
+175,Dog,174,Dead (Died on iteration 66)
+177,Dog,2617,Alive,100,70,10,0,0
+181,Cat,180,Alive,95,70,5,0,50
+184,Cat,1248,Alive,93,60,5,0,50
+195,Cat,194,Alive,81,70,5,0,50
+197,Cat,196,Alive,100,65,5,0,50
+201,Dog,200,Dead (Died on iteration 23)
+208,Cat,207,Alive,94,50,5,0,50
+210,Dog,209,Dead (Died on iteration 18)
+214,Cat,213,Alive,77,85,5,0,50
+225,Cat,224,Alive,100,50,5,0,50
+227,Cat,226,Alive,78,50,5,0,50
+235,Dog,234,Dead (Died on iteration 101)
+245,Cat,1813,Alive,100,45,5,0,50
+248,Cat,2384,Alive,73,60,5,0,50
+250,Cat,249,Alive,85,70,5,0,50
+252,Cat,251,Alive,79,45,5,0,50
+255,Dog,1090,Dead (Died on iteration 455)
+257,Cat,256,Alive,76,60,5,0,50
+260,Cat,2646,Alive,30,50,5,0,50
+262,Cat,261,Alive,75,50,5,0,50
+265,Cat,930,Alive,100,60,5,0,50
+268,Cat,267,Alive,95,60,5,0,50
+273,Cat,2597,Alive,73,70,5,0,50
+275,Dog,274,Dead (Died on iteration 1)
+278,Cat,635,Alive,100,65,5,0,50
+282,Dog,1428,Dead (Died on iteration 167)
+293,Cat,121,Alive,85,60,5,0,50
+295,Cat,294,Alive,63,60,5,0,50
+298,Cat,297,Alive,100,60,5,0,50
+301,Dog,2169,Alive,100,100,10,0,0
+305,Cat,232,Alive,79,60,5,0,50
+308,Cat,472,Alive,100,95,5,0,50
+314,Cat,313,Alive,90,60,5,0,50
+324,Cat,323,Alive,89,75,5,0,50
+328,Cat,327,Alive,95,50,5,0,50
+333,Dog,332,Dead (Died on iteration 26)
+335,Cat,334,Alive,49,50,5,0,50
+346,Dog,2079,Dead (Died on iteration 140)
+350,Cat,349,Alive,100,55,5,0,50
+352,Dog,351,Dead (Died on iteration 12)
+354,Cat,353,Alive,100,70,5,0,50
+356,Dog,355,Dead (Died on iteration 21)
+358,Dog,357,Dead (Died on iteration 1)
+363,Cat,2617,Alive,94,75,5,0,50
+371,Cat,370,Alive,94,40,5,0,50
+381,Cat,380,Alive,56,45,5,0,50
+383,Cat,1690,Alive,100,60,5,0,50
+386,Dog,2365,Alive,100,100,10,0,0
+391,Cat,390,Alive,85,50,5,0,50
+393,Dog,783,Dead (Died on iteration 47)
+396,Dog,914,Dead (Died on iteration 104)
+399,Cat,398,Alive,93,45,5,0,50
+402,Cat,401,Alive,74,55,5,0,50
+404,Dog,403,Dead (Died on iteration 3)
+407,Dog,406,Dead (Died on iteration 5)
+409,Cat,408,Alive,90,55,5,0,50
+412,Cat,489,Alive,93,60,5,0,50
+414,Dog,413,Dead (Died on iteration 141)
+420,Dog,419,Dead (Died on iteration 38)
+425,Cat,424,Alive,100,70,5,0,50
+430,Cat,1489,Alive,100,65,5,0,50
+437,Cat,436,Alive,95,45,5,0,50
+439,Cat,2546,Alive,100,95,5,0,50
+447,Cat,446,Alive,54,35,5,0,50
+454,Cat,1989,Alive,100,50,5,0,50
+459,Cat,2326,Alive,100,70,5,0,50
+461,Cat,460,Alive,86,55,5,0,50
+469,Cat,1220,Alive,100,55,5,0,50
+479,Cat,650,Alive,89,65,5,0,50
+483,Cat,2137,Alive,100,50,5,0,50
+487,Cat,486,Alive,89,50,5,0,50
+495,Cat,494,Alive,58,55,5,0,50
+497,Dog,496,Dead (Died on iteration 9)
+500,Cat,499,Alive,85,50,5,0,50
+502,Dog,501,Dead (Died on iteration 108)
+504,Cat,343,Alive,100,65,5,0,50
+510,Cat,509,Alive,100,55,5,0,50
+522,Cat,1473,Alive,100,90,5,0,50
+539,Cat,538,Alive,100,85,5,0,50
+542,Dog,1696,Alive,89,100,10,0,0
+552,Cat,2140,Alive,47,40,5,0,50
+557,Dog,2621,Dead (Died on iteration 7)
+563,Dog,562,Dead (Died on iteration 7)
+565,Dog,564,Dead (Died on iteration 137)
+567,Cat,566,Alive,78,60,5,0,50
+569,Cat,36,Alive,100,45,5,0,50
+573,Cat,572,Alive,88,45,5,0,50
+576,Cat,904,Alive,100,60,5,0,50
+579,Cat,2404,Alive,84,60,5,0,50
+589,Cat,588,Alive,74,75,5,0,50
+591,Dog,590,Dead (Died on iteration 7)
+594,Dog,1768,Dead (Died on iteration 391)
+604,Dog,603,Dead (Died on iteration 110)
+606,Dog,1813,Alive,100,100,10,0,0
+608,Cat,607,Alive,100,50,5,0,50
+611,Cat,610,Alive,100,50,5,0,50
+621,Cat,620,Alive,100,35,5,0,50
+625,Cat,1763,Alive,100,40,5,0,50
+629,Cat,670,Alive,94,50,5,0,50
+632,Cat,1121,Alive,100,55,5,0,50
+642,Dog,641,Dead (Died on iteration 37)
+652,Cat,651,Alive,94,40,5,0,50
+655,Cat,654,Alive,69,45,5,0,50
+661,Dog,1985,Alive,85,100,10,0,0
+663,Cat,2040,Alive,100,75,5,0,50
+665,Cat,664,Alive,91,40,5,0,50
+675,Cat,674,Alive,37,60,5,0,50
+679,Cat,1528,Alive,100,95,5,0,50
+684,Cat,2135,Alive,100,90,5,0,50
+688,Dog,1205,Alive,100,100,10,0,0
+690,Cat,689,Alive,95,45,5,0,50
+699,Cat,1307,Alive,88,75,5,0,50
+703,Cat,475,Alive,83,60,5,0,50
+708,Cat,707,Alive,70,55,5,0,50
+712,Cat,2340,Alive,95,75,5,0,50
+717,Cat,716,Alive,100,50,5,0,50
+719,Dog,1788,Alive,88,100,10,0,0
+722,Cat,721,Alive,49,40,5,0,50
+729,Cat,728,Alive,82,55,5,0,50
+732,Cat,731,Alive,67,65,5,0,50
+734,Cat,733,Alive,100,45,5,0,50
+744,Cat,2430,Alive,100,55,5,0,50
+747,Cat,682,Alive,90,35,5,0,50
+755,Cat,754,Alive,82,50,5,0,50
+764,Cat,763,Alive,100,55,5,0,50
+767,Cat,766,Alive,100,45,5,0,50
+773,Cat,1319,Alive,80,65,5,0,50
+777,Dog,776,Dead (Died on iteration 51)
+784,Cat,2306,Alive,100,95,5,0,50
+786,Cat,785,Alive,78,65,5,0,50
+789,Cat,1309,Alive,78,60,5,0,50
+792,Cat,1276,Alive,90,55,5,0,50
+794,Dog,793,Dead (Died on iteration 22)
+796,Cat,795,Alive,94,65,5,0,50
+798,Dog,797,Dead (Died on iteration 169)
+803,Cat,1527,Alive,100,50,5,0,50
+808,Dog,807,Dead (Died on iteration 1)
+811,Dog,810,Dead (Died on iteration 3)
+819,Cat,818,Alive,77,45,5,0,50
+822,Cat,2058,Alive,100,95,5,0,50
+824,Dog,823,Dead (Died on iteration 23)
+829,Cat,828,Dead (Died on iteration 139)
+835,Cat,834,Alive,84,60,5,0,50
+838,Dog,837,Dead (Died on iteration 20)
+840,Dog,839,Dead (Died on iteration 21)
+846,Cat,845,Alive,73,40,5,0,50
+862,Dog,2065,Dead (Died on iteration 21)
+870,Dog,1169,Dead (Died on iteration 296)
+874,Cat,251,Alive,100,60,5,0,50
+877,Cat,876,Alive,100,60,5,0,50
+884,Cat,2399,Alive,100,85,5,0,50
+886,Dog,885,Dead (Died on iteration 80)
+890,Cat,2058,Alive,100,90,5,0,50
+892,Cat,891,Alive,42,55,5,0,50
+894,Dog,893,Dead (Died on iteration 1)
+898,Dog,897,Dead (Died on iteration 34)
+903,Dog,902,Dead (Died on iteration 2)
+906,Dog,2357,Dead (Died on iteration 128)
+916,Cat,832,Alive,100,85,5,0,50
+918,Cat,1213,Alive,84,60,5,0,50
+922,Dog,671,Dead (Died on iteration 7)
+928,Dog,1455,Dead (Died on iteration 86)
+934,Cat,933,Alive,89,65,5,0,50
+945,Cat,944,Alive,90,45,5,0,50
+950,Dog,1210,Alive,86,90,10,0,0
+954,Cat,2026,Alive,88,55,5,0,50
+960,Cat,1984,Alive,95,55,5,0,50
+963,Cat,962,Alive,90,40,5,0,50
+965,Cat,964,Alive,89,45,5,0,50
+970,Cat,969,Alive,94,50,5,0,50
+972,Cat,2027,Alive,100,60,5,0,50
+976,Cat,975,Alive,100,65,5,0,50
+978,Cat,2478,Alive,100,70,5,0,50
+981,Cat,1468,Alive,78,55,5,0,50
+988,Cat,987,Alive,67,50,5,0,50
+990,Cat,217,Alive,100,65,5,0,50
+1000,Cat,2304,Alive,100,95,5,0,50
+1002,Cat,2556,Alive,84,65,5,0,50
+1004,Dog,1003,Dead (Died on iteration 5)
+1017,Dog,997,Dead (Died on iteration 6)
+1021,Dog,1020,Dead (Died on iteration 12)
+1030,Cat,1029,Alive,95,40,5,0,50
+1036,Dog,1008,Alive,88,100,10,0,0
+1044,Cat,1043,Alive,90,50,5,0,50
+1049,Cat,1881,Alive,100,80,5,0,50
+1053,Cat,1052,Alive,88,50,5,0,50
+1056,Cat,1055,Alive,76,45,5,0,50
+1076,Cat,1075,Alive,42,80,5,0,50
+1095,Cat,1094,Alive,58,55,5,0,50
+1100,Cat,1099,Alive,50,50,5,0,50
+1105,Cat,1104,Alive,84,45,5,0,50
+1111,Cat,1110,Alive,63,60,5,0,50
+1115,Cat,1114,Alive,93,45,5,0,50
+1117,Dog,1116,Dead (Died on iteration 12)
+1133,Cat,1132,Alive,100,65,5,0,50
+1136,Dog,1135,Dead (Died on iteration 8)
+1138,Cat,1137,Alive,50,60,5,0,50
+1141,Cat,237,Alive,96,70,5,0,50
+1147,Cat,118,Alive,100,85,5,0,50
+1149,Dog,1148,Dead (Died on iteration 49)
+1151,Cat,361,Alive,100,50,5,0,50
+1155,Cat,1171,Alive,100,95,5,0,50
+1161,Cat,783,Alive,93,50,5,0,50
+1163,Dog,860,Alive,89,100,10,0,0
+1168,Dog,1167,Dead (Died on iteration 1)
+1172,Dog,1171,Dead (Died on iteration 4)
+1183,Cat,1182,Alive,95,45,5,0,50
+1185,Dog,1184,Dead (Died on iteration 4)
+1189,Cat,1548,Alive,100,80,5,0,50
+1196,Cat,1713,Alive,100,80,5,0,50
+1201,Cat,1691,Alive,100,70,5,0,50
+1204,Cat,1203,Alive,75,60,5,0,50
+1207,Cat,2649,Alive,90,60,5,0,50
+1215,Dog,1845,Dead (Died on iteration 14)
+1217,Dog,1216,Dead (Died on iteration 12)
+1223,Cat,2686,Alive,95,80,5,0,50
+1230,Dog,1229,Dead (Died on iteration 39)
+1233,Cat,1232,Alive,88,50,5,0,50
+1236,Cat,1235,Alive,93,55,5,0,50
+1240,Cat,1239,Alive,100,35,5,0,50
+1246,Cat,1245,Alive,61,65,5,0,50
+1249,Dog,1412,Dead (Died on iteration 40)
+1265,Dog,112,Alive,83,100,10,0,0
+1268,Dog,1267,Dead (Died on iteration 7)
+1275,Dog,1274,Dead (Died on iteration 18)
+1291,Cat,1290,Alive,94,45,5,0,50
+1297,Dog,756,Alive,23,60,10,0,0
+1302,Cat,1301,Alive,59,45,5,0,50
+1305,Cat,1304,Alive,72,65,5,0,50
+1311,Cat,1310,Alive,100,50,5,0,50
+1321,Cat,1320,Alive,100,60,5,0,50
+1323,Dog,1322,Dead (Died on iteration 7)
+1328,Cat,1327,Alive,82,55,5,0,50
+1337,Cat,1274,Alive,100,65,5,0,50
+1341,Cat,1139,Alive,100,55,5,0,50
+1345,Cat,1344,Alive,93,50,5,0,50
+1351,Dog,1350,Dead (Died on iteration 23)
+1353,Cat,1352,Alive,100,60,5,0,50
+1355,Dog,1354,Dead (Died on iteration 3)
+1361,Cat,141,Alive,100,50,5,0,50
+1366,Cat,1365,Alive,84,50,5,0,50
+1372,Dog,1154,Alive,63,100,10,0,0
+1383,Cat,1382,Alive,71,30,5,0,50
+1386,Dog,1285,Dead (Died on iteration 190)
+1388,Cat,1871,Alive,28,50,5,0,50
+1393,Cat,1392,Alive,94,70,5,0,50
+1396,Dog,1325,Dead (Died on iteration 300)
+1398,Cat,2300,Alive,79,50,5,0,50
+1408,Dog,1407,Dead (Died on iteration 29)
+1415,Dog,1414,Dead (Died on iteration 34)
+1417,Dog,1416,Dead (Died on iteration 16)
+1419,Cat,2364,Alive,100,95,5,0,50
+1422,Cat,1421,Alive,85,60,5,0,50
+1426,Cat,1375,Alive,100,60,5,0,50
+1440,Cat,1439,Alive,40,45,5,0,50
+1450,Dog,1866,Dead (Died on iteration 9)
+1452,Cat,1274,Alive,100,45,5,0,50
+1454,Dog,2437,Dead (Died on iteration 121)
+1456,Cat,2383,Alive,100,90,5,0,50
+1461,Dog,1605,Alive,100,100,10,0,0
+1463,Dog,2147,Dead (Died on iteration 79)
+1466,Cat,1465,Alive,93,55,5,0,50
+1469,Cat,1468,Alive,100,45,5,0,50
+1472,Cat,841,Alive,100,90,5,0,50
+1474,Dog,2503,Dead (Died on iteration 23)
+1476,Dog,2447,Dead (Died on iteration 338)
+1480,Dog,578,Dead (Died on iteration 132)
+1482,Dog,2387,Alive,100,100,10,0,0
+1485,Cat,2503,Alive,100,55,5,0,50
+1498,Cat,549,Alive,100,95,5,0,50
+1501,Cat,1934,Alive,88,55,5,0,50
+1504,Dog,2230,Dead (Died on iteration 62)
+1506,Dog,889,Dead (Died on iteration 190)
+1508,Cat,1507,Alive,70,60,5,0,50
+1518,Cat,1606,Alive,100,55,5,0,50
+1520,Dog,1519,Dead (Died on iteration 24)
+1525,Cat,2437,Alive,39,45,5,0,50
+1532,Cat,1531,Alive,93,55,5,0,50
+1555,Cat,1554,Alive,91,40,5,0,50
+1563,Cat,1562,Alive,63,50,5,0,50
+1582,Cat,1581,Alive,94,55,5,0,50
+1585,Dog,1584,Dead (Died on iteration 15)
+1589,Dog,2012,Alive,90,100,10,0,0
+1594,Dog,1301,Dead (Died on iteration 47)
+1600,Dog,1274,Alive,47,100,10,0,0
+1604,Cat,1603,Alive,78,40,5,0,50
+1608,Cat,1607,Alive,95,50,5,0,50
+1613,Cat,332,Alive,100,65,5,0,50
+1619,Cat,1231,Alive,66,45,5,0,50
+1623,Cat,1622,Alive,100,60,5,0,50
+1637,Cat,2545,Alive,63,55,5,0,50
+1644,Cat,1993,Alive,65,60,5,0,50
+1646,Dog,38,Dead (Died on iteration 14)
+1649,Cat,1648,Alive,96,45,5,0,50
+1653,Cat,2472,Alive,89,45,5,0,50
+1655,Dog,1728,Dead (Died on iteration 460)
+1657,Dog,1656,Dead (Died on iteration 44)
+1660,Cat,1659,Alive,76,50,5,0,50
+1666,Dog,1665,Dead (Died on iteration 70)
+1668,Cat,1667,Alive,55,45,5,0,50
+1676,Dog,2399,Alive,15,100,10,0,0
+1680,Cat,1679,Alive,67,45,5,0,50
+1682,Dog,2698,Dead (Died on iteration 97)
+1684,Dog,2423,Dead (Died on iteration 326)
+1689,Cat,1688,Alive,94,50,5,0,50
+1692,Cat,1460,Alive,100,65,5,0,50
+1702,Cat,491,Alive,100,55,5,0,50
+1704,Cat,1703,Alive,66,85,5,0,50
+1710,Cat,1709,Alive,44,50,5,0,50
+1712,Cat,1954,Alive,100,55,5,0,50
+1714,Cat,1713,Alive,94,55,5,0,50
+1724,Dog,218,Alive,32,70,10,0,0
+1727,Dog,1726,Dead (Died on iteration 22)
+1729,Cat,1728,Alive,76,65,5,0,50
+1736,Dog,1735,Dead (Died on iteration 34)
+1738,Dog,1737,Dead (Died on iteration 4)
+1740,Cat,1739,Alive,59,45,5,0,50
+1745,Cat,1744,Alive,100,60,5,0,50
+1748,Dog,2329,Alive,100,100,10,0,0
+1753,Cat,2234,Alive,100,50,5,0,50
+1760,Cat,1759,Alive,57,50,5,0,50
+1762,Dog,1761,Dead (Died on iteration 18)
+1766,Cat,1765,Alive,81,50,5,0,50
+1772,Dog,2522,Dead (Died on iteration 240)
+1776,Dog,1775,Dead (Died on iteration 22)
+1778,Cat,1777,Alive,87,40,5,0,50
+1782,Cat,2169,Alive,82,65,5,0,50
+1786,Cat,1785,Alive,94,60,5,0,50
+1789,Cat,1992,Alive,100,65,5,0,50
+1796,Dog,1795,Dead (Died on iteration 1)
+1803,Cat,735,Alive,100,85,5,0,50
+1811,Cat,1020,Alive,100,50,5,0,50
+1814,Cat,641,Alive,88,65,5,0,50
+1823,Dog,168,Alive,65,90,10,0,0
+1826,Cat,2594,Alive,88,80,5,0,50
+1832,Dog,2373,Alive,100,100,10,0,0
+1839,Dog,1838,Dead (Died on iteration 3)
+1843,Cat,247,Alive,100,60,5,0,50
+1849,Dog,89,Dead (Died on iteration 174)
+1852,Cat,1851,Alive,88,45,5,0,50
+1855,Cat,1854,Alive,94,80,5,0,50
+1859,Cat,2329,Alive,100,50,5,0,50
+1864,Cat,2532,Alive,80,45,5,0,50
+1872,Dog,1871,Dead (Died on iteration 11)
+1875,Cat,1932,Alive,100,70,5,0,50
+1879,Dog,1878,Dead (Died on iteration 50)
+1882,Cat,61,Alive,88,60,5,0,50
+1887,Dog,395,Dead (Died on iteration 41)
+1889,Cat,1994,Alive,100,65,5,0,50
+1891,Dog,1890,Dead (Died on iteration 43)
+1894,Cat,105,Alive,63,50,5,0,50
+1899,Cat,612,Alive,93,50,5,0,50
+1901,Dog,1900,Dead (Died on iteration 20)
+1905,Cat,1904,Alive,100,45,5,0,50
+1909,Cat,1362,Alive,100,50,5,0,50
+1914,Cat,1913,Alive,74,40,5,0,50
+1917,Cat,1158,Alive,100,70,5,0,50
+1921,Cat,1920,Alive,46,45,5,0,50
+1924,Cat,888,Alive,95,40,5,0,50
+1933,Cat,1932,Alive,70,50,5,0,50
+1938,Dog,1937,Dead (Died on iteration 5)
+1941,Cat,2275,Alive,100,90,5,0,50
+1943,Dog,1942,Dead (Died on iteration 24)
+1947,Dog,1946,Dead (Died on iteration 58)
+1950,Cat,472,Alive,100,80,5,0,50
+1955,Cat,240,Alive,89,60,5,0,50
+1966,Dog,2085,Alive,20,100,10,0,0
+1973,Dog,1972,Dead (Died on iteration 12)
+1977,Cat,2476,Alive,78,80,5,0,50
+1979,Cat,1274,Alive,90,85,5,0,50
+1987,Dog,42,Alive,10,50,10,0,0
+1991,Cat,1990,Alive,94,45,5,0,50
+1999,Cat,1904,Alive,95,70,5,0,50
+2003,Cat,1261,Alive,100,60,5,0,50
+2006,Dog,1488,Dead (Died on iteration 27)
+2009,Cat,2008,Alive,53,50,5,0,50
+2013,Cat,80,Alive,76,65,5,0,50
+2015,Cat,1397,Alive,75,50,5,0,50
+2018,Cat,241,Alive,100,55,5,0,50
+2029,Cat,2028,Alive,100,45,5,0,50
+2032,Cat,2327,Alive,100,40,5,0,50
+2036,Cat,2035,Alive,88,65,5,0,50
+2039,Dog,1122,Dead (Died on iteration 68)
+2046,Cat,2045,Alive,89,50,5,0,50
+2051,Cat,2050,Alive,76,50,5,0,50
+2055,Cat,2054,Alive,82,40,5,0,50
+2064,Dog,2063,Dead (Died on iteration 46)
+2066,Cat,1775,Alive,85,45,5,0,50
+2068,Cat,2067,Alive,66,55,5,0,50
+2070,Cat,2069,Alive,71,35,5,0,50
+2072,Dog,1165,Alive,76,80,10,0,0
+2081,Dog,319,Alive,28,100,10,0,0
+2083,Cat,2523,Alive,65,35,5,0,50
+2087,Cat,2086,Alive,79,60,5,0,50
+2090,Dog,2089,Dead (Died on iteration 53)
+2092,Dog,2091,Dead (Died on iteration 10)
+2094,Dog,1595,Dead (Died on iteration 132)
+2096,Cat,2095,Alive,100,45,5,0,50
+2111,Cat,1473,Alive,73,55,5,0,50
+2113,Cat,910,Alive,100,60,5,0,50
+2117,Dog,2116,Dead (Died on iteration 6)
+2121,Cat,2120,Alive,100,45,5,0,50
+2124,Dog,2123,Dead (Died on iteration 2)
+2126,Dog,2125,Dead (Died on iteration 24)
+2129,Dog,2128,Dead (Died on iteration 21)
+2139,Cat,921,Alive,68,55,5,0,50
+2142,Cat,2141,Alive,94,45,5,0,50
+2144,Dog,2143,Dead (Died on iteration 41)
+2149,Dog,839,Dead (Died on iteration 125)
+2153,Cat,1384,Alive,100,60,5,0,50
+2158,Dog,131,Alive,17,80,10,0,0
+2160,Cat,2089,Alive,94,85,5,0,50
+2165,Cat,2164,Alive,57,50,5,0,50
+2172,Cat,2171,Alive,100,60,5,0,50
+2180,Dog,2683,Dead (Died on iteration 56)
+2184,Dog,2183,Dead (Died on iteration 6)
+2186,Dog,2185,Dead (Died on iteration 34)
+2188,Cat,2187,Alive,86,50,5,0,50
+2193,Dog,2192,Dead (Died on iteration 41)
+2203,Dog,2202,Dead (Died on iteration 1)
+2205,Cat,1365,Alive,88,70,5,0,50
+2207,Dog,832,Alive,90,100,10,0,0
+2209,Dog,2208,Dead (Died on iteration 22)
+2217,Cat,2216,Alive,100,55,5,0,50
+2222,Cat,408,Alive,100,65,5,0,50
+2224,Cat,807,Alive,63,55,5,0,50
+2229,Cat,12,Alive,100,50,5,0,50
+2232,Cat,2519,Alive,83,55,5,0,50
+2235,Dog,2234,Dead (Died on iteration 35)
+2241,Cat,807,Alive,100,70,5,0,50
+2248,Dog,2427,Alive,100,100,10,0,0
+2251,Dog,2250,Dead (Died on iteration 128)
+2263,Cat,1771,Alive,81,45,5,0,50
+2265,Cat,1019,Alive,78,50,5,0,50
+2268,Cat,558,Alive,94,75,5,0,50
+2271,Dog,168,Alive,100,60,10,0,0
+2273,Cat,2272,Alive,89,60,5,0,50
+2276,Dog,1598,Dead (Died on iteration 94)
+2280,Cat,2539,Alive,100,60,5,0,50
+2283,Cat,534,Alive,88,55,5,0,50
+2286,Cat,2285,Alive,65,60,5,0,50
+2290,Dog,1688,Alive,82,100,10,0,0
+2299,Cat,1008,Alive,82,50,5,0,50
+2301,Cat,2300,Alive,76,50,5,0,50
+2305,Cat,2304,Alive,89,50,5,0,50
+2307,Dog,1986,Dead (Died on iteration 422)
+2310,Cat,204,Alive,85,75,5,0,50
+2312,Cat,1242,Alive,86,45,5,0,50
+2321,Cat,1066,Alive,100,70,5,0,50
+2328,Cat,1234,Alive,90,45,5,0,50
+2331,Cat,1982,Alive,89,55,5,0,50
+2334,Cat,2468,Alive,30,75,5,0,50
+2348,Dog,2347,Dead (Died on iteration 1)
+2356,Dog,2355,Dead (Died on iteration 163)
+2358,Cat,240,Alive,100,65,5,0,50
+2360,Dog,2359,Dead (Died on iteration 139)
+2363,Dog,2362,Dead (Died on iteration 18)
+2366,Cat,2365,Alive,90,70,5,0,50
+2370,Dog,1446,Dead (Died on iteration 205)
+2372,Cat,2371,Alive,82,80,5,0,50
+2379,Dog,1757,Alive,33,30,10,0,0
+2381,Dog,2052,Dead (Died on iteration 144)
+2392,Dog,1537,Dead (Died on iteration 179)
+2412,Dog,2705,Dead (Died on iteration 39)
+2418,Dog,299,Dead (Died on iteration 18)
+2424,Cat,1028,Alive,94,45,5,0,50
+2426,Cat,332,Alive,100,80,5,0,50
+2428,Cat,2427,Alive,95,90,5,0,50
+2433,Cat,2432,Alive,100,50,5,0,50
+2442,Dog,1591,Dead (Died on iteration 52)
+2446,Dog,709,Dead (Died on iteration 329)
+2448,Cat,2447,Alive,82,35,5,0,50
+2450,Cat,2449,Alive,50,60,5,0,50
+2454,Dog,1342,Alive,95,100,10,0,0
+2457,Cat,2456,Alive,82,85,5,0,50
+2461,Cat,72,Alive,86,45,5,0,50
+2464,Cat,2198,Alive,100,70,5,0,50
+2467,Dog,2466,Dead (Died on iteration 228)
+2469,Dog,2468,Dead (Died on iteration 80)
+2471,Cat,1370,Alive,73,50,5,0,50
+2486,Cat,2485,Alive,73,55,5,0,50
+2493,Dog,2492,Dead (Died on iteration 49)
+2495,Cat,2494,Alive,28,60,5,0,50
+2498,Cat,1140,Alive,100,60,5,0,50
+2501,Cat,2500,Alive,79,55,5,0,50
+2505,Cat,2504,Alive,26,60,5,0,50
+2513,Cat,2512,Alive,100,50,5,0,50
+2517,Cat,2516,Alive,61,40,5,0,50
+2520,Dog,2519,Dead (Died on iteration 73)
+2524,Dog,1298,Alive,41,20,10,0,0
+2526,Dog,2525,Dead (Died on iteration 28)
+2528,Cat,2303,Alive,100,95,5,0,50
+2534,Cat,120,Alive,100,85,5,0,50
+2538,Cat,1278,Alive,100,80,5,0,50
+2544,Cat,355,Alive,100,60,5,0,50
+2551,Cat,2550,Alive,100,75,5,0,50
+2555,Cat,2527,Alive,94,55,5,0,50
+2557,Cat,2628,Alive,100,50,5,0,50
+2559,Dog,2558,Dead (Died on iteration 203)
+2561,Dog,1211,Dead (Died on iteration 46)
+2568,Cat,2567,Alive,5,45,5,0,50
+2571,Dog,2570,Dead (Died on iteration 36)
+2574,Cat,2573,Alive,100,60,5,0,50
+2576,Cat,2575,Alive,78,45,5,0,50
+2578,Cat,1387,Alive,100,95,5,0,50
+2580,Cat,1960,Alive,100,95,5,0,50
+2582,Dog,2581,Dead (Died on iteration 56)
+2585,Cat,2584,Alive,90,60,5,0,50
+2591,Cat,2234,Alive,86,65,5,0,50
+2595,Cat,2594,Alive,90,45,5,0,50
+2598,Cat,2597,Alive,89,35,5,0,50
+2602,Dog,1457,Dead (Died on iteration 421)
+2604,Cat,2603,Alive,58,85,5,0,50
+2613,Cat,2612,Alive,61,60,5,0,50
+2615,Dog,2614,Dead (Died on iteration 15)
+2620,Dog,2619,Dead (Died on iteration 30)
+2623,Cat,2622,Alive,57,55,5,0,50
+2627,Cat,751,Alive,100,35,5,0,50
+2629,Dog,2628,Dead (Died on iteration 23)
+2634,Dog,2633,Dead (Died on iteration 25)
+2636,Dog,2635,Dead (Died on iteration 2)
+2641,Dog,2640,Dead (Died on iteration 12)
+2643,Cat,2642,Alive,77,50,5,0,50
+2650,Cat,353,Alive,96,80,5,0,50
+2658,Cat,2657,Alive,83,65,5,0,50
+2666,Cat,2665,Alive,91,50,5,0,50
+2672,Cat,2671,Alive,95,35,5,0,50
+2681,Cat,2680,Alive,100,55,5,0,50
+2684,Cat,1016,Alive,93,85,5,0,50
+2690,Cat,558,Alive,66,45,5,0,50
+2694,Cat,2693,Alive,100,45,5,0,50
+2697,Cat,2696,Alive,83,45,5,0,50
+2702,Cat,2701,Alive,89,70,5,0,50
+2704,Cat,2703,Alive,100,55,5,0,50
+2711,Cat,112,Alive,95,95,5,0,50
+2714,Dog,2502,Dead (Died on iteration 63)
 
 Final global stats:
-Total number of entities: 133
-Total number of humans: 100
-Total number of animals: 33
-Alive entities:80
-Deaths: 53
-Alive humans: 52
-Dead humans: 48
-Alive animals: 28
-Dead animals: 5
+Total number of entities: 2716
+Total number of humans: 2137
+Total number of animals: 579
+Alive entities:744
+Deaths: 1972
+Alive humans: 327
+Dead humans: 1810
+Alive animals: 417
+Dead animals: 162
 Total number of buildings: 100
 
 Deaths per Iteration:
 Iteration,Total Deaths,Total Remaining Entities,Human Deaths,Remaining Humans,Animal Deaths,Remaining Animals
-23,1,132,1,99,0,33
-81,1,131,1,98,0,33
-115,1,130,1,97,0,33
-132,1,129,1,96,0,33
-180,1,128,1,95,0,33
-186,1,127,1,94,0,33
-226,1,126,1,93,0,33
-256,1,125,0,93,1,32
-259,1,124,1,92,0,32
-280,1,123,1,91,0,32
-331,1,122,1,90,0,32
-450,1,121,1,89,0,32
-552,1,120,1,88,0,32
-606,1,119,1,87,0,32
-666,1,118,1,86,0,32
-672,1,117,1,85,0,32
-692,1,116,1,84,0,32
-787,1,115,1,83,0,32
-820,1,114,1,82,0,32
-825,1,113,1,81,0,32
-931,1,112,1,80,0,32
-980,1,111,1,79,0,32
-991,1,110,1,78,0,32
-1005,1,109,0,78,1,31
-1006,1,108,1,77,0,31
-1029,1,107,1,76,0,31
-1053,1,106,1,75,0,31
-1143,1,105,1,74,0,31
-1201,1,104,1,73,0,31
-1212,1,103,1,72,0,31
-1641,1,102,1,71,0,31
-1726,1,101,1,70,0,31
-1891,1,100,1,69,0,31
-1979,1,99,1,68,0,31
-2009,1,98,1,67,0,31
-2010,2,96,2,65,0,31
-2052,1,95,1,64,0,31
-2152,1,94,1,63,0,31
-2295,1,93,1,62,0,31
-2370,1,92,1,61,0,31
-2448,1,91,1,60,0,31
-2571,1,90,0,60,1,30
-2669,1,89,1,59,0,30
-2692,1,88,1,58,0,30
-2795,1,87,1,57,0,30
-3018,1,86,1,56,0,30
-3128,1,85,1,55,0,30
-3177,1,84,0,55,1,29
-3360,1,83,1,54,0,29
-3566,1,82,1,53,0,29
-3974,1,81,1,52,0,29
-4048,1,80,0,52,1,28
+1,55,2661,47,2090,8,571
+2,35,2626,32,2058,3,568
+3,32,2594,28,2030,4,564
+4,40,2554,37,1993,3,561
+5,41,2513,38,1955,3,558
+6,26,2487,23,1932,3,555
+7,26,2461,20,1912,6,549
+8,22,2439,21,1891,1,548
+9,22,2417,20,1871,2,546
+10,31,2386,30,1841,1,545
+11,33,2353,32,1809,1,544
+12,25,2328,19,1790,6,538
+13,26,2302,25,1765,1,537
+14,28,2274,26,1739,2,535
+15,25,2249,23,1716,2,533
+16,21,2228,20,1696,1,532
+17,23,2205,23,1673,0,532
+18,28,2177,22,1651,6,526
+19,30,2147,30,1621,0,526
+20,18,2129,16,1605,2,524
+21,23,2106,19,1586,4,520
+22,30,2076,26,1560,4,516
+23,21,2055,16,1544,5,511
+24,21,2034,18,1526,3,508
+25,17,2017,16,1510,1,507
+26,27,1990,26,1484,1,506
+27,21,1969,19,1465,2,504
+28,14,1955,13,1452,1,503
+29,20,1935,19,1433,1,502
+30,15,1920,14,1419,1,501
+31,10,1910,9,1410,1,500
+32,12,1898,12,1398,0,500
+33,13,1885,13,1385,0,500
+34,20,1865,16,1369,4,496
+35,9,1856,8,1361,1,495
+36,10,1846,9,1352,1,494
+37,17,1829,16,1336,1,493
+38,19,1810,18,1318,1,492
+39,19,1791,17,1301,2,490
+40,14,1777,13,1288,1,489
+41,15,1762,12,1276,3,486
+42,14,1748,14,1262,0,486
+43,12,1736,11,1251,1,485
+44,10,1726,9,1242,1,484
+45,11,1715,11,1231,0,484
+46,13,1702,11,1220,2,482
+47,13,1689,11,1209,2,480
+48,8,1681,8,1201,0,480
+49,8,1673,6,1195,2,478
+50,10,1663,9,1186,1,477
+51,10,1653,9,1177,1,476
+52,7,1646,6,1171,1,475
+53,10,1636,9,1162,1,474
+54,6,1630,6,1156,0,474
+55,12,1618,12,1144,0,474
+56,10,1608,8,1136,2,472
+57,4,1604,4,1132,0,472
+58,8,1596,7,1125,1,471
+59,6,1590,6,1119,0,471
+60,7,1583,7,1112,0,471
+61,9,1574,9,1103,0,471
+62,9,1565,8,1095,1,470
+63,7,1558,6,1089,1,469
+64,5,1553,5,1084,0,469
+65,14,1539,14,1070,0,469
+66,10,1529,9,1061,1,468
+67,5,1524,5,1056,0,468
+68,5,1519,4,1052,1,467
+69,5,1514,5,1047,0,467
+70,8,1506,7,1040,1,466
+71,10,1496,10,1030,0,466
+72,5,1491,5,1025,0,466
+73,9,1482,8,1017,1,465
+74,4,1478,4,1013,0,465
+75,5,1473,5,1008,0,465
+76,4,1469,3,1005,1,464
+77,6,1463,6,999,0,464
+78,8,1455,8,991,0,464
+79,10,1445,9,982,1,463
+80,8,1437,6,976,2,461
+81,7,1430,6,970,1,460
+82,4,1426,4,966,0,460
+83,4,1422,4,962,0,460
+84,3,1419,3,959,0,460
+85,8,1411,8,951,0,460
+86,5,1406,4,947,1,459
+87,4,1402,4,943,0,459
+88,2,1400,2,941,0,459
+89,4,1396,4,937,0,459
+90,6,1390,6,931,0,459
+91,3,1387,3,928,0,459
+92,4,1383,4,924,0,459
+93,6,1377,6,918,0,459
+94,6,1371,5,913,1,458
+95,2,1369,2,911,0,458
+96,2,1367,2,909,0,458
+97,6,1361,5,904,1,457
+98,3,1358,3,901,0,457
+99,4,1354,4,897,0,457
+100,8,1346,8,889,0,457
+101,2,1344,1,888,1,456
+102,7,1337,6,882,1,455
+103,3,1334,3,879,0,455
+104,3,1331,2,877,1,454
+105,9,1322,9,868,0,454
+106,1,1321,1,867,0,454
+107,2,1319,1,866,1,453
+108,3,1316,2,864,1,452
+109,1,1315,1,863,0,452
+110,4,1311,3,860,1,451
+111,4,1307,4,856,0,451
+112,4,1303,4,852,0,451
+113,3,1300,3,849,0,451
+114,4,1296,4,845,0,451
+115,4,1292,4,841,0,451
+116,2,1290,2,839,0,451
+117,2,1288,2,837,0,451
+118,2,1286,2,835,0,451
+119,5,1281,5,830,0,451
+120,5,1276,5,825,0,451
+121,4,1272,3,822,1,450
+122,3,1269,3,819,0,450
+123,4,1265,4,815,0,450
+124,2,1263,2,813,0,450
+125,3,1260,2,811,1,449
+126,2,1258,2,809,0,449
+127,2,1256,2,807,0,449
+128,6,1250,4,803,2,447
+129,4,1246,4,799,0,447
+130,2,1244,2,797,0,447
+131,6,1238,6,791,0,447
+132,5,1233,3,788,2,445
+133,4,1229,4,784,0,445
+134,1,1228,1,783,0,445
+135,3,1225,3,780,0,445
+136,3,1222,3,777,0,445
+137,5,1217,4,773,1,444
+138,2,1215,2,771,0,444
+139,9,1206,7,764,2,442
+140,2,1204,1,763,1,441
+141,6,1198,5,758,1,440
+142,6,1192,6,752,0,440
+143,4,1188,4,748,0,440
+144,4,1184,3,745,1,439
+145,2,1182,2,743,0,439
+146,5,1177,5,738,0,439
+147,2,1175,2,736,0,439
+148,3,1172,3,733,0,439
+149,3,1169,3,730,0,439
+150,4,1165,4,726,0,439
+151,1,1164,1,725,0,439
+152,4,1160,4,721,0,439
+153,1,1159,1,720,0,439
+154,1,1158,1,719,0,439
+155,1,1157,1,718,0,439
+156,2,1155,2,716,0,439
+157,3,1152,3,713,0,439
+158,4,1148,4,709,0,439
+159,4,1144,4,705,0,439
+160,3,1141,3,702,0,439
+161,3,1138,3,699,0,439
+162,3,1135,3,696,0,439
+163,4,1131,3,693,1,438
+164,6,1125,6,687,0,438
+165,1,1124,1,686,0,438
+167,3,1121,2,684,1,437
+168,1,1120,1,683,0,437
+169,3,1117,2,681,1,436
+170,1,1116,1,680,0,436
+171,2,1114,2,678,0,436
+172,1,1113,1,677,0,436
+174,4,1109,3,674,1,435
+175,1,1108,1,673,0,435
+176,4,1104,4,669,0,435
+177,7,1097,7,662,0,435
+178,2,1095,2,660,0,435
+179,5,1090,4,656,1,434
+180,1,1089,1,655,0,434
+181,1,1088,1,654,0,434
+182,4,1084,4,650,0,434
+183,4,1080,4,646,0,434
+184,3,1077,3,643,0,434
+185,4,1073,4,639,0,434
+186,3,1070,3,636,0,434
+187,2,1068,2,634,0,434
+188,3,1065,3,631,0,434
+189,4,1061,4,627,0,434
+190,3,1058,1,626,2,432
+191,5,1053,5,621,0,432
+192,1,1052,1,620,0,432
+193,2,1050,2,618,0,432
+194,3,1047,3,615,0,432
+195,3,1044,3,612,0,432
+196,2,1042,2,610,0,432
+197,1,1041,1,609,0,432
+198,3,1038,3,606,0,432
+199,4,1034,4,602,0,432
+201,1,1033,1,601,0,432
+202,3,1030,3,598,0,432
+203,3,1027,2,596,1,431
+204,6,1021,6,590,0,431
+205,1,1020,0,590,1,430
+206,1,1019,1,589,0,430
+207,3,1016,2,587,1,429
+208,1,1015,1,586,0,429
+209,2,1013,2,584,0,429
+210,1,1012,1,583,0,429
+211,5,1007,5,578,0,429
+212,2,1005,2,576,0,429
+213,3,1002,3,573,0,429
+214,1,1001,1,572,0,429
+215,1,1000,1,571,0,429
+220,3,997,3,568,0,429
+221,2,995,2,566,0,429
+222,2,993,2,564,0,429
+224,2,991,2,562,0,429
+225,1,990,1,561,0,429
+226,2,988,2,559,0,429
+227,3,985,3,556,0,429
+228,1,984,0,556,1,428
+229,1,983,1,555,0,428
+230,2,981,2,553,0,428
+231,2,979,2,551,0,428
+232,1,978,1,550,0,428
+234,2,976,2,548,0,428
+235,4,972,4,544,0,428
+236,1,971,1,543,0,428
+237,3,968,3,540,0,428
+238,2,966,2,538,0,428
+239,1,965,1,537,0,428
+240,4,961,3,534,1,427
+242,1,960,1,533,0,427
+243,1,959,1,532,0,427
+244,1,958,1,531,0,427
+245,2,956,2,529,0,427
+247,1,955,1,528,0,427
+248,1,954,1,527,0,427
+249,5,949,5,522,0,427
+250,2,947,2,520,0,427
+252,1,946,1,519,0,427
+253,5,941,5,514,0,427
+254,2,939,2,512,0,427
+255,1,938,1,511,0,427
+256,1,937,1,510,0,427
+257,2,935,2,508,0,427
+258,2,933,2,506,0,427
+261,1,932,1,505,0,427
+262,1,931,1,504,0,427
+263,3,928,3,501,0,427
+264,2,926,2,499,0,427
+265,1,925,1,498,0,427
+266,1,924,1,497,0,427
+267,3,921,3,494,0,427
+268,1,920,1,493,0,427
+269,2,918,2,491,0,427
+273,2,916,2,489,0,427
+274,1,915,1,488,0,427
+277,1,914,1,487,0,427
+278,1,913,1,486,0,427
+280,1,912,1,485,0,427
+284,1,911,1,484,0,427
+285,1,910,1,483,0,427
+287,1,909,1,482,0,427
+291,1,908,1,481,0,427
+292,1,907,1,480,0,427
+295,2,905,2,478,0,427
+296,3,902,2,476,1,426
+298,2,900,2,474,0,426
+299,2,898,2,472,0,426
+300,1,897,0,472,1,425
+301,2,895,2,470,0,425
+303,1,894,1,469,0,425
+304,1,893,1,468,0,425
+305,1,892,1,467,0,425
+306,1,891,1,466,0,425
+308,1,890,1,465,0,425
+311,1,889,1,464,0,425
+312,2,887,2,462,0,425
+313,1,886,1,461,0,425
+314,3,883,3,458,0,425
+315,2,881,2,456,0,425
+317,1,880,1,455,0,425
+318,1,879,1,454,0,425
+319,1,878,1,453,0,425
+320,3,875,3,450,0,425
+324,2,873,2,448,0,425
+326,3,870,2,446,1,424
+327,3,867,3,443,0,424
+328,1,866,1,442,0,424
+329,2,864,1,441,1,423
+330,2,862,2,439,0,423
+333,1,861,1,438,0,423
+337,1,860,1,437,0,423
+338,1,859,0,437,1,422
+339,2,857,2,435,0,422
+341,2,855,2,433,0,422
+342,1,854,1,432,0,422
+343,1,853,1,431,0,422
+345,2,851,2,429,0,422
+346,1,850,1,428,0,422
+347,2,848,2,426,0,422
+348,2,846,2,424,0,422
+349,3,843,3,421,0,422
+350,1,842,1,420,0,422
+353,1,841,1,419,0,422
+355,1,840,1,418,0,422
+356,1,839,1,417,0,422
+357,2,837,2,415,0,422
+358,1,836,1,414,0,422
+359,1,835,1,413,0,422
+360,1,834,1,412,0,422
+361,1,833,1,411,0,422
+363,1,832,1,410,0,422
+365,1,831,1,409,0,422
+367,1,830,1,408,0,422
+369,1,829,1,407,0,422
+370,1,828,1,406,0,422
+372,1,827,1,405,0,422
+375,1,826,1,404,0,422
+377,1,825,1,403,0,422
+379,1,824,1,402,0,422
+381,2,822,2,400,0,422
+382,2,820,2,398,0,422
+383,1,819,1,397,0,422
+384,1,818,1,396,0,422
+385,1,817,1,395,0,422
+386,1,816,1,394,0,422
+388,1,815,1,393,0,422
+390,1,814,1,392,0,422
+391,2,812,1,391,1,421
+392,2,810,2,389,0,421
+394,2,808,2,387,0,421
+395,1,807,1,386,0,421
+397,1,806,1,385,0,421
+398,3,803,3,382,0,421
+399,1,802,1,381,0,421
+402,1,801,1,380,0,421
+403,3,798,3,377,0,421
+405,1,797,1,376,0,421
+406,2,795,2,374,0,421
+410,1,794,1,373,0,421
+411,3,791,3,370,0,421
+416,3,788,3,367,0,421
+421,1,787,0,367,1,420
+422,1,786,0,367,1,419
+423,3,783,3,364,0,419
+428,1,782,1,363,0,419
+430,1,781,1,362,0,419
+432,1,780,1,361,0,419
+434,1,779,1,360,0,419
+436,1,778,1,359,0,419
+437,2,776,2,357,0,419
+438,1,775,1,356,0,419
+444,1,774,1,355,0,419
+445,2,772,2,353,0,419
+446,1,771,1,352,0,419
+449,1,770,1,351,0,419
+450,1,769,1,350,0,419
+453,1,768,1,349,0,419
+455,2,766,1,348,1,418
+456,1,765,1,347,0,418
+459,1,764,1,346,0,418
+460,2,762,1,345,1,417
+461,1,761,1,344,0,417
+462,1,760,1,343,0,417
+463,1,759,1,342,0,417
+464,1,758,1,341,0,417
+465,1,757,1,340,0,417
+468,1,756,1,339,0,417
+471,1,755,1,338,0,417
+475,1,754,1,337,0,417
+476,1,753,1,336,0,417
+477,1,752,1,335,0,417
+481,1,751,1,334,0,417
+491,1,750,1,333,0,417
+492,1,749,1,332,0,417
+493,1,748,1,331,0,417
+494,1,747,1,330,0,417
+498,1,746,1,329,0,417
+499,1,745,1,328,0,417
+500,1,744,1,327,0,417
 
 Map Data:
-1,0,2,3,3,2,1,0,1,1,0,1,1,1,1,0,1,2,3,3,2,0,1,1,1,0,1,1,1,1,1,1,2,3,3,2,0,0,0,0,1,1,0,1,1,1,0,2,3,3,2,1,0,0,1,0,1,0,0,0,1,1,2,3,3,2,0,1,0,1,1,0,1,0,1,0,0,2,3,3,2,0,0,1,0,0,0,1,1,1,1,1,2,3,3,2,0,0,1,1,1,1,0,1,0,1,0,2,3,3,2,0,0,0,0,1,0,0,0,0,1,0,2,3,3,2,0,1
-1,0,2,3,3,2,0,0,0,0,0,1,0,1,0,0,1,2,3,3,2,0,0,0,0,1,1,1,0,0,1,0,2,3,3,2,0,1,0,1,0,1,1,1,1,0,1,2,3,3,2,0,0,1,0,0,0,1,1,0,1,0,2,3,3,2,1,1,0,0,0,1,0,1,0,0,0,2,3,3,2,0,0,1,1,0,1,1,0,0,0,1,2,3,3,2,1,0,0,0,1,1,1,1,0,1,1,2,3,3,2,0,1,0,0,0,0,1,0,1,0,0,2,3,3,2,0,0
-0,1,2,3,3,2,1,0,0,0,1,0,1,1,1,0,0,2,3,3,2,0,0,0,1,0,1,1,1,1,1,0,2,3,3,2,1,1,1,0,0,0,0,1,1,0,1,2,3,3,2,0,1,1,0,1,1,0,0,1,0,1,2,3,3,2,1,1,1,1,1,1,1,1,1,0,1,2,3,3,2,1,1,0,0,0,0,1,1,1,1,1,2,3,3,2,0,0,0,1,0,1,0,0,1,1,1,2,3,3,2,0,1,0,1,0,1,1,1,0,1,1,2,3,3,2,0,0
-0,1,2,3,3,2,1,0,1,0,1,1,0,1,1,1,0,2,3,3,2,0,1,1,0,0,0,0,0,0,1,1,2,3,3,2,0,1,0,1,0,1,0,0,1,1,1,2,3,3,2,0,0,0,1,1,0,1,1,1,0,0,2,3,3,2,0,0,1,0,0,0,0,0,1,1,1,2,3,3,2,1,1,0,0,0,1,0,1,0,1,0,2,3,3,2,1,0,1,0,0,1,1,0,1,1,1,2,3,3,2,0,0,1,0,0,0,1,0,1,1,1,2,3,3,2,0,1
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-0,1,2,3,3,2,7,7,7,7,7,7,5,5,5,1,0,2,3,3,2,7,7,7,7,1,0,1,4,4,0,0,2,3,3,2,4,4,4,0,0,6,6,6,7,7,0,2,3,3,2,1,0,1,1,1,1,0,0,0,1,1,2,3,3,2,1,0,1,1,1,1,1,1,1,1,1,2,3,3,2,4,4,1,1,0,0,1,0,1,1,0,2,3,3,2,0,1,0,6,6,6,6,6,6,1,0,2,3,3,2,1,1,1,0,5,5,1,0,1,0,0,2,3,3,2,1,1
-0,1,2,3,3,2,7,7,7,7,7,7,5,5,5,1,0,2,3,3,2,7,7,7,7,1,1,0,4,4,0,0,2,3,3,2,4,4,4,1,1,6,6,6,7,7,1,2,3,3,2,0,1,0,0,1,0,0,0,1,1,1,2,3,3,2,0,0,1,0,1,0,1,1,1,0,1,2,3,3,2,4,4,1,1,0,1,0,0,0,1,1,2,3,3,2,1,1,1,6,6,6,6,6,6,1,0,2,3,3,2,7,7,7,7,5,5,0,0,0,0,0,2,3,3,2,1,0
-1,0,2,3,3,2,7,7,7,7,7,7,5,5,5,1,1,2,3,3,2,0,0,0,0,0,1,0,1,1,0,0,2,3,3,2,4,4,4,0,1,6,6,6,7,7,0,2,3,3,2,7,7,7,0,0,1,5,5,5,5,5,2,3,3,2,4,4,4,1,0,1,0,1,0,0,0,2,3,3,2,6,6,6,0,1,0,0,1,0,1,0,2,3,3,2,1,1,1,6,6,6,6,6,6,0,0,2,3,3,2,7,7,7,7,5,5,1,1,0,1,1,2,3,3,2,0,0
-1,0,2,3,3,2,7,7,7,7,7,7,5,5,5,0,1,2,3,3,2,1,1,0,0,1,0,1,0,0,0,1,2,3,3,2,4,4,4,0,1,6,6,6,7,7,1,2,3,3,2,7,7,7,0,1,0,5,5,5,5,5,2,3,3,2,4,4,4,0,1,0,1,0,1,0,0,2,3,3,2,6,6,6,0,1,1,0,1,1,1,1,2,3,3,2,1,1,0,1,1,0,0,0,0,1,1,2,3,3,2,7,7,7,7,5,5,0,1,0,1,1,2,3,3,2,1,1
-0,0,2,3,3,2,1,0,0,1,1,0,1,1,5,5,5,2,3,3,2,0,1,0,0,0,0,1,1,0,0,1,2,3,3,2,4,4,4,0,1,6,6,6,1,0,1,2,3,3,2,6,6,6,6,6,1,0,0,7,7,7,2,3,3,2,4,4,4,1,0,0,0,0,0,0,1,2,3,3,2,6,6,6,1,0,0,0,1,1,0,1,2,3,3,2,1,0,0,1,0,0,0,1,1,0,1,2,3,3,2,5,5,5,5,0,0,1,1,0,0,0,2,3,3,2,0,1
-0,0,2,3,3,2,6,6,6,0,1,0,1,1,5,5,5,2,3,3,2,0,0,1,1,0,1,1,0,0,0,1,2,3,3,2,7,7,7,0,0,0,1,0,0,1,0,2,3,3,2,6,6,6,6,6,0,0,1,7,7,7,2,3,3,2,6,6,6,6,6,6,1,1,1,1,1,2,3,3,2,6,6,6,1,0,1,0,1,1,1,1,2,3,3,2,0,1,1,1,0,0,1,1,0,1,1,2,3,3,2,5,5,5,5,1,0,0,1,1,0,1,2,3,3,2,1,0
-1,1,2,3,3,2,6,6,6,0,0,1,1,0,5,5,5,2,3,3,2,0,0,1,1,0,1,1,1,0,0,1,2,3,3,2,7,7,7,0,1,1,0,1,1,1,1,2,3,3,2,6,6,6,6,6,1,0,1,7,7,7,2,3,3,2,6,6,6,6,6,6,0,0,0,0,0,2,3,3,2,6,6,6,0,0,0,0,0,1,0,1,2,3,3,2,0,0,0,1,1,1,0,0,1,0,1,2,3,3,2,5,5,5,5,0,0,0,0,0,1,0,2,3,3,2,0,0
-1,1,2,3,3,2,6,6,6,1,0,1,1,1,5,5,5,2,3,3,2,0,0,0,1,0,0,0,0,0,0,0,2,3,3,2,7,7,7,0,0,1,0,0,1,0,0,2,3,3,2,0,1,0,1,1,0,0,1,7,7,7,2,3,3,2,6,6,6,6,6,6,0,1,1,1,0,2,3,3,2,6,6,6,0,0,1,0,0,0,1,0,2,3,3,2,1,0,1,6,6,6,6,6,1,1,0,2,3,3,2,5,5,5,5,1,5,5,5,1,1,0,2,3,3,2,0,1
-0,0,2,3,3,2,6,6,6,0,1,0,1,0,0,0,1,2,3,3,2,1,0,0,1,1,0,0,1,0,1,0,2,3,3,2,7,7,7,0,0,0,1,0,1,0,0,2,3,3,2,5,5,5,5,0,1,1,1,1,0,0,2,3,3,2,6,6,6,6,6,6,0,1,0,1,1,2,3,3,2,0,0,1,1,1,7,7,7,7,0,1,2,3,3,2,0,0,1,6,6,6,6,6,0,0,1,2,3,3,2,5,5,5,5,1,5,5,5,1,0,1,2,3,3,2,0,1
-0,0,2,3,3,2,6,6,6,1,1,1,4,4,1,0,1,2,3,3,2,0,1,1,5,5,5,5,5,0,0,0,2,3,3,2,1,0,1,0,0,0,1,0,1,1,0,2,3,3,2,5,5,5,5,1,0,0,0,1,1,1,2,3,3,2,1,1,1,0,0,0,0,0,0,0,0,2,3,3,2,0,0,1,1,1,7,7,7,7,1,0,2,3,3,2,1,0,0,6,6,6,6,6,0,0,0,2,3,3,2,0,0,4,4,4,5,5,5,0,0,1,2,3,3,2,0,0
-1,1,2,3,3,2,0,0,0,1,0,0,4,4,0,0,0,2,3,3,2,1,1,1,5,5,5,5,5,0,1,0,2,3,3,2,0,0,0,0,0,1,1,0,0,1,0,2,3,3,2,5,5,5,5,0,1,1,0,0,0,1,2,3,3,2,1,1,0,0,0,0,0,0,0,1,1,2,3,3,2,1,1,0,0,0,7,7,7,7,0,0,2,3,3,2,1,0,0,6,6,6,6,6,1,0,0,2,3,3,2,1,0,4,4,4,5,5,5,1,1,0,2,3,3,2,1,0
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-1,0,2,3,3,2,7,7,7,0,0,1,4,4,1,1,1,2,3,3,2,5,5,5,5,0,6,6,6,6,1,0,2,3,3,2,6,6,6,0,1,0,0,0,0,1,0,2,3,3,2,5,5,5,1,1,0,1,1,1,1,1,2,3,3,2,5,5,5,5,0,0,0,0,0,1,1,2,3,3,2,5,5,5,1,1,0,6,6,6,7,7,2,3,3,2,1,1,0,1,0,1,4,4,4,4,1,2,3,3,2,6,6,6,4,4,4,4,0,1,1,0,2,3,3,2,1,1
-0,1,2,3,3,2,7,7,7,0,1,0,4,4,0,1,0,2,3,3,2,5,5,5,5,0,6,6,6,6,1,0,2,3,3,2,6,6,6,1,1,1,1,0,0,1,1,2,3,3,2,5,5,5,1,0,0,1,1,0,0,0,2,3,3,2,5,5,5,5,1,0,1,0,1,0,0,2,3,3,2,5,5,5,0,0,0,6,6,6,7,7,2,3,3,2,1,1,0,1,1,0,4,4,4,4,1,2,3,3,2,6,6,6,4,4,4,4,1,0,0,1,2,3,3,2,0,1
-0,1,2,3,3,2,7,7,7,0,1,0,4,4,1,1,1,2,3,3,2,5,5,5,5,0,6,6,6,6,1,1,2,3,3,2,6,6,6,0,1,1,1,0,0,0,0,2,3,3,2,5,5,5,0,0,0,1,1,0,1,1,2,3,3,2,5,5,5,5,1,0,1,0,0,1,0,2,3,3,2,5,5,5,0,0,0,6,6,6,7,7,2,3,3,2,0,1,1,1,1,1,0,0,1,0,1,2,3,3,2,6,6,6,4,4,4,4,0,1,0,1,2,3,3,2,1,0
-1,0,2,3,3,2,7,7,7,0,1,1,4,4,0,1,0,2,3,3,2,5,5,5,5,1,6,6,6,6,0,0,2,3,3,2,6,6,6,1,1,0,0,0,1,0,0,2,3,3,2,5,5,5,1,1,0,1,1,1,0,1,2,3,3,2,7,7,7,7,1,0,1,0,1,1,0,2,3,3,2,5,5,5,1,1,0,6,6,6,7,7,2,3,3,2,1,1,1,1,0,0,0,1,0,1,1,2,3,3,2,6,6,6,4,4,4,4,1,1,1,0,2,3,3,2,0,0
-1,0,2,3,3,2,4,4,4,1,1,0,4,4,1,1,0,2,3,3,2,5,5,5,5,0,1,0,0,0,1,1,2,3,3,2,6,6,6,0,0,0,0,1,0,1,1,2,3,3,2,5,5,5,0,1,0,1,0,1,0,1,2,3,3,2,7,7,7,7,1,1,1,1,0,0,0,2,3,3,2,1,1,0,1,0,0,1,0,0,0,0,2,3,3,2,0,1,0,1,0,0,1,1,1,0,0,2,3,3,2,7,7,7,0,0,0,1,1,1,1,0,2,3,3,2,0,1
-0,0,2,3,3,2,4,4,4,1,0,1,0,0,0,1,1,2,3,3,2,1,0,1,0,1,1,0,1,0,0,1,2,3,3,2,0,0,0,1,1,1,1,0,1,1,0,2,3,3,2,6,6,6,0,0,0,1,0,0,1,1,2,3,3,2,7,7,7,7,1,1,1,1,1,1,1,2,3,3,2,0,0,6,6,6,6,6,6,0,0,1,2,3,3,2,0,0,0,1,1,1,0,0,0,1,1,2,3,3,2,7,7,7,1,0,1,1,0,1,0,0,2,3,3,2,0,1
-0,0,2,3,3,2,4,4,4,1,0,1,1,0,0,0,1,2,3,3,2,0,1,0,1,1,0,1,0,1,1,0,2,3,3,2,0,1,0,0,0,1,0,1,0,0,1,2,3,3,2,6,6,6,0,1,0,1,0,0,0,0,2,3,3,2,7,7,7,7,1,0,1,0,0,0,1,2,3,3,2,0,0,6,6,6,6,6,6,0,0,0,2,3,3,2,1,1,1,0,1,1,1,0,0,0,0,2,3,3,2,0,1,6,6,6,6,6,0,0,0,0,2,3,3,2,0,0
-0,1,2,3,3,2,4,4,4,1,1,0,1,1,0,1,0,2,3,3,2,1,1,0,1,1,0,0,1,0,0,1,2,3,3,2,1,1,4,4,0,0,1,0,1,4,4,2,3,3,2,6,6,6,0,0,0,1,0,1,1,0,2,3,3,2,7,7,7,7,7,7,7,7,1,0,0,2,3,3,2,1,1,6,6,6,6,6,6,0,1,0,2,3,3,2,0,0,1,1,0,1,1,1,1,1,0,2,3,3,2,0,1,6,6,6,6,6,5,5,5,5,2,3,3,2,1,0
-0,1,2,3,3,2,4,4,4,0,1,0,1,1,0,0,1,2,3,3,2,1,6,6,6,6,6,1,0,1,1,0,2,3,3,2,0,1,4,4,0,0,1,1,1,4,4,2,3,3,2,6,6,6,1,4,4,4,4,1,1,0,2,3,3,2,7,7,7,7,7,7,7,7,1,0,0,2,3,3,2,1,1,6,6,6,6,6,6,1,0,0,2,3,3,2,1,0,1,0,0,1,1,1,1,0,0,2,3,3,2,0,1,6,6,6,6,6,5,5,5,5,2,3,3,2,0,1
-1,0,2,3,3,2,1,0,0,1,0,0,1,0,0,1,0,2,3,3,2,1,6,6,6,6,6,1,1,0,0,0,2,3,3,2,1,1,4,4,0,1,0,0,1,4,4,2,3,3,2,6,6,6,1,4,4,4,4,0,0,0,2,3,3,2,7,7,7,7,7,7,7,7,1,0,1,2,3,3,2,0,0,6,6,6,6,6,6,1,1,0,2,3,3,2,1,0,1,0,1,0,1,0,0,1,0,2,3,3,2,1,1,6,6,6,6,6,1,0,0,0,2,3,3,2,1,1
-1,0,2,3,3,2,1,0,0,0,0,0,1,0,0,0,0,2,3,3,2,1,6,6,6,6,6,0,0,1,0,1,2,3,3,2,0,0,4,4,1,1,0,1,1,1,0,2,3,3,2,0,0,0,1,4,4,4,4,0,1,1,2,3,3,2,7,7,7,7,7,7,7,7,1,1,1,2,3,3,2,0,0,6,6,6,6,6,6,0,0,1,2,3,3,2,0,0,0,0,1,0,0,0,1,0,1,2,3,3,2,0,0,6,6,6,6,6,1,0,0,0,2,3,3,2,1,0
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-0,0,2,3,3,2,0,0,0,0,1,0,0,0,0,0,0,2,3,3,2,0,1,1,1,5,5,5,1,0,1,1,2,3,3,2,1,0,1,6,6,6,6,1,0,1,0,2,3,3,2,1,0,1,6,6,6,6,6,6,1,1,2,3,3,2,0,1,0,0,0,6,6,6,6,6,1,2,3,3,2,1,1,1,1,1,0,4,4,1,1,1,2,3,3,2,1,1,0,1,1,0,0,0,0,1,1,2,3,3,2,4,4,4,4,0,0,7,7,1,1,1,2,3,3,2,0,0
-0,0,2,3,3,2,0,1,1,1,1,0,0,0,0,1,0,2,3,3,2,0,0,0,0,5,5,5,0,1,0,0,2,3,3,2,1,1,1,6,6,6,6,1,0,0,1,2,3,3,2,0,1,0,6,6,6,6,6,6,1,0,2,3,3,2,1,1,0,1,0,6,6,6,6,6,1,2,3,3,2,1,1,1,0,0,0,4,4,1,1,0,2,3,3,2,0,1,1,1,1,1,0,0,0,1,0,2,3,3,2,4,4,4,4,1,1,7,7,1,1,1,2,3,3,2,0,1
-1,1,2,3,3,2,4,4,4,4,0,1,0,1,0,0,1,2,3,3,2,0,0,0,0,5,5,5,1,0,1,0,2,3,3,2,1,1,0,6,6,6,6,1,0,0,1,2,3,3,2,0,0,0,6,6,6,6,6,6,0,0,2,3,3,2,1,1,1,0,1,6,6,6,6,6,0,2,3,3,2,0,0,0,1,1,1,4,4,1,1,1,2,3,3,2,1,1,0,1,0,0,0,1,0,1,0,2,3,3,2,4,4,4,4,0,0,0,1,1,0,0,2,3,3,2,0,1
-1,1,2,3,3,2,4,4,4,4,1,1,0,0,0,1,1,2,3,3,2,0,1,1,0,5,5,5,0,1,0,1,2,3,3,2,1,0,0,6,6,6,6,1,0,1,0,2,3,3,2,1,0,1,6,6,6,6,6,6,0,0,2,3,3,2,0,0,1,1,0,6,6,6,6,6,0,2,3,3,2,0,0,0,1,1,0,0,0,0,1,0,2,3,3,2,0,1,1,1,0,0,1,1,0,1,0,2,3,3,2,5,5,5,0,1,0,1,1,0,0,0,2,3,3,2,0,0
-0,0,2,3,3,2,5,5,0,1,0,1,0,1,0,1,0,2,3,3,2,1,1,1,0,0,1,0,1,0,1,1,2,3,3,2,1,1,1,6,6,6,6,1,1,0,1,2,3,3,2,0,0,1,6,6,6,6,6,6,0,0,2,3,3,2,4,4,0,0,1,6,6,6,6,6,1,2,3,3,2,1,1,1,0,0,1,0,0,0,1,0,2,3,3,2,0,1,1,1,1,1,0,0,1,0,0,2,3,3,2,5,5,5,1,1,1,0,0,1,1,1,2,3,3,2,1,0
-0,0,2,3,3,2,5,5,0,0,0,1,1,1,0,1,1,2,3,3,2,0,0,0,6,6,6,1,1,1,1,1,2,3,3,2,1,0,0,6,6,6,6,1,0,1,0,2,3,3,2,1,0,0,6,6,6,6,6,6,0,1,2,3,3,2,4,4,0,1,0,6,6,6,6,6,0,2,3,3,2,1,1,1,0,0,0,1,0,1,1,0,2,3,3,2,1,1,0,0,1,1,1,0,1,1,1,2,3,3,2,5,5,5,1,0,1,1,1,0,1,1,2,3,3,2,0,1
-1,1,2,3,3,2,5,5,0,0,1,0,4,4,1,1,0,2,3,3,2,1,0,0,6,6,6,5,5,5,5,5,2,3,3,2,0,0,1,0,0,0,0,1,1,1,0,2,3,3,2,6,6,6,6,6,6,0,1,1,1,1,2,3,3,2,4,4,0,0,1,0,1,0,0,1,1,2,3,3,2,0,0,0,1,1,1,0,1,1,1,0,2,3,3,2,1,0,0,1,0,1,1,1,0,0,0,2,3,3,2,0,0,0,1,1,1,0,0,0,0,1,2,3,3,2,1,1
-1,0,2,3,3,2,5,5,1,0,1,0,4,4,0,1,0,2,3,3,2,1,1,1,6,6,6,5,5,5,5,5,2,3,3,2,1,0,1,1,0,0,1,1,1,0,0,2,3,3,2,6,6,6,6,6,6,0,1,1,1,1,2,3,3,2,4,4,4,1,1,0,1,1,1,1,1,2,3,3,2,0,0,0,1,1,0,1,0,1,1,1,2,3,3,2,1,1,1,0,0,1,1,1,0,1,1,2,3,3,2,0,1,1,1,0,1,1,0,0,0,1,2,3,3,2,1,0
-0,1,2,3,3,2,1,1,1,0,0,1,4,4,1,1,1,2,3,3,2,1,1,1,6,6,6,5,5,5,5,5,2,3,3,2,4,4,0,0,0,1,0,1,1,0,0,2,3,3,2,6,6,6,6,6,6,1,7,7,7,1,2,3,3,2,4,4,4,1,1,0,1,0,0,1,0,2,3,3,2,1,1,1,0,1,1,0,1,1,1,0,2,3,3,2,1,0,1,0,1,0,1,0,1,0,1,2,3,3,2,7,7,7,0,0,0,1,1,0,1,0,2,3,3,2,1,0
-0,1,2,3,3,2,1,1,0,1,0,0,4,4,0,0,1,2,3,3,2,1,0,0,6,6,6,5,5,5,5,5,2,3,3,2,4,4,0,1,1,1,0,1,1,1,1,2,3,3,2,6,6,6,6,6,6,0,7,7,7,0,2,3,3,2,4,4,4,1,1,1,1,1,0,0,0,2,3,3,2,1,1,1,0,1,0,1,1,0,1,1,2,3,3,2,0,0,0,0,1,0,0,0,0,1,1,2,3,3,2,7,7,7,0,7,7,7,0,1,0,0,2,3,3,2,1,1
-1,0,2,3,3,2,0,0,0,0,1,1,4,4,1,1,0,2,3,3,2,0,0,0,6,6,6,5,5,5,5,5,2,3,3,2,4,4,1,0,0,0,1,1,0,1,1,2,3,3,2,6,6,6,6,6,6,1,7,7,7,0,2,3,3,2,0,0,0,1,1,1,1,1,0,1,1,2,3,3,2,0,0,0,1,0,1,0,0,0,0,1,2,3,3,2,0,0,1,0,1,0,1,1,1,0,1,2,3,3,2,7,7,7,0,7,7,7,1,0,1,1,2,3,3,2,0,1
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-1,1,2,3,3,2,5,5,5,0,1,0,0,1,0,0,1,2,3,3,2,0,1,0,0,1,1,1,1,1,1,0,2,3,3,2,7,7,7,7,1,1,0,0,0,1,0,2,3,3,2,5,5,5,5,1,1,0,1,0,1,1,2,3,3,2,5,5,6,6,6,6,6,6,0,1,0,2,3,3,2,5,5,5,1,1,0,1,0,0,1,0,2,3,3,2,0,0,0,1,1,1,1,1,1,0,0,2,3,3,2,6,6,6,6,6,6,4,4,0,1,1,2,3,3,2,0,0
-1,0,2,3,3,2,5,5,5,1,0,1,1,1,1,0,0,2,3,3,2,1,1,0,1,0,0,0,1,1,0,0,2,3,3,2,7,7,7,7,1,0,1,1,0,1,0,2,3,3,2,5,5,5,5,0,0,1,1,1,1,1,2,3,3,2,5,5,6,6,6,6,6,6,1,1,1,2,3,3,2,5,5,5,0,0,1,1,1,0,0,0,2,3,3,2,1,1,0,1,0,0,0,0,1,0,0,2,3,3,2,6,6,6,6,6,6,4,4,1,0,0,2,3,3,2,1,0
-1,0,2,3,3,2,5,5,5,0,1,1,0,1,0,0,1,2,3,3,2,0,1,1,0,0,1,1,1,1,0,0,2,3,3,2,7,7,7,7,0,0,1,0,0,0,1,2,3,3,2,5,5,5,5,0,1,1,1,1,1,0,2,3,3,2,5,5,6,6,6,6,6,6,0,5,5,2,3,3,2,5,5,5,0,0,0,0,1,1,0,1,2,3,3,2,0,1,1,1,0,0,1,0,1,0,1,2,3,3,2,6,6,6,6,6,6,4,4,0,0,0,2,3,3,2,0,1
-0,1,2,3,3,2,5,5,5,0,0,1,0,0,1,0,0,2,3,3,2,1,1,1,0,0,1,1,1,1,0,0,2,3,3,2,7,7,7,7,1,1,1,1,1,0,0,2,3,3,2,4,4,1,0,1,0,1,1,0,0,1,2,3,3,2,5,5,6,6,6,6,6,6,1,5,5,2,3,3,2,5,5,5,1,1,1,1,1,0,0,0,2,3,3,2,0,1,0,1,1,1,1,1,0,0,1,2,3,3,2,6,6,6,6,6,6,4,4,0,1,1,2,3,3,2,1,1
-0,1,2,3,3,2,6,6,6,6,6,1,0,0,1,1,0,2,3,3,2,1,0,0,1,0,0,0,1,1,0,1,2,3,3,2,0,1,1,0,0,1,1,0,0,1,1,2,3,3,2,4,4,0,1,0,1,1,0,0,0,0,2,3,3,2,5,5,0,1,0,0,0,0,0,5,5,2,3,3,2,5,5,5,5,1,0,0,1,1,0,1,2,3,3,2,1,1,1,0,1,1,1,1,0,0,1,2,3,3,2,6,6,6,6,6,6,0,1,0,1,1,2,3,3,2,1,0
-1,0,2,3,3,2,6,6,6,6,6,0,0,1,1,0,1,2,3,3,2,4,4,4,1,1,0,0,1,1,0,1,2,3,3,2,1,1,0,0,0,0,0,1,1,1,1,2,3,3,2,4,4,0,0,1,0,1,1,1,0,0,2,3,3,2,1,1,1,1,0,0,1,0,1,5,5,2,3,3,2,5,5,5,5,1,1,1,0,1,0,1,2,3,3,2,1,1,1,1,0,1,1,1,1,1,1,2,3,3,2,0,0,0,1,1,0,0,0,0,0,0,2,3,3,2,1,0
-1,0,2,3,3,2,6,6,6,6,6,0,0,1,1,1,1,2,3,3,2,4,4,4,1,0,1,1,1,1,0,0,2,3,3,2,0,1,0,0,0,0,0,0,1,0,1,2,3,3,2,1,1,0,1,4,4,4,4,0,0,0,2,3,3,2,0,0,1,1,0,1,0,1,0,5,5,2,3,3,2,5,5,5,5,1,1,0,0,0,0,1,2,3,3,2,1,1,0,0,0,1,1,1,1,7,7,2,3,3,2,0,6,6,6,6,1,0,0,1,0,1,2,3,3,2,1,1
-0,1,2,3,3,2,6,6,6,6,0,1,0,0,1,1,0,2,3,3,2,5,5,5,5,1,1,0,1,1,1,1,2,3,3,2,1,1,1,0,0,7,7,7,1,0,1,2,3,3,2,1,0,0,1,4,4,4,4,1,1,0,2,3,3,2,0,1,0,1,1,0,1,1,1,0,1,2,3,3,2,0,1,0,0,0,1,1,0,0,0,1,2,3,3,2,1,0,0,0,1,0,1,0,0,7,7,2,3,3,2,0,6,6,6,6,0,0,1,0,1,0,2,3,3,2,0,1
-0,0,2,3,3,2,6,6,6,6,0,0,1,1,1,1,1,2,3,3,2,5,5,5,5,7,7,7,1,1,0,0,2,3,3,2,0,0,1,0,1,7,7,7,1,1,0,2,3,3,2,0,0,1,0,4,4,4,4,1,1,1,2,3,3,2,1,0,1,0,0,1,0,0,1,1,1,2,3,3,2,0,1,0,0,0,1,0,0,0,0,0,2,3,3,2,0,1,1,0,1,0,0,0,1,0,0,2,3,3,2,0,6,6,6,6,0,0,0,1,1,0,2,3,3,2,1,0
-1,1,2,3,3,2,6,6,6,6,1,1,0,0,1,1,0,2,3,3,2,0,0,0,0,7,7,7,1,1,1,0,2,3,3,2,1,0,0,1,0,7,7,7,1,1,0,2,3,3,2,0,0,1,1,4,4,4,4,0,1,1,2,3,3,2,1,1,0,1,1,1,1,1,1,0,0,2,3,3,2,1,0,1,1,1,1,0,1,0,0,1,2,3,3,2,4,4,4,4,4,0,1,1,0,1,0,2,3,3,2,1,6,6,6,6,1,0,1,1,0,1,2,3,3,2,0,0
-1,1,2,3,3,2,6,6,6,6,1,1,1,0,1,1,0,2,3,3,2,0,1,1,0,7,7,7,1,0,0,1,2,3,3,2,0,0,1,0,1,7,7,7,1,1,0,2,3,3,2,0,0,0,0,4,4,4,4,0,1,1,2,3,3,2,0,0,0,0,0,0,1,0,1,1,0,2,3,3,2,1,0,1,1,1,1,0,1,1,0,0,2,3,3,2,4,4,4,4,4,0,0,1,0,0,0,2,3,3,2,0,6,6,6,6,1,1,1,0,0,1,2,3,3,2,0,1
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2
-0,0,2,3,3,2,0,0,0,0,0,1,1,0,1,1,0,2,3,3,2,1,1,0,1,0,1,1,1,1,1,1,2,3,3,2,1,1,0,1,1,1,1,0,0,1,1,2,3,3,2,7,7,0,5,5,5,0,1,1,1,0,2,3,3,2,1,0,0,1,1,1,0,1,0,1,1,2,3,3,2,0,1,0,7,7,7,7,0,0,1,0,2,3,3,2,0,1,1,1,0,0,0,0,0,1,1,2,3,3,2,0,0,0,1,1,1,1,1,0,1,0,2,3,3,2,1,1
-0,1,2,3,3,2,0,1,1,1,0,1,0,0,1,0,0,2,3,3,2,1,0,1,0,0,0,0,1,0,1,0,2,3,3,2,1,0,1,0,0,0,1,0,0,0,0,2,3,3,2,7,7,0,5,5,5,0,0,1,1,1,2,3,3,2,0,1,0,0,1,0,1,0,1,0,0,2,3,3,2,0,1,0,7,7,7,7,0,1,0,1,2,3,3,2,0,0,0,1,0,0,1,0,0,1,1,2,3,3,2,1,1,1,1,0,0,1,1,1,1,0,2,3,3,2,1,0
-1,0,2,3,3,2,1,0,1,0,0,0,1,1,0,0,1,2,3,3,2,1,0,1,0,1,0,0,1,1,1,0,2,3,3,2,1,1,0,1,1,1,0,0,1,0,1,2,3,3,2,7,7,0,5,5,5,0,0,0,0,0,2,3,3,2,0,0,1,1,0,1,0,0,0,0,1,2,3,3,2,1,0,1,1,0,1,0,1,1,1,1,2,3,3,2,0,1,0,1,1,1,1,1,1,1,1,2,3,3,2,0,1,1,0,1,1,1,1,0,0,1,2,3,3,2,1,0
-1,0,2,3,3,2,0,0,0,1,0,1,0,1,1,0,1,2,3,3,2,1,1,0,1,0,0,0,1,0,1,1,2,3,3,2,1,0,0,1,0,1,0,1,0,1,0,2,3,3,2,1,0,1,0,1,1,0,0,0,1,1,2,3,3,2,1,1,1,0,1,0,1,1,1,1,1,2,3,3,2,1,0,1,1,1,1,1,0,0,0,1,2,3,3,2,1,1,1,0,1,1,1,1,1,1,0,2,3,3,2,0,0,0,0,0,1,1,1,1,0,1,2,3,3,2,1,1
+1,2,3,3,2,0,1,0,1,1,0,1,1,1,1,0,2,3,3,2,0,0,1,1,1,0,1,1,1,1,1,2,3,3,2,0,0,0,0,0,1,1,0,1,1,1,2,3,3,2,0,1,0,0,1,0,1,0,0,0,1,2,3,3,2,0,0,1,0,1,1,0,1,0,1
+0,2,3,3,2,1,0,0,1,0,7,7,7,7,1,1,2,3,3,2,1,4,4,7,7,7,1,0,1,0,1,2,3,3,2,0,7,7,7,7,1,0,0,0,0,1,2,3,3,2,0,4,4,4,4,0,1,1,0,0,0,2,3,3,2,0,1,0,0,1,1,1,1,1,0
+0,2,3,3,2,1,0,0,1,0,7,7,7,7,0,1,2,3,3,2,1,4,4,7,7,7,1,1,0,0,0,2,3,3,2,1,7,7,7,7,1,1,1,1,1,1,2,3,3,2,0,4,4,4,4,1,0,0,0,0,0,2,3,3,2,1,0,0,0,1,1,0,1,0,1
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+0,2,3,3,2,1,0,0,1,6,6,6,6,0,0,1,2,3,3,2,1,0,0,1,1,1,4,4,4,1,1,2,3,3,2,5,5,6,6,6,6,0,0,1,0,1,2,3,3,2,6,6,6,6,6,6,6,6,6,1,1,2,3,3,2,6,6,6,6,6,6,4,4,4,1
+0,2,3,3,2,4,4,4,4,6,6,6,6,0,1,1,2,3,3,2,1,1,0,1,0,1,4,4,4,1,1,2,3,3,2,5,5,6,6,6,6,1,0,1,0,0,2,3,3,2,6,6,6,6,6,6,6,6,6,1,1,2,3,3,2,6,6,6,6,6,6,4,4,4,1
+0,2,3,3,2,4,4,4,4,6,6,6,6,1,0,1,2,3,3,2,5,5,5,5,5,0,4,4,4,1,0,2,3,3,2,1,0,6,6,6,6,0,1,0,0,1,2,3,3,2,6,6,6,6,6,6,6,6,6,1,1,2,3,3,2,6,6,6,6,6,6,4,4,4,0
+0,2,3,3,2,4,4,4,4,6,6,6,6,0,1,0,2,3,3,2,5,5,5,5,5,1,1,0,1,1,0,2,3,3,2,0,1,6,6,6,6,0,0,1,1,1,2,3,3,2,1,0,0,0,6,6,6,6,6,1,0,2,3,3,2,1,7,7,0,1,1,4,4,4,1
+0,2,3,3,2,4,4,4,4,6,6,6,6,1,0,1,2,3,3,2,5,5,5,5,5,1,0,0,0,0,1,2,3,3,2,0,1,6,6,6,6,1,0,1,1,1,2,3,3,2,1,1,1,0,1,1,1,0,0,0,1,2,3,3,2,7,7,1,0,1,0,1,0,1,0
+0,2,3,3,2,4,4,4,4,1,1,4,4,4,4,4,2,3,3,2,5,5,5,5,5,0,1,0,0,1,1,2,3,3,2,4,4,6,6,6,6,1,0,1,1,1,2,3,3,2,0,6,6,6,6,6,6,1,1,1,1,2,3,3,2,7,7,1,1,1,1,1,1,0,1
+1,2,3,3,2,5,5,5,0,0,1,4,4,4,4,4,2,3,3,2,5,5,5,5,5,0,1,0,1,1,1,2,3,3,2,4,4,0,1,1,0,1,1,0,0,1,2,3,3,2,1,6,6,6,6,6,6,0,1,0,1,2,3,3,2,7,7,1,0,0,1,1,1,1,1
+0,2,3,3,2,5,5,5,1,1,1,4,4,4,4,4,2,3,3,2,0,1,0,1,0,1,0,1,1,1,1,2,3,3,2,4,4,1,6,6,6,6,6,6,1,1,2,3,3,2,1,6,6,6,6,6,6,1,5,5,5,2,3,3,2,0,1,0,0,0,5,5,5,5,0
+1,2,3,3,2,5,5,5,1,1,1,1,1,0,1,1,2,3,3,2,7,7,7,0,1,1,1,0,1,1,0,2,3,3,2,4,4,0,6,6,6,6,6,6,1,1,2,3,3,2,0,6,6,6,6,6,6,0,5,5,5,2,3,3,2,1,4,4,4,4,5,5,5,5,1
+1,2,3,3,2,5,5,5,5,5,5,5,5,1,0,1,2,3,3,2,7,7,7,0,1,1,1,0,1,0,0,2,3,3,2,1,1,0,6,6,6,6,6,6,1,0,2,3,3,2,1,6,6,6,6,6,6,1,5,5,5,2,3,3,2,0,4,4,4,4,5,5,5,5,1
+0,2,3,3,2,5,5,5,5,5,5,5,5,1,1,1,2,3,3,2,1,1,0,1,0,1,0,0,0,0,0,2,3,3,2,0,0,1,6,6,6,6,6,6,0,1,2,3,3,2,0,6,6,6,6,6,6,0,5,5,5,2,3,3,2,0,4,4,4,4,5,5,5,5,1
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+1,2,3,3,2,5,5,5,6,6,6,6,6,1,0,0,2,3,3,2,4,4,1,0,1,0,1,1,1,0,1,2,3,3,2,7,7,7,7,5,5,5,5,5,0,1,2,3,3,2,4,4,4,6,6,6,6,6,6,5,5,2,3,3,2,1,0,6,6,6,6,0,4,4,0
+0,2,3,3,2,5,5,5,6,6,6,6,6,1,1,1,2,3,3,2,4,4,1,1,0,1,0,1,1,1,1,2,3,3,2,7,7,7,7,5,5,5,5,5,1,1,2,3,3,2,4,4,4,6,6,6,6,6,6,5,5,2,3,3,2,1,0,6,6,6,6,1,4,4,1
+0,2,3,3,2,5,5,5,6,6,6,6,6,0,0,1,2,3,3,2,4,4,0,1,0,1,1,1,1,1,1,2,3,3,2,6,6,6,1,5,5,5,5,5,1,0,2,3,3,2,4,4,4,6,6,6,6,6,6,5,5,2,3,3,2,0,0,6,6,6,6,1,0,1,1
+0,2,3,3,2,5,5,5,1,0,0,1,0,0,0,0,2,3,3,2,4,4,0,1,1,0,0,0,0,0,1,2,3,3,2,6,6,6,0,5,5,5,5,5,0,1,2,3,3,2,4,4,4,1,1,0,1,1,1,5,5,2,3,3,2,5,5,5,5,1,0,0,0,0,0
+0,2,3,3,2,5,5,5,1,0,0,1,0,0,1,0,2,3,3,2,4,4,1,0,1,1,0,0,1,0,1,2,3,3,2,6,6,6,1,0,0,1,0,4,4,4,2,3,3,2,5,5,5,5,5,0,1,0,0,0,1,2,3,3,2,5,5,5,5,0,1,1,1,0,1
+1,2,3,3,2,4,4,1,0,1,1,0,0,0,1,1,2,3,3,2,1,0,1,0,0,0,1,1,0,1,1,2,3,3,2,7,7,0,0,1,0,1,0,4,4,4,2,3,3,2,5,5,5,5,5,1,0,0,0,0,0,2,3,3,2,5,5,5,5,0,0,0,1,0,1
+1,2,3,3,2,4,4,1,0,0,1,1,1,0,0,1,2,3,3,2,0,1,0,1,1,1,1,0,0,0,0,2,3,3,2,7,7,0,0,1,1,1,0,0,0,0,2,3,3,2,5,5,5,5,5,0,1,0,1,0,1,2,3,3,2,5,5,5,5,1,1,0,0,1,0
+1,2,3,3,2,4,4,1,1,0,1,1,1,0,0,1,2,3,3,2,0,1,0,1,1,0,0,1,1,0,0,2,3,3,2,0,0,5,5,5,5,0,0,1,0,1,2,3,3,2,5,5,5,5,5,7,7,7,0,0,1,2,3,3,2,5,5,5,5,7,7,7,0,0,0
+0,2,3,3,2,4,4,0,0,6,6,6,6,6,0,1,2,3,3,2,0,0,1,0,0,0,0,1,1,0,0,2,3,3,2,0,0,5,5,5,5,0,1,0,0,0,2,3,3,2,5,5,5,5,5,7,7,7,7,7,0,2,3,3,2,7,7,7,7,7,7,7,1,0,1
+1,2,3,3,2,7,7,7,7,6,6,6,6,6,1,0,2,3,3,2,1,1,0,0,1,0,1,1,1,1,0,2,3,3,2,1,1,5,5,5,5,1,1,1,0,1,2,3,3,2,0,0,0,0,1,7,7,7,7,7,1,2,3,3,2,7,7,7,7,7,7,7,0,0,1
+1,2,3,3,2,7,7,7,7,6,6,6,6,6,0,1,2,3,3,2,0,0,1,1,1,0,0,1,0,1,1,2,3,3,2,0,0,5,5,5,5,1,0,0,0,1,2,3,3,2,1,0,0,1,0,7,7,7,7,7,0,2,3,3,2,7,7,7,7,7,7,7,1,1,1
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+1,2,3,3,2,5,5,5,7,7,7,5,5,1,0,0,2,3,3,2,1,0,0,1,1,1,1,1,0,0,1,2,3,3,2,0,1,0,5,5,5,5,5,7,7,0,2,3,3,2,7,7,7,6,6,6,0,1,0,1,0,2,3,3,2,7,7,7,7,7,7,7,7,0,0
+0,2,3,3,2,5,5,5,7,7,7,5,5,0,1,0,2,3,3,2,0,0,0,1,0,1,1,0,1,1,1,2,3,3,2,0,1,1,5,5,5,5,5,7,7,0,2,3,3,2,7,7,7,6,6,6,0,0,0,0,0,2,3,3,2,7,7,7,7,7,7,7,7,0,1
+1,2,3,3,2,5,5,5,7,7,7,5,5,1,1,1,2,3,3,2,0,1,0,1,1,1,0,1,0,0,1,2,3,3,2,6,6,6,6,6,1,0,0,7,7,1,2,3,3,2,0,0,1,6,6,6,0,1,0,1,0,2,3,3,2,7,7,7,7,7,7,7,7,1,1
+0,2,3,3,2,5,5,5,7,7,7,0,1,0,0,0,2,3,3,2,1,0,0,1,0,1,1,0,1,1,0,2,3,3,2,6,6,6,6,6,1,1,0,7,7,1,2,3,3,2,4,4,4,4,4,1,0,0,1,1,1,2,3,3,2,7,7,7,7,7,7,7,7,1,1
+0,2,3,3,2,5,5,5,0,0,1,0,1,0,0,1,2,3,3,2,0,1,0,1,0,1,0,1,0,0,1,2,3,3,2,6,6,6,6,6,0,0,1,1,1,1,2,3,3,2,4,4,4,4,4,1,0,0,0,1,1,2,3,3,2,7,7,1,0,1,0,1,0,0,1
+0,2,3,3,2,1,0,0,0,1,0,0,0,1,1,1,2,3,3,2,0,1,1,0,0,0,1,0,1,1,0,2,3,3,2,6,6,6,6,6,1,0,0,1,0,1,2,3,3,2,4,4,4,4,4,0,0,1,1,0,1,2,3,3,2,7,7,6,6,6,6,0,1,0,0
+0,2,3,3,2,1,1,0,0,1,1,0,0,0,0,1,2,3,3,2,0,0,1,1,0,0,0,1,1,0,0,2,3,3,2,6,6,6,6,6,0,0,0,0,0,1,2,3,3,2,4,4,4,4,4,0,0,0,1,0,0,2,3,3,2,7,7,6,6,6,6,0,1,1,1
+1,2,3,3,2,4,4,4,4,0,0,1,1,0,0,1,2,3,3,2,0,1,0,0,1,0,1,0,1,0,1,2,3,3,2,6,6,6,6,6,7,7,7,1,0,0,2,3,3,2,4,4,4,4,4,5,5,5,5,0,1,2,3,3,2,7,7,6,6,6,6,0,1,0,0
+0,2,3,3,2,4,4,4,4,6,6,6,6,6,1,0,2,3,3,2,0,1,0,1,7,7,7,1,1,0,1,2,3,3,2,1,0,1,1,0,7,7,7,0,1,0,2,3,3,2,4,4,4,0,0,5,5,5,5,1,0,2,3,3,2,1,0,6,6,6,6,1,1,1,0
+0,2,3,3,2,4,4,4,4,6,6,6,6,6,0,1,2,3,3,2,1,1,0,1,7,7,7,0,0,1,1,2,3,3,2,0,1,1,0,0,7,7,7,0,1,0,2,3,3,2,4,4,4,0,1,5,5,5,5,1,0,2,3,3,2,1,0,6,6,6,6,1,0,0,0
+0,2,3,3,2,0,0,0,1,6,6,6,6,6,0,1,2,3,3,2,0,0,0,0,7,7,7,0,1,0,1,2,3,3,2,1,0,0,0,1,7,7,7,0,1,0,2,3,3,2,4,4,4,0,0,5,5,5,5,0,0,2,3,3,2,0,0,6,6,6,6,0,0,0,1
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+1,2,3,3,2,7,7,7,7,0,0,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,0,1,0,0,1,2,3,3,2,6,6,6,6,6,4,4,4,4,4,1,2,3,3,2,5,5,5,1,0,5,5,5,5,1,1,2,3,3,2,5,5,5,5,6,6,6,6,0,0
+0,2,3,3,2,7,7,7,7,1,1,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,0,0,1,0,1,2,3,3,2,6,6,6,6,6,4,4,4,4,4,0,2,3,3,2,5,5,5,1,0,5,5,5,5,0,1,2,3,3,2,5,5,5,5,6,6,6,6,1,1
+1,2,3,3,2,7,7,7,7,0,1,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,0,1,0,0,1,2,3,3,2,6,6,6,6,6,4,4,4,4,4,1,2,3,3,2,5,5,5,0,0,5,5,5,5,0,0,2,3,3,2,5,5,5,5,6,6,6,6,1,1
+0,2,3,3,2,1,0,1,1,1,1,0,1,0,0,1,2,3,3,2,6,6,6,6,6,6,1,0,0,0,0,2,3,3,2,6,6,6,6,6,4,4,4,4,4,1,2,3,3,2,5,5,5,0,1,0,1,0,1,0,1,2,3,3,2,5,5,5,5,6,6,6,6,1,0
+0,2,3,3,2,4,4,4,1,1,0,1,0,1,1,0,2,3,3,2,6,6,6,6,6,6,0,0,1,1,1,2,3,3,2,6,6,6,6,6,4,4,4,4,4,1,2,3,3,2,5,5,5,1,0,1,0,1,0,0,0,2,3,3,2,1,0,1,1,1,0,0,1,0,0
+0,2,3,3,2,4,4,4,0,6,6,6,6,6,6,1,2,3,3,2,6,6,6,6,6,6,0,1,1,1,0,2,3,3,2,4,4,0,0,0,1,0,1,0,0,0,2,3,3,2,0,0,0,1,0,1,1,1,1,0,0,2,3,3,2,0,0,1,0,0,0,0,0,1,0
+1,2,3,3,2,4,4,4,0,6,6,6,6,6,6,1,2,3,3,2,1,0,0,0,1,0,0,0,0,0,1,2,3,3,2,4,4,1,1,1,0,1,0,0,0,0,2,3,3,2,0,1,5,5,5,5,1,1,0,0,1,2,3,3,2,0,0,6,6,6,6,6,0,1,0
+1,2,3,3,2,7,7,7,7,6,6,6,6,6,6,0,2,3,3,2,0,1,1,0,0,0,0,1,1,1,1,2,3,3,2,4,4,6,6,6,6,6,1,0,1,1,2,3,3,2,0,0,5,5,5,5,1,0,1,1,0,2,3,3,2,1,1,6,6,6,6,6,1,1,0
+0,2,3,3,2,7,7,7,7,6,6,6,6,6,6,0,2,3,3,2,1,0,6,6,6,6,6,6,1,0,0,2,3,3,2,4,4,6,6,6,6,6,1,1,0,0,2,3,3,2,0,1,5,5,5,5,1,0,0,0,0,2,3,3,2,1,0,6,6,6,6,6,1,0,1
+0,2,3,3,2,7,7,7,7,6,6,6,6,6,6,1,2,3,3,2,0,0,6,6,6,6,6,6,1,0,1,2,3,3,2,4,4,6,6,6,6,6,0,0,0,1,2,3,3,2,0,1,5,5,5,5,5,5,5,5,0,2,3,3,2,1,1,6,6,6,6,6,1,0,0
+1,2,3,3,2,0,0,0,1,6,6,6,6,6,6,0,2,3,3,2,1,0,6,6,6,6,6,6,0,1,0,2,3,3,2,0,0,6,6,6,6,6,0,0,0,0,2,3,3,2,0,1,5,5,5,5,5,5,5,5,1,2,3,3,2,1,0,6,6,6,6,6,1,1,1
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2
+1,2,3,3,2,7,7,7,4,4,4,4,0,1,0,0,2,3,3,2,7,7,7,7,4,4,4,1,0,0,1,2,3,3,2,6,6,6,6,6,6,6,6,6,0,0,2,3,3,2,4,4,4,4,4,5,5,5,5,1,0,2,3,3,2,4,4,4,4,0,5,5,5,0,1
+1,2,3,3,2,7,7,7,4,4,4,4,1,1,0,1,2,3,3,2,7,7,7,7,4,4,4,0,1,1,0,2,3,3,2,6,6,6,6,6,6,6,6,6,0,1,2,3,3,2,4,4,4,4,4,5,5,5,5,0,1,2,3,3,2,4,4,4,4,1,5,5,5,0,0
+1,2,3,3,2,7,7,7,4,4,4,4,1,1,0,1,2,3,3,2,0,0,1,0,1,0,0,0,0,1,1,2,3,3,2,6,6,6,6,6,6,6,6,6,1,0,2,3,3,2,4,4,4,4,4,5,5,5,5,0,0,2,3,3,2,4,4,4,4,1,1,0,1,1,1
+1,2,3,3,2,4,4,4,4,4,4,4,0,1,1,1,2,3,3,2,1,1,0,1,1,1,0,1,0,1,1,2,3,3,2,6,6,6,6,6,6,6,6,6,0,1,2,3,3,2,4,4,4,4,4,5,5,5,5,0,1,2,3,3,2,4,4,4,4,1,0,1,1,0,0
+1,2,3,3,2,4,4,4,4,4,4,4,0,1,0,0,2,3,3,2,1,1,1,0,0,1,1,0,1,0,0,2,3,3,2,5,5,0,1,0,1,6,6,6,0,1,2,3,3,2,4,4,4,4,4,0,0,1,1,0,1,2,3,3,2,4,4,4,4,1,0,0,1,1,1
+0,2,3,3,2,4,4,4,0,1,1,1,1,1,1,0,2,3,3,2,1,0,1,0,1,1,1,0,0,1,1,2,3,3,2,5,5,0,0,0,0,6,6,6,0,0,2,3,3,2,0,0,1,1,1,0,0,1,1,1,0,2,3,3,2,0,1,0,1,0,0,0,0,1,1
+1,2,3,3,2,1,0,0,1,1,0,0,0,0,0,1,2,3,3,2,1,1,1,1,1,0,0,1,0,0,0,2,3,3,2,5,5,0,0,0,1,1,1,0,1,1,2,3,3,2,0,0,0,1,1,0,1,1,1,1,1,2,3,3,2,1,0,0,1,0,1,1,1,0,1
+0,2,3,3,2,1,0,0,0,0,1,0,1,0,0,1,2,3,3,2,0,0,0,1,0,0,0,0,1,1,0,2,3,3,2,1,1,1,0,0,0,1,0,1,1,0,2,3,3,2,1,1,0,0,1,1,1,0,1,1,1,2,3,3,2,0,0,1,1,0,1,1,1,0,1

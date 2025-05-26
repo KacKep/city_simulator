@@ -18,8 +18,9 @@ Human::Human()
 	//std::cout << item.getAttack1() << std::endl;
 	setAttack(getAttack() + item.getAttack1());
 	setSwiftness(getSwiftness() + item.getSwiftness());
+	setDefence(getDefence() + item.getDefence());
 	//setPosition(sf::Vector2f(10, 10));
-	
+	setName();
 }
 
 
@@ -192,7 +193,8 @@ void Human::behavior() {
 
 std::string Human::toSave() {
 	std::stringstream toSave;
-	toSave << getID() << ",";
+	toSave << getID() << ","
+	<< getName() << ",";
 	if (isDead() == 0 ) {
 		toSave << "Alive," << getHealth() << ","
 		<< getHunger() << ","
@@ -207,4 +209,31 @@ std::string Human::toSave() {
 		toSave << "Dead (Died on iteration " << getDeathIteration() << ")";
 	}
 	return toSave.str();
+}
+
+std::string Human::getName() {
+	return name;
+}
+
+void Human:: setName() {
+	static std::vector<std::string> firstNames = {
+		"John", "Radomir", "Grzmislaw", "Gniewomir", "Genowefa", "Christopher", "Kunegunda", "Brajan", "Bozydar", "Alfred", "Jessica", "Michel", "Steve", "Zygmunt", "Nikolai","Jerry","Alexander","Ihor","Karol","Denis","Stanislaw","Vladimir","Tim"
+	};
+	static std::vector<std::string> lastNames = {
+		"Smith","Pork", "Jobs","Sunbed","Jones","Nowak", "Kowalski", "Jaroszewicz", "Baranowicz", "Prudnicka","Dudek","Shrimpus","Wojtyla","Poniatowski","Bialy","Cheese"
+	};
+	std::string first = firstNames[std::rand() % firstNames.size()];
+	std::string last = lastNames[std::rand() % lastNames.size()];
+	this->name = first + " " + last;
+	if (name == "Steve Jobs") {
+		this->addMoney(1000000);
+	}
+	if (name == "Stanislaw Poniatowski") {
+		this->name = "Stanislaw August Poniatowski";
+	}
+	//Divine protection
+	if (name == "Karol Wojtyla") {
+		this->setDefence(10);
+		setFillColor(sf::Color::Yellow);
+	}
 }

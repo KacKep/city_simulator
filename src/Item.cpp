@@ -90,6 +90,9 @@ Item::Item()
 	int Item::getAttack1() const {
 		return attack;
 	}
+	int Item::getDefence() const {
+	return defence;
+	}
 	std:: string Item::getName() const {
 	return name;
 }

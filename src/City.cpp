@@ -611,13 +611,15 @@ void City::start() {
         }
         window.display();
         
-        //interact
+        // interact
+        if (buildings.size() > 0) {
+            interactionBuilding();
+        }
 
-        (buildings.size()>0)?interactionBuilding():0;
-
-        //fight
-
-        (entities.size() > 1) ? interactionEntities() : 0;
+        // fight
+        if (entities.size() > 1) {
+            interactionEntities();
+        }
 
         //walking
 
@@ -674,7 +676,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     }
     //std::cout << "elp3" << std::endl;
     // --- Final stats of each human ---
-    file << "\nFinal Stats of each Human\nID,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item\n";
+    file << "\nFinal Stats of each Human\nID,Name,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item\n";
     for (long int i = 0; i < entities.size(); i++) {
         if (!entities[i]->getType()) {
             //getting data from toSave method

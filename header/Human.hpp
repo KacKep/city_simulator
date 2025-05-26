@@ -12,10 +12,12 @@ public:
 	void walk() override;
 	void fight(Entity* enemy) override;
 	std::string toSave()override;
-
+	std::string getName();
 
 private:
 	Item item;
+	std::string name;
+	void setName();
 	void behavior()override;
 };
 
