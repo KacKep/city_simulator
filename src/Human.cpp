@@ -236,7 +236,9 @@ void Human:: setName() {
 	//Divine protection
 	if (name == "Karol Wojtyla") {
 		this->setDefence(10);
+		setFillColor(sf::Color::White);
 		setTexture(&texture);
+		
 
 	}
 }
