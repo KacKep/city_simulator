@@ -1,4 +1,6 @@
 #include "Building.hpp"
+
+/**@File Base class for all buildings*/
 long unsigned int Building::building_count=0;
 
 Building::Building(const std::string& name, const BuildingList& construct)
@@ -12,7 +14,6 @@ Building::Building(const std::string& name, const BuildingList& construct)
 {
 	setID();
 }
-//to do: put price and produktVal as constructor initializer or whatever it is
 
 //-----------setters and getters----------
 std::string Building::getName() const {

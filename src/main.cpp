@@ -11,7 +11,6 @@ int main() {
         std::cerr << "Fatal error: " << lambert.what() << '\n';
         return 1;
     }
-    //std::cout << "Program exit complete\n";
     return 0;
 
 }

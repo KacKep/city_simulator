@@ -1,6 +1,8 @@
 #include "Entity.hpp"
 
-//it's static and it must be implemented beafor using it so long gaybowser
+/**@File Abstract class for all moving entities*/
+
+//it's static and it must be implemented beafor using it 
 sf::Vector2i Entity::boundry = { 10,10 };
  std::vector<std::vector<int>> Entity::map;
  long unsigned int Entity::entity_count=0;
@@ -141,7 +143,6 @@ void Entity:: addSemester(int semester) {
 	return entity_count;
  }
  //------building interaction stats-------
-  //I mean it's not wrong but not right either. Btw there is operator overloading in City.cpp at the bottom
  void Entity::interactionCount() {
 	 building_interaction_count++;
  }

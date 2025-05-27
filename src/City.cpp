@@ -1,19 +1,6 @@
 #include "City.hpp"
-
-/*
- City::City()
-
-    :numHumans(100),
-    numBuildings(10),
-    length(128),
-    height(72),
-    ValueSwitch(false),
-    ValueSwitch2(false),
-    seed(0)
-    //Intmap(height, std::vector<int>(length, 0))
-{ }
+/**@File City is responsible for interaction beetween classes and making the map.
 */
-
 City::City()
 // Default Values to be used if something goes wrong
     :ValueSwitch(false),
@@ -25,6 +12,7 @@ City::City()
      outputfile(std::string(RESOURCE_DIR) + "/output.csv"),
      seed(321),
      maxIterations(0){
+    //Basic info
     std::cout <<"-------City Simulator-------\n"
     << "Project authors:\n"
        "Kacper Krzekotowski\n"
@@ -147,7 +135,8 @@ sf::Texture City::giveTexture(std::string path) {
     return sf::Texture(std::string(RESOURCE_DIR) + "/" + path);;
 }
 
-
+/**Creates road and pavment on the map
+*/
 void City::cross(int* level, int width, int length) {
 
     if (width<=9||length<=9)
@@ -166,15 +155,15 @@ void City::cross(int* level, int width, int length) {
 
         //walk of 2
         for (int i = 0; i < length; ++i) {
-            level[i * width + roadColumna] = 2;
+            level[i * width + roadColumna] = PavementTile;
 
-            level[i * width + roadColumna + 3] = 2;
+            level[i * width + roadColumna + 3] = PavementTile;
         }
         //left to right
 
         for (int i = 0; i < width; ++i) {
-            level[roadColumnb * width + i] = 2;
-            level[(roadColumnb + 3) * width + i] = 2;
+            level[roadColumnb * width + i] = PavementTile;
+            level[(roadColumnb + 3) * width + i] = PavementTile;
         }
 
 
@@ -206,14 +195,14 @@ void City::cross(int* level, int width, int length) {
 
         //road of 3
         for (int i = 0; i < length; ++i) {
-            level[i * width + roadColumna + 1] = 3;
-            level[i * width + roadColumna + 2] = 3;
+            level[i * width + roadColumna + 1] = RoadTile;
+            level[i * width + roadColumna + 2] = RoadTile;
         }
 
         //left to right
         for (int i = 0; i < width; ++i) {
-            level[(roadColumnb + 1) * width + i] = 3;
-            level[(roadColumnb + 2) * width + i] = 3;
+            level[(roadColumnb + 1) * width + i] = RoadTile;
+            level[(roadColumnb + 2) * width + i] = RoadTile;
         }
 
         if (roadColumnb + 15 < length - 3) {
@@ -346,6 +335,9 @@ void City::interactionBuilding() {
     }
 }
 
+/**Chooses type of the building and appropriate interaction with it
+
+*/
 void City::interactionHumanBuilding(Entity& entity, Building& building) {
     entity.setTarget(entity.getPosition());
     switch (building.getTile())
@@ -440,6 +432,10 @@ void City::interactionEntities() {
     }
 }
 
+/**Cmaera is for camera movmwnt speed change and closing the window
+
+*/
+
 void City::camera(sf::RenderWindow& window, sf::View& view) {
     while (const std::optional event = window.pollEvent())
     {
@@ -495,6 +491,22 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
 
         }
 
+        
+
+    }
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F))
+    {
+        //sf::sleep(sf::milliseconds(50));
+        if (!ValueSwitch2)
+        {
+            ValueSwitch2 = true;
+        }
+        else
+        {
+            ValueSwitch2 = false;
+        }
+
     }
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
@@ -510,19 +522,7 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
         }
 
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F))
-    {
-        sf::sleep(sf::milliseconds(20));
-        if (!ValueSwitch2)
-        {
-            ValueSwitch2 = true;
-        }
-        else
-        {
-            ValueSwitch2 = false;
-        }
-
-    }
+    
 
 }
 
@@ -646,30 +646,30 @@ void City::start() {
         window.draw(map);
 
         
-        //window.draw(pwr);
+       
 
         drawScreen(window, view);
-
+        window.draw(pwr);
 
         // debug purposes and it's a lag machine
-        if (ValueSwitch)
-        {
-            for (loop.x = 0; loop.x < height; ++loop.x) {
-                for (loop.y = 0; loop.y < length; ++loop.y) {
+        //if (ValueSwitch)
+        //{
+        //    for (loop.x = 0; loop.x < height; ++loop.x) {
+        //        for (loop.y = 0; loop.y < length; ++loop.y) {
 
-                    // Draw text
-                    numStr = std::to_string(Intmap[loop.x][loop.y]);
-                    text.setString(numStr);
-                    
-                    textX = loop.x * 10 + (10 / 2.0f)-2;
-                    textY = loop.y * 10 + (10 / 2.0f)-1; 
-                    text.setPosition(sf::Vector2f(textY, textX));
-                    window.draw(text);
-                }
-            }
-            loop = { 0,0 };
-            
-        }
+        //            // Draw text
+        //            numStr = std::to_string(Intmap[loop.x][loop.y]);
+        //            text.setString(numStr);
+        //            
+        //            textX = loop.x * 10 + (10 / 2.0f)-2;
+        //            textY = loop.y * 10 + (10 / 2.0f)-1; 
+        //            text.setPosition(sf::Vector2f(textY, textX));
+        //            window.draw(text);
+        //        }
+        //    }
+        //    loop = { 0,0 };
+        //    
+        //}
         window.display();
         
         // interact

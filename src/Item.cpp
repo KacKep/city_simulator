@@ -1,5 +1,8 @@
 #include "Item.hpp"
 
+/**@FileItem used by humans to fight or protect them selfs
+*/
+
 Item::Item() 
 	:name("error"),
 	attack(0),
@@ -84,7 +87,7 @@ Item::Item()
 	Item::~Item(){}
 
 
-	int Item::getSwiftness() const{
+	int Item::getSwiftness() const {
 		return swiftness;
 	}
 	int Item::getAttack1() const {
@@ -95,4 +98,4 @@ Item::Item()
 	}
 	std:: string Item::getName() const {
 	return name;
-}
+	}

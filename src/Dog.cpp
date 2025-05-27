@@ -1,6 +1,7 @@
 #include "Dog.hpp"
 sf::Texture Dog::texture(std::string(RESOURCE_DIR) + "/Dog.png");
-
+/*@File Dog is companion of Human. It will die if left alone for too long.
+*/
 Dog::Dog(Human* owner)
 	:Animal(owner),
 	followPosition(getOwner()->getPosition())
@@ -47,11 +48,15 @@ void Dog::behavior() {
 		chooseTarget();
 	}
 
+	if (getBoundry().x < 10 || getBoundry().y < 10)
+	{
+		walkBasic();
+		return;
+	}
 	
 	if (checkBoundry(1, left) == false || checkBoundry(1, right) == false || checkBoundry(1, down) == false || checkBoundry(1, up) == false)
 	{
 		walkBasic();
-		//the most important uselles return lol
 		return;
 	}
 	else if (walkSpecific(PavementTile))

@@ -1,5 +1,7 @@
 #include "Cat.hpp"
-
+/**@File Animal created to show it living with an owner but not chasing it like a dog
+*aCan walk on buildings
+*/
 
 sf::Texture Cat::texture(std::string(RESOURCE_DIR) + "/Cat.png");
 
@@ -29,9 +31,7 @@ void Cat::behavior() {
 			addHealth(100 - getHealth());
 		}
 
-		/*std::cout <<"Hunger:" << getHunger() << std::endl;
-		std::cout << "Health:" << getHealth() << std::endl;
-		std::cout << "Money:" << getMoney() << std::endl;*/
+
 		if (rand()%2==0)
 		{
 			setTargetTile(FlowersTile);

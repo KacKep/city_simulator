@@ -1,5 +1,6 @@
 #include "Shop.hpp"
-
+/**@File sells food to human
+*/
 Shop::Shop ()
 	: Building("Shop", ShopTile){
 	
@@ -11,24 +12,3 @@ Shop::Shop ()
 	setPrice((rand() % 10 + 1) * (-10));
 	setProductValue((rand() % 8 + 3) * 10);
 }
-
-//Shop::~Shop()
-//{
-//}
-
-
-
-
-
-//int Shop::giveValue() const {
-//	return foodValue;
-//}
-
-
-
-
-
-//void Shop::draw(sf::RenderTarget& target, sf::RenderStates states) const
-//{
-//	target.draw(shape, states);
-//}

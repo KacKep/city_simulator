@@ -1,5 +1,7 @@
 #include "TileMap.hpp"
-
+/**@Class added from SFML Tutorial on theire website
+*The most optimised background as it could be.
+*/
 bool TileMap::load(const std::filesystem::path& tileset, const int* tiles, unsigned int width, unsigned int height)
 {
     sf::Vector2u tileSize = { 10,10 };

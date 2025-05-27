@@ -1,5 +1,5 @@
 #include "Animal.hpp"
-
+/**@File Base class for all animals */
 Animal::Animal(Human* human)
 	:Entity(),
 	owner(human), //that's the only way, said the yt guy about agregations (he was talking about using refrence in the constructor)
@@ -71,10 +71,6 @@ void Animal::behavior() {
 			addHappiness(-1);
 		}
 	
-
-		/*std::cout <<"Hunger:" << getHunger() << std::endl;
-		std::cout << "Health:" << getHealth() << std::endl;
-		std::cout << "Money:" << getMoney() << std::endl;*/
 		setTargetTile(GrassTile);
 		chooseTarget();
 	}
@@ -106,9 +102,8 @@ void Animal::fight(Entity* enemy) {
 		return;
 	}
 
-	if (enemy->getType() == human && rand() % 10==0)
+	if (enemy->getType() == human && rand() % 10==0 && owner->isDead())
 	{
-		//std::cout << "dog got addopted by" << owner->getID()<<std::endl;
 		//PREVIOUS OWNER LOSES THE PET
 		owner->setPetID(0);
 		//PET GETS A NEW OWNER
