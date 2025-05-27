@@ -30,6 +30,7 @@ City::City()
     std::string userInput;
     std::string inputfile(std::string(RESOURCE_DIR) + "/config.csv");
 
+<<<<<<< HEAD
     std::cout << "-------Controls-------\n"
         << "escape key - end simulation\n"
         << "+/= -> zoom in\n"
@@ -37,22 +38,44 @@ City::City()
         << "arrow keys -> move camera\n"
         << "f -> change speed\n"
         << std::endl;
+=======
+    //SETTING THE INPUT FILE
+>>>>>>> 464710bb5ff9554c44c1d1aaa14557df16c12e01
 
     std:: cout << "Input the full path of the config file, leave blank for default (.../resources/config.csv)\n";
     std::getline(std::cin, userInput);
-    if (!userInput.empty()) {
+    //TESTING IF IT GENERATES CORRECTLY
+    std::ifstream filetest (userInput);
+    if (userInput.empty()) {
+        std::cout << "Using default path for the input file. \n";
+    }
+    else if (filetest.is_open()) {
         inputfile = userInput;
     }
-    std:: cout << "Input the full path where the output file should be generated, leave blank for default (.../resources/output.csv)\n";
-    std::getline(std::cin, userInput);
-    std::ifstream filetest (userInput);
-    if (filetest.is_open()) {
-        outputfile = userInput;
+    else {
+        std::cerr << "Failed to create the input file at " << userInput << std::endl << "Reverting to use the default path\n";
     }
     filetest.close();
-    //if (!userInput.empty()) {
-    //    outputfile = userInput;
-    //}
+
+    //INPUTING THE OUTPUT FILE
+
+    std:: cout << "Input the full path where the output file should be generated, leave blank for default (.../resources/output.csv)\n";
+    std::getline(std::cin, userInput);
+    //TESTING IF IT IS A PROPER PATH
+    std::ofstream filetest2 (userInput);
+    if (userInput.empty()) {
+        std::cout << "Using default path for output file. \n";
+    }
+    else if (filetest2.is_open()) {
+        outputfile = userInput;
+    }
+    else {
+        std::cerr << "Failed to create the output file at " << userInput << std::endl << "Reverting to use the default path\n";
+    }
+    filetest2.close();
+
+    //READING DATA FROM THE INPUT FILE
+
     std::ifstream file(inputfile);
     if (file.is_open()) {
         std::string line;
