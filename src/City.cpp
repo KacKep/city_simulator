@@ -30,6 +30,14 @@ City::City()
     std::string userInput;
     std::string inputfile(std::string(RESOURCE_DIR) + "/config.csv");
 
+    std::cout << "-------Controls-------\n"
+        << "escape key - end simulation\n"
+        << "+/= -> zoom in\n"
+        << "-/_ -> zoom out\n"
+        << "arrow keys -> move camera\n"
+        << "f -> change speed\n"
+        << std::endl;
+
     std:: cout << "Input the full path of the config file, leave blank for default (.../resources/config.csv)\n";
     std::getline(std::cin, userInput);
     if (!userInput.empty()) {
@@ -97,7 +105,10 @@ City::City()
     } else {
         std::cout << "Failed to open file, using default values.\n";
     }
+
     srand(seed);
+
+
 }
 City::~City() {
 
@@ -226,10 +237,6 @@ void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
         }
         case 3:
         {
-            /*if (rand()%2!=0)
-            {
-                continue;
-            }*/
              building = std::make_unique<LiqourShop>();
             
             break;
