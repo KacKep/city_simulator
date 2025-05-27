@@ -40,7 +40,7 @@ City::City()
         << std::endl;
 =======
     //SETTING THE INPUT FILE
->>>>>>> 464710bb5ff9554c44c1d1aaa14557df16c12e01
+//>>>>>>> 464710bb5ff9554c44c1d1aaa14557df16c12e01
 
     std:: cout << "Input the full path of the config file, leave blank for default (.../resources/config.csv)\n";
     std::getline(std::cin, userInput);
@@ -53,7 +53,7 @@ City::City()
         inputfile = userInput;
     }
     else {
-        std::cerr << "Failed to create the input file at " << userInput << std::endl << "Reverting to use the default path\n";
+        std::cout << "Failed to create the input file at " << userInput << std::endl << "Reverting to use the default path\n";
     }
     filetest.close();
 
@@ -70,7 +70,7 @@ City::City()
         outputfile = userInput;
     }
     else {
-        std::cerr << "Failed to create the output file at " << userInput << std::endl << "Reverting to use the default path\n";
+        std::cout << "Failed to create the output file at " << userInput << std::endl << "Reverting to use the default path\n";
     }
     filetest2.close();
 
