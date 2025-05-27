@@ -250,14 +250,17 @@ int Human::getPetID() const {
 
 void Human:: setName() {
 	static std::vector<std::string> firstNames = {
-		"John", "Radomir", "Grzmislaw", "Gniewomir", "Genowefa", "Christopher", "Kunegunda", "Brajan", "Bozydar", "Alfred", "Jessica", "Michel", "Steve", "Zygmunt", "Nikolai","Jerry","Alexander","Ihor","Karol","Denis","Stanislaw","Vladimir","Tim","Stachu"
+		"John", "Radomir", "Grzmislaw", "Gniewomir", "Genowefa", "Christopher", "Kunegunda", "Brajan", "Bozydar", "Alfred", "Jessica", "Michel", "Steve", "Zygmunt", "Nikolai","Jerry","Alexander","Ihor","Karol","Denis","Stanislaw","Vladimir","Tim","Stachu", "Jakub"
 	};
 	static std::vector<std::string> lastNames = {
-		"Smith","Pork", "Jobs","Sunbed","Jones","Nowak", "Kowalski", "Jaroszewicz", "Baranowicz", "Prudnicka","Dudek","Shrimpus","Wojtyla","Poniatowski","Bialy","Cheese"
+		"Smith","Pork", "Jobs","Sunbed","Jones","Nowak", "Kowalski", "Jaroszewicz", "Baranowicz", "Prudnicka","Dudek","Shrimpus","Wojtyla","Poniatowski","Bialy","Cheese", "Kabak", "Labiszak"
 	};
 	std::string first = firstNames[std::rand() % firstNames.size()];
 	std::string last = lastNames[std::rand() % lastNames.size()];
 	this->name = first + " " + last;
+	if (getID()==2137) {
+		this->name = "Karol Wojtyla";
+	}
 	if (name == "Steve Jobs") {
 		this->addMoney(100000);
 	}
@@ -269,10 +272,11 @@ void Human:: setName() {
 		this->setDefence(10);
 		setFillColor(sf::Color::White);
 		setTexture(&texture);
+		this->addMoney(-getMoney()+2137);
 	}
 	if (name == "Stachu Jones") {
 		this->setAttack(15);
-		addDrunkness(1000);
+		addDrunkness(10000);
 	}
 
 	if (name == "John Pork") {
@@ -282,5 +286,9 @@ void Human:: setName() {
 	if (name == "Vladimir Bialy") {
 		this->addMoney(5000);
 		this->setAttack(this->getAttack()+3);
+	}
+	if (name == "Jakub Labiszak") {
+		this->addSemester(2);
+		addDrunkness(1000);
 	}
 }

@@ -109,6 +109,9 @@ void Animal::fight(Entity* enemy) {
 	if (enemy->getType() == human && rand() % 10==0)
 	{
 		//std::cout << "dog got addopted by" << owner->getID()<<std::endl;
+		//PREVIOUS OWNER LOSES THE PET
+		owner->setPetID(0);
+		//PET GETS A NEW OWNER
 		Human* new_owner = dynamic_cast<Human*>(enemy);
         owner = new_owner;
 		owner->setPetID(getID());

@@ -25,6 +25,18 @@ City::City()
      outputfile(std::string(RESOURCE_DIR) + "/output.csv"),
      seed(321),
      maxIterations(0){
+    std::cout <<"-------City Simulator-------\n"
+    << "Project authors:\n"
+       "Kacper Krzekotowski\n"
+       "Matesz Grzywa\n";
+    std::cout << "\n-------Controls-------\n"
+         << "escape key - end simulation\n"
+         << "+/= -> zoom in\n"
+         << "-/_ -> zoom out\n"
+         << "arrow keys -> move camera\n"
+         << "f -> change speed\n"
+         <<  "------------------"
+         << std::endl;
 
     //inputing data from csv files from an inputted path
     std::string userInput;
@@ -43,7 +55,7 @@ City::City()
         inputfile = userInput;
     }
     else {
-        std::cout << "Failed to load the input file at " << userInput << std::endl << "Reverting to use the default path\n";
+        std::cout << "Failed to load the input file at " << userInput << "\nReverting to use the default path\n";
     }
     filetest.close();
 
@@ -57,7 +69,7 @@ City::City()
         std::cout << "Using default path for output file. \n";
     }
     else if (!filetest2) {
-        std::cout << "Failed to create the output file at " << userInput << std::endl << "Reverting to use the default path\n";
+        std::cout << "Failed to create the output file at " << userInput << "\nReverting to use the default path\n";
     }
     else {
         std::filesystem::path p(userInput);
@@ -700,7 +712,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
 
 
     std::ofstream file(outputfile);
-
+    file << "Anarchist City Simulator\nby:,Kacper Krzekotowski,and,Mateusz Grzywa";
     //--- Initial Parameters ----
     //std::cout << "elp2" << std::endl;
     file << "Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length\n";
@@ -787,7 +799,18 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     }
     //std::cout << "elp6" << std::endl;
     // --- MAP ---
-    file << "\nMap Data:\n";
+    file << "Map Legend:\n"
+            "0,Grass Tile\n"
+            "1,Flowers Tile\n"
+            "2,Pavement Tile\n"
+            "3,Road Tile\n"
+            "4,Grocery Shop Tile\n"
+            "5,Hospital Tile\n"
+            "6,Office Building Tile\n"
+            "7,Liquor Shop Tile\n"
+            "8,Polytechnic Tile\n"
+
+    "Map Data:\n";
     for (long  int y = 0; y < height; y++) {
         for (long int x = 0; x < length; x++) {
             file << Intmap[y][x];

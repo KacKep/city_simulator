@@ -1,242 +1,538 @@
-Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length
-321,100,10,infinity,128,72
+Anarchist City Simulator
+by:,Kacper Krzekotowski,and,Mateusz GrzywaSeed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length
+2137,200,100,infinity,70,70
 
 Final Stats per Building
 ID,Name,Price,Product Value,Total Money Earned
-0,Shop,50,30,0
-1,Hospital,800,30,0
-2,OfficeBuilding,1200,0,1200
-3,LiqourShop,1000,70,0
-4,Shop,50,50,0
-5,Polytechnic,200,70,0
-6,OfficeBuilding,500,0,2000
-7,LiqourShop,1000,100,0
-8,Shop,10,30,0
-9,Hospital,900,30,0
+0,Shop,90,80,900
+1,Hospital,900,20,2700
+2,OfficeBuilding,800,0,9600
+3,LiqourShop,700,70,1400
+4,Shop,20,70,160
+5,Polytechnic,2000,35,122000
+6,OfficeBuilding,1300,0,44200
+7,LiqourShop,800,60,8000
+8,Shop,100,80,1500
+9,Hospital,700,50,3500
+10,OfficeBuilding,700,0,4900
+11,LiqourShop,700,100,2100
+12,Shop,30,80,240
+13,Hospital,700,10,700
+14,OfficeBuilding,1200,0,46800
+15,LiqourShop,1000,70,8000
+16,Shop,70,30,910
+17,Hospital,1400,30,5600
+18,OfficeBuilding,500,0,9000
+19,LiqourShop,700,70,700
+20,Shop,40,80,0
+21,Hospital,800,10,8800
+22,OfficeBuilding,900,0,13500
+23,LiqourShop,1000,60,3000
+24,Shop,40,100,160
+25,Hospital,1100,40,0
+26,OfficeBuilding,700,0,8400
+27,LiqourShop,900,100,18000
+28,Shop,90,90,1440
+29,Hospital,700,10,2100
+30,OfficeBuilding,1300,0,11700
+31,LiqourShop,900,60,11700
+32,Shop,100,60,500
+33,Hospital,600,20,0
+34,OfficeBuilding,900,0,3600
+35,LiqourShop,800,40,8800
+36,Shop,100,80,1200
+37,Hospital,800,20,0
+38,OfficeBuilding,800,0,17600
+39,LiqourShop,800,40,17600
+40,Shop,20,100,300
+41,Hospital,800,50,1600
+42,OfficeBuilding,1200,0,37200
+43,LiqourShop,1000,30,10000
+44,Shop,60,90,780
+45,Hospital,1400,50,4200
+46,OfficeBuilding,900,0,9000
+47,LiqourShop,700,40,5600
+48,Shop,20,50,220
+49,Hospital,700,20,1400
+50,OfficeBuilding,600,0,3600
+51,LiqourShop,700,60,0
+52,Shop,70,50,490
+53,Hospital,1000,20,3000
+54,OfficeBuilding,500,0,6500
+55,LiqourShop,600,80,1800
+56,Shop,100,50,700
+57,Hospital,1300,30,1300
+58,OfficeBuilding,1300,0,6500
+59,LiqourShop,100,30,1800
+60,Shop,80,60,1440
+61,Hospital,700,20,0
+62,OfficeBuilding,1000,0,26000
+63,LiqourShop,500,100,1500
+64,Shop,30,70,480
+65,Hospital,1000,30,5000
+66,OfficeBuilding,500,0,13500
+67,LiqourShop,100,60,100
+68,Shop,40,80,280
+69,Hospital,1000,40,0
+70,OfficeBuilding,1000,0,0
+71,LiqourShop,500,60,3000
+72,Shop,60,60,540
+73,Hospital,1300,30,5200
+74,OfficeBuilding,500,0,19000
+75,LiqourShop,800,80,8000
+76,Shop,70,70,700
+77,Hospital,1400,30,0
+78,OfficeBuilding,1000,0,7000
+79,LiqourShop,800,100,6400
+80,Shop,20,40,20
+81,Hospital,500,30,500
+82,OfficeBuilding,600,0,9600
+83,LiqourShop,700,80,7700
+84,Shop,40,50,400
+85,Hospital,1300,20,0
+86,OfficeBuilding,500,0,7500
+87,LiqourShop,100,40,0
+88,Shop,10,40,10
+89,Hospital,500,40,500
+90,OfficeBuilding,1100,0,3300
+91,LiqourShop,1000,70,0
+92,Shop,30,60,150
+93,Hospital,1200,50,0
+94,OfficeBuilding,1100,0,11000
+95,LiqourShop,300,60,7200
+96,Shop,100,60,2700
+97,Hospital,800,40,800
+98,OfficeBuilding,1300,0,16900
+99,LiqourShop,1000,60,4000
 
 Final Stats of each Human
 ID,Name,Status,Pet ID,Health,Hunger,Happiness,Attack,Defence,Swiftness,Graduated Semesters,Money,Drunkness,Item
-1,John Dudek,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-2,Christopher Poniatowski,Alive,No Pets,100,90,99,5,3,0,0,1000,0,Aluminium Armor
-3,Tim Dudek,Alive,No Pets,100,90,99,11,0,35,0,1000,0,Knife
-4,Bozydar Prudnicka,Alive,No Pets,100,80,98,10,0,20,0,1000,0,Scissors
-5,Denis Nowak,Alive,No Pets,100,80,98,5,1,50,0,1000,0,Boots
-6,Brajan Prudnicka,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
-7,Alfred Bialy,Alive,8,100,90,99,10,0,20,0,1000,0,Scissors
-9,Christopher Wojtyla,Alive,10,100,90,99,7,0,30,0,1000,0,Glass Bottle
-11,Genowefa Baranowicz,Alive,No Pets,100,90,99,11,0,35,0,1000,0,Knife
-12,Ihor Jaroszewicz,Alive,No Pets,100,90,99,5,3,0,0,1000,0,Aluminium Armor
-13,Jerry Poniatowski,Alive,No Pets,100,90,99,11,0,35,0,1000,0,Knife
-14,Ihor Nowak,Alive,No Pets,100,90,99,5,3,0,0,1000,0,Aluminium Armor
-15,Kunegunda Cheese,Alive,No Pets,100,80,98,5,0,0,0,1000,0,Indomitable Human Spirit
-16,Jessica Wojtyla,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-17,Denis Bialy,Alive,18,100,80,98,5,1,50,0,1000,0,Boots
-19,Zygmunt Sunbed,Alive,No Pets,100,90,99,6,2,10,0,1000,0,Riot Shield
-20,Steve Shrimpus,Alive,No Pets,100,80,98,7,0,40,0,1000,0,Rock
-21,Steve Sunbed,Alive,No Pets,100,80,98,5,0,0,0,1000,0,Indomitable Human Spirit
-22,Steve Wojtyla,Alive,No Pets,100,90,99,6,0,45,0,1000,0,Sharp Pencil
-23,Vladimir Shrimpus,Alive,24,100,90,99,7,0,40,0,1000,0,Rock
-25,Alexander Baranowicz,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
-26,Christopher Jones,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-27,John Poniatowski,Alive,28,100,80,98,5,3,0,0,1000,0,Aluminium Armor
-29,Steve Baranowicz,Alive,30,100,90,99,7,0,40,0,1000,0,Rock
-31,Radomir Smith,Alive,32,100,80,98,12,0,0,0,1000,0,Baseball Bat
-33,Alexander Prudnicka,Alive,34,100,80,98,5,0,0,0,1000,0,Indomitable Human Spirit
-35,Radomir Jobs,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-36,Denis Jones,Alive,No Pets,100,80,98,7,0,30,0,1000,0,Glass Bottle
-37,Radomir Nowak,Alive,38,100,80,98,11,0,35,0,1000,0,Knife
-39,Zygmunt Bialy,Alive,No Pets,88,80,98,6,0,45,0,1000,0,Sharp Pencil
-40,Stanislaw Kowalski,Alive,41,82,90,99,7,0,40,0,1000,0,Rock
-42,Alfred Kowalski,Alive,No Pets,100,80,98,7,0,40,0,1000,0,Rock
-43,Steve Pork,Alive,No Pets,100,80,98,7,0,40,0,1000,0,Rock
-44,Grzmislaw Dudek,Alive,45,100,80,98,5,1,50,0,1000,0,Boots
-46,Nikolai Cheese,Alive,No Pets,100,90,99,11,0,35,0,1000,0,Knife
-47,Vladimir Cheese,Alive,No Pets,100,90,99,12,0,0,0,1000,0,Baseball Bat
-48,Stanislaw Baranowicz,Alive,No Pets,20,90,99,5,0,0,0,1000,0,Indomitable Human Spirit
-49,Karol Smith,Alive,50,100,90,99,12,0,0,0,1000,0,Baseball Bat
-51,Genowefa Smith,Alive,No Pets,100,80,98,5,1,50,0,1000,0,Boots
-52,Michel Sunbed,Alive,53,100,90,99,12,0,0,0,1000,0,Baseball Bat
-54,Jerry Kowalski,Alive,No Pets,100,80,98,6,2,10,0,1000,0,Riot Shield
-55,Zygmunt Smith,Alive,No Pets,100,90,99,7,0,40,0,1000,0,Rock
-56,Michel Dudek,Alive,57,100,80,100,7,0,30,0,1000,0,Glass Bottle
-58,Grzmislaw Jaroszewicz,Alive,No Pets,100,70,97,10,0,20,0,1500,0,Scissors
-59,Genowefa Shrimpus,Alive,60,50,80,98,12,0,0,0,1000,0,Baseball Bat
-61,Tim Baranowicz,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-62,Ihor Jones,Alive,63,82,60,75,6,2,10,0,2000,0,Riot Shield
-64,Stanislaw Bialy,Alive,No Pets,70,90,99,11,0,35,0,1000,0,Knife
-65,Stanislaw Jobs,Alive,No Pets,100,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
-66,Christopher Dudek,Alive,No Pets,100,90,99,6,2,10,0,1000,0,Riot Shield
-67,Denis Nowak,Alive,No Pets,100,90,99,11,0,35,0,1000,0,Knife
-68,Bozydar Jones,Alive,No Pets,100,70,97,5,1,50,0,1000,0,Boots
-69,Tim Cheese,Alive,No Pets,100,90,99,6,0,45,0,1000,0,Sharp Pencil
-70,Gniewomir Nowak,Alive,No Pets,100,90,99,7,0,40,0,1000,0,Rock
-71,Jerry Poniatowski,Alive,No Pets,100,70,97,6,2,10,0,1000,0,Riot Shield
-72,Alexander Kowalski,Alive,73,100,80,98,6,2,10,0,2200,0,Riot Shield
-74,Tim Jobs,Alive,75,100,90,99,7,0,40,0,1000,0,Rock
-76,Stachu Jones,Alive,No Pets,100,90,99,15,0,0,0,1000,705,Indomitable Human Spirit
-77,Alfred Sunbed,Alive,78,95,80,98,7,0,40,0,1000,0,Rock
-79,Jessica Wojtyla,Alive,80,100,90,99,5,3,0,0,1000,0,Aluminium Armor
-81,Stanislaw Dudek,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-82,Christopher Shrimpus,Alive,No Pets,100,90,99,6,2,10,0,1000,0,Riot Shield
-83,Nikolai Baranowicz,Alive,No Pets,100,90,99,10,0,20,0,1000,0,Scissors
-84,Nikolai Cheese,Alive,No Pets,93,70,97,7,0,40,0,1000,0,Rock
-85,Kunegunda Nowak,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
-86,Alfred Cheese,Alive,87,100,90,99,11,0,35,0,1000,0,Knife
-88,Jerry Jobs,Alive,No Pets,100,80,98,5,0,0,0,1000,0,Indomitable Human Spirit
-89,Ihor Smith,Dead (Died on iteration 3)
-90,Kunegunda Bialy,Alive,No Pets,100,80,98,6,2,10,0,1000,0,Riot Shield
-91,Nikolai Wojtyla,Alive,92,100,90,99,7,0,40,0,1000,0,Rock
-93,Christopher Smith,Alive,94,100,90,100,6,0,45,0,1000,0,Sharp Pencil
-95,John Jobs,Alive,No Pets,100,90,99,5,3,0,0,1000,0,Aluminium Armor
-96,Steve Jaroszewicz,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-97,Karol Cheese,Alive,No Pets,100,90,99,6,0,45,0,1000,0,Sharp Pencil
-98,Steve Pork,Alive,No Pets,100,60,96,6,2,10,0,1000,0,Riot Shield
-99,Karol Bialy,Alive,No Pets,100,90,99,5,1,50,0,1000,0,Boots
-100,Vladimir Shrimpus,Alive,No Pets,94,80,92,12,0,0,0,1500,0,Baseball Bat
-101,Brajan Shrimpus,Alive,No Pets,100,80,98,5,3,0,0,1000,0,Aluminium Armor
-102,Grzmislaw Prudnicka,Alive,No Pets,100,80,98,10,0,20,0,1000,0,Scissors
-103,Genowefa Bialy,Alive,104,100,80,98,6,2,10,0,1000,0,Riot Shield
-105,Alexander Dudek,Alive,No Pets,100,80,98,10,0,20,0,1000,0,Scissors
-106,Michel Wojtyla,Alive,No Pets,100,90,99,5,0,0,0,1000,0,Indomitable Human Spirit
-107,Grzmislaw Dudek,Alive,108,67,90,66,5,0,0,0,1000,0,Indomitable Human Spirit
-109,Alfred Kowalski,Alive,No Pets,100,90,99,10,0,20,0,1000,0,Scissors
-110,Zygmunt Pork,Alive,No Pets,100,90,99,7,0,40,0,1000,0,Rock
-111,Kunegunda Jobs,Alive,No Pets,90,90,99,5,1,50,0,1000,0,Boots
-112,Grzmislaw Jones,Alive,No Pets,100,90,99,11,0,35,0,1000,0,Knife
-113,Christopher Jones,Alive,No Pets,100,90,99,10,0,20,0,1000,0,Scissors
-114,Genowefa Shrimpus,Alive,115,100,80,100,5,1,50,0,1000,0,Boots
-116,Karol Nowak,Alive,No Pets,100,80,98,12,0,0,0,1000,0,Baseball Bat
-117,Bozydar Sunbed,Alive,No Pets,100,70,97,6,2,10,0,1000,0,Riot Shield
-118,Christopher Baranowicz,Alive,No Pets,100,90,99,12,0,0,0,1000,0,Baseball Bat
-119,Denis Shrimpus,Alive,No Pets,100,70,97,7,0,40,0,1000,0,Rock
-120,Kunegunda Wojtyla,Alive,121,93,80,91,7,0,30,0,1000,0,Glass Bottle
-122,John Poniatowski,Alive,123,100,90,99,5,0,0,0,1000,0,Indomitable Human Spirit
-124,Tim Pork,Alive,125,100,80,98,5,0,0,0,1000,0,Indomitable Human Spirit
-126,Stanislaw Smith,Alive,No Pets,100,90,99,5,3,0,0,1000,0,Aluminium Armor
-127,Gniewomir Wojtyla,Alive,128,100,80,98,6,0,45,0,1000,0,Sharp Pencil
-129,Jerry Pork,Alive,No Pets,100,70,97,6,0,45,0,1000,0,Sharp Pencil
-130,Michel Prudnicka,Alive,131,100,80,98,5,3,0,0,1000,0,Aluminium Armor
+1,Tim Jobs,Alive,No Pets,45,110,39,5,1,50,1,610,5,Boots
+2,Zygmunt Baranowicz,Alive,3,42,50,76,5,1,50,1,740,5,Boots
+4,Gniewomir Jobs,Dead (Died on iteration 7)
+5,Alexander Jaroszewicz,Dead (Died on iteration 339)
+7,Genowefa Nowak,Alive,No Pets,64,80,33,11,0,35,1,870,0,Knife
+8,Ihor Pork,Dead (Died on iteration 176)
+9,Zygmunt Cheese,Alive,10,64,50,98,11,0,35,0,2100,5,Knife
+11,Alexander Kowalski,Alive,No Pets,90,40,27,6,0,45,1,100,5,Sharp Pencil
+12,Gniewomir Prudnicka,Alive,No Pets,72,60,99,11,0,35,0,360,5,Knife
+13,Denis Baranowicz,Dead (Died on iteration 460)
+14,Alexander Kowalski,Alive,15,86,60,81,11,0,35,1,2350,5,Knife
+16,Kunegunda Pork,Alive,17,40,60,51,10,0,20,0,800,0,Scissors
+18,Jerry Bialy,Alive,No Pets,2,50,95,7,0,30,0,1000,0,Glass Bottle
+19,Zygmunt Prudnicka,Alive,20,76,100,98,7,0,40,0,2510,5,Rock
+21,Grzmislaw Kowalski,Dead (Died on iteration 278)
+22,Grzmislaw Cheese,Dead (Died on iteration 28)
+23,Tim Dudek,Alive,No Pets,47,80,36,7,0,30,1,470,5,Glass Bottle
+24,Radomir Wojtyla,Alive,No Pets,66,90,97,5,0,0,0,1010,5,Indomitable Human Spirit
+25,Kunegunda Jaroszewicz,Alive,26,41,60,95,7,0,40,0,930,0,Rock
+27,Christopher Jones,Alive,230,43,50,28,12,0,0,1,40,0,Baseball Bat
+28,Jessica Baranowicz,Alive,No Pets,29,60,85,5,0,0,0,1540,0,Indomitable Human Spirit
+29,Kunegunda Kabak,Dead (Died on iteration 210)
+30,Denis Bialy,Dead (Died on iteration 164)
+32,Vladimir Jones,Dead (Died on iteration 4)
+34,Stanislaw Jobs,Alive,35,56,110,23,7,0,30,1,740,5,Glass Bottle
+36,Kunegunda Pork,Alive,No Pets,82,50,96,6,0,45,0,1910,5,Sharp Pencil
+37,Zygmunt Prudnicka,Dead (Died on iteration 377)
+38,Brajan Prudnicka,Alive,No Pets,64,90,97,6,0,45,1,860,5,Sharp Pencil
+39,Kunegunda Jobs,Alive,No Pets,100,90,98,11,0,35,0,970,0,Knife
+40,Michel Baranowicz,Alive,No Pets,61,60,98,7,0,30,1,430,5,Glass Bottle
+42,Steve Sunbed,Alive,43,93,100,97,7,0,40,0,940,0,Rock
+44,Ihor Nowak,Dead (Died on iteration 211)
+45,Gniewomir Cheese,Dead (Died on iteration 15)
+47,Steve Jobs,Dead (Died on iteration 252)
+48,Radomir Bialy,Alive,No Pets,68,70,30,5,1,50,1,100,0,Boots
+49,Steve Jones,Alive,No Pets,55,70,96,6,0,45,0,880,5,Sharp Pencil
+50,Tim Baranowicz,Alive,No Pets,62,70,98,12,0,0,1,1870,5,Baseball Bat
+51,Vladimir Smith,Dead (Died on iteration 484)
+52,Karol Cheese,Dead (Died on iteration 316)
+53,Steve Sunbed,Alive,54,51,50,95,5,0,0,0,2010,5,Indomitable Human Spirit
+55,Karol Prudnicka,Dead (Died on iteration 112)
+56,Jerry Shrimpus,Alive,No Pets,51,50,73,11,0,35,0,310,5,Knife
+57,Vladimir Jobs,Alive,No Pets,52,100,99,6,2,10,0,2310,5,Riot Shield
+58,Ihor Kowalski,Alive,No Pets,89,90,97,7,0,40,0,900,0,Rock
+59,Jakub Shrimpus,Alive,No Pets,48,40,99,7,0,40,1,-730,85,Rock
+60,Nikolai Bialy,Dead (Died on iteration 458)
+62,Alexander Jaroszewicz,Dead (Died on iteration 112)
+63,Genowefa Kabak,Alive,No Pets,9,120,97,7,0,30,0,320,5,Glass Bottle
+64,Genowefa Pork,Alive,No Pets,94,60,93,6,0,45,0,5410,0,Sharp Pencil
+65,Stachu Baranowicz,Alive,No Pets,60,130,99,11,0,35,0,3220,5,Knife
+66,Zygmunt Jobs,Alive,No Pets,14,70,-2,12,0,0,1,780,0,Baseball Bat
+67,Stachu Bialy,Alive,No Pets,2,50,81,7,0,40,1,420,5,Rock
+68,Tim Nowak,Dead (Died on iteration 41)
+69,Steve Kabak,Dead (Died on iteration 262)
+70,Kunegunda Smith,Alive,No Pets,67,60,94,6,0,45,0,580,5,Sharp Pencil
+71,Michel Smith,Dead (Died on iteration 164)
+72,Steve Kabak,Dead (Died on iteration 35)
+73,Nikolai Labiszak,Dead (Died on iteration 365)
+74,Steve Poniatowski,Alive,No Pets,25,70,32,6,0,45,1,720,5,Sharp Pencil
+75,Stachu Nowak,Alive,76,59,80,78,7,0,30,0,1060,5,Glass Bottle
+77,Jessica Pork,Alive,No Pets,77,100,98,5,1,50,0,3180,5,Boots
+78,Brajan Dudek,Dead (Died on iteration 396)
+80,Genowefa Bialy,Alive,122,44,70,32,6,0,45,1,100,0,Sharp Pencil
+81,Grzmislaw Pork,Alive,No Pets,42,40,98,7,0,40,0,1130,5,Rock
+82,Stachu Wojtyla,Alive,No Pets,48,80,90,6,0,45,0,630,5,Sharp Pencil
+83,Jakub Jaroszewicz,Alive,No Pets,35,60,2,7,0,30,1,640,0,Glass Bottle
+84,Radomir Jobs,Alive,144,41,110,68,7,0,40,0,1160,5,Rock
+85,Denis Shrimpus,Alive,No Pets,44,80,83,11,0,35,1,2030,5,Knife
+86,Jessica Jobs,Alive,89,66,60,95,6,0,45,0,910,5,Sharp Pencil
+87,Alexander Prudnicka,Alive,No Pets,52,80,5,10,0,20,1,360,0,Scissors
+88,Denis Shrimpus,Alive,No Pets,43,80,89,10,0,20,0,2570,5,Scissors
+90,Vladimir Pork,Dead (Died on iteration 135)
+91,Gniewomir Sunbed,Alive,92,37,60,99,6,2,10,0,810,5,Riot Shield
+93,Grzmislaw Nowak,Alive,94,42,100,78,7,0,40,0,1060,5,Rock
+95,Jessica Pork,Alive,96,79,0,23,5,1,50,1,100,0,Boots
+97,Ihor Wojtyla,Alive,98,75,60,86,5,1,50,0,760,5,Boots
+99,Genowefa Bialy,Alive,No Pets,54,80,85,7,0,30,0,800,5,Glass Bottle
+100,Alexander Cheese,Dead (Died on iteration 413)
+101,Zygmunt Baranowicz,Alive,No Pets,55,70,95,6,0,45,0,1870,0,Sharp Pencil
+102,Jessica Kabak,Alive,No Pets,81,80,90,11,0,35,0,770,5,Knife
+103,Bozydar Bialy,Alive,104,69,50,93,7,0,30,0,110,5,Glass Bottle
+105,Radomir Bialy,Alive,No Pets,74,40,99,7,0,40,0,300,5,Rock
+106,Stachu Kowalski,Alive,No Pets,69,80,87,7,0,30,0,1100,5,Glass Bottle
+107,Nikolai Bialy,Dead (Died on iteration 319)
+109,Vladimir Jones,Alive,No Pets,81,60,99,5,1,50,1,1840,5,Boots
+110,Nikolai Wojtyla,Dead (Died on iteration 5)
+111,Brajan Nowak,Alive,149,39,90,66,7,0,30,1,990,5,Glass Bottle
+112,Genowefa Wojtyla,Alive,No Pets,22,70,98,5,0,0,0,680,5,Indomitable Human Spirit
+113,Zygmunt Dudek,Dead (Died on iteration 298)
+115,Stanislaw Smith,Alive,No Pets,66,100,99,6,0,45,0,1610,5,Sharp Pencil
+116,Christopher Sunbed,Alive,117,89,70,99,5,1,50,1,2410,5,Boots
+118,John Prudnicka,Alive,119,55,70,63,7,0,40,0,600,5,Rock
+120,John Jobs,Alive,No Pets,74,120,99,6,0,45,0,1610,5,Sharp Pencil
+121,Grzmislaw Baranowicz,Alive,No Pets,33,80,98,6,0,45,0,1800,5,Sharp Pencil
+123,Radomir Jobs,Alive,No Pets,2,30,19,11,0,35,2,410,80,Knife
+124,Zygmunt Nowak,Dead (Died on iteration 427)
+125,Vladimir Poniatowski,Dead (Died on iteration 214)
+126,Ihor Smith,Dead (Died on iteration 462)
+128,Zygmunt Jones,Alive,No Pets,77,80,75,11,0,35,1,2610,5,Knife
+129,Brajan Smith,Alive,196,21,50,36,7,0,30,1,770,5,Glass Bottle
+130,Alexander Kabak,Dead (Died on iteration 220)
+131,John Bialy,Dead (Died on iteration 525)
+132,Brajan Nowak,Alive,No Pets,29,100,71,6,2,10,1,200,5,Riot Shield
+133,Steve Smith,Alive,No Pets,58,70,55,7,0,40,0,2190,0,Rock
+134,Michel Poniatowski,Alive,No Pets,33,60,99,10,0,20,1,780,20,Scissors
+135,Radomir Jobs,Dead (Died on iteration 385)
+136,Karol Jobs,Dead (Died on iteration 310)
+137,Michel Bialy,Alive,No Pets,64,80,33,5,1,50,1,210,0,Boots
+138,Kunegunda Smith,Alive,139,13,50,98,7,0,40,0,600,5,Rock
+140,Stanislaw Shrimpus,Alive,No Pets,62,60,52,6,0,45,1,670,5,Sharp Pencil
+141,Michel Dudek,Alive,No Pets,50,100,98,6,2,10,0,1000,5,Riot Shield
+142,Nikolai Sunbed,Alive,No Pets,68,80,99,10,0,20,1,850,5,Scissors
+143,Kunegunda Bialy,Dead (Died on iteration 159)
+145,Kunegunda Dudek,Alive,No Pets,47,80,99,6,0,45,0,1030,5,Sharp Pencil
+146,Ihor Nowak,Dead (Died on iteration 59)
+147,Nikolai Jones,Dead (Died on iteration 54)
+148,Brajan Dudek,Dead (Died on iteration 382)
+150,Radomir Pork,Dead (Died on iteration 1)
+151,Bozydar Shrimpus,Dead (Died on iteration 488)
+152,Vladimir Jones,Alive,No Pets,79,60,66,12,0,0,1,870,5,Baseball Bat
+153,Gniewomir Smith,Alive,No Pets,5,50,-15,7,0,40,1,970,0,Rock
+154,Karol Pork,Dead (Died on iteration 369)
+155,Radomir Baranowicz,Alive,No Pets,75,50,77,6,0,45,0,960,0,Sharp Pencil
+156,Gniewomir Bialy,Alive,No Pets,66,120,17,7,0,30,1,790,0,Glass Bottle
+157,Steve Poniatowski,Alive,No Pets,1,110,16,7,0,40,1,1610,5,Rock
+158,John Jones,Dead (Died on iteration 97)
+159,Brajan Nowak,Dead (Died on iteration 92)
+160,Kunegunda Jaroszewicz,Dead (Died on iteration 190)
+161,Denis Nowak,Dead (Died on iteration 70)
+162,Bozydar Baranowicz,Dead (Died on iteration 65)
+163,Kunegunda Shrimpus,Dead (Died on iteration 346)
+164,Denis Baranowicz,Alive,No Pets,60,80,13,7,0,30,1,110,0,Glass Bottle
+165,Michel Jobs,Dead (Died on iteration 79)
+167,Alexander Kowalski,Dead (Died on iteration 464)
+168,Jerry Kowalski,Alive,No Pets,59,110,65,11,0,35,1,960,5,Knife
+169,Stanislaw Smith,Alive,No Pets,9,40,58,10,0,20,0,2440,5,Scissors
+170,Jessica Wojtyla,Dead (Died on iteration 496)
+172,John Nowak,Alive,173,41,60,-17,6,0,45,1,210,0,Sharp Pencil
+174,Alfred Kabak,Alive,No Pets,22,90,77,5,0,0,0,1460,5,Indomitable Human Spirit
+175,Jessica Shrimpus,Alive,No Pets,43,50,24,10,0,20,0,1610,0,Scissors
+176,Kunegunda Labiszak,Dead (Died on iteration 164)
+177,Nikolai Baranowicz,Alive,178,72,90,18,5,1,50,1,1560,0,Boots
+179,Grzmislaw Baranowicz,Alive,180,70,70,91,5,1,50,0,1000,5,Boots
+181,Steve Smith,Alive,No Pets,79,120,81,6,0,45,0,1410,0,Sharp Pencil
+182,Brajan Bialy,Alive,No Pets,91,120,99,5,1,50,0,900,0,Boots
+183,Alfred Jaroszewicz,Alive,No Pets,34,70,63,7,0,40,0,660,5,Rock
+184,Nikolai Jones,Alive,No Pets,65,40,98,6,2,10,0,910,5,Riot Shield
+185,Radomir Nowak,Dead (Died on iteration 351)
+187,Tim Wojtyla,Alive,188,56,70,67,5,3,0,0,2380,0,Aluminium Armor
+189,Nikolai Sunbed,Dead (Died on iteration 317)
+191,Grzmislaw Pork,Alive,No Pets,89,60,95,7,0,40,0,1370,5,Rock
+192,Zygmunt Baranowicz,Dead (Died on iteration 62)
+193,Steve Kowalski,Alive,No Pets,34,80,82,5,0,0,0,790,5,Indomitable Human Spirit
+194,Jerry Prudnicka,Dead (Died on iteration 121)
+195,Jakub Cheese,Alive,No Pets,73,100,11,6,2,10,1,1360,5,Riot Shield
+197,John Kabak,Alive,No Pets,100,100,33,5,1,50,1,720,5,Boots
+198,Ihor Poniatowski,Dead (Died on iteration 49)
+200,Brajan Cheese,Dead (Died on iteration 442)
+202,Radomir Kowalski,Dead (Died on iteration 182)
+204,Ihor Shrimpus,Dead (Died on iteration 242)
+205,Gniewomir Shrimpus,Dead (Died on iteration 15)
+206,Vladimir Poniatowski,Dead (Died on iteration 481)
+208,Jakub Kabak,Alive,209,42,60,91,5,3,0,0,430,5,Aluminium Armor
+210,Michel Wojtyla,Dead (Died on iteration 477)
+211,Radomir Bialy,Alive,No Pets,42,80,44,11,0,35,0,680,0,Knife
+212,Kunegunda Labiszak,Dead (Died on iteration 399)
+213,Radomir Smith,Dead (Died on iteration 211)
+214,Ihor Prudnicka,Alive,No Pets,77,90,98,12,0,0,0,1180,5,Baseball Bat
+215,Christopher Dudek,Alive,No Pets,95,70,99,5,1,50,0,1670,5,Boots
+216,Brajan Poniatowski,Dead (Died on iteration 299)
+217,Stanislaw Nowak,Dead (Died on iteration 245)
+218,Vladimir Jones,Alive,No Pets,27,80,-40,10,0,20,1,130,0,Scissors
+219,Stanislaw August Poniatowski,Alive,No Pets,5,70,99,7,0,40,0,510,85,Rock
+220,Karol Kabak,Dead (Died on iteration 56)
+221,John Jobs,Alive,No Pets,86,50,16,10,0,20,1,220,0,Scissors
+222,Jakub Kabak,Alive,223,55,50,65,6,0,45,1,1700,5,Sharp Pencil
+224,Karol Labiszak,Alive,No Pets,81,50,69,7,0,40,1,2130,5,Rock
+225,Christopher Sunbed,Dead (Died on iteration 352)
+226,Alexander Labiszak,Alive,No Pets,72,50,52,11,0,35,1,1880,5,Knife
+227,Genowefa Labiszak,Alive,232,16,60,99,10,0,20,1,900,5,Scissors
+229,Karol Prudnicka,Dead (Died on iteration 27)
+231,Jessica Jones,Alive,No Pets,45,40,10,7,0,30,1,600,0,Glass Bottle
+233,Ihor Prudnicka,Alive,No Pets,33,50,65,12,0,0,0,610,5,Baseball Bat
+234,Michel Cheese,Alive,No Pets,43,50,48,6,0,45,0,1630,0,Sharp Pencil
+235,Steve Dudek,Alive,No Pets,82,80,89,7,0,40,0,230,5,Rock
+236,Steve Smith,Dead (Died on iteration 94)
+237,Vladimir Sunbed,Alive,No Pets,72,50,78,7,0,40,0,2240,5,Rock
+238,Alexander Baranowicz,Alive,No Pets,54,70,98,6,0,45,0,360,5,Sharp Pencil
+239,Steve Jaroszewicz,Alive,No Pets,81,80,98,6,0,45,0,840,5,Sharp Pencil
+240,Alexander Kowalski,Alive,No Pets,95,50,75,7,0,40,1,700,5,Rock
+241,Stanislaw Kabak,Dead (Died on iteration 261)
+242,Ihor Smith,Alive,No Pets,74,100,97,6,0,45,0,910,5,Sharp Pencil
+243,Jerry Jobs,Dead (Died on iteration 404)
+245,Denis Prudnicka,Alive,246,29,80,86,7,0,30,0,1780,5,Glass Bottle
+247,John Kabak,Dead (Died on iteration 27)
+248,Karol Pork,Dead (Died on iteration 525)
+249,Steve Bialy,Alive,250,34,100,92,10,0,20,0,300,5,Scissors
+251,Zygmunt Nowak,Alive,No Pets,79,70,61,10,0,20,1,580,10,Scissors
+252,Ihor Kabak,Dead (Died on iteration 32)
+253,Denis Shrimpus,Alive,244,48,120,98,5,1,50,0,2800,5,Boots
 
 Final Stats of each Animal
 ID,Type,Owner ID,Status,Health,Hunger,Happiness,Attack,Defence,Swiftness
-8,Cat,7,Alive,100,90,100,5,0,50
-10,Cat,9,Alive,100,85,100,5,0,50
-18,Cat,17,Alive,100,90,100,5,0,50
-24,Dog,23,Alive,100,100,100,10,0,0
-28,Cat,27,Alive,100,95,100,5,0,50
-30,Dog,29,Alive,100,100,100,10,0,0
-32,Cat,31,Alive,100,95,100,5,0,50
-34,Dog,33,Alive,100,100,100,10,0,0
-38,Dog,37,Alive,100,100,100,10,0,0
-41,Cat,40,Alive,100,90,100,5,0,50
-45,Cat,44,Alive,100,95,100,5,0,50
-50,Cat,49,Alive,100,90,100,5,0,50
-53,Cat,52,Alive,100,90,100,5,0,50
-57,Dog,56,Alive,100,100,100,10,0,0
-60,Cat,59,Alive,100,95,100,5,0,50
-63,Dog,62,Alive,60,100,60,10,0,0
-73,Cat,72,Alive,100,90,100,5,0,50
-75,Dog,74,Alive,100,100,100,10,0,0
-78,Dog,77,Alive,100,100,100,10,0,0
-80,Cat,79,Alive,100,90,100,5,0,50
-87,Cat,86,Alive,93,95,93,5,0,50
+3,Cat,2,Alive,89,65,100,5,0,50
+6,Dog,Owner is Dead,Dead (Died on iteration 184)
+10,Cat,9,Alive,100,55,100,5,0,50
+15,Cat,14,Alive,100,60,100,5,0,50
+17,Cat,16,Alive,76,30,76,5,0,50
+20,Cat,19,Alive,94,60,100,5,0,50
+26,Cat,25,Alive,100,55,100,5,0,50
+31,Dog,Owner is Dead,Dead (Died on iteration 293)
+33,Cat,Owner is Dead,Alive,100,45,100,5,0,50
+35,Cat,34,Alive,100,60,100,5,0,50
+41,Dog,Owner is Dead,Alive,61,80,100,10,0,0
+43,Cat,42,Alive,100,50,100,5,0,50
+46,Cat,Owner is Dead,Alive,100,70,100,5,0,50
+54,Cat,53,Alive,100,40,100,5,0,50
+61,Dog,Owner is Dead,Alive,2,60,2,10,0,0
+76,Cat,75,Alive,100,60,100,5,0,50
+79,Cat,Owner is Dead,Alive,100,45,100,5,0,50
+89,Cat,86,Alive,100,90,100,5,0,50
 92,Cat,91,Alive,100,85,100,5,0,50
-94,Cat,93,Alive,90,90,90,5,0,50
-104,Dog,103,Alive,100,100,100,10,0,0
-108,Cat,107,Alive,67,95,67,5,0,50
-115,Dog,114,Alive,100,100,100,10,0,0
-121,Cat,120,Alive,100,95,100,5,0,50
-123,Dog,122,Alive,100,100,100,10,0,0
-125,Dog,124,Alive,100,100,100,10,0,0
-128,Cat,127,Alive,100,95,100,5,0,50
-131,Dog,130,Alive,100,100,100,10,0,0
+94,Dog,93,Dead (Died on iteration 99)
+96,Cat,95,Alive,44,50,64,5,0,50
+98,Cat,97,Alive,100,70,100,5,0,50
+104,Cat,103,Alive,95,45,100,5,0,50
+108,Cat,Owner is Dead,Alive,100,50,100,5,0,50
+114,Dog,Owner is Dead,Dead (Died on iteration 107)
+117,Dog,116,Alive,100,100,100,10,0,0
+119,Cat,118,Alive,100,65,100,5,0,50
+122,Dog,80,Alive,83,100,83,10,0,0
+127,Dog,Owner is Dead,Alive,23,80,23,10,0,0
+139,Cat,138,Alive,71,45,80,5,0,50
+144,Dog,84,Alive,100,100,100,10,0,0
+149,Cat,111,Alive,79,50,100,5,0,50
+166,Cat,Owner is Dead,Alive,100,35,100,5,0,50
+171,Cat,Owner is Dead,Alive,90,35,90,5,0,50
+173,Cat,172,Alive,94,40,94,5,0,50
+178,Cat,177,Alive,100,60,100,5,0,50
+180,Cat,179,Alive,100,35,100,5,0,50
+186,Dog,Owner is Dead,Alive,10,60,10,10,0,0
+188,Dog,187,Dead (Died on iteration 180)
+190,Cat,Owner is Dead,Alive,100,50,100,5,0,50
+196,Dog,129,Alive,95,100,35,10,0,0
+199,Cat,Owner is Dead,Alive,100,35,100,5,0,50
+201,Cat,Owner is Dead,Alive,100,55,100,5,0,50
+203,Cat,Owner is Dead,Alive,100,40,100,5,0,50
+207,Cat,Owner is Dead,Alive,100,65,100,5,0,50
+209,Dog,208,Alive,72,100,96,10,0,0
+223,Cat,222,Alive,100,65,100,5,0,50
+228,Cat,227,Alive,100,50,100,5,0,50
+230,Cat,27,Alive,100,60,100,5,0,50
+232,Cat,227,Alive,100,55,100,5,0,50
+244,Dog,253,Dead (Died on iteration 108)
+246,Cat,245,Alive,100,35,100,5,0,50
+250,Cat,249,Alive,94,40,94,5,0,50
+254,Dog,253,Alive,54,100,64,10,0,0
 
 Final global stats:
-Total number of entities: 131
-Total number of humans: 100
-Total number of animals: 31
-Alive entities:130
-Deaths: 1
-Alive humans: 99
-Dead humans: 1
-Alive animals: 31
-Dead animals: 0
-Total number of buildings: 10
+Total number of entities: 254
+Total number of humans: 200
+Total number of animals: 54
+Alive entities:171
+Deaths: 83
+Alive humans: 123
+Dead humans: 77
+Alive animals: 48
+Dead animals: 6
+Total number of buildings: 100
 
 Deaths per Iteration:
 Iteration,Total Deaths,Total Remaining Entities,Human Deaths,Remaining Humans,Animal Deaths,Remaining Animals
-3,1,130,1,99,0,31
-
+1,1,253,1,199,0,54
+4,1,252,1,198,0,54
+5,1,251,1,197,0,54
+7,1,250,1,196,0,54
+15,2,248,2,194,0,54
+27,2,246,2,192,0,54
+28,1,245,1,191,0,54
+32,1,244,1,190,0,54
+35,1,243,1,189,0,54
+41,1,242,1,188,0,54
+49,1,241,1,187,0,54
+54,1,240,1,186,0,54
+56,1,239,1,185,0,54
+59,1,238,1,184,0,54
+62,1,237,1,183,0,54
+65,1,236,1,182,0,54
+70,1,235,1,181,0,54
+79,1,234,1,180,0,54
+92,1,233,1,179,0,54
+94,1,232,1,178,0,54
+97,1,231,1,177,0,54
+99,1,230,0,177,1,53
+107,1,229,0,177,1,52
+108,1,228,0,177,1,51
+112,2,226,2,175,0,51
+121,1,225,1,174,0,51
+135,1,224,1,173,0,51
+159,1,223,1,172,0,51
+164,3,220,3,169,0,51
+176,1,219,1,168,0,51
+180,1,218,0,168,1,50
+182,1,217,1,167,0,50
+184,1,216,0,167,1,49
+190,1,215,1,166,0,49
+210,1,214,1,165,0,49
+211,2,212,2,163,0,49
+214,1,211,1,162,0,49
+220,1,210,1,161,0,49
+242,1,209,1,160,0,49
+245,1,208,1,159,0,49
+252,1,207,1,158,0,49
+261,1,206,1,157,0,49
+262,1,205,1,156,0,49
+278,1,204,1,155,0,49
+293,1,203,0,155,1,48
+298,1,202,1,154,0,48
+299,1,201,1,153,0,48
+310,1,200,1,152,0,48
+316,1,199,1,151,0,48
+317,1,198,1,150,0,48
+319,1,197,1,149,0,48
+339,1,196,1,148,0,48
+346,1,195,1,147,0,48
+351,1,194,1,146,0,48
+352,1,193,1,145,0,48
+365,1,192,1,144,0,48
+369,1,191,1,143,0,48
+377,1,190,1,142,0,48
+382,1,189,1,141,0,48
+385,1,188,1,140,0,48
+396,1,187,1,139,0,48
+399,1,186,1,138,0,48
+404,1,185,1,137,0,48
+413,1,184,1,136,0,48
+427,1,183,1,135,0,48
+442,1,182,1,134,0,48
+458,1,181,1,133,0,48
+460,1,180,1,132,0,48
+462,1,179,1,131,0,48
+464,1,178,1,130,0,48
+477,1,177,1,129,0,48
+481,1,176,1,128,0,48
+484,1,175,1,127,0,48
+488,1,174,1,126,0,48
+496,1,173,1,125,0,48
+525,2,171,2,123,0,48
+Map Legend:
+0,Grass Tile
+1,Flowers Tile
+2,Pavement Tile
+3,Road Tile
+4,Grocery Shop Tile
+5,Hospital Tile
+6,Office Building Tile
+7,Liquor Shop Tile
+8,Polytechnic Tile
 Map Data:
-2,3,3,2,1,1,0,0,0,0,1,1,1,0,1,2,3,3,2,1,1,0,1,0,0,1,1,1,0,0,2,3,3,2,0,1,1,1,0,0,0,0,1,0,1,2,3,3,2,1,0,1,1,0,1,1,1,0,1,1,2,3,3,2,0,0,0,1,1,1,0,1,0,0,0,2,3,3,2,1,0,1,0,1,1,0,0,0,0,0,2,3,3,2,0,0,0,0,1,0,1,0,1,1,0,2,3,3,2,1,1,0,1,1,0,0,1,1,0,1,2,3,3,2,0,1,0,1
-2,3,3,2,1,0,1,1,0,0,1,1,1,0,1,2,3,3,2,1,1,1,1,0,0,1,1,1,1,0,2,3,3,2,0,0,0,1,0,1,1,0,1,0,0,2,3,3,2,1,0,1,1,1,1,1,0,0,0,0,2,3,3,2,1,0,1,0,0,1,1,1,0,0,0,2,3,3,2,0,0,1,0,1,1,0,0,0,0,0,2,3,3,2,0,0,0,0,0,0,1,1,0,0,1,2,3,3,2,0,1,1,1,1,0,1,1,1,0,0,2,3,3,2,0,0,1,1
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-2,3,3,2,0,0,1,0,1,1,0,0,0,1,0,2,3,3,2,4,4,4,4,4,0,1,1,1,1,0,2,3,3,2,1,0,1,0,1,0,0,1,1,1,1,2,3,3,2,1,1,1,1,1,1,1,0,1,1,0,2,3,3,2,1,1,1,1,1,1,0,0,1,1,1,2,3,3,2,1,0,1,0,0,0,1,1,1,1,0,2,3,3,2,1,1,1,0,1,0,1,1,1,1,1,2,3,3,2,1,0,0,1,0,0,1,1,1,0,1,2,3,3,2,1,0,0,1
-2,3,3,2,0,1,0,1,1,0,0,0,0,1,1,2,3,3,2,4,4,4,4,4,1,0,1,1,1,0,2,3,3,2,1,1,0,1,1,1,1,0,0,1,1,2,3,3,2,1,0,1,1,1,1,1,0,1,0,1,2,3,3,2,0,1,0,1,0,1,0,1,1,1,0,2,3,3,2,0,1,1,1,0,1,1,0,0,0,0,2,3,3,2,1,1,1,0,0,0,0,1,0,1,0,2,3,3,2,0,1,1,0,0,0,1,1,1,0,1,2,3,3,2,1,0,1,1
-2,3,3,2,1,1,0,0,1,0,1,0,1,0,0,2,3,3,2,4,4,4,4,4,0,1,0,1,1,1,2,3,3,2,0,1,0,1,0,1,1,1,1,1,1,2,3,3,2,0,1,0,1,1,0,0,0,1,0,0,2,3,3,2,0,0,0,1,1,1,0,0,0,0,1,2,3,3,2,0,1,0,0,0,1,1,0,1,1,1,2,3,3,2,0,0,0,1,1,0,1,0,0,1,0,2,3,3,2,0,0,1,0,1,1,1,0,0,1,1,2,3,3,2,0,0,0,1
-2,3,3,2,0,0,1,1,1,0,1,0,1,0,0,2,3,3,2,4,4,4,4,4,0,0,1,1,0,1,2,3,3,2,1,0,1,0,1,0,1,0,0,1,0,2,3,3,2,1,0,0,1,0,0,0,0,1,1,1,2,3,3,2,1,1,1,0,1,1,0,1,0,0,0,2,3,3,2,1,1,0,1,0,0,1,1,0,0,1,2,3,3,2,0,0,0,1,1,0,0,1,1,1,0,2,3,3,2,1,0,0,0,1,0,0,0,1,0,0,2,3,3,2,1,1,1,1
-2,3,3,2,1,0,0,1,1,0,0,0,0,1,1,2,3,3,2,1,1,0,1,0,1,0,0,1,1,1,2,3,3,2,0,0,1,1,0,0,1,1,1,1,0,2,3,3,2,0,0,1,0,1,1,1,0,0,1,1,2,3,3,2,1,0,1,0,0,1,0,1,1,0,0,2,3,3,2,1,1,0,0,0,0,1,1,1,0,0,2,3,3,2,1,1,1,0,0,0,1,0,1,1,0,2,3,3,2,0,0,1,0,0,1,1,1,0,1,1,2,3,3,2,0,1,1,0
-2,3,3,2,1,1,1,0,1,1,1,1,0,1,1,2,3,3,2,1,1,1,1,0,1,0,0,1,0,1,2,3,3,2,0,1,0,0,0,1,0,0,0,1,0,2,3,3,2,1,1,0,1,0,1,0,0,1,0,0,2,3,3,2,1,0,1,0,0,1,0,1,0,0,1,2,3,3,2,0,1,0,1,0,0,1,0,1,0,0,2,3,3,2,1,1,1,0,0,0,0,0,1,1,1,2,3,3,2,1,0,0,1,0,1,0,1,0,0,0,2,3,3,2,0,0,0,0
-2,3,3,2,1,1,1,0,1,1,0,0,1,0,0,2,3,3,2,0,1,1,1,1,1,0,1,1,1,0,2,3,3,2,0,1,0,0,0,1,0,1,1,0,0,2,3,3,2,0,0,1,0,0,0,1,0,0,0,1,2,3,3,2,1,0,1,0,1,1,1,1,1,1,0,2,3,3,2,1,1,1,0,1,0,0,1,1,0,1,2,3,3,2,0,0,0,1,1,0,1,1,1,1,0,2,3,3,2,1,0,0,0,1,0,0,0,1,1,0,2,3,3,2,0,0,1,0
-2,3,3,2,1,0,0,0,1,1,0,1,1,0,0,2,3,3,2,0,1,0,0,1,1,0,1,1,0,0,2,3,3,2,0,0,1,1,0,0,1,0,0,1,1,2,3,3,2,1,1,1,1,0,0,1,0,0,1,0,2,3,3,2,0,0,0,1,0,1,0,0,1,1,1,2,3,3,2,0,0,1,1,0,1,1,0,1,1,1,2,3,3,2,0,0,0,1,0,0,0,0,0,1,1,2,3,3,2,0,0,1,1,0,1,0,0,1,0,0,2,3,3,2,0,1,0,0
-2,3,3,2,0,0,0,0,0,1,1,1,0,1,1,2,3,3,2,0,0,0,1,0,0,0,0,0,0,1,2,3,3,2,0,0,1,1,1,0,1,1,1,0,1,2,3,3,2,0,1,0,0,0,1,0,0,0,1,0,2,3,3,2,0,1,0,1,1,1,1,1,0,1,1,2,3,3,2,0,1,0,0,1,1,0,0,1,1,1,2,3,3,2,1,1,1,0,1,0,0,1,0,0,1,2,3,3,2,0,1,1,1,1,0,0,1,0,1,0,2,3,3,2,0,1,0,1
-2,3,3,2,1,1,1,1,1,0,0,1,0,1,0,2,3,3,2,0,0,1,0,0,0,1,1,1,0,1,2,3,3,2,0,1,1,1,0,1,1,0,0,1,0,2,3,3,2,0,1,0,1,1,1,0,0,0,0,0,2,3,3,2,0,0,1,1,1,1,0,0,0,1,0,2,3,3,2,1,0,0,1,0,0,1,1,1,1,1,2,3,3,2,1,1,1,0,1,0,0,1,1,1,1,2,3,3,2,0,0,0,1,1,0,1,1,1,0,1,2,3,3,2,0,0,1,1
-2,3,3,2,0,1,1,1,0,0,1,1,1,0,1,2,3,3,2,1,0,0,0,1,1,0,0,0,0,1,2,3,3,2,1,1,1,1,1,1,1,1,1,0,1,2,3,3,2,0,1,1,0,0,0,1,0,0,1,0,2,3,3,2,0,1,1,1,0,1,1,0,1,0,1,2,3,3,2,1,0,0,0,1,1,0,1,1,1,0,2,3,3,2,0,0,0,1,0,0,0,1,0,0,1,2,3,3,2,0,1,0,1,0,1,0,0,0,1,0,2,3,3,2,1,0,0,1
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-2,3,3,2,0,0,0,1,0,1,0,0,1,0,1,2,3,3,2,1,1,1,1,0,0,1,0,1,1,1,2,3,3,2,1,0,0,1,1,1,1,0,0,0,1,2,3,3,2,0,1,0,0,1,1,0,1,1,0,0,2,3,3,2,0,0,0,1,1,1,1,1,1,1,1,2,3,3,2,1,1,0,1,1,1,0,1,1,0,0,2,3,3,2,7,7,7,1,5,5,1,0,1,1,0,2,3,3,2,0,1,0,0,0,0,0,0,0,1,0,2,3,3,2,1,0,0,0
-2,3,3,2,1,0,0,1,0,1,1,0,0,1,0,2,3,3,2,0,1,1,1,1,0,1,0,0,0,1,2,3,3,2,0,0,0,1,0,1,1,1,0,0,1,2,3,3,2,1,0,1,0,1,0,0,0,1,0,1,2,3,3,2,0,0,1,0,0,1,1,1,0,1,1,2,3,3,2,1,0,0,1,0,1,1,0,0,0,1,2,3,3,2,7,7,7,0,5,5,0,1,0,0,0,2,3,3,2,0,0,0,0,1,1,1,1,0,1,1,2,3,3,2,0,0,0,1
-2,3,3,2,1,1,1,0,0,0,1,1,0,1,1,2,3,3,2,0,1,0,0,1,0,0,0,1,1,1,2,3,3,2,1,1,1,1,0,0,0,0,0,0,0,2,3,3,2,0,1,1,0,0,0,0,1,1,1,0,2,3,3,2,1,0,0,1,0,0,1,0,0,1,1,2,3,3,2,0,1,0,1,1,0,0,1,1,1,0,2,3,3,2,7,7,7,0,5,5,1,1,1,0,1,2,3,3,2,1,1,1,0,1,0,0,1,0,1,0,2,3,3,2,1,1,1,1
-2,3,3,2,1,1,1,1,0,1,1,0,1,1,0,2,3,3,2,0,0,0,1,0,1,1,1,0,1,0,2,3,3,2,0,1,1,1,1,0,0,1,0,1,1,2,3,3,2,1,1,1,0,1,1,1,0,1,1,0,2,3,3,2,0,1,0,1,0,1,1,1,0,0,1,2,3,3,2,0,0,1,1,0,0,1,1,0,1,1,2,3,3,2,7,7,7,1,1,1,0,1,1,0,0,2,3,3,2,0,0,1,0,0,1,0,0,1,1,0,2,3,3,2,0,1,0,1
-2,3,3,2,1,0,0,0,0,0,1,1,1,1,0,2,3,3,2,0,0,0,0,0,1,0,1,1,1,0,2,3,3,2,0,0,0,0,0,1,1,0,0,0,0,2,3,3,2,0,0,1,0,0,1,1,1,1,0,1,2,3,3,2,1,0,1,0,0,0,1,0,0,0,0,2,3,3,2,1,1,1,1,1,0,0,0,0,1,1,2,3,3,2,0,0,1,0,1,0,1,1,0,0,1,2,3,3,2,1,0,0,1,0,1,0,0,1,1,1,2,3,3,2,1,0,1,1
-2,3,3,2,0,0,1,0,1,0,0,1,0,0,1,2,3,3,2,1,0,0,0,1,0,1,0,0,1,1,2,3,3,2,0,0,0,0,1,1,0,1,0,1,0,2,3,3,2,1,1,0,0,0,0,0,0,0,1,0,2,3,3,2,1,1,1,1,1,1,1,0,1,1,1,2,3,3,2,1,1,0,1,0,0,1,0,0,1,0,2,3,3,2,1,1,0,1,1,1,1,0,0,0,1,2,3,3,2,1,0,0,0,0,0,0,0,0,0,0,2,3,3,2,0,0,1,0
-2,3,3,2,1,1,0,1,0,1,0,1,0,0,1,2,3,3,2,1,0,1,0,1,1,0,0,1,0,1,2,3,3,2,0,1,1,1,1,0,1,0,0,0,1,2,3,3,2,0,0,0,0,0,0,0,1,1,0,1,2,3,3,2,0,1,0,0,1,0,1,0,1,0,0,2,3,3,2,1,1,1,1,0,1,1,1,0,0,0,2,3,3,2,1,1,0,1,1,0,1,1,0,0,1,2,3,3,2,0,0,0,1,0,1,0,0,0,1,1,2,3,3,2,0,1,0,0
-2,3,3,2,0,1,0,1,1,0,1,1,1,1,0,2,3,3,2,0,1,1,0,0,0,0,0,0,1,1,2,3,3,2,1,1,1,0,1,0,1,1,0,1,0,2,3,3,2,1,0,1,0,0,1,0,1,0,0,1,2,3,3,2,1,0,0,0,0,1,0,0,0,1,0,2,3,3,2,1,1,0,1,0,1,1,0,0,1,1,2,3,3,2,0,0,1,0,0,1,1,0,0,0,1,2,3,3,2,0,1,0,1,1,0,0,1,1,0,1,2,3,3,2,0,1,1,0
-2,3,3,2,0,1,1,1,0,1,0,0,1,1,0,2,3,3,2,0,0,0,1,0,0,0,0,0,0,1,2,3,3,2,0,0,1,1,1,1,0,0,0,1,1,2,3,3,2,1,1,1,0,1,1,0,1,0,1,1,2,3,3,2,0,1,1,0,0,0,1,1,0,1,1,2,3,3,2,0,1,0,1,0,0,1,1,0,0,1,2,3,3,2,0,0,1,0,0,0,1,0,1,0,0,2,3,3,2,0,0,1,1,1,0,1,1,0,1,1,2,3,3,2,0,0,0,0
-2,3,3,2,0,1,1,1,1,1,1,1,0,0,1,2,3,3,2,1,1,0,0,1,1,0,1,0,1,0,2,3,3,2,1,0,1,1,0,1,0,1,0,1,1,2,3,3,2,1,0,0,1,0,0,1,1,0,1,1,2,3,3,2,0,0,1,0,0,1,0,1,1,0,0,2,3,3,2,0,1,1,1,0,1,1,1,0,0,0,2,3,3,2,1,1,0,1,1,1,1,1,1,0,1,2,3,3,2,0,1,1,1,0,1,0,0,1,0,1,2,3,3,2,1,1,0,1
-2,3,3,2,0,0,0,0,0,0,1,0,0,0,0,2,3,3,2,1,1,1,1,1,0,1,1,0,0,0,2,3,3,2,1,1,0,0,1,0,1,0,0,1,0,2,3,3,2,1,1,1,0,1,0,1,1,0,0,0,2,3,3,2,1,0,0,1,0,0,1,1,1,1,1,2,3,3,2,1,0,1,1,0,0,1,0,0,1,1,2,3,3,2,1,1,0,1,1,0,1,0,0,0,0,2,3,3,2,1,0,0,0,0,1,1,0,1,1,0,2,3,3,2,0,0,1,1
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-2,3,3,2,1,0,0,1,1,0,1,0,1,1,1,2,3,3,2,1,0,0,1,1,0,1,1,0,0,0,2,3,3,2,0,0,0,0,1,0,0,1,0,0,1,2,3,3,2,0,0,0,1,1,0,1,1,1,0,0,2,3,3,2,0,1,1,1,0,1,0,0,1,1,0,2,3,3,2,0,0,1,1,1,5,5,5,5,5,0,2,3,3,2,0,0,1,0,1,1,1,0,1,1,0,2,3,3,2,0,0,1,0,1,0,1,1,1,0,0,2,3,3,2,1,0,1,0
-2,3,3,2,1,1,1,0,1,1,1,1,1,1,1,2,3,3,2,1,0,1,0,1,0,1,1,0,1,0,2,3,3,2,0,1,1,1,0,1,1,0,1,1,1,2,3,3,2,1,0,1,0,0,0,1,1,1,0,1,2,3,3,2,0,1,0,0,0,0,0,0,1,1,0,2,3,3,2,1,0,1,0,1,5,5,5,5,5,0,2,3,3,2,0,0,1,0,1,1,0,0,0,0,1,2,3,3,2,1,1,0,0,1,0,0,1,1,0,1,2,3,3,2,1,1,0,0
-2,3,3,2,0,1,1,0,0,1,1,1,0,0,0,2,3,3,2,0,1,1,0,0,1,1,0,0,0,1,2,3,3,2,0,1,1,1,1,0,0,1,0,0,1,2,3,3,2,0,0,0,1,1,1,0,1,1,0,1,2,3,3,2,0,1,0,0,1,1,0,0,0,0,0,2,3,3,2,1,0,0,1,1,0,0,1,1,1,1,2,3,3,2,1,1,0,1,0,1,1,0,1,1,1,2,3,3,2,1,0,0,0,0,1,0,0,0,0,0,2,3,3,2,0,1,0,1
-2,3,3,2,7,7,7,7,1,0,1,1,0,0,1,2,3,3,2,0,0,0,1,0,1,1,0,0,1,1,2,3,3,2,0,0,0,0,1,1,1,0,1,1,0,2,3,3,2,1,1,0,1,0,1,1,0,1,1,0,2,3,3,2,1,1,1,1,1,0,0,1,0,1,1,2,3,3,2,0,0,1,0,1,1,0,0,0,0,1,2,3,3,2,1,1,0,1,1,1,0,0,0,0,1,2,3,3,2,1,1,1,1,0,1,0,0,0,0,1,2,3,3,2,1,0,1,1
-2,3,3,2,7,7,7,7,0,1,0,1,1,1,0,2,3,3,2,1,1,0,0,1,0,1,1,0,0,1,2,3,3,2,1,0,0,0,0,1,1,1,0,0,0,2,3,3,2,0,0,1,1,0,0,0,1,0,1,1,2,3,3,2,1,0,1,0,0,1,0,0,1,0,1,2,3,3,2,0,0,0,1,1,0,1,0,1,0,1,2,3,3,2,0,0,1,0,0,1,0,1,0,1,1,2,3,3,2,1,0,1,0,0,0,0,1,1,0,1,2,3,3,2,0,0,0,1
-2,3,3,2,7,7,7,7,1,0,0,0,1,1,0,2,3,3,2,1,1,1,1,1,1,0,0,0,1,1,2,3,3,2,0,1,1,0,1,0,0,0,1,0,0,2,3,3,2,1,1,1,1,0,0,0,0,1,0,0,2,3,3,2,1,0,0,1,1,0,0,1,1,0,1,2,3,3,2,1,1,0,0,1,1,0,1,1,1,1,2,3,3,2,0,0,1,0,0,1,0,1,1,1,0,2,3,3,2,0,0,0,1,0,1,1,1,1,0,1,2,3,3,2,0,1,1,1
-2,3,3,2,4,4,4,4,4,0,1,1,0,0,1,2,3,3,2,0,1,1,1,0,0,1,1,1,1,0,2,3,3,2,1,1,0,0,0,0,0,1,0,0,0,2,3,3,2,0,1,0,1,0,1,1,1,0,0,0,2,3,3,2,1,0,0,1,0,1,0,1,0,1,1,2,3,3,2,0,0,1,1,0,1,1,1,1,0,0,2,3,3,2,1,1,0,1,1,1,0,1,1,1,1,2,3,3,2,0,0,0,1,1,0,0,0,0,1,1,2,3,3,2,0,0,1,0
-2,3,3,2,4,4,4,4,4,1,0,0,0,0,1,2,3,3,2,0,1,0,1,0,0,0,1,0,1,0,2,3,3,2,1,0,1,1,0,1,1,0,1,0,1,2,3,3,2,0,0,0,1,1,1,1,0,0,1,0,2,3,3,2,0,0,1,0,0,0,0,0,0,0,0,2,3,3,2,1,1,1,0,1,0,0,1,1,1,0,2,3,3,2,1,1,0,1,1,1,0,1,1,1,0,2,3,3,2,0,0,1,1,1,0,1,0,1,0,0,2,3,3,2,0,1,0,0
-2,3,3,2,4,4,4,4,4,0,1,0,1,1,0,2,3,3,2,0,0,0,1,1,1,0,0,1,1,1,2,3,3,2,1,0,1,1,0,1,0,1,0,0,1,2,3,3,2,0,1,0,1,0,0,0,1,0,1,0,2,3,3,2,0,1,0,1,1,1,1,1,1,1,1,2,3,3,2,1,1,1,1,0,0,1,1,1,1,1,2,3,3,2,0,0,1,1,0,1,0,0,1,1,0,2,3,3,2,0,1,0,1,0,1,1,1,0,1,1,2,3,3,2,1,1,1,1
-2,3,3,2,4,4,4,4,4,1,1,0,1,1,0,2,3,3,2,0,0,0,0,1,1,0,0,0,0,1,2,3,3,2,1,1,0,1,0,0,1,0,1,0,1,2,3,3,2,0,0,0,1,1,0,1,0,0,0,1,2,3,3,2,0,0,1,0,1,0,0,0,1,1,0,2,3,3,2,0,1,1,0,1,0,1,0,1,1,1,2,3,3,2,0,0,1,1,1,1,0,0,0,1,0,2,3,3,2,1,0,1,1,0,1,1,1,0,0,0,2,3,3,2,0,0,0,0
-2,3,3,2,4,4,4,4,4,1,0,0,0,0,1,2,3,3,2,1,0,0,1,0,1,0,1,1,1,1,2,3,3,2,0,1,0,1,1,0,1,1,0,0,1,2,3,3,2,0,0,1,1,1,1,0,1,0,0,1,2,3,3,2,0,1,1,0,0,0,1,0,0,0,0,2,3,3,2,0,1,0,1,0,0,1,0,1,1,0,2,3,3,2,1,1,0,0,0,1,0,0,0,1,0,2,3,3,2,1,1,1,1,1,1,1,0,1,1,0,2,3,3,2,1,0,0,1
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-2,3,3,2,0,0,1,0,0,0,1,1,0,1,0,2,3,3,2,6,6,6,1,1,0,1,0,0,0,1,2,3,3,2,0,0,1,1,1,1,1,0,1,0,1,2,3,3,2,0,1,0,1,0,1,1,0,1,0,0,2,3,3,2,0,0,0,1,1,0,1,1,1,1,1,2,3,3,2,8,8,8,8,8,8,8,8,8,1,1,2,3,3,2,1,1,0,0,1,1,1,1,0,1,1,2,3,3,2,1,1,0,0,1,0,0,1,0,1,1,2,3,3,2,1,1,0,0
-2,3,3,2,0,0,1,0,1,0,1,1,1,0,1,2,3,3,2,6,6,6,1,0,1,0,1,1,0,1,2,3,3,2,1,0,1,1,0,1,1,1,0,1,1,2,3,3,2,1,1,1,0,1,1,0,0,1,0,0,2,3,3,2,0,0,0,1,0,0,1,1,0,1,1,2,3,3,2,8,8,8,8,8,8,8,8,8,0,0,2,3,3,2,0,0,1,1,0,1,0,0,0,0,1,2,3,3,2,1,0,1,0,0,1,0,0,1,1,1,2,3,3,2,0,1,1,1
-2,3,3,2,0,1,0,1,0,1,1,0,1,0,1,2,3,3,2,6,6,6,1,0,1,1,1,0,0,1,2,3,3,2,0,1,0,0,1,0,0,1,1,1,0,2,3,3,2,0,0,1,1,0,1,0,0,1,1,1,2,3,3,2,1,0,1,0,1,0,1,1,0,1,0,2,3,3,2,8,8,8,8,8,8,8,8,8,1,0,2,3,3,2,0,0,1,1,0,1,1,1,1,1,0,2,3,3,2,1,1,0,1,0,1,0,0,1,1,0,2,3,3,2,1,0,0,0
-2,3,3,2,1,1,0,1,1,1,0,1,0,1,0,2,3,3,2,6,6,6,1,1,0,1,1,1,0,0,2,3,3,2,1,1,0,1,0,0,0,1,1,1,1,2,3,3,2,1,1,0,0,0,0,1,0,0,1,0,2,3,3,2,0,1,1,0,0,0,1,1,1,0,0,2,3,3,2,8,8,8,8,8,8,8,8,8,1,1,2,3,3,2,1,1,0,0,1,1,1,0,0,0,1,2,3,3,2,1,0,0,0,0,0,0,1,0,1,1,2,3,3,2,0,1,0,1
-2,3,3,2,0,0,1,1,0,1,0,0,0,1,1,2,3,3,2,6,6,6,0,1,0,1,1,1,1,0,2,3,3,2,0,0,0,0,0,1,1,1,1,1,0,2,3,3,2,4,4,4,4,0,0,1,0,1,0,1,2,3,3,2,1,0,1,0,0,0,1,0,1,0,0,2,3,3,2,8,8,8,8,8,8,8,8,8,1,1,2,3,3,2,1,1,0,0,1,1,1,0,1,1,0,2,3,3,2,0,1,1,1,0,1,1,1,0,1,0,2,3,3,2,0,0,1,1
-2,3,3,2,1,0,1,1,1,1,0,0,1,0,0,2,3,3,2,1,0,0,1,0,0,1,0,1,0,1,2,3,3,2,1,0,0,0,0,0,0,1,1,1,0,2,3,3,2,4,4,4,4,0,1,1,0,0,0,1,2,3,3,2,1,1,1,0,1,0,1,0,0,0,0,2,3,3,2,8,8,8,8,8,8,8,8,8,1,0,2,3,3,2,0,0,1,1,0,1,1,1,1,0,0,2,3,3,2,0,0,1,1,1,0,0,0,0,1,0,2,3,3,2,0,0,0,0
-2,3,3,2,1,1,1,0,1,0,0,0,1,0,0,2,3,3,2,1,0,1,0,0,0,0,0,1,1,1,2,3,3,2,1,1,1,1,0,1,1,1,1,1,1,2,3,3,2,1,1,0,1,1,1,1,0,1,1,1,2,3,3,2,0,1,0,1,1,0,1,0,0,0,1,2,3,3,2,8,8,8,8,8,8,8,8,8,0,1,2,3,3,2,0,0,1,1,1,1,1,0,0,1,0,2,3,3,2,1,0,0,1,1,0,1,0,0,1,0,2,3,3,2,0,1,1,1
-2,3,3,2,1,1,1,0,1,0,1,0,0,1,1,2,3,3,2,0,1,1,0,1,1,1,1,1,0,1,2,3,3,2,1,1,1,0,1,1,1,1,1,0,0,2,3,3,2,1,0,1,0,0,0,0,0,0,0,1,2,3,3,2,1,1,0,0,0,0,0,0,1,1,1,2,3,3,2,8,8,8,8,8,8,8,8,8,0,0,2,3,3,2,1,1,0,0,0,0,1,1,0,0,0,2,3,3,2,0,0,0,1,0,1,1,1,1,0,0,2,3,3,2,1,1,1,0
-2,3,3,2,1,0,0,1,1,0,1,1,0,1,1,2,3,3,2,0,0,0,0,1,1,0,1,1,1,1,2,3,3,2,1,0,0,1,1,0,0,1,1,1,1,2,3,3,2,1,1,1,1,1,0,0,0,0,1,0,2,3,3,2,0,1,1,1,1,0,1,1,1,1,1,2,3,3,2,8,8,8,8,8,8,8,8,8,0,0,2,3,3,2,1,1,0,0,0,1,0,1,0,0,1,2,3,3,2,1,0,1,1,0,1,1,1,1,1,1,2,3,3,2,0,0,0,0
-2,3,3,2,0,0,0,0,1,0,0,0,1,0,0,2,3,3,2,1,1,0,0,0,0,1,0,1,1,0,2,3,3,2,0,0,0,1,1,0,0,1,1,0,1,2,3,3,2,1,1,0,0,1,1,1,0,0,1,0,2,3,3,2,0,0,1,1,0,0,0,0,0,1,1,2,3,3,2,1,0,1,0,1,0,1,0,0,0,1,2,3,3,2,0,0,1,1,1,0,1,1,0,0,0,2,3,3,2,1,1,1,1,1,1,1,0,0,0,0,2,3,3,2,1,0,1,1
-2,3,3,2,1,1,1,1,1,1,1,1,1,0,0,2,3,3,2,1,1,1,1,0,1,0,1,1,1,0,2,3,3,2,1,1,1,0,1,1,1,1,1,1,0,2,3,3,2,1,1,0,0,1,1,0,0,0,0,0,2,3,3,2,1,0,0,0,0,0,1,1,1,1,0,2,3,3,2,0,1,0,0,1,1,0,1,0,1,1,2,3,3,2,0,0,1,1,1,1,0,1,1,0,1,2,3,3,2,0,0,1,0,1,1,0,0,0,1,1,2,3,3,2,0,1,0,0
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
-2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2
-2,3,3,2,1,1,1,0,0,0,1,1,0,1,0,2,3,3,2,1,0,0,1,0,1,0,0,1,1,0,2,3,3,2,1,1,1,1,0,1,0,1,1,0,0,2,3,3,2,0,0,0,0,0,0,1,0,1,0,1,2,3,3,2,0,1,1,0,0,0,0,1,0,1,0,2,3,3,2,1,1,1,0,0,0,1,0,1,1,1,2,3,3,2,1,1,0,1,1,0,0,1,0,1,0,2,3,3,2,1,1,1,0,0,1,0,1,0,0,1,2,3,3,2,0,0,1,0
-2,3,3,2,0,0,0,1,1,0,1,0,0,1,0,2,3,3,2,1,0,1,0,0,1,1,1,1,0,0,2,3,3,2,0,0,0,1,0,0,1,1,1,0,1,2,3,3,2,1,1,0,0,0,0,0,1,1,1,0,2,3,3,2,0,1,0,1,0,0,0,0,0,1,1,2,3,3,2,0,1,0,1,0,1,1,1,0,0,1,2,3,3,2,1,1,0,1,1,1,0,1,1,0,0,2,3,3,2,6,6,6,6,6,6,0,0,0,0,0,2,3,3,2,1,1,0,0
-2,3,3,2,1,0,0,1,0,0,0,0,0,0,1,2,3,3,2,0,1,1,0,1,0,0,0,0,0,1,2,3,3,2,1,0,1,1,1,0,0,1,1,0,1,2,3,3,2,0,0,1,0,0,0,1,0,1,0,1,2,3,3,2,0,1,0,1,1,0,0,0,1,1,1,2,3,3,2,0,1,1,0,0,1,1,1,1,0,0,2,3,3,2,0,0,1,0,0,0,0,1,1,1,0,2,3,3,2,6,6,6,6,6,6,0,1,1,0,0,2,3,3,2,0,1,1,1
-2,3,3,2,1,1,1,0,0,1,0,0,0,0,1,2,3,3,2,0,0,0,0,1,0,1,0,1,0,1,2,3,3,2,1,1,0,0,0,1,1,1,1,0,0,2,3,3,2,1,1,1,0,0,0,1,1,1,1,0,2,3,3,2,1,1,1,1,1,0,0,1,1,1,1,2,3,3,2,1,0,1,1,0,0,1,0,1,0,0,2,3,3,2,0,0,1,0,0,1,0,1,0,0,1,2,3,3,2,6,6,6,6,6,6,1,1,1,0,1,2,3,3,2,0,0,0,0
-2,3,3,2,1,1,1,1,0,1,0,0,1,1,0,2,3,3,2,1,1,0,0,0,0,1,1,0,0,1,2,3,3,2,1,1,0,0,1,1,1,1,1,1,0,2,3,3,2,0,1,0,1,0,1,0,0,0,1,0,2,3,3,2,1,0,1,1,1,0,0,0,0,0,1,2,3,3,2,1,1,0,0,0,1,0,1,1,0,1,2,3,3,2,1,1,0,1,0,0,0,0,1,1,0,2,3,3,2,6,6,6,6,6,6,0,0,1,0,0,2,3,3,2,0,0,0,1
-2,3,3,2,1,0,0,0,0,1,0,1,1,1,0,2,3,3,2,1,1,1,1,0,0,1,1,1,0,1,2,3,3,2,1,0,1,1,1,0,0,1,0,0,0,2,3,3,2,0,0,1,0,1,1,0,1,1,0,0,2,3,3,2,1,1,0,0,1,1,0,1,0,0,0,2,3,3,2,0,0,0,1,0,0,1,0,1,1,1,2,3,3,2,1,1,0,1,0,1,0,1,0,0,1,2,3,3,2,1,1,1,1,1,0,1,0,1,0,1,2,3,3,2,0,1,1,1
+2,3,3,2,0,1,1,1,0,1,0,0,0,0,0,2,3,3,2,0,0,1,0,0,1,0,0,0,0,1,2,3,3,2,1,1,1,0,0,0,1,1,0,1,0,2,3,3,2,1,1,1,1,1,0,1,0,1,0,0,2,3,3,2,0,0,0,1,0,1
+2,3,3,2,7,7,7,1,1,1,0,0,1,0,1,2,3,3,2,0,1,0,5,5,5,5,0,1,1,0,2,3,3,2,5,5,0,1,0,1,0,0,1,1,1,2,3,3,2,0,1,1,0,0,0,0,0,0,1,0,2,3,3,2,0,1,0,1,1,0
+2,3,3,2,7,7,7,0,1,0,1,0,1,0,1,2,3,3,2,1,1,0,5,5,5,5,0,1,0,0,2,3,3,2,5,5,0,1,1,0,1,1,1,0,1,2,3,3,2,1,1,0,0,1,1,0,1,0,1,1,2,3,3,2,0,1,1,1,1,1
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+2,3,3,2,0,1,4,4,4,4,4,0,1,1,1,2,3,3,2,0,8,8,8,8,8,8,8,8,8,0,2,3,3,2,0,0,7,7,7,7,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,6,6,6,6,6,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,0,0,4,4,4,4,4,1,0,0,0,2,3,3,2,1,8,8,8,8,8,8,8,8,8,0,2,3,3,2,0,1,7,7,7,7,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,6,6,6,6,6,2,3,3,2,6,6,6,6,1,1
+2,3,3,2,0,0,4,4,4,4,4,0,0,0,0,2,3,3,2,0,8,8,8,8,8,8,8,8,8,0,2,3,3,2,1,1,7,7,7,7,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,6,6,6,6,6,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,7,7,7,1,0,0,0,0,1,0,1,2,3,3,2,0,8,8,8,8,8,8,8,8,8,0,2,3,3,2,6,6,6,6,6,0,5,5,5,5,5,2,3,3,2,6,6,6,6,6,6,6,6,6,6,6,2,3,3,2,1,0,1,1,1,1
+2,3,3,2,7,7,7,1,1,0,1,1,0,1,0,2,3,3,2,0,8,8,8,8,8,8,8,8,8,0,2,3,3,2,6,6,6,6,6,1,1,0,5,5,5,2,3,3,2,6,6,6,6,6,6,6,6,6,6,6,2,3,3,2,0,0,0,0,0,1
+2,3,3,2,7,7,7,1,1,0,0,0,1,0,0,2,3,3,2,0,8,8,8,8,8,8,8,8,8,1,2,3,3,2,6,6,6,6,6,1,0,0,5,5,5,2,3,3,2,5,5,5,5,5,1,6,6,6,6,6,2,3,3,2,0,0,0,0,1,1
+2,3,3,2,1,1,0,1,0,1,1,1,0,1,0,2,3,3,2,1,8,8,8,8,8,8,8,8,8,0,2,3,3,2,6,6,6,6,6,1,0,1,5,5,5,2,3,3,2,5,5,5,5,5,1,0,0,4,4,4,2,3,3,2,5,5,5,5,5,1
+2,3,3,2,1,5,5,5,0,1,1,1,1,0,1,2,3,3,2,0,8,8,8,8,8,8,8,8,8,1,2,3,3,2,6,6,6,6,6,0,0,1,5,5,5,2,3,3,2,5,5,5,5,5,1,0,1,4,4,4,2,3,3,2,5,5,5,5,5,0
+2,3,3,2,0,5,5,5,0,0,0,1,0,0,1,2,3,3,2,0,8,8,8,8,8,8,8,8,8,0,2,3,3,2,7,7,7,7,6,6,6,0,5,5,5,2,3,3,2,5,5,5,5,5,6,6,6,4,4,4,2,3,3,2,5,5,5,5,5,0
+2,3,3,2,1,5,5,5,0,0,1,1,1,1,0,2,3,3,2,4,4,7,7,7,0,0,1,1,1,1,2,3,3,2,7,7,7,7,6,6,6,1,4,4,0,2,3,3,2,0,1,1,1,1,6,6,6,4,4,4,2,3,3,2,5,5,5,5,5,0
+2,3,3,2,0,5,5,5,1,0,1,1,1,0,1,2,3,3,2,4,4,7,7,7,0,1,0,0,1,0,2,3,3,2,7,7,7,7,6,6,6,1,4,4,0,2,3,3,2,1,1,1,1,1,6,6,6,4,4,4,2,3,3,2,1,1,1,1,0,1
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+2,3,3,2,5,5,5,5,0,1,1,1,1,1,0,2,3,3,2,5,5,5,5,7,7,7,7,7,7,7,2,3,3,2,6,6,6,6,6,6,6,6,6,6,1,2,3,3,2,5,5,5,0,0,7,7,7,1,7,7,2,3,3,2,4,4,4,1,0,1
+2,3,3,2,5,5,5,5,1,0,1,0,1,0,0,2,3,3,2,5,5,5,5,7,7,7,7,7,7,7,2,3,3,2,6,6,6,6,6,6,6,6,6,6,1,2,3,3,2,5,5,5,1,0,7,7,7,0,7,7,2,3,3,2,4,4,4,1,1,0
+2,3,3,2,5,5,5,5,0,0,1,1,1,0,1,2,3,3,2,5,5,5,5,7,7,7,7,7,7,7,2,3,3,2,6,6,6,6,6,6,6,6,6,6,1,2,3,3,2,5,5,5,1,1,7,7,7,1,7,7,2,3,3,2,0,0,1,1,0,0
+2,3,3,2,5,5,5,5,1,1,0,0,0,0,1,2,3,3,2,5,5,5,5,7,7,7,7,7,7,7,2,3,3,2,6,6,6,6,6,6,6,6,6,6,0,2,3,3,2,4,4,1,0,0,7,7,7,1,1,1,2,3,3,2,6,6,6,6,1,1
+2,3,3,2,5,5,5,5,1,1,0,0,0,0,0,2,3,3,2,7,7,7,7,0,1,0,1,1,1,0,2,3,3,2,6,6,6,6,6,6,6,6,6,6,0,2,3,3,2,4,4,0,0,0,0,1,1,0,1,1,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,7,7,7,1,1,1,1,0,0,1,0,2,3,3,2,7,7,7,7,6,6,6,0,1,1,1,2,3,3,2,6,6,6,6,6,6,6,6,6,6,0,2,3,3,2,4,4,0,1,0,0,1,0,0,1,1,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,7,7,7,1,1,1,1,1,0,0,1,2,3,3,2,7,7,7,7,6,6,6,1,1,0,1,2,3,3,2,4,4,4,4,4,0,1,0,0,1,0,2,3,3,2,4,4,0,0,4,4,4,4,1,0,1,2,3,3,2,6,6,6,6,1,1
+2,3,3,2,6,6,6,6,6,6,1,0,1,1,1,2,3,3,2,7,7,7,7,6,6,6,1,0,0,1,2,3,3,2,4,4,4,4,4,6,6,6,6,1,0,2,3,3,2,4,4,4,4,4,4,4,4,0,0,0,2,3,3,2,6,6,6,4,4,1
+2,3,3,2,6,6,6,6,6,6,1,0,1,1,0,2,3,3,2,0,4,4,4,6,6,6,7,7,1,0,2,3,3,2,0,0,0,1,1,6,6,6,6,1,1,2,3,3,2,4,4,4,4,4,4,4,4,1,1,1,2,3,3,2,6,6,6,4,4,0
+2,3,3,2,6,6,6,6,6,6,0,0,0,1,0,2,3,3,2,1,4,4,4,6,6,6,7,7,1,0,2,3,3,2,0,5,5,5,5,6,6,6,6,0,1,2,3,3,2,4,4,4,4,4,4,4,4,1,1,1,2,3,3,2,6,6,6,4,4,1
+2,3,3,2,6,6,6,6,6,6,0,0,0,1,0,2,3,3,2,0,4,4,4,6,6,6,7,7,1,0,2,3,3,2,0,5,5,5,5,6,6,6,6,0,1,2,3,3,2,0,0,1,1,4,4,4,4,1,0,0,2,3,3,2,1,1,0,4,4,0
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+2,3,3,2,5,5,5,5,0,0,0,0,1,1,1,2,3,3,2,4,4,4,4,4,1,5,5,5,5,5,2,3,3,2,1,1,5,5,5,1,7,7,7,0,0,2,3,3,2,1,1,1,1,1,1,4,4,4,1,0,2,3,3,2,4,4,4,0,0,1
+2,3,3,2,5,5,5,5,0,0,0,0,1,1,1,2,3,3,2,4,4,4,4,4,1,5,5,5,5,5,2,3,3,2,1,0,5,5,5,1,7,7,7,1,0,2,3,3,2,1,1,1,1,0,0,4,4,4,0,1,2,3,3,2,4,4,4,0,0,1
+2,3,3,2,5,5,5,5,1,1,0,0,1,1,0,2,3,3,2,4,4,4,4,4,0,1,4,4,4,4,2,3,3,2,1,1,5,5,5,0,7,7,7,0,1,2,3,3,2,6,6,6,6,6,0,4,4,4,0,1,2,3,3,2,4,4,4,0,0,0
+2,3,3,2,5,5,5,5,0,0,1,0,0,0,0,2,3,3,2,6,6,6,6,1,1,1,4,4,4,4,2,3,3,2,7,7,7,1,1,6,6,6,6,6,6,2,3,3,2,6,6,6,6,6,0,0,0,0,0,0,2,3,3,2,4,4,4,1,1,1
+2,3,3,2,1,0,1,0,0,0,1,1,0,1,0,2,3,3,2,6,6,6,6,0,0,0,4,4,4,4,2,3,3,2,7,7,7,0,1,6,6,6,6,6,6,2,3,3,2,6,6,6,6,6,0,0,0,0,1,0,2,3,3,2,4,4,4,0,1,1
+2,3,3,2,1,0,0,1,0,1,1,1,1,1,1,2,3,3,2,6,6,6,6,1,0,0,0,1,0,0,2,3,3,2,1,0,1,1,1,6,6,6,6,6,6,2,3,3,2,6,6,6,6,6,1,0,1,0,0,1,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,0,0,0,1,1,0,0,1,1,1,1,2,3,3,2,6,6,6,6,0,1,1,1,0,0,0,2,3,3,2,1,1,0,0,0,6,6,6,6,6,6,2,3,3,2,6,6,6,6,6,0,1,5,5,5,1,2,3,3,2,6,6,6,6,1,1
+2,3,3,2,0,1,0,0,0,0,1,0,0,0,0,2,3,3,2,6,6,6,6,4,4,4,4,0,0,0,2,3,3,2,0,1,7,7,7,4,4,4,0,1,1,2,3,3,2,6,6,6,6,6,0,1,5,5,5,0,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,0,0,1,1,1,1,1,1,0,0,1,2,3,3,2,6,6,6,6,4,4,4,4,1,0,1,2,3,3,2,1,1,7,7,7,4,4,4,0,1,1,2,3,3,2,7,7,1,5,5,5,5,5,5,5,0,2,3,3,2,6,6,6,6,0,0
+2,3,3,2,0,0,0,0,1,1,1,1,0,1,0,2,3,3,2,4,4,4,1,4,4,4,4,1,0,1,2,3,3,2,0,1,7,7,7,4,4,4,1,0,1,2,3,3,2,7,7,0,5,5,5,5,5,5,5,0,2,3,3,2,6,6,6,6,1,0
+2,3,3,2,0,0,1,1,0,1,0,0,1,1,1,2,3,3,2,4,4,4,1,4,4,4,4,1,0,1,2,3,3,2,0,1,7,7,7,4,4,4,1,1,0,2,3,3,2,7,7,0,5,5,5,5,5,5,5,1,2,3,3,2,0,0,1,0,0,1
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+2,3,3,2,7,7,7,7,1,7,7,1,0,1,0,2,3,3,2,7,7,7,4,4,4,4,6,6,6,6,2,3,3,2,6,6,6,6,6,6,6,6,6,1,1,2,3,3,2,6,6,6,6,6,6,4,4,4,4,1,2,3,3,2,4,4,4,4,4,0
+2,3,3,2,7,7,7,7,1,7,7,1,6,6,6,2,3,3,2,7,7,7,4,4,4,4,6,6,6,6,2,3,3,2,6,6,6,6,6,6,6,6,6,0,1,2,3,3,2,6,6,6,6,6,6,4,4,4,4,0,2,3,3,2,4,4,4,4,4,0
+2,3,3,2,7,7,7,7,0,7,7,0,6,6,6,2,3,3,2,7,7,7,4,4,4,4,6,6,6,6,2,3,3,2,6,6,6,6,6,6,6,6,6,1,0,2,3,3,2,6,6,6,6,6,6,1,6,6,6,6,2,3,3,2,4,4,4,4,4,0
+2,3,3,2,1,0,0,1,1,7,7,1,6,6,6,2,3,3,2,7,7,7,4,4,4,4,6,6,6,6,2,3,3,2,6,6,6,6,6,6,6,6,6,1,1,2,3,3,2,6,6,6,6,6,6,0,6,6,6,6,2,3,3,2,4,4,4,4,4,1
+2,3,3,2,6,6,6,6,6,6,0,1,6,6,6,2,3,3,2,7,7,7,4,4,4,4,0,1,1,0,2,3,3,2,6,6,6,6,6,6,6,6,6,0,1,2,3,3,2,6,6,6,6,6,6,1,6,6,6,6,2,3,3,2,5,5,5,5,0,0
+2,3,3,2,6,6,6,6,6,6,1,0,0,1,0,2,3,3,2,7,7,7,1,0,1,0,0,1,0,0,2,3,3,2,5,5,5,5,1,1,0,0,1,1,0,2,3,3,2,6,6,6,6,6,6,0,6,6,6,6,2,3,3,2,5,5,5,5,1,1
+2,3,3,2,6,6,6,6,6,6,0,0,0,1,1,2,3,3,2,7,7,7,5,5,5,5,5,0,1,1,2,3,3,2,5,5,5,5,1,1,4,4,4,4,1,2,3,3,2,1,0,1,0,0,1,1,5,5,5,5,2,3,3,2,6,6,6,6,6,0
+2,3,3,2,6,6,6,6,6,6,0,1,0,1,1,2,3,3,2,7,7,7,5,5,5,5,5,0,0,1,2,3,3,2,5,5,5,7,7,7,4,4,4,4,1,2,3,3,2,1,7,7,7,5,5,5,5,5,5,5,2,3,3,2,6,6,6,6,6,0
+2,3,3,2,1,0,0,0,1,1,1,4,4,1,0,2,3,3,2,7,7,7,5,5,5,5,5,0,0,1,2,3,3,2,5,5,5,7,7,7,4,4,4,4,1,2,3,3,2,0,7,7,7,5,5,5,5,5,5,5,2,3,3,2,6,6,6,6,6,0
+2,3,3,2,0,1,1,0,1,0,0,4,4,0,0,2,3,3,2,7,7,7,5,5,5,5,5,1,1,0,2,3,3,2,5,5,5,7,7,7,4,4,4,4,1,2,3,3,2,1,7,7,7,5,5,5,5,5,5,5,2,3,3,2,6,6,6,6,6,0
+2,3,3,2,1,1,0,0,1,0,1,4,4,1,0,2,3,3,2,7,7,7,5,5,5,5,5,1,1,0,2,3,3,2,5,5,5,7,7,7,4,4,4,4,0,2,3,3,2,0,7,7,7,5,5,5,1,1,1,0,2,3,3,2,0,0,0,1,0,0
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,2,2,2,2,2,2
+2,3,3,2,5,5,5,5,5,1,1,1,0,0,0,2,3,3,2,7,7,7,7,0,0,0,1,1,1,0,2,3,3,2,1,0,0,0,0,0,1,1,0,1,0,2,3,3,2,1,0,0,1,0,1,4,4,4,1,1,2,3,3,2,1,0,1,0,1,1
+2,3,3,2,5,5,5,5,5,0,0,1,1,1,1,2,3,3,2,7,7,7,7,0,0,1,0,1,0,1,2,3,3,2,0,1,0,0,1,0,1,0,0,0,0,2,3,3,2,0,0,1,0,0,0,4,4,4,0,1,2,3,3,2,0,0,1,0,1,0
+2,3,3,2,1,1,0,0,1,1,0,1,1,0,1,2,3,3,2,0,1,1,0,0,1,0,0,1,1,1,2,3,3,2,0,0,0,1,1,0,1,1,0,0,0,2,3,3,2,1,1,1,1,0,1,0,1,1,0,1,2,3,3,2,0,0,1,1,0,1
