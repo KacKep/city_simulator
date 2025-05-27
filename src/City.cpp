@@ -43,7 +43,7 @@ City::City()
         inputfile = userInput;
     }
     else {
-        std::cerr << "Failed to create the input file at " << userInput << std::endl << "Reverting to use the default path\n";
+        std::cout << "Failed to load the input file at " << userInput << std::endl << "Reverting to use the default path\n";
     }
     filetest.close();
 
@@ -52,16 +52,23 @@ City::City()
     std:: cout << "Input the full path where the output file should be generated, leave blank for default (.../resources/output.csv)\n";
     std::getline(std::cin, userInput);
     //TESTING IF IT IS A PROPER PATH
-    std::ofstream filetest2 (userInput);
+    std::ofstream filetest2(userInput);
     if (userInput.empty()) {
         std::cout << "Using default path for output file. \n";
     }
-    else if (filetest2.is_open()) {
-        outputfile = userInput;
+    else if (!filetest2) {
+        std::cout << "Failed to create the output file at " << userInput << std::endl << "Reverting to use the default path\n";
     }
     else {
-        std::cerr << "Failed to create the output file at " << userInput << std::endl << "Reverting to use the default path\n";
+        std::filesystem::path p(userInput);
+        if (p.has_parent_path() && p.has_filename()) {
+            outputfile = userInput;
+        }
+        else {
+            std::cout << userInput << " is not a correct filepath.\nReverting to use the default path\n";
+        }
     }
+    filetest2 << "This is a test file. You should not see this text\n";
     filetest2.close();
 
     //READING DATA FROM THE INPUT FILE
