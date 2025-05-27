@@ -356,7 +356,7 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
         //ENTITY PAYS FOR DORM
         entity.addMoney(building.getPrice());
         //ENTITY LOSES HAPPINESS
-        entity.addHappiness(100-building.getProductValue());
+        entity.addHappiness(-(100-building.getProductValue()));
         //ENTITY GETS EDUCATION
         entity.addSemester(1);
         //PWR GETS MONEY
