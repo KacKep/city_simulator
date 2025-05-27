@@ -41,6 +41,12 @@ public:
 	//----------------Health----------------
 	int getHealth() const;
 	void addHealth(int health);
+	//----------------Happiness----------------
+	int getHappiness() const;
+	void addHappiness(int happiness);
+	//----------------Education----------------
+	int getSemester() const;
+	void addSemester(int semester);
 	//---------------Attack-----------------
 	virtual int getAttack()const;
 	void setAttack(int attack);
@@ -112,6 +118,8 @@ private:
 	int attack;
 	int defence;
 	int swiftness;
+	int happiness;
+	int education;
 	double money;
 	Direction dir;
 	sf::Vector2f target;

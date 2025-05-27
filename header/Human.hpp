@@ -13,11 +13,14 @@ public:
 	void fight(Entity* enemy) override;
 	std::string toSave()override;
 	std::string getName();
+	void setPetID(int petID);
+	int getPetID() const;
 
 private:
 	Item item;
 	static sf::Texture texture;
 	std::string name;
+	int petID;
 	void setName();
 	void behavior()override;
 };

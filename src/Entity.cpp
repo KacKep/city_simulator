@@ -19,6 +19,8 @@ Entity::Entity()
 	ID(0),
 	entity_type(human),
 	drunkness(0),
+	happiness(100),
+	education(0),
 	place(PavementTile),
 	swiftness(0),
 	deathIteration(0),
@@ -92,6 +94,20 @@ int Entity::getDeathIteration() {
  }
 void Entity::setDefence(int defence) {
 	this->defence = defence;
+}
+//----------------Happiness----------------
+int Entity::getHappiness() const {
+	return happiness;
+}
+void Entity:: addHappiness(int happiness) {
+	this->happiness += happiness;
+}
+//----------------Education----------------
+int Entity:: getSemester() const {
+	return education;
+}
+void Entity:: addSemester(int semester) {
+	this->education += semester;
 }
  //---------------Money------------------
  void Entity::addMoney(double money) {

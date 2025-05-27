@@ -13,5 +13,6 @@ enum BuildingList
 	ShopTile = 4,
 	HospitalTile = 5,
 	OfficeBuildingTile=6,
-	LiqourShopTile=7
+	LiqourShopTile=7,
+	PolytechnicTile = 8
 };

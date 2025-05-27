@@ -6,6 +6,7 @@ Animal::Animal(Human* human)
 	name("Animal")
 {
 	setID();
+	owner->setPetID(getID());
 	setTarget(owner->getTarget());
 	setPosition(getTarget());
 	setType(animal);
@@ -43,8 +44,10 @@ void Animal::walk() {
 		setOutlineThickness(0);
 	}
 	if (getHealth() > 100) {
-		//std::cout << "animal nr " << getID() << " died" << std::endl;
 		addHealth(100 - getHealth());
+	}
+	if (getHappiness() > 100) {
+		addHappiness(100 - getHappiness());
 	}
 	behavior();
 
@@ -60,10 +63,12 @@ void Animal::behavior() {
 		{
 			addHunger(0);
 			addHealth(-2);
+			addHappiness(-2);
 		}
 		else
 		{
 			addHunger(-10);
+			addHappiness(-1);
 		}
 	
 
@@ -84,6 +89,8 @@ void Animal::fight(Entity* enemy) {
 		if (enemy->getID() == owner->getID())
 		{
 			//std::cout << "pat pat" << std::endl;
+			addHappiness((rand() % 5 + 1) * 10);
+			owner->addHappiness((rand() % 5 + 1) * 5);
 			if (owner->getMoney()>=100 && getHealth()<=50)
 			{
 				owner->addMoney(-100);
@@ -95,6 +102,7 @@ void Animal::fight(Entity* enemy) {
 	if (getType()==enemy->getType())
 	{
 		//animals play or something
+		addHappiness((rand() % 5 + 1) * 5);
 		return;
 	}
 
@@ -103,11 +111,13 @@ void Animal::fight(Entity* enemy) {
 		//std::cout << "dog got addopted by" << owner->getID()<<std::endl;
 		Human* new_owner = dynamic_cast<Human*>(enemy);
         owner = new_owner;
+		owner->setPetID(getID());
 		if (owner->getMoney()>100)
 		{
 			owner->addMoney(-100);
 			addHealth(100 - getHealth());
 			addHunger(100 - getHunger());
+			addHappiness(100 - getHappiness());
 		}
 		return;
 	}
@@ -141,6 +151,7 @@ void Animal::fight(Entity* enemy) {
 		entity1DefRoll = rand() % (getDefence() + 1);
 		if (enemy->getAttack() > entity1DefRoll) {
 			addHealth(-enemy->getAttack() + entity1DefRoll);
+			addHappiness(-enemy->getAttack());
 		}
 
 		if (getHealth() <= 0) {
@@ -155,6 +166,7 @@ void Animal::hunt() {
 	if (rand() % 3 == 0 && getHunger() < 50)
 	{
 		addHunger((rand() % 10) * 5);
+		addHappiness(10);
 		addHealth(1);//it's enought for a cat to survive
 	}
 }
@@ -162,11 +174,17 @@ void Animal::hunt() {
 std::string Animal::toSave() {
 	std::stringstream toSave;
 	toSave << getID() << ","
-	<<getName() << ","
-	<< getOwner()->getID() << ",";
+	<<getName() << ",";
+	if (getOwner()->isDead()) {
+		toSave<< "Owner is Dead,";
+	}
+	else {
+		toSave<< getOwner()->getID() << ",";
+	}
 	if (isDead() == 0 ) {
 		toSave << "Alive," << getHealth() << ","
 		<< getHunger() << ","
+		<< getHappiness() << ","
 		<< getAttack() << ","
 		<< getDefence() << ","
 		<< getSwiftness();

@@ -50,6 +50,7 @@ add_library(draw_lib
     src/Item.cpp
     src/Human.cpp
     src/Dog.cpp
+    src/Polytechnic.cpp
 )
 
 target_include_directories(draw_lib PUBLIC

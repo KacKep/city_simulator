@@ -1,4 +1,5 @@
 #include "City.hpp"
+
 /*
  City::City()
 
@@ -208,8 +209,13 @@ void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
         }
         case 1:
         {
-             building = std::make_unique<Hospital>();
-            
+            //the fifth building is always a polytechnic, and then every 100th building
+            if (i==5||(i!=1&&i%100==1)) {
+                building = std::make_unique<Polytechnic>();
+            }
+            else {
+                building = std::make_unique<Hospital>();
+            }
             break;
         }
         case 2:
@@ -311,6 +317,8 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     case ShopTile: {
         //ENTITY GETS food
         entity.addHunger(building.getProductValue());
+        //ENTITY GETS HAPPINESS
+        entity.addHappiness(building.getProductValue()/10);
         //ENTITY PAYS THE PRICE
         entity.addMoney(building.getPrice());
         //BUILDING GETS MONEY
@@ -328,7 +336,7 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     }
     case OfficeBuildingTile: {
         //ENTITY GETS money
-        entity.addMoney(building.getProductValue());
+        entity.addMoney(building.getPrice()*(entity.getSemester() ? entity.getSemester() : 1));
         //BUILDING GETS MONEY
         building.addMoney(building.getPrice());//yeah getPrice is kinda bad but i have no idea how to name it
         return;
@@ -336,9 +344,22 @@ void City::interactionHumanBuilding(Entity& entity, Building& building) {
     case LiqourShopTile: {
         //ENTITY GETS drunk
         entity.addDrunkness(building.getProductValue());
+        //ENTITY GETS HAPPY
+        entity.addHappiness(50);
         //ENTITY PAYS THE PRICE
         entity.addMoney(building.getPrice());
         //BUILDING GETS MONEY
+        building.addMoney(-building.getPrice());
+        return;
+    }
+        case PolytechnicTile: {
+        //ENTITY PAYS FOR DORM
+        entity.addMoney(building.getPrice());
+        //ENTITY LOSES HAPPINESS
+        entity.addHappiness(100-building.getProductValue());
+        //ENTITY GETS EDUCATION
+        entity.addSemester(1);
+        //PWR GETS MONEY
         building.addMoney(-building.getPrice());
         return;
     }
@@ -654,7 +675,6 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     std::vector<int> animalDeathsPerIteration((entities.size() <= 0 ? 0 : (int)entities[0]->getIteration()) + 1, 0);
 
 
-
     std::ofstream file(outputfile);
 
     //--- Initial Parameters ----
@@ -680,7 +700,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     }
     //std::cout << "elp3" << std::endl;
     // --- Final stats of each human ---
-    file << "\nFinal Stats of each Human\nID,Name,Status,Health,Hunger,Attack,Defence,Swiftness,Money,Drunkness,Item\n";
+    file << "\nFinal Stats of each Human\nID,Name,Status,Pet ID,Health,Hunger,Happiness,Attack,Defence,Swiftness,Graduated Semesters,Money,Drunkness,Item\n";
     for (long int i = 0; i < entities.size(); i++) {
         if (!entities[i]->getType()) {
             //getting data from toSave method
@@ -692,7 +712,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     }
 
     // --- Final stats of each animal ---
-    file << "\nFinal Stats of each Animal\nID,Type,Owner ID,Status,Health,Hunger,Attack,Defence,Swiftness\n";
+    file << "\nFinal Stats of each Animal\nID,Type,Owner ID,Status,Health,Hunger,Happiness,Attack,Defence,Swiftness\n";
     for (long int i = 0; i < entities.size(); i++) {
         if (entities[i]->getType()) {
             //getting data from toSave method

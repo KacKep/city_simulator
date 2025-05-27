@@ -10,6 +10,6 @@ OfficeBuilding::OfficeBuilding()
 	setOutlineColor(sf::Color::Black);
 	setOutlineThickness(1);
 
-	setPrice((rand() % 5 + 1) * 10);
-	setProductValue((rand() % 10 + 5) * 100);
+	setProductValue(0);
+	setPrice((rand() % 10 + 5) * 100);
 }
