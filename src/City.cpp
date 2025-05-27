@@ -254,10 +254,6 @@ void City::createBuildings(std::vector<std::vector<int>>& Intmap) {
         }
         case 3:
         {
-            /*if (rand()%2!=0)
-            {
-                continue;
-            }*/
              building = std::make_unique<LiqourShop>();
             
             break;
