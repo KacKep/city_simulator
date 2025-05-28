@@ -144,7 +144,7 @@ bool Building::Build(std::vector<std::vector<int>>& Intmap, int xBoundry, int yB
 
 		
 	}
-	std::cout << "No space for the " << getName() << " (ID: " << getID() << ")" << std::endl;
+	//std::cout << "No space for the " << getName() << " (ID: " << getID() << ")" << std::endl;
 	return false;
 }
 

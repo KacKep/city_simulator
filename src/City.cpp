@@ -558,7 +558,7 @@ void City::start() {
     sf::Sprite pwr(texture);
     sf::Color currentColor = pwr.getColor();
     pwr.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, currentColor.a - 150));
-    pwr.setScale(sf::Vector2f(0.25f, 0.25f));
+    pwr.setScale(sf::Vector2f(0.125f, 0.125f));
 
 
 
@@ -712,10 +712,10 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
 
 
     std::ofstream file(outputfile);
-    file << "Anarchist City Simulator\nby:,Kacper Krzekotowski,and,Mateusz Grzywa";
+    file << "Anarchist City Simulator\nby:,Kacper Krzekotowski,and,Mateusz Grzywa\n";
     //--- Initial Parameters ----
     //std::cout << "elp2" << std::endl;
-    file << "Seed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length\n";
+    file << "\nSeed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length\n";
     file << seed << "," << numHumans << "," << numBuildings << ",";
     if (maxIterations == 0) {
         file << "infinity";
