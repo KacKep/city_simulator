@@ -13,10 +13,12 @@ Język programowania:
 
 C++
 
-doxy file generation,
+doxy file generation
+
 .\city_simulator> cmake --build build --target docs
 
-opennig doxyfile,
+opennig doxyfile
+
 .\city_simulator> build/html/index.html
 
 # CMake SFML Project Template
