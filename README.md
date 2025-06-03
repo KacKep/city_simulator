@@ -13,6 +13,14 @@ Język programowania:
 
 C++
 
+doxy file generation
+
+.\city_simulator> cmake --build build --target docs
+
+opennig doxyfile
+
+.\city_simulator> build/html/index.html
+
 # CMake SFML Project Template
 
 This repository template should allow for a fast and hassle-free kick start of your next SFML project using CMake.
