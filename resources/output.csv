@@ -8,51 +8,51 @@ Final Stats per Building
 ID,Name,Price,Product Value,Total Money Earned
 0,Shop,-60,50,0
 1,Hospital,-1400,30,0
-2,OfficeBuilding,800,0,0
+2,OfficeBuilding,800,0,800
 3,LiqourShop,-200,40,0
 4,Shop,-70,70,70
-5,Polytechnic,-600,25,7200
-6,OfficeBuilding,1100,0,5500
+5,Polytechnic,-600,25,7800
+6,OfficeBuilding,1100,0,2200
 7,LiqourShop,-400,70,0
-8,Shop,-90,40,180
+8,Shop,-90,40,90
 9,Hospital,-700,50,0
-10,OfficeBuilding,1200,0,2400
+10,OfficeBuilding,1200,0,1200
 11,LiqourShop,-300,50,300
-12,Shop,-20,80,0
+12,Shop,-20,80,20
 13,Hospital,-800,10,0
 14,OfficeBuilding,500,0,0
 15,LiqourShop,-900,50,0
-16,Shop,-60,60,0
+16,Shop,-60,60,60
 17,Hospital,-1100,30,0
-18,OfficeBuilding,500,0,0
-19,LiqourShop,-700,80,700
+18,OfficeBuilding,500,0,2000
+19,LiqourShop,-700,80,0
 20,Shop,-90,100,0
 21,Hospital,-1300,30,0
-22,OfficeBuilding,900,0,2700
+22,OfficeBuilding,900,0,6300
 23,LiqourShop,-600,40,0
 24,Shop,-80,40,80
 25,Hospital,-1000,20,0
 26,OfficeBuilding,700,0,0
 27,LiqourShop,-400,70,0
-28,Shop,-100,80,100
+28,Shop,-100,80,200
 29,Hospital,-900,10,0
-30,OfficeBuilding,1200,0,2400
-31,LiqourShop,-1000,50,2000
+30,OfficeBuilding,1200,0,4800
+31,LiqourShop,-1000,50,1000
 32,Shop,-60,100,0
 33,Hospital,-1000,50,0
-34,OfficeBuilding,1100,0,0
+34,OfficeBuilding,1100,0,2200
 35,LiqourShop,-800,80,0
 36,Shop,-60,50,0
 37,Hospital,-1100,10,0
 38,OfficeBuilding,1000,0,4000
-39,LiqourShop,-1000,60,0
+39,LiqourShop,-1000,60,2000
 40,Shop,-80,100,0
-41,Hospital,-600,30,1200
-42,OfficeBuilding,900,0,5400
+41,Hospital,-600,30,0
+42,OfficeBuilding,900,0,4500
 43,LiqourShop,-700,100,2100
 44,Shop,-40,40,0
 45,Hospital,-1400,20,0
-46,OfficeBuilding,1100,0,6600
+46,OfficeBuilding,1100,0,8800
 47,LiqourShop,-500,60,0
 48,Shop,-70,60,0
 49,Hospital,-500,30,0
@@ -60,51 +60,51 @@ ID,Name,Price,Product Value,Total Money Earned
 51,LiqourShop,-100,40,0
 52,Shop,-80,30,0
 53,Hospital,-600,50,0
-54,OfficeBuilding,500,0,500
+54,OfficeBuilding,500,0,0
 55,LiqourShop,-500,70,500
 56,Shop,-70,60,0
 57,Hospital,-1400,50,0
-58,OfficeBuilding,1400,0,4200
+58,OfficeBuilding,1400,0,2800
 59,LiqourShop,-100,60,0
 60,Shop,-100,50,0
 61,Hospital,-1300,50,0
-62,OfficeBuilding,700,0,2800
+62,OfficeBuilding,700,0,4200
 63,LiqourShop,-900,30,900
 64,Shop,-60,100,0
 65,Hospital,-600,10,0
 66,OfficeBuilding,1000,0,2000
-67,LiqourShop,-1000,100,0
+67,LiqourShop,-1000,100,1000
 68,Shop,-10,50,0
 69,Hospital,-800,50,0
 70,OfficeBuilding,800,0,1600
 71,LiqourShop,-400,50,0
 72,Shop,-90,90,0
 73,Hospital,-1200,10,0
-74,OfficeBuilding,1400,0,1400
-75,LiqourShop,-300,80,900
+74,OfficeBuilding,1400,0,4200
+75,LiqourShop,-300,80,300
 76,Shop,-60,100,0
-77,Hospital,-1200,30,0
+77,Hospital,-1200,30,1200
 78,OfficeBuilding,1300,0,0
 79,LiqourShop,-400,40,0
 80,Shop,-70,80,0
 81,Hospital,-900,20,0
 82,OfficeBuilding,800,0,4800
-83,LiqourShop,-800,40,0
+83,LiqourShop,-800,40,1600
 84,Shop,-10,60,0
 85,Hospital,-1000,40,0
-86,OfficeBuilding,1300,0,0
+86,OfficeBuilding,1300,0,1300
 87,LiqourShop,-100,70,0
 88,Shop,-80,30,0
 89,Hospital,-800,30,0
-90,OfficeBuilding,1200,0,3600
+90,OfficeBuilding,1200,0,6000
 91,LiqourShop,-400,50,400
 92,Shop,-70,70,0
 93,Hospital,-500,30,0
 94,OfficeBuilding,900,0,3600
 95,LiqourShop,-900,60,0
-96,Shop,-10,50,0
+96,Shop,-10,50,10
 97,Hospital,-1200,50,0
-98,OfficeBuilding,1200,0,6000
+98,OfficeBuilding,1200,0,9600
 99,LiqourShop,-900,100,0
 100,Shop,-70,40,0
 101,Polytechnic,-2000,45,14000
@@ -112,112 +112,112 @@ ID,Name,Price,Product Value,Total Money Earned
 103,LiqourShop,-900,40,0
 104,Shop,-40,80,0
 105,Hospital,-700,40,0
-106,OfficeBuilding,1200,0,2400
-107,LiqourShop,-200,70,200
+106,OfficeBuilding,1200,0,0
+107,LiqourShop,-200,70,600
 108,Shop,-70,40,0
 109,Hospital,-500,50,0
-110,OfficeBuilding,1300,0,1300
+110,OfficeBuilding,1300,0,2600
 111,LiqourShop,-800,50,0
-112,Shop,-30,50,30
+112,Shop,-30,50,0
 113,Hospital,-1300,40,0
-114,OfficeBuilding,900,0,900
+114,OfficeBuilding,900,0,4500
 115,LiqourShop,-500,60,0
-116,Shop,-10,60,0
+116,Shop,-10,60,20
 117,Hospital,-800,10,0
-118,OfficeBuilding,500,0,1000
+118,OfficeBuilding,500,0,500
 119,LiqourShop,-500,90,0
 120,Shop,-80,90,0
 121,Hospital,-1200,10,0
-122,OfficeBuilding,1400,0,2800
-123,LiqourShop,-700,80,700
-124,Shop,-70,90,70
+122,OfficeBuilding,1400,0,4200
+123,LiqourShop,-700,80,0
+124,Shop,-70,90,0
 125,Hospital,-1400,40,0
-126,OfficeBuilding,500,0,1000
+126,OfficeBuilding,500,0,3000
 127,LiqourShop,-400,90,0
 128,Shop,-20,30,0
 129,Hospital,-500,10,0
 130,OfficeBuilding,700,0,0
 131,LiqourShop,-200,100,0
-132,Shop,-60,80,0
+132,Shop,-60,80,60
 133,Hospital,-1000,40,0
-134,OfficeBuilding,1100,0,1100
+134,OfficeBuilding,1100,0,0
 135,LiqourShop,-1000,30,0
 136,Shop,-100,30,0
 137,Hospital,-1200,40,0
-138,OfficeBuilding,1300,0,9100
+138,OfficeBuilding,1300,0,7800
 139,LiqourShop,-1000,30,0
-140,Shop,-70,70,0
+140,Shop,-70,70,70
 141,Hospital,-1000,30,0
-142,OfficeBuilding,600,0,2400
-143,LiqourShop,-300,90,0
-144,Shop,-100,50,0
+142,OfficeBuilding,600,0,3600
+143,LiqourShop,-300,90,300
+144,Shop,-100,50,100
 145,Hospital,-1300,50,0
-146,OfficeBuilding,600,0,1200
+146,OfficeBuilding,600,0,1800
 147,LiqourShop,-1000,50,1000
-148,Shop,-90,30,90
+148,Shop,-90,30,0
 149,Hospital,-1100,50,1100
-150,OfficeBuilding,1000,0,1000
-151,LiqourShop,-900,100,0
+150,OfficeBuilding,1000,0,2000
+151,LiqourShop,-900,100,900
 152,Shop,-50,60,0
 153,Hospital,-1300,40,0
-154,OfficeBuilding,500,0,2000
-155,LiqourShop,-400,30,400
+154,OfficeBuilding,500,0,1500
+155,LiqourShop,-400,30,1200
 156,Shop,-10,100,0
 157,Hospital,-1300,20,0
-158,OfficeBuilding,700,0,700
-159,LiqourShop,-900,90,0
+158,OfficeBuilding,700,0,2100
+159,LiqourShop,-900,90,900
 160,Shop,-20,70,0
 161,Hospital,-1000,20,0
 162,OfficeBuilding,1100,0,0
 163,LiqourShop,-100,40,0
 164,Shop,-90,60,0
 165,Hospital,-800,50,0
-166,OfficeBuilding,800,0,12000
+166,OfficeBuilding,800,0,10400
 167,LiqourShop,-200,100,0
-168,Shop,-90,40,0
+168,Shop,-90,40,90
 169,Hospital,-1400,50,0
-170,OfficeBuilding,1400,0,12600
-171,LiqourShop,-500,90,1500
+170,OfficeBuilding,1400,0,8400
+171,LiqourShop,-500,90,2500
 172,Shop,-10,60,0
 173,Hospital,-1400,30,0
-174,OfficeBuilding,1000,0,5000
-175,LiqourShop,-400,100,1200
+174,OfficeBuilding,1000,0,2000
+175,LiqourShop,-400,100,400
 176,Shop,-40,90,0
 177,Hospital,-800,20,0
-178,OfficeBuilding,500,0,1000
-179,LiqourShop,-200,90,200
-180,Shop,-30,100,0
+178,OfficeBuilding,500,0,1500
+179,LiqourShop,-200,90,600
+180,Shop,-30,100,30
 181,Hospital,-1400,40,0
 182,OfficeBuilding,900,0,0
-183,LiqourShop,-700,50,700
-184,Shop,-90,30,0
-185,Hospital,-1200,40,1200
-186,OfficeBuilding,800,0,1600
+183,LiqourShop,-700,50,2100
+184,Shop,-90,30,90
+185,Hospital,-1200,40,0
+186,OfficeBuilding,800,0,2400
 187,LiqourShop,-900,30,0
-188,Shop,-100,60,0
+188,Shop,-100,60,100
 189,Hospital,-900,10,0
-190,OfficeBuilding,500,0,1000
-191,LiqourShop,-100,60,100
+190,OfficeBuilding,500,0,1500
+191,LiqourShop,-100,60,0
 192,Shop,-100,50,0
 193,Hospital,-800,50,0
 194,OfficeBuilding,1400,0,1400
-195,LiqourShop,-400,80,400
-196,Shop,-40,90,0
+195,LiqourShop,-400,80,0
+196,Shop,-40,90,80
 197,Hospital,-600,20,0
-198,OfficeBuilding,500,0,1000
-199,LiqourShop,-700,70,1400
+198,OfficeBuilding,500,0,1500
+199,LiqourShop,-700,70,2100
 200,Shop,-20,90,0
 201,FAILED TO GENERATE
-202,OfficeBuilding,1100,0,3300
+202,OfficeBuilding,1100,0,1100
 203,LiqourShop,-400,90,400
 204,Shop,-10,100,0
 205,Hospital,-1300,30,0
-206,OfficeBuilding,1100,0,1100
-207,LiqourShop,-500,40,0
+206,OfficeBuilding,1100,0,0
+207,LiqourShop,-500,40,500
 208,Shop,-80,30,0
 209,Hospital,-1100,10,0
-210,OfficeBuilding,800,0,0
-211,LiqourShop,-500,70,0
+210,OfficeBuilding,800,0,3200
+211,LiqourShop,-500,70,500
 212,Shop,-70,100,0
 213,Hospital,-900,50,0
 214,FAILED TO GENERATE
@@ -225,7 +225,7 @@ ID,Name,Price,Product Value,Total Money Earned
 216,FAILED TO GENERATE
 217,Hospital,-800,30,0
 218,OfficeBuilding,1200,0,2400
-219,LiqourShop,-300,90,600
+219,LiqourShop,-300,90,1500
 220,Shop,-80,50,0
 221,Hospital,-500,30,0
 222,OfficeBuilding,1000,0,1000
@@ -248,29 +248,29 @@ ID,Name,Price,Product Value,Total Money Earned
 239,FAILED TO GENERATE
 240,FAILED TO GENERATE
 241,FAILED TO GENERATE
-242,OfficeBuilding,600,0,600
+242,OfficeBuilding,600,0,0
 243,FAILED TO GENERATE
-244,Shop,-80,60,0
+244,Shop,-80,60,80
 245,Hospital,-1400,10,0
 246,FAILED TO GENERATE
-247,LiqourShop,-500,90,500
+247,LiqourShop,-500,90,1000
 248,Shop,-80,80,0
 249,Hospital,-1400,20,0
-250,OfficeBuilding,600,0,0
-251,LiqourShop,-1000,40,1000
+250,OfficeBuilding,600,0,1200
+251,LiqourShop,-1000,40,0
 252,FAILED TO GENERATE
 253,Hospital,-1000,10,0
-254,OfficeBuilding,800,0,3200
+254,OfficeBuilding,800,0,4800
 255,LiqourShop,-400,40,0
-256,Shop,-70,90,0
+256,Shop,-70,90,70
 257,FAILED TO GENERATE
-258,OfficeBuilding,1300,0,0
+258,OfficeBuilding,1300,0,2600
 259,LiqourShop,-800,100,0
 260,Shop,-10,30,0
 261,Hospital,-500,30,0
 262,FAILED TO GENERATE
 263,LiqourShop,-400,80,0
-264,Shop,-50,30,0
+264,Shop,-50,30,50
 265,FAILED TO GENERATE
 266,FAILED TO GENERATE
 267,LiqourShop,-1000,30,0
@@ -282,14 +282,14 @@ ID,Name,Price,Product Value,Total Money Earned
 273,Hospital,-500,10,0
 274,OfficeBuilding,1300,0,3900
 275,LiqourShop,-700,80,0
-276,Shop,-60,50,0
+276,Shop,-60,50,60
 277,Hospital,-1200,50,0
 278,FAILED TO GENERATE
 279,FAILED TO GENERATE
 280,Shop,-90,50,0
 281,FAILED TO GENERATE
 282,FAILED TO GENERATE
-283,LiqourShop,-300,60,0
+283,LiqourShop,-300,60,600
 284,Shop,-60,60,0
 285,Hospital,-700,30,0
 286,FAILED TO GENERATE
@@ -313,12 +313,12 @@ ID,Name,Price,Product Value,Total Money Earned
 304,Shop,-90,50,0
 305,FAILED TO GENERATE
 306,FAILED TO GENERATE
-307,LiqourShop,-400,100,0
+307,LiqourShop,-400,100,400
 308,FAILED TO GENERATE
 309,FAILED TO GENERATE
 310,FAILED TO GENERATE
-311,LiqourShop,-900,40,1800
-312,Shop,-90,100,90
+311,LiqourShop,-900,40,900
+312,Shop,-90,100,180
 313,Hospital,-1200,10,0
 314,FAILED TO GENERATE
 315,LiqourShop,-600,60,0
@@ -337,7 +337,7 @@ ID,Name,Price,Product Value,Total Money Earned
 328,Shop,-90,30,0
 329,FAILED TO GENERATE
 330,FAILED TO GENERATE
-331,LiqourShop,-1000,100,1000
+331,LiqourShop,-1000,100,3000
 332,FAILED TO GENERATE
 333,FAILED TO GENERATE
 334,FAILED TO GENERATE
@@ -377,13 +377,13 @@ ID,Name,Price,Product Value,Total Money Earned
 368,FAILED TO GENERATE
 369,FAILED TO GENERATE
 370,FAILED TO GENERATE
-371,LiqourShop,-500,70,1000
+371,LiqourShop,-500,70,2500
 372,FAILED TO GENERATE
 373,FAILED TO GENERATE
 374,FAILED TO GENERATE
 375,FAILED TO GENERATE
 376,FAILED TO GENERATE
-377,Hospital,-600,40,0
+377,Hospital,-600,40,600
 378,FAILED TO GENERATE
 379,FAILED TO GENERATE
 380,FAILED TO GENERATE
@@ -401,7 +401,7 @@ ID,Name,Price,Product Value,Total Money Earned
 392,FAILED TO GENERATE
 393,FAILED TO GENERATE
 394,FAILED TO GENERATE
-395,LiqourShop,-600,30,4200
+395,LiqourShop,-600,30,3600
 396,FAILED TO GENERATE
 397,FAILED TO GENERATE
 398,FAILED TO GENERATE
@@ -412,278 +412,278 @@ ID,Name,Price,Product Value,Total Money Earned
 
 Final Stats of each Human
 ID,Name,Status,Pet ID,Health,Hunger,Happiness,Attack,Defence,Swiftness,Graduated Semesters,Money,Drunkness,Item
-1,Stanislaw Baranowicz,Alive,No Pets,100,90,99,10,0,20,0,1000,0,Scissors
-2,Christopher Nowak,Alive,No Pets,70,100,45,6,0,45,1,130,0,Sharp Pencil
-3,Ihor Prudnicka,Alive,No Pets,100,50,95,7,0,30,0,3000,0,Glass Bottle
-4,Kunegunda Pork,Dead (Died on iteration 135)
-5,John Poniatowski,Alive,No Pets,100,70,99,5,1,50,0,700,5,Boots
-6,Stanislaw Prudnicka,Alive,7,100,70,97,5,3,0,0,1000,0,Aluminium Armor
-8,Zygmunt Wojtyla,Alive,No Pets,100,60,96,5,1,50,0,2800,0,Boots
-9,John Wojtyla,Alive,10,78,60,96,6,2,10,0,1000,0,Riot Shield
-11,Stachu Baranowicz,Alive,No Pets,90,60,99,7,0,30,0,1000,5,Glass Bottle
-12,Christopher Dudek,Alive,No Pets,100,50,40,7,0,40,1,1200,0,Rock
-13,Gniewomir Wojtyla,Alive,No Pets,100,60,96,6,2,10,0,1000,0,Riot Shield
-14,Brajan Pork,Alive,No Pets,100,60,96,7,0,30,0,2200,0,Glass Bottle
-15,Kunegunda Baranowicz,Alive,No Pets,66,40,94,11,0,35,0,1900,0,Knife
-16,Nikolai Smith,Alive,17,78,80,99,10,0,20,0,1900,0,Scissors
+1,Stanislaw Baranowicz,Alive,No Pets,100,70,97,10,0,20,0,1000,0,Scissors
+2,Christopher Nowak,Alive,No Pets,70,60,91,6,0,45,1,4400,5,Sharp Pencil
+3,Ihor Prudnicka,Alive,No Pets,100,60,96,7,0,30,0,3000,0,Glass Bottle
+4,Kunegunda Pork,Alive,No Pets,72,90,99,6,2,10,0,1000,0,Riot Shield
+5,John Poniatowski,Alive,No Pets,42,60,98,5,1,50,0,700,5,Boots
+6,Stanislaw Prudnicka,Dead (Died on iteration 154)
+8,Zygmunt Wojtyla,Alive,No Pets,100,50,95,5,1,50,0,2800,0,Boots
+9,John Wojtyla,Alive,10,75,60,96,6,2,10,0,1000,0,Riot Shield
+11,Stachu Baranowicz,Alive,No Pets,86,70,97,7,0,30,0,1000,0,Glass Bottle
+12,Christopher Dudek,Alive,No Pets,100,80,99,7,0,40,0,1440,5,Rock
+13,Gniewomir Wojtyla,Alive,No Pets,84,90,99,6,2,10,0,4090,0,Riot Shield
+14,Brajan Pork,Alive,No Pets,100,50,95,7,0,30,0,2800,0,Glass Bottle
+15,Kunegunda Baranowicz,Alive,No Pets,46,70,99,11,0,35,0,1500,5,Knife
+16,Nikolai Smith,Alive,17,8,60,97,10,0,20,0,2400,0,Scissors
 18,John Bialy,Dead (Died on iteration 18)
-19,Alfred Jobs,Alive,No Pets,100,60,99,6,2,10,0,4370,90,Riot Shield
-20,Brajan Smith,Alive,No Pets,100,80,98,5,1,50,0,1000,0,Boots
-21,Christopher Kowalski,Alive,No Pets,100,60,96,7,0,30,0,3000,0,Glass Bottle
+19,Alfred Jobs,Alive,No Pets,100,50,95,6,2,10,0,3100,0,Riot Shield
+20,Brajan Smith,Alive,No Pets,77,80,98,5,1,50,0,1000,0,Boots
+21,Christopher Kowalski,Alive,No Pets,100,50,95,7,0,30,0,2400,0,Glass Bottle
 22,Brajan Pork,Dead (Died on iteration 33)
-23,Steve Dudek,Alive,No Pets,100,30,68,7,0,30,1,5400,5,Glass Bottle
-24,Kunegunda Pork,Alive,25,50,50,99,7,0,30,0,1100,5,Glass Bottle
-26,Denis Jones,Alive,No Pets,27,70,97,10,0,20,0,1000,0,Scissors
-27,Zygmunt Dudek,Alive,No Pets,61,60,99,6,2,10,0,1400,5,Riot Shield
-28,Grzmislaw Jones,Alive,29,95,60,99,7,0,30,0,1000,5,Glass Bottle
-30,Bozydar Sunbed,Alive,No Pets,100,90,99,10,0,20,0,1000,0,Scissors
-31,Alexander Sunbed,Alive,No Pets,100,50,45,10,0,20,2,1110,5,Scissors
-32,Bozydar Sunbed,Alive,No Pets,100,80,98,6,2,10,0,1000,0,Riot Shield
-33,Stachu Baranowicz,Alive,34,89,70,97,7,0,30,0,1000,0,Glass Bottle
-35,Nikolai Poniatowski,Alive,No Pets,30,60,74,7,0,40,0,1200,5,Rock
-36,Jessica Bialy,Alive,No Pets,40,70,43,12,0,0,0,1000,0,Baseball Bat
-37,Nikolai Jobs,Alive,38,100,70,100,7,0,30,0,1800,0,Glass Bottle
-39,Denis Dudek,Alive,40,56,70,97,5,1,50,0,2200,0,Boots
-41,John Wojtyla,Alive,No Pets,95,60,96,6,0,45,0,2400,0,Sharp Pencil
-42,Jessica Kowalski,Alive,No Pets,100,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
-43,Kunegunda Labiszak,Alive,44,100,70,98,7,0,40,0,1000,0,Rock
-45,Jessica Cheese,Alive,No Pets,100,50,95,5,1,50,0,3400,0,Boots
-46,Brajan Wojtyla,Alive,No Pets,100,50,99,11,0,35,0,1200,5,Knife
-47,Christopher Wojtyla,Dead (Died on iteration 89)
-48,Tim Jobs,Alive,No Pets,30,70,62,10,0,20,0,1000,0,Scissors
-49,Gniewomir Jobs,Alive,No Pets,95,50,89,5,1,50,0,2300,0,Boots
-50,Brajan Prudnicka,Alive,No Pets,27,80,38,10,0,20,0,1000,0,Scissors
-51,Jakub Labiszak,Alive,52,40,90,99,7,0,40,2,1000,295,Rock
-53,Alfred Baranowicz,Alive,54,55,80,98,12,0,0,0,1000,0,Baseball Bat
+23,Steve Dudek,Alive,No Pets,100,90,74,7,0,30,1,4530,5,Glass Bottle
+24,Kunegunda Pork,Alive,25,76,40,97,7,0,30,0,1700,5,Glass Bottle
+26,Denis Jones,Alive,No Pets,100,70,97,10,0,20,0,1000,0,Scissors
+27,Zygmunt Dudek,Alive,No Pets,56,70,97,6,2,10,0,1900,0,Riot Shield
+28,Grzmislaw Jones,Alive,29,46,40,97,7,0,30,0,1000,5,Glass Bottle
+30,Bozydar Sunbed,Alive,No Pets,100,80,98,10,0,20,0,1000,0,Scissors
+31,Alexander Sunbed,Alive,No Pets,79,50,70,10,0,20,1,1000,5,Scissors
+32,Bozydar Sunbed,Alive,No Pets,100,60,21,6,2,10,1,1800,0,Riot Shield
+33,Stachu Baranowicz,Alive,34,54,70,97,7,0,30,0,1000,0,Glass Bottle
+35,Nikolai Poniatowski,Alive,No Pets,54,50,97,7,0,40,0,1200,5,Rock
+36,Jessica Bialy,Alive,No Pets,46,90,45,12,0,0,0,1990,0,Baseball Bat
+37,Nikolai Jobs,Alive,38,100,80,98,7,0,30,0,1000,0,Glass Bottle
+39,Denis Dudek,Alive,40,56,50,99,5,1,50,0,1700,55,Boots
+41,John Wojtyla,Alive,No Pets,100,50,99,6,0,45,0,1200,5,Sharp Pencil
+42,Jessica Kowalski,Dead (Died on iteration 81)
+43,Kunegunda Labiszak,Alive,44,100,80,99,7,0,40,0,1000,0,Rock
+45,Jessica Cheese,Alive,No Pets,100,60,96,5,1,50,0,1000,0,Boots
+46,Brajan Wojtyla,Alive,No Pets,60,50,95,11,0,35,0,3000,0,Knife
+47,Christopher Wojtyla,Alive,No Pets,100,90,99,12,0,0,0,1300,5,Baseball Bat
+48,Tim Jobs,Alive,No Pets,88,60,96,10,0,20,0,1000,0,Scissors
+49,Gniewomir Jobs,Alive,No Pets,100,130,99,5,1,50,0,3370,5,Boots
+50,Brajan Prudnicka,Alive,No Pets,9,70,13,10,0,20,0,1000,0,Scissors
+51,Jakub Labiszak,Alive,52,40,90,99,7,0,40,2,1000,145,Rock
+53,Alfred Baranowicz,Alive,54,55,60,96,12,0,0,0,1500,0,Baseball Bat
 55,Brajan Jaroszewicz,Alive,No Pets,100,60,99,6,0,45,0,1400,5,Sharp Pencil
 56,Bozydar Wojtyla,Alive,57,100,70,97,10,0,20,0,2300,0,Scissors
-58,Grzmislaw Kabak,Alive,59,59,80,78,11,0,35,0,1000,0,Knife
-60,Stanislaw Pork,Alive,No Pets,100,70,97,5,1,50,0,1000,0,Boots
-61,Denis Smith,Alive,No Pets,100,40,94,5,0,0,0,3400,0,Indomitable Human Spirit
-62,John Wojtyla,Alive,63,100,60,96,12,0,0,0,2100,0,Baseball Bat
-64,Christopher Prudnicka,Alive,No Pets,100,60,41,6,0,45,1,300,0,Sharp Pencil
-65,Bozydar Smith,Alive,66,5,40,22,7,0,40,1,1600,5,Rock
-67,Bozydar Prudnicka,Alive,No Pets,100,60,96,11,0,35,0,1000,0,Knife
-68,Jakub Wojtyla,Alive,No Pets,85,70,42,5,0,0,1,200,0,Indomitable Human Spirit
-69,Steve Smith,Alive,No Pets,100,70,97,6,0,45,0,1900,0,Sharp Pencil
-70,Nikolai Bialy,Alive,No Pets,100,70,97,5,3,0,0,1000,0,Aluminium Armor
-71,John Sunbed,Alive,No Pets,93,80,98,10,0,20,0,1000,0,Scissors
-72,Nikolai Dudek,Alive,No Pets,90,90,99,7,0,40,0,1000,0,Rock
-73,Christopher Nowak,Alive,No Pets,67,50,87,7,0,40,1,1200,105,Rock
-74,Jerry Pork,Alive,75,100,60,96,12,0,0,0,3800,0,Baseball Bat
-76,Kunegunda Wojtyla,Alive,No Pets,80,70,97,7,0,40,0,1000,0,Rock
-77,Michel Pork,Alive,No Pets,33,50,20,5,0,0,1,1800,0,Indomitable Human Spirit
-78,Jessica Poniatowski,Alive,No Pets,100,80,98,6,2,10,0,1000,0,Riot Shield
-79,Jerry Baranowicz,Alive,No Pets,100,70,97,10,0,20,0,1000,0,Scissors
-80,Kunegunda Dudek,Alive,No Pets,90,50,99,5,3,0,0,1800,5,Aluminium Armor
-81,Zygmunt Labiszak,Alive,No Pets,100,80,98,10,0,20,0,1000,0,Scissors
-82,Gniewomir Jobs,Alive,No Pets,100,50,99,5,0,0,0,1400,5,Indomitable Human Spirit
-83,Zygmunt Jones,Alive,84,20,60,96,5,0,0,0,1000,0,Indomitable Human Spirit
-85,Michel Prudnicka,Alive,86,100,60,96,6,2,10,0,1000,0,Riot Shield
-87,Zygmunt Prudnicka,Alive,88,100,90,99,5,1,50,0,1000,0,Boots
+58,Grzmislaw Kabak,Alive,59,80,40,74,11,0,35,0,4500,0,Knife
+60,Stanislaw Pork,Alive,No Pets,83,60,96,5,1,50,0,2200,0,Boots
+61,Denis Smith,Dead (Died on iteration 117)
+62,John Wojtyla,Alive,63,100,70,97,12,0,0,0,1600,0,Baseball Bat
+64,Christopher Prudnicka,Alive,No Pets,100,50,40,6,0,45,1,300,0,Sharp Pencil
+65,Bozydar Smith,Alive,66,55,100,99,7,0,40,0,2130,5,Rock
+67,Bozydar Prudnicka,Alive,No Pets,68,60,98,11,0,35,0,3220,5,Knife
+68,Jakub Wojtyla,Alive,No Pets,85,50,40,5,0,0,1,1300,0,Indomitable Human Spirit
+69,Steve Smith,Alive,No Pets,100,70,97,6,0,45,0,1000,0,Sharp Pencil
+70,Nikolai Bialy,Alive,No Pets,16,120,99,5,3,0,0,3160,5,Aluminium Armor
+71,John Sunbed,Alive,No Pets,80,80,98,10,0,20,0,1000,0,Scissors
+72,Nikolai Dudek,Alive,No Pets,100,80,98,7,0,40,0,1000,0,Rock
+73,Christopher Nowak,Alive,No Pets,74,50,64,7,0,40,1,900,5,Rock
+74,Jerry Pork,Alive,75,100,60,97,12,0,0,0,1000,0,Baseball Bat
+76,Kunegunda Wojtyla,Alive,No Pets,69,60,96,7,0,40,0,3400,0,Rock
+77,Michel Pork,Alive,No Pets,95,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
+78,Jessica Poniatowski,Alive,No Pets,100,60,96,6,2,10,0,1900,0,Riot Shield
+79,Jerry Baranowicz,Alive,No Pets,100,40,99,10,0,20,0,2100,5,Scissors
+80,Kunegunda Dudek,Alive,No Pets,32,60,36,5,3,0,0,1710,5,Aluminium Armor
+81,Zygmunt Labiszak,Alive,No Pets,100,70,97,10,0,20,0,1500,0,Scissors
+82,Gniewomir Jobs,Dead (Died on iteration 54)
+83,Zygmunt Jones,Dead (Died on iteration 183)
+85,Michel Prudnicka,Alive,86,100,50,70,6,2,10,1,800,95,Riot Shield
+87,Zygmunt Prudnicka,Alive,88,100,80,98,5,1,50,0,1000,0,Boots
 89,Christopher Pork,Dead (Died on iteration 4)
-90,John Wojtyla,Alive,No Pets,95,60,99,7,0,30,0,1300,5,Glass Bottle
-91,Alfred Kabak,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
-92,John Pork,Alive,93,100,120,99,12,0,25,0,2930,0,Baseball Bat
+90,John Wojtyla,Alive,No Pets,100,40,94,7,0,30,0,3400,0,Glass Bottle
+91,Alfred Kabak,Alive,No Pets,100,70,97,6,0,45,0,1000,0,Sharp Pencil
+92,John Pork,Alive,93,86,80,84,12,0,25,0,1000,0,Baseball Bat
 94,Zygmunt Kabak,Dead (Died on iteration 30)
-95,Gniewomir Wojtyla,Alive,No Pets,100,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
-96,Alfred Jobs,Alive,No Pets,100,80,98,12,0,0,0,2300,0,Baseball Bat
-97,Tim Nowak,Alive,98,78,60,96,6,2,10,0,1000,0,Riot Shield
-99,Karol Bialy,Alive,No Pets,93,60,89,5,1,50,0,2600,0,Boots
-100,Denis Dudek,Alive,No Pets,56,70,97,11,0,35,0,1000,0,Knife
-101,Alfred Kabak,Alive,No Pets,87,70,97,5,3,0,0,1000,0,Aluminium Armor
-102,Grzmislaw Prudnicka,Alive,No Pets,100,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
+95,Gniewomir Wojtyla,Alive,No Pets,100,60,96,5,0,0,0,1000,0,Indomitable Human Spirit
+96,Alfred Jobs,Alive,No Pets,100,70,97,12,0,0,0,2300,0,Baseball Bat
+97,Tim Nowak,Alive,98,70,60,74,6,2,10,0,1900,0,Riot Shield
+99,Karol Bialy,Alive,No Pets,100,50,99,5,1,50,0,2300,5,Boots
+100,Denis Dudek,Alive,No Pets,38,60,96,11,0,35,0,1500,0,Knife
+101,Alfred Kabak,Alive,No Pets,84,60,96,5,3,0,0,1700,0,Aluminium Armor
+102,Grzmislaw Prudnicka,Alive,No Pets,30,60,96,5,0,0,0,1000,0,Indomitable Human Spirit
 103,Bozydar Jobs,Alive,No Pets,100,80,98,5,3,0,0,1000,0,Aluminium Armor
-104,Nikolai Labiszak,Alive,105,35,50,96,5,3,0,0,600,0,Aluminium Armor
-106,Genowefa Bialy,Alive,No Pets,95,90,99,6,0,45,0,1000,0,Sharp Pencil
-107,Gniewomir Poniatowski,Alive,No Pets,80,50,95,10,0,20,0,2100,0,Scissors
-108,Christopher Bialy,Alive,No Pets,100,90,99,12,0,0,0,1000,0,Baseball Bat
-109,Steve Prudnicka,Alive,No Pets,100,60,21,7,0,40,1,1800,0,Rock
-110,Michel Shrimpus,Dead (Died on iteration 104)
-111,Jessica Cheese,Alive,No Pets,100,80,98,7,0,30,0,1000,0,Glass Bottle
+104,Nikolai Labiszak,Dead (Died on iteration 61)
+106,Genowefa Bialy,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
+107,Gniewomir Poniatowski,Alive,No Pets,80,50,95,10,0,20,0,1000,0,Scissors
+108,Christopher Bialy,Alive,No Pets,90,60,86,12,0,0,0,2000,0,Baseball Bat
+109,Steve Prudnicka,Alive,No Pets,100,60,96,7,0,40,0,2400,0,Rock
+110,Michel Shrimpus,Alive,No Pets,5,80,3,5,0,0,0,1000,0,Indomitable Human Spirit
+111,Jessica Cheese,Alive,No Pets,100,60,96,7,0,30,0,1000,0,Glass Bottle
 112,Tim Smith,Alive,No Pets,100,70,97,6,2,10,0,1000,0,Riot Shield
-113,Karol Poniatowski,Alive,No Pets,79,70,97,6,0,45,0,1000,0,Sharp Pencil
-114,John Wojtyla,Alive,115,76,60,75,7,0,40,1,1610,5,Rock
-116,Michel Jones,Alive,No Pets,64,40,89,10,0,20,1,1900,5,Scissors
-117,Bozydar Dudek,Alive,No Pets,95,50,98,11,0,35,0,2900,5,Knife
-118,Alexander Kabak,Alive,No Pets,86,80,84,12,0,0,0,1000,0,Baseball Bat
-119,Gniewomir Kowalski,Alive,120,50,60,96,5,3,0,0,3200,0,Aluminium Armor
-121,Nikolai Shrimpus,Alive,122,100,70,97,7,0,30,0,1000,0,Glass Bottle
+113,Karol Poniatowski,Alive,No Pets,100,70,97,6,0,45,0,1000,0,Sharp Pencil
+114,John Wojtyla,Alive,115,100,40,99,7,0,40,1,400,5,Rock
+116,Michel Jones,Alive,No Pets,100,60,41,10,0,20,1,300,0,Scissors
+117,Bozydar Dudek,Alive,No Pets,90,60,94,11,0,35,0,700,5,Knife
+118,Alexander Kabak,Dead (Died on iteration 81)
+119,Gniewomir Kowalski,Dead (Died on iteration 174)
+121,Nikolai Shrimpus,Alive,122,88,70,97,7,0,30,0,1720,0,Glass Bottle
 123,Steve Nowak,Alive,No Pets,100,40,39,5,1,50,1,1000,0,Boots
-124,Karol Wojtyla,Alive,No Pets,100,80,98,10,10,20,0,2137,0,Scissors
-125,Jessica Smith,Alive,126,78,60,98,6,0,45,0,2600,5,Sharp Pencil
-127,Genowefa Jobs,Alive,No Pets,90,90,99,12,0,0,0,1000,0,Baseball Bat
-128,Jakub Jaroszewicz,Alive,No Pets,30,80,88,10,0,20,0,1000,0,Scissors
-129,Jakub Nowak,Alive,No Pets,100,60,96,6,2,10,0,1000,0,Riot Shield
-130,Ihor Jobs,Alive,No Pets,90,40,94,11,0,35,0,3600,0,Knife
+124,Karol Wojtyla,Alive,No Pets,100,70,97,10,10,20,0,2137,0,Scissors
+125,Jessica Smith,Alive,126,78,60,98,6,0,45,0,1500,5,Sharp Pencil
+127,Genowefa Jobs,Alive,No Pets,5,80,48,12,0,0,0,1000,0,Baseball Bat
+128,Jakub Jaroszewicz,Dead (Died on iteration 101)
+129,Jakub Nowak,Alive,No Pets,92,40,89,6,2,10,0,1000,0,Riot Shield
+130,Ihor Jobs,Alive,No Pets,90,60,71,11,0,35,1,850,5,Knife
 131,Jerry Nowak,Alive,No Pets,100,70,97,11,0,35,0,1000,0,Knife
-132,Alexander Shrimpus,Alive,133,100,80,98,11,0,35,0,1000,0,Knife
-134,Ihor Nowak,Dead (Died on iteration 58)
-136,Stachu Pork,Alive,No Pets,100,50,95,7,0,30,0,2300,0,Glass Bottle
-137,Jessica Baranowicz,Dead (Died on iteration 88)
-138,Vladimir Labiszak,Alive,No Pets,100,70,97,5,1,50,0,2300,0,Boots
-139,Bozydar Bialy,Alive,No Pets,100,70,97,6,0,45,0,1800,0,Sharp Pencil
-140,Bozydar Jaroszewicz,Alive,141,100,80,98,5,1,50,0,1000,0,Boots
-142,Alfred Smith,Alive,No Pets,100,40,94,10,0,20,0,2500,0,Scissors
-143,Nikolai Bialy,Alive,No Pets,94,70,91,7,0,30,0,2100,0,Glass Bottle
-144,Jerry Dudek,Alive,No Pets,100,80,98,10,0,20,0,1000,0,Scissors
-145,Tim Pork,Dead (Died on iteration 118)
-146,John Baranowicz,Alive,147,100,70,99,7,0,30,0,720,5,Glass Bottle
-148,Radomir Shrimpus,Alive,No Pets,95,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
-149,Grzmislaw Baranowicz,Alive,No Pets,100,80,98,5,1,50,0,1000,0,Boots
-150,Alfred Jobs,Dead (Died on iteration 80)
-151,Grzmislaw Wojtyla,Alive,No Pets,85,70,97,6,2,10,0,1000,0,Riot Shield
-152,Alfred Baranowicz,Alive,153,47,70,48,6,2,10,0,3000,0,Riot Shield
-154,Bozydar Baranowicz,Alive,155,4,80,2,12,0,0,0,1000,0,Baseball Bat
-156,Brajan Jaroszewicz,Alive,157,100,60,96,5,0,0,0,1500,0,Indomitable Human Spirit
-158,Gniewomir Pork,Alive,No Pets,89,70,97,6,0,45,0,1000,0,Sharp Pencil
-159,Jerry Poniatowski,Alive,No Pets,66,60,54,6,2,10,0,2200,0,Riot Shield
-160,Brajan Bialy,Alive,No Pets,100,70,44,7,0,40,1,710,5,Rock
-161,Stanislaw Wojtyla,Alive,162,100,80,98,7,0,30,0,1000,0,Glass Bottle
-163,Michel Nowak,Dead (Died on iteration 88)
-165,Steve Wojtyla,Alive,No Pets,95,70,97,11,0,35,0,1500,0,Knife
-166,Jakub Bialy,Alive,No Pets,19,70,67,10,0,20,0,1000,0,Scissors
-167,Denis Kabak,Alive,No Pets,100,80,98,7,0,40,0,1000,0,Rock
-168,Jakub Prudnicka,Alive,No Pets,33,60,31,5,3,0,0,2400,0,Aluminium Armor
-169,Zygmunt Labiszak,Alive,No Pets,82,70,79,11,0,35,0,1000,0,Knife
-170,Denis Nowak,Alive,No Pets,65,60,61,12,0,0,0,1900,0,Baseball Bat
-171,Zygmunt Baranowicz,Alive,172,93,60,98,12,0,0,0,2300,0,Baseball Bat
-173,Alfred Jobs,Alive,No Pets,100,70,97,6,0,45,0,1000,0,Sharp Pencil
-174,Michel Dudek,Alive,175,100,60,96,7,0,30,0,1500,0,Glass Bottle
-176,Grzmislaw Wojtyla,Alive,177,95,60,96,7,0,40,0,1800,0,Rock
-178,Zygmunt Bialy,Alive,No Pets,100,50,99,10,0,20,0,1300,5,Scissors
-179,Alfred Smith,Alive,180,100,70,98,11,0,35,0,2200,0,Knife
-181,Bozydar Jones,Alive,No Pets,92,60,86,5,1,50,0,2400,0,Boots
-182,Brajan Baranowicz,Alive,183,73,60,76,7,0,30,0,800,5,Glass Bottle
+132,Alexander Shrimpus,Alive,133,100,70,97,11,0,35,0,1000,0,Knife
+134,Ihor Nowak,Alive,135,100,70,97,5,0,0,0,1800,0,Indomitable Human Spirit
+136,Stachu Pork,Alive,No Pets,100,60,96,7,0,30,0,1700,0,Glass Bottle
+137,Jessica Baranowicz,Alive,No Pets,100,50,97,5,0,0,0,1200,5,Indomitable Human Spirit
+138,Vladimir Labiszak,Alive,No Pets,100,70,45,5,1,50,1,920,5,Boots
+139,Bozydar Bialy,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
+140,Bozydar Jaroszewicz,Alive,141,90,80,98,5,1,50,0,1000,0,Boots
+142,Alfred Smith,Dead (Died on iteration 137)
+143,Nikolai Bialy,Alive,No Pets,74,40,77,7,0,30,0,3300,5,Glass Bottle
+144,Jerry Dudek,Alive,No Pets,40,80,98,10,0,20,0,1000,0,Scissors
+145,Tim Pork,Alive,No Pets,100,70,97,5,3,0,0,1000,0,Aluminium Armor
+146,John Baranowicz,Alive,147,82,70,72,7,0,30,1,1140,5,Glass Bottle
+148,Radomir Shrimpus,Alive,No Pets,51,80,54,5,0,0,0,1000,0,Indomitable Human Spirit
+149,Grzmislaw Baranowicz,Alive,No Pets,100,70,97,5,1,50,0,1000,0,Boots
+150,Alfred Jobs,Alive,No Pets,100,70,97,6,2,10,0,1000,0,Riot Shield
+151,Grzmislaw Wojtyla,Alive,No Pets,80,40,87,6,2,10,0,2000,0,Riot Shield
+152,Alfred Baranowicz,Alive,153,81,60,98,6,2,10,0,1600,5,Riot Shield
+154,Bozydar Baranowicz,Alive,155,45,70,90,12,0,0,0,1000,0,Baseball Bat
+156,Brajan Jaroszewicz,Dead (Died on iteration 87)
+158,Gniewomir Pork,Alive,No Pets,79,60,96,6,0,45,0,1500,0,Sharp Pencil
+159,Jerry Poniatowski,Alive,No Pets,38,60,21,6,2,10,0,2200,0,Riot Shield
+160,Brajan Bialy,Alive,No Pets,100,60,43,7,0,40,1,1410,5,Rock
+161,Stanislaw Wojtyla,Alive,162,100,40,99,7,0,30,0,1300,120,Glass Bottle
+163,Michel Nowak,Alive,164,49,70,34,6,2,10,0,1000,0,Riot Shield
+165,Steve Wojtyla,Alive,No Pets,100,70,97,11,0,35,0,1500,0,Knife
+166,Jakub Bialy,Alive,No Pets,49,60,96,10,0,20,0,1000,0,Scissors
+167,Denis Kabak,Alive,No Pets,100,60,99,7,0,40,0,1400,5,Rock
+168,Jakub Prudnicka,Dead (Died on iteration 156)
+169,Zygmunt Labiszak,Alive,No Pets,100,60,96,11,0,35,0,1000,0,Knife
+170,Denis Nowak,Alive,No Pets,65,80,63,12,0,0,0,1000,0,Baseball Bat
+171,Zygmunt Baranowicz,Alive,172,83,110,78,12,0,0,1,1400,5,Baseball Bat
+173,Alfred Jobs,Alive,No Pets,100,110,99,6,0,45,0,2000,0,Sharp Pencil
+174,Michel Dudek,Alive,175,100,60,96,7,0,30,0,1000,0,Glass Bottle
+176,Grzmislaw Wojtyla,Alive,177,95,40,99,7,0,40,0,1100,55,Rock
+178,Zygmunt Bialy,Alive,No Pets,46,70,87,10,0,20,0,1000,0,Scissors
+179,Alfred Smith,Alive,180,95,50,99,11,0,35,0,900,5,Knife
+181,Bozydar Jones,Alive,No Pets,84,70,77,5,1,50,0,1000,0,Boots
+182,Brajan Baranowicz,Alive,183,73,50,85,7,0,30,0,800,5,Glass Bottle
 184,Denis Nowak,Alive,185,88,60,71,5,1,50,1,1000,5,Boots
-186,Steve Smith,Alive,No Pets,100,60,96,5,1,50,0,2000,0,Boots
-187,Jessica Jobs,Alive,No Pets,100,70,97,7,0,30,0,1700,0,Glass Bottle
-188,Stachu Kowalski,Alive,No Pets,56,70,53,11,0,35,0,2000,0,Knife
-189,Grzmislaw Baranowicz,Alive,No Pets,76,50,46,5,1,50,1,1100,5,Boots
-190,Denis Cheese,Alive,No Pets,40,40,84,10,0,20,0,1500,5,Scissors
-191,John Cheese,Alive,No Pets,100,70,97,11,0,35,0,1000,0,Knife
-192,Ihor Cheese,Alive,No Pets,65,120,-12,10,0,20,1,4310,0,Scissors
-193,Jakub Poniatowski,Alive,No Pets,34,110,45,12,0,0,0,3600,5,Baseball Bat
-194,Karol Poniatowski,Alive,195,72,80,70,7,0,30,0,1000,0,Glass Bottle
-196,Ihor Poniatowski,Alive,No Pets,88,60,86,6,0,45,0,900,5,Sharp Pencil
-197,Kunegunda Smith,Alive,No Pets,80,70,77,11,0,35,0,1000,0,Knife
-198,Nikolai Kabak,Alive,No Pets,100,80,98,5,0,0,0,1000,0,Indomitable Human Spirit
-199,Grzmislaw Jaroszewicz,Alive,No Pets,93,80,91,11,0,35,0,1000,0,Knife
-200,Denis Sunbed,Alive,No Pets,95,50,98,11,0,35,0,1300,5,Knife
-201,Denis Cheese,Alive,No Pets,100,60,96,5,1,50,0,2100,0,Boots
-202,Jessica Dudek,Alive,No Pets,29,70,86,5,0,0,0,1000,0,Indomitable Human Spirit
-203,Ihor Kowalski,Alive,204,86,40,80,10,0,20,0,2200,0,Scissors
-205,Alexander Baranowicz,Alive,206,24,80,74,6,0,45,0,1000,0,Sharp Pencil
-207,Alfred Dudek,Alive,208,80,70,99,11,0,35,0,2320,5,Knife
-209,Vladimir Shrimpus,Alive,210,43,70,27,5,3,0,0,1000,0,Aluminium Armor
-211,Ihor Pork,Alive,No Pets,95,70,92,11,0,35,0,1000,0,Knife
+186,Steve Smith,Alive,No Pets,100,80,98,5,1,50,0,1000,0,Boots
+187,Jessica Jobs,Alive,No Pets,100,60,96,7,0,30,0,1700,0,Glass Bottle
+188,Stachu Kowalski,Alive,No Pets,56,60,52,11,0,35,0,2000,0,Knife
+189,Grzmislaw Baranowicz,Alive,No Pets,76,60,47,5,1,50,1,1100,5,Boots
+190,Denis Cheese,Alive,No Pets,38,100,93,10,0,20,0,1840,5,Scissors
+191,John Cheese,Alive,No Pets,70,60,76,11,0,35,0,1000,0,Knife
+192,Ihor Cheese,Alive,No Pets,80,110,52,10,0,20,1,3510,20,Scissors
+193,Jakub Poniatowski,Alive,No Pets,100,100,99,12,0,0,0,2680,5,Baseball Bat
+194,Karol Poniatowski,Alive,195,70,60,96,7,0,30,0,2200,0,Glass Bottle
+196,Ihor Poniatowski,Alive,No Pets,100,40,96,6,0,45,0,1700,5,Sharp Pencil
+197,Kunegunda Smith,Alive,No Pets,100,50,95,11,0,35,0,2400,0,Knife
+198,Nikolai Kabak,Alive,No Pets,100,70,97,5,0,0,0,1000,0,Indomitable Human Spirit
+199,Grzmislaw Jaroszewicz,Alive,No Pets,55,70,87,11,0,35,0,1000,0,Knife
+200,Denis Sunbed,Alive,No Pets,100,70,97,11,0,35,0,1000,0,Knife
+201,Denis Cheese,Alive,No Pets,43,40,84,5,1,50,0,1600,15,Boots
+202,Jessica Dudek,Alive,No Pets,100,60,96,5,0,0,0,1000,0,Indomitable Human Spirit
+203,Ihor Kowalski,Alive,204,72,30,40,10,0,20,1,1000,5,Scissors
+205,Alexander Baranowicz,Alive,206,88,70,97,6,0,45,0,1000,0,Sharp Pencil
+207,Alfred Dudek,Alive,208,40,100,87,11,0,35,0,760,5,Knife
+209,Vladimir Shrimpus,Dead (Died on iteration 150)
+211,Ihor Pork,Alive,No Pets,87,70,84,11,0,35,0,1000,0,Knife
 212,Alfred Sunbed,Dead (Died on iteration 40)
-213,Radomir Poniatowski,Alive,No Pets,100,60,98,6,2,10,0,2700,5,Riot Shield
-214,Jerry Pork,Alive,215,100,80,98,6,0,45,0,1000,0,Sharp Pencil
+213,Radomir Poniatowski,Alive,No Pets,100,40,96,6,2,10,0,2700,5,Riot Shield
+214,Jerry Pork,Alive,215,100,70,97,6,0,45,0,1000,0,Sharp Pencil
 216,Stachu Wojtyla,Dead (Died on iteration 32)
-217,Christopher Sunbed,Alive,218,46,80,23,5,3,0,0,1000,0,Aluminium Armor
-219,Jessica Kabak,Alive,No Pets,100,90,99,7,0,30,0,1000,0,Glass Bottle
-220,Jessica Bialy,Alive,No Pets,95,80,93,5,1,50,0,1000,0,Boots
+217,Christopher Sunbed,Alive,218,56,70,42,5,3,0,0,1000,0,Aluminium Armor
+219,Jessica Kabak,Alive,No Pets,88,80,86,7,0,30,0,1000,0,Glass Bottle
+220,Jessica Bialy,Alive,No Pets,85,80,83,5,1,50,0,1000,0,Boots
 221,Tim Prudnicka,Alive,222,100,80,98,6,2,10,0,1000,0,Riot Shield
-223,Michel Kabak,Alive,No Pets,30,60,96,12,0,0,0,1000,0,Baseball Bat
-224,Kunegunda Nowak,Alive,No Pets,18,80,16,12,0,0,0,1000,0,Baseball Bat
-225,Jakub Cheese,Alive,226,91,70,97,5,1,50,0,1000,0,Boots
-227,Steve Pork,Alive,No Pets,45,80,98,11,0,35,0,1000,0,Knife
+223,Michel Kabak,Dead (Died on iteration 56)
+224,Kunegunda Nowak,Alive,No Pets,8,70,5,12,0,0,0,1000,0,Baseball Bat
+225,Jakub Cheese,Alive,226,100,70,97,5,1,50,0,1500,0,Boots
+227,Steve Pork,Alive,No Pets,50,80,98,11,0,35,0,1000,0,Knife
 228,Ihor Baranowicz,Alive,No Pets,100,50,95,7,0,40,0,3000,0,Rock
-229,Vladimir Wojtyla,Alive,230,92,80,88,6,2,10,0,1000,0,Riot Shield
-231,Stachu Smith,Alive,No Pets,100,80,98,6,0,45,0,1000,0,Sharp Pencil
-232,Radomir Wojtyla,Alive,No Pets,70,50,65,12,0,0,0,1800,0,Baseball Bat
-233,Jakub Jobs,Alive,234,100,70,97,10,0,20,0,2800,0,Scissors
-235,Alexander Jones,Alive,No Pets,65,30,50,5,0,0,0,1300,5,Indomitable Human Spirit
-236,Christopher Prudnicka,Alive,No Pets,80,50,95,10,0,20,0,1000,0,Scissors
-237,Stachu Nowak,Alive,No Pets,100,50,98,7,0,30,0,1200,5,Glass Bottle
-238,Stachu Jones,Alive,No Pets,70,80,68,17,0,30,0,1000,9295,Glass Bottle
-239,Denis Sunbed,Alive,240,37,70,92,5,1,50,0,1000,0,Boots
-241,Christopher Jobs,Alive,No Pets,14,80,-37,5,3,0,0,1000,0,Aluminium Armor
-242,Jakub Dudek,Alive,243,37,80,3,5,3,0,0,1000,0,Aluminium Armor
-244,Kunegunda Nowak,Alive,No Pets,100,60,96,6,2,10,0,2100,0,Riot Shield
-245,Bozydar Sunbed,Alive,No Pets,90,90,87,6,2,10,0,1000,0,Riot Shield
-246,Jessica Poniatowski,Alive,No Pets,100,70,97,10,0,20,0,1000,0,Scissors
-247,Jerry Smith,Alive,No Pets,100,60,21,6,2,10,1,1500,0,Riot Shield
-248,Radomir Prudnicka,Alive,249,90,70,85,6,2,10,0,1000,0,Riot Shield
-250,Alexander Prudnicka,Dead (Died on iteration 57)
+229,Vladimir Wojtyla,Alive,230,100,70,97,6,2,10,0,1000,0,Riot Shield
+231,Stachu Smith,Alive,No Pets,100,60,96,6,0,45,0,1000,0,Sharp Pencil
+232,Radomir Wojtyla,Alive,No Pets,100,60,96,12,0,0,0,1800,0,Baseball Bat
+233,Jakub Jobs,Alive,234,80,60,76,10,0,20,0,2800,0,Scissors
+235,Alexander Jones,Alive,No Pets,18,130,23,5,0,0,0,4710,5,Indomitable Human Spirit
+236,Christopher Prudnicka,Alive,No Pets,44,60,60,10,0,20,0,1000,0,Scissors
+237,Stachu Nowak,Alive,No Pets,52,120,57,7,0,30,0,1130,5,Glass Bottle
+238,Stachu Jones,Alive,No Pets,70,80,68,17,0,30,0,1000,9080,Glass Bottle
+239,Denis Sunbed,Alive,240,68,40,89,5,1,50,0,2200,0,Boots
+241,Christopher Jobs,Alive,No Pets,100,70,97,5,3,0,0,1000,0,Aluminium Armor
+242,Jakub Dudek,Alive,243,33,80,-7,5,3,0,0,1000,0,Aluminium Armor
+244,Kunegunda Nowak,Alive,No Pets,92,60,86,6,2,10,0,2100,0,Riot Shield
+245,Bozydar Sunbed,Alive,No Pets,62,70,55,6,2,10,0,1000,0,Riot Shield
+246,Jessica Poniatowski,Alive,No Pets,82,70,79,10,0,20,0,1000,0,Scissors
+247,Jerry Smith,Alive,No Pets,100,80,98,6,2,10,0,1000,0,Riot Shield
+248,Radomir Prudnicka,Alive,249,33,60,16,6,2,10,0,1000,0,Riot Shield
+250,Alexander Prudnicka,Alive,251,5,70,-13,5,3,0,0,1000,0,Aluminium Armor
 252,John Cheese,Dead (Died on iteration 34)
-254,John Kabak,Alive,No Pets,100,50,99,6,2,10,0,1600,30,Riot Shield
-255,Nikolai Dudek,Alive,No Pets,80,60,99,12,0,0,0,1500,5,Baseball Bat
-256,Kunegunda Shrimpus,Alive,257,90,70,87,7,0,40,0,1000,0,Rock
-258,Alfred Sunbed,Alive,No Pets,100,70,97,6,0,45,0,1000,0,Sharp Pencil
+254,John Kabak,Alive,No Pets,100,50,99,6,2,10,0,1800,5,Riot Shield
+255,Nikolai Dudek,Alive,No Pets,40,50,53,12,0,0,0,1500,5,Baseball Bat
+256,Kunegunda Shrimpus,Alive,257,76,70,73,7,0,40,0,1000,0,Rock
+258,Alfred Sunbed,Alive,No Pets,95,40,99,6,0,45,0,2000,55,Sharp Pencil
 
 Final Stats of each Animal
 ID,Type,Owner ID,Status,Health,Hunger,Happiness,Attack,Defence,Swiftness
-7,Dog,6,Alive,100,100,100,10,0,0
-10,Cat,9,Alive,100,85,97,5,0,50
+7,Dog,Owner is Dead,Dead (Died on iteration 179)
+10,Cat,9,Alive,100,85,100,5,0,50
 17,Cat,16,Alive,100,85,98,5,0,50
 25,Cat,24,Alive,100,80,96,5,0,50
 29,Cat,28,Alive,100,90,98,5,0,50
-34,Dog,33,Alive,100,100,100,10,0,0
-38,Dog,37,Alive,52,100,100,10,0,0
+34,Dog,33,Alive,89,100,89,10,0,0
+38,Dog,37,Alive,82,100,82,10,0,0
 40,Cat,39,Alive,100,80,96,5,0,50
-44,Cat,43,Alive,94,85,98,5,0,50
-52,Cat,51,Alive,90,90,88,5,0,50
-54,Cat,53,Alive,100,75,95,5,0,50
-57,Cat,56,Alive,100,90,98,5,0,50
-59,Cat,58,Alive,100,85,97,5,0,50
+44,Cat,43,Alive,100,90,99,5,0,50
+52,Cat,51,Alive,100,85,97,5,0,50
+54,Cat,53,Alive,100,80,96,5,0,50
+57,Cat,56,Alive,89,85,86,5,0,50
+59,Cat,58,Alive,95,85,92,5,0,50
 63,Cat,62,Alive,100,90,98,5,0,50
-66,Cat,65,Alive,95,90,99,5,0,50
-75,Cat,74,Alive,100,90,98,5,0,50
-84,Cat,83,Alive,100,85,100,5,0,50
-86,Cat,85,Alive,100,90,98,5,0,50
-88,Cat,87,Alive,100,90,98,5,0,50
-93,Cat,92,Alive,100,90,98,5,0,50
+66,Cat,65,Alive,65,85,68,5,0,50
+75,Cat,74,Alive,100,85,98,5,0,50
+84,Cat,Owner is Dead,Alive,100,80,96,5,0,50
+86,Cat,85,Alive,100,85,97,5,0,50
+88,Cat,87,Alive,100,85,97,5,0,50
+93,Cat,92,Alive,100,80,96,5,0,50
 98,Cat,97,Alive,93,85,90,5,0,50
-105,Cat,104,Alive,100,75,96,5,0,50
-115,Cat,114,Alive,76,90,74,5,0,50
-120,Dog,119,Dead (Died on iteration 37)
-122,Cat,121,Alive,100,85,97,5,0,50
+105,Cat,Owner is Dead,Alive,100,80,97,5,0,50
+115,Cat,114,Alive,76,85,73,5,0,50
+120,Dog,Owner is Dead,Dead (Died on iteration 37)
+122,Cat,121,Alive,100,80,96,5,0,50
 126,Cat,125,Alive,100,80,96,5,0,50
 133,Dog,132,Alive,93,100,93,10,0,0
-135,Dog,Owner is Dead,Alive,80,70,77,10,0,0
-141,Cat,140,Alive,100,85,97,5,0,50
+135,Dog,134,Alive,80,100,80,10,0,0
+141,Cat,140,Alive,100,80,96,5,0,50
 147,Cat,146,Alive,93,85,98,5,0,50
-153,Cat,152,Alive,100,85,98,5,0,50
-155,Cat,154,Alive,100,90,98,5,0,50
-157,Dog,156,Alive,100,100,100,10,0,0
-162,Cat,161,Alive,100,80,96,5,0,50
-164,Cat,Owner is Dead,Alive,100,75,95,5,0,50
-172,Dog,171,Alive,67,100,67,10,0,0
-175,Cat,174,Alive,94,85,91,5,0,50
-177,Dog,176,Alive,100,100,100,10,0,0
+153,Cat,152,Alive,100,75,96,5,0,50
+155,Cat,154,Alive,100,85,97,5,0,50
+157,Dog,Owner is Dead,Alive,100,100,100,10,0,0
+162,Cat,161,Alive,100,70,94,5,0,50
+164,Cat,163,Alive,100,80,96,5,0,50
+172,Dog,171,Alive,100,100,100,10,0,0
+175,Cat,174,Alive,100,75,95,5,0,50
+177,Dog,176,Alive,70,100,70,10,0,0
 180,Cat,179,Alive,100,90,99,5,0,50
 183,Dog,182,Dead (Died on iteration 21)
 185,Cat,184,Alive,100,70,94,5,0,50
 195,Dog,194,Alive,100,100,100,10,0,0
 204,Cat,203,Alive,100,75,95,5,0,50
-206,Cat,205,Alive,100,90,98,5,0,50
-208,Cat,207,Alive,100,95,99,5,0,50
-210,Dog,209,Alive,100,100,100,10,0,0
-215,Cat,214,Alive,100,85,97,5,0,50
+206,Cat,205,Alive,100,85,97,5,0,50
+208,Cat,207,Alive,100,90,98,5,0,50
+210,Dog,Owner is Dead,Dead (Died on iteration 57)
+215,Cat,214,Alive,100,80,96,5,0,50
 218,Dog,217,Alive,100,100,100,10,0,0
-222,Cat,221,Alive,100,85,97,5,0,50
-226,Dog,225,Alive,93,100,93,10,0,0
-230,Dog,229,Alive,76,100,76,10,0,0
-234,Cat,233,Alive,100,85,97,5,0,50
-240,Dog,239,Dead (Died on iteration 130)
-243,Dog,242,Alive,100,100,100,10,0,0
-249,Cat,248,Alive,100,90,98,5,0,50
-251,Cat,Owner is Dead,Alive,100,85,97,5,0,50
+222,Cat,221,Alive,100,90,98,5,0,50
+226,Dog,225,Alive,100,100,100,10,0,0
+230,Dog,229,Alive,100,100,100,10,0,0
+234,Cat,233,Alive,100,80,96,5,0,50
+240,Dog,239,Alive,63,100,63,10,0,0
+243,Dog,242,Alive,72,100,72,10,0,0
+249,Cat,248,Alive,100,85,97,5,0,50
+251,Cat,250,Alive,100,85,97,5,0,50
 253,Cat,Owner is Dead,Alive,100,85,97,5,0,50
-257,Dog,256,Alive,100,100,100,10,0,0
+257,Dog,256,Alive,30,100,30,10,0,0
 
 Final global stats:
 Total number of entities: 258
 Total number of humans: 200
 Total number of animals: 58
-Alive entities:239
-Deaths: 19
-Alive humans: 184
-Dead humans: 16
-Alive animals: 55
-Dead animals: 3
+Alive entities:233
+Deaths: 25
+Alive humans: 179
+Dead humans: 21
+Alive animals: 54
+Dead animals: 4
 Total number of buildings: 290
 
 Deaths per Iteration:
@@ -697,15 +697,21 @@ Iteration,Total Deaths,Total Remaining Entities,Human Deaths,Remaining Humans,An
 34,1,251,1,194,0,57
 37,1,250,0,194,1,56
 40,1,249,1,193,0,56
-57,1,248,1,192,0,56
-58,1,247,1,191,0,56
-80,1,246,1,190,0,56
-88,2,244,2,188,0,56
-89,1,243,1,187,0,56
-104,1,242,1,186,0,56
-118,1,241,1,185,0,56
-130,1,240,0,185,1,55
-135,1,239,1,184,0,55
+54,1,248,1,192,0,56
+56,1,247,1,191,0,56
+57,1,246,0,191,1,55
+61,1,245,1,190,0,55
+81,2,243,2,188,0,55
+87,1,242,1,187,0,55
+101,1,241,1,186,0,55
+117,1,240,1,185,0,55
+137,1,239,1,184,0,55
+150,1,238,1,183,0,55
+154,1,237,1,182,0,55
+156,1,236,1,181,0,55
+174,1,235,1,180,0,55
+179,1,234,0,180,1,54
+183,1,233,1,179,0,54
 
 Map Legend:
 0,Grass Tile

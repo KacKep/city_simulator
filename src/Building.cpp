@@ -1,6 +1,8 @@
 #include "Building.hpp"
 
-/**@File Base class for all buildings, all building types inherit from it*/
+
+/** file Base class for all buildings*/
+
 long unsigned int Building::building_count=0;
 
 Building::Building(const std::string& name, const BuildingList& construct)

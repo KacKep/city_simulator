@@ -1,5 +1,5 @@
 #include "Shop.hpp"
-/**@File sells food to human
+/** file sells food to human
 */
 Shop::Shop ()
 	: Building("Shop", ShopTile){

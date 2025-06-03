@@ -1,6 +1,6 @@
 #include "Dog.hpp"
 sf::Texture Dog::texture(std::string(RESOURCE_DIR) + "/Dog.png");
-/*@File Dog is companion of Human. It will die if left alone for too long.
+/** file Dog is companion of Human. It will die if left alone for too long.
 */
 Dog::Dog(Human* owner)
 	:Animal(owner),

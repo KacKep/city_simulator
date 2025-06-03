@@ -1,5 +1,5 @@
 #include "Polytechnic.hpp"
-/**@File Makes human smarter so they can earn more money*/
+/** file Makes human smarter so they can earn more money*/
 
 Polytechnic::Polytechnic()
     : Building("Polytechnic", PolytechnicTile) {

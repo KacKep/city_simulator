@@ -1,5 +1,5 @@
 #include "Human.hpp"
-/**@File Human makes most decisions it's the most complex class.
+/** file Human makes most decisions it's the most complex class.
 *It has needs only buildings can help them them 
 */
 sf::Texture Human::texture(std::string(RESOURCE_DIR) + "/Karol_Wojtyla.png");

@@ -1,5 +1,5 @@
 #include "City.hpp"
-/**@File City is responsible for interaction beetween classes and making the map.
+/** file City is responsible for interaction beetween classes and making the map.
 */
 City::City()
 // Default Values to be used if something goes wrong

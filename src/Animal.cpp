@@ -1,5 +1,7 @@
 #include "Animal.hpp"
-/**@File Base abstract class for all animals */
+
+/**@file Base abstract class for all animals */
+
 Animal::Animal(Human* human)
 	:Entity(),
 	owner(human), //this is an aggregation, each animal has one human as its owner

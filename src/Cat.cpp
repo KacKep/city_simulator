@@ -1,5 +1,5 @@
 #include "Cat.hpp"
-/**@File Animal created to show it living with an owner but not chasing it like a dog
+/** file Animal created to show it living with an owner but not chasing it like a dog
 *aCan walk on buildings
 */
 

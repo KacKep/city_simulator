@@ -1,6 +1,6 @@
 #include "Entity.hpp"
 
-/**@File Abstract class for all moving entities*/
+/** file Abstract class for all moving entities*/
 
 //it's static and it must be implemented beafor using it 
 sf::Vector2i Entity::boundry = { 10,10 };
