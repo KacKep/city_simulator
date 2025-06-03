@@ -590,12 +590,12 @@ void City::start() {
             Intmap[y][x] = level[y * length + x];
         }
     }
-
+/*
     sf::Font font(std::string(RESOURCE_DIR) +"/AGENCYR.TTF");
     sf::Text text(font);
     text.setFillColor(sf::Color::Black);
     text.setCharacterSize(5);
-
+*/
 
     
 
@@ -730,7 +730,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     for (long int i = 0; i < buildings.size(); i++) {
         file << buildings[i]->getID() << ","
         << buildings[i]->getName() << ","
-        << ((buildings[i]->getPrice()<0)? -buildings[i]->getPrice(): buildings[i]->getPrice() )<< ","
+        << buildings[i]->getPrice() << ","
         << buildings[i]->getProductValue() << ","
         << buildings[i]->getMoney() << "\n";
     }

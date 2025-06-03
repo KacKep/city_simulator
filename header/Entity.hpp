@@ -33,7 +33,7 @@ public:
 	int getDeathCount();
 	int getDeathIteration();
 	//----------------Drunkness--------------
-	int getDrunkness() const; //I prefere getDrunk 
+	int getDrunkness() const; //I prefer getDrunk
 	void addDrunkness(int drunkness);
 	//----------------Hunger-----------------
 	int getHunger() const;
