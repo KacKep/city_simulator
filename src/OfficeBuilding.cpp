@@ -1,5 +1,7 @@
 #include "OfficeBuilding.hpp"
-/**@File gives not permament jobs to human*/
+/**@File gives not permament jobs to humans
+ *  the more semesters a human has graduated, the more money he earns
+ */
 OfficeBuilding::OfficeBuilding()
 	: Building("OfficeBuilding", OfficeBuildingTile) {
 

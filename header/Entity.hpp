@@ -4,6 +4,9 @@
 #include "EnumList.hpp"
 #include <iostream>
 #include <sstream>
+
+//abstract class that is used for both humans and animals
+
 enum Direction
 {
 	left = 0,
@@ -24,8 +27,10 @@ public:
 
 	//------Getters and Seters------------
 
+	//basically everything is private because of hermetization so we have to use those
+
 	//--------------Iteration------------
-	void setIteration(int iteration);
+	void setIteration();
 	int getIteration();
 	//-----------------Dead---------------------
 	void setDead(bool yes);
@@ -48,10 +53,10 @@ public:
 	int getSemester() const;
 	void addSemester(int semester);
 	//---------------Attack-----------------
-	virtual int getAttack()const;
+	int getAttack()const;
 	void setAttack(int attack);
 	//-------------Swiftness----------------
-	virtual int getSwiftness()const;
+	int getSwiftness()const;
 	void setSwiftness(int swiftness);
 	//-------------Defence----------------
 	int getDefence()const;
@@ -69,10 +74,6 @@ public:
 	void setID();
 	unsigned int getID() const;
 	unsigned int getEntityCount();
-
-	//------building interaction stats-------
-	void interactionCount();
-	const long unsigned int getBuiildingInteractionCount();
 	//-------------------map set up-------------------
 	void setMap(std::vector<std::vector<int>>& map, sf::Vector2i boundry);
 	const std::vector<std::vector<int>>& getMap()const;
@@ -86,7 +87,7 @@ public:
 
 	virtual std::string toSave();
 
-	bool checkBoundry(unsigned int dystance, Direction direction);
+	bool checkBoundry(unsigned int distance, Direction direction);
 
 	void chooseTarget();
 	//virtual void behavior();
@@ -108,9 +109,7 @@ public:
 
 
 private:
-	//everyone has some
-	
-	
+	//variables
 	bool dead;
 	int drunkness;
 	int hunger;
@@ -121,19 +120,22 @@ private:
 	int happiness;
 	int education;
 	double money;
-	Direction dir;
-	sf::Vector2f target;
-	//tile of the buildings mostly
-	BuildingList place;
-	EntityList entity_type;
 	unsigned int ID;
 	unsigned int deathIteration;
+	//movement related
+	Direction dir; //number of the tile where the entity is going
+	sf::Vector2f target;
+	BuildingList place;	//tile of the buildings mostly
+	EntityList entity_type; //0 means human, 1 means animal
+	//static variables
 	static long unsigned int entity_count;
-	static long unsigned int building_interaction_count;
 	static long unsigned int death_count;
 	static long unsigned int iteration;
+	//map related
 	static std::vector<std::vector<int>> map;
 	static sf::Vector2i boundry;
+
+	//interface method
 	virtual void behavior() = 0;
 };
 

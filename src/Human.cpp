@@ -151,6 +151,7 @@ void Human::behavior() {
 		// in 9x9 there is no buildings so you probably want to check who survives the longest
 		if (getBoundry().x > 9 && getBoundry().y > 9)
 		{
+			//if the hunger reaches 0, the humans begins to starve
 			if (getHunger() <= 0)
 			{
 				addHunger(0);
@@ -159,6 +160,7 @@ void Human::behavior() {
 			}
 			else
 			{
+				//else the human slowly looses hunger and happiness (just like me right now)
 				addHunger(-10);
 				addHappiness(-1);
 			}
@@ -168,37 +170,48 @@ void Human::behavior() {
 		/*std::cout <<"Hunger:" << getHunger() << std::endl;
 		std::cout << "Health:" << getHealth() << std::endl;
 		std::cout << "Money:" << getMoney() << std::endl;*/
+//how the human decides where to go:
+	//everything down from here only happens if the human has enough money to afford it! (this is a capitalist society)
 
+	//if the health is less than 40, he goes to the hospital
 	if (getHealth() < 40 && getMoney() > 1500)
 	{
 		setTargetTile(HospitalTile);
 	}
+	//if the human is unhappy he goes for a beer!!
 	else if (getHappiness() < 40 && getMoney() > 1000) {
 		setTargetTile(LiqourShopTile);
 	}
+	//if the human is hungry he goes to a grocery shop to buy food
 	else if (getHunger() < 50 && getMoney() > 150)
 	{
 		setTargetTile(ShopTile);
 	}
+	//if the human cannot afford any of that, he goes to work
 	else if (getMoney() < 100)
 	{
 		setTargetTile(OfficeBuildingTile);
 	}
 	else
+		//if the human has no pressing needs
 	{
+		//if the human can afford it and he doesnt already have all semesters graduated, he can go to the polytechnic to study
 		if (rand() % 4 == 0 && getMoney() > 2000 && getSemester() < 7)
 		{
 			setTargetTile(PolytechnicTile);
 		}
+		//humans can randomly go to the liquor store if they are bored
 		else if (rand() % 4 == 0 && getMoney() > 1000)
 		{
 			setTargetTile(LiqourShopTile);
 		}
+		//they can also randomly choose to do something productive with their lives and go to work
 		else if (rand() % 4 == 0)
 		{
 			setTargetTile(OfficeBuildingTile);
 		}
 		else
+			//or alternatively they can just go to a completely random place
 		{
 			setTargetTile(PavementTile);
 		}
@@ -208,7 +221,7 @@ void Human::behavior() {
 	//std::cout << "chosen" << std::endl;
 	return;
 }
-
+//overriding the save method from the entity class (polymorhpism)
 std::string Human::toSave() {
 	std::stringstream toSave;
 	toSave << getID() << ","
@@ -249,6 +262,8 @@ int Human::getPetID() const {
 	return petID;
 }
 
+//determining a random name for the human.
+//certain special names have easter eggs :)
 
 void Human:: setName() {
 	static std::vector<std::string> firstNames = {

@@ -623,7 +623,7 @@ void City::start() {
         iteration++;
         if (entities.size() > 0)
         {
-            entities[0]->setIteration(iteration);
+            entities[0]->setIteration();
         }
         
   
@@ -700,10 +700,9 @@ void City::start() {
 
 
 
-
+//saves everything to a csv file
 
 void City :: save(std::vector<std::vector<int>>& Intmap) {
-    //std::cout << "elp1" << std::endl;
     int alive = entities.size() - (entities.size()<= 0 ? 0 : entities[0]->getDeathCount());
     int alivehumans = 0;
     //vector to store all deaths per each iteration
@@ -714,7 +713,6 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     std::ofstream file(outputfile);
     file << "Anarchist City Simulator\nby:,Kacper Krzekotowski,and,Mateusz Grzywa\n";
     //--- Initial Parameters ----
-    //std::cout << "elp2" << std::endl;
     file << "\nSeed,Number of Humans,Number of Buildings,Max Iterations,Map height,Map length\n";
     file << seed << "," << numHumans << "," << numBuildings << ",";
     if (maxIterations == 0) {
@@ -727,14 +725,27 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
 
     // --- Final stats of each building ---
     file << "\nFinal Stats per Building\nID,Name,Price,Product Value,Total Money Earned\n";
-    for (long int i = 0; i < buildings.size(); i++) {
-        file << buildings[i]->getID() << ","
-        << buildings[i]->getName() << ","
-        << buildings[i]->getPrice() << ","
-        << buildings[i]->getProductValue() << ","
-        << buildings[i]->getMoney() << "\n";
+    //i iterates through all ids and j iterates through all building objects on the buildings list. The loop checks if the buildings were actually generated and if so writes their data in the output file.
+    for (long int i = 0, j = 0; i < numBuildings; i++) {
+        file << i << ",";
+        //this basically checks if buildings[j] exists
+        if (buildings.size()<1 || j>buildings.size()-1) {
+            file << "FAILED TO GENERATE\n";
+        }
+        //if it does check if it generated
+        else if (buildings[j]->getID() != i) {
+            file << "FAILED TO GENERATE\n";
+        }
+        //if it geerated print data
+        else {
+            file << buildings[j]->getName() << ","
+                 << buildings[j]->getPrice() << ","
+                 << buildings[j]->getProductValue() << ","
+                 << buildings[j]->getMoney() << "\n";
+            j++;
+        }
+ //test       std::cout<< " " << i << " " << j << " " << numBuildings << " " << buildings.size() << "\n";
     }
-    //std::cout << "elp3" << std::endl;
     // --- Final stats of each human ---
     file << "\nFinal Stats of each Human\nID,Name,Status,Pet ID,Health,Hunger,Happiness,Attack,Defence,Swiftness,Graduated Semesters,Money,Drunkness,Item\n";
     for (long int i = 0; i < entities.size(); i++) {
@@ -755,7 +766,6 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
             file << entities[i]->toSave() << "\n";
         }
     }
-    //std::cout << "elp4" << std::endl;
     // --- Final global stats ---
     file << "\nFinal global stats:\n";
     file << "Total number of entities: " << entities.size() << "\n"
@@ -770,7 +780,6 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     << "Total number of buildings: " << buildings.size() << "\n";
 
     // --- Stats per each iteration ---
-    //std::cout << "elp5" << std::endl;
     for (long int i = 0; i < entities.size(); i++) {
         if (!entities[i]->isDead()) {
             continue;
@@ -797,9 +806,8 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
             << alive - alivehumans << "\n";
         }
     }
-    //std::cout << "elp6" << std::endl;
     // --- MAP ---
-    file << "Map Legend:\n"
+    file << "\nMap Legend:\n"
             "0,Grass Tile\n"
             "1,Flowers Tile\n"
             "2,Pavement Tile\n"
@@ -810,7 +818,7 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
             "7,Liquor Shop Tile\n"
             "8,Polytechnic Tile\n"
 
-    "Map Data:\n";
+    "\nMap Data:\n";
     for (long  int y = 0; y < height; y++) {
         for (long int x = 0; x < length; x++) {
             file << Intmap[y][x];
@@ -820,5 +828,4 @@ void City :: save(std::vector<std::vector<int>>& Intmap) {
     }
 
     file.close();
-    //std::cout << "elp7" << std::endl;
 }

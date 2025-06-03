@@ -14,6 +14,7 @@ Dog::Dog(Human* owner)
 }
 
 void Dog::behavior() {
+	//dog always follows owner if it is possible
 	if (getOwner() && !getOwner()->isDead())
 	{
 		if (abs(getOwner()->getPosition().y - getPosition().y) < 9.f && abs(getOwner()->getPosition().x - getPosition().x) < 9.f)
@@ -32,12 +33,15 @@ void Dog::behavior() {
 		setTarget(getPosition());
 		if (getHunger() <= 0)
 		{
-			addHunger(0);
+			//if the hunger is 0, the animal starts to take damage
 			addHealth(-2);
+			addHappiness(-2);
 		}
 		else
 		{
+			//if the animal isnt staving, the hunger decreases as well as happiness
 			addHunger(-10);
+			addHappiness(-1);
 		}
 
 		/*std::cout <<"Hunger:" << getHunger() << std::endl;

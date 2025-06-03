@@ -6,7 +6,6 @@
 sf::Vector2i Entity::boundry = { 10,10 };
  std::vector<std::vector<int>> Entity::map;
  long unsigned int Entity::entity_count=0;
- long unsigned int Entity::building_interaction_count =0;
  long unsigned int Entity::death_count=0;
  long unsigned int Entity::iteration=0;
 
@@ -32,8 +31,8 @@ Entity::Entity()
 }
 //----------Getters, Seters or Adders------------
 //----------------Iteration--------------
-void Entity::setIteration(int iteration) {
-	this->iteration = iteration;
+void Entity::setIteration() {
+	this->iteration++;
 }
 int Entity::getIteration() {
 	return this->iteration;
@@ -142,14 +141,6 @@ void Entity:: addSemester(int semester) {
  unsigned int Entity::getEntityCount() {
 	return entity_count;
  }
- //------building interaction stats-------
- void Entity::interactionCount() {
-	 building_interaction_count++;
- }
-
- const long unsigned int Entity::getBuiildingInteractionCount() {
-	 return building_interaction_count;
- }
  //-------------------map set up-------------------
  void Entity::setMap(std::vector<std::vector<int>>& map, sf::Vector2i boundry) {
 	 this->map = map;
@@ -241,24 +232,24 @@ std::string Entity::toSave() {
  }
 
  //checks if the boundry is in given direction. Probably will be used in path finding 
- bool Entity::checkBoundry(unsigned int dystance, Direction direction) {
+ bool Entity::checkBoundry(unsigned int distance, Direction direction) {
 
 	 switch (direction) {
 	 case left: {
 		 //std::cout << check << "- left\n";
-		 return ((int)getPosition().x / 10) >= dystance;
+		 return ((int)getPosition().x / 10) >= distance;
 	 }
 	 case right: {
 		 //std::cout << check << "- right\n";
-		 return abs(getBoundry().x - (int)getPosition().x / 10) > dystance;
+		 return abs(getBoundry().x - (int)getPosition().x / 10) > distance;
 	 }
 	 case up: {
 		 //std::cout << check << "- up\n";
-		 return ((int)getPosition().y / 10) >= dystance;
+		 return ((int)getPosition().y / 10) >= distance;
 	 }
 	 case down: {
 		 //std::cout << check << "- down\n";
-		 return abs(getBoundry().y - (int)getPosition().y / 10) > dystance;
+		 return abs(getBoundry().y - (int)getPosition().y / 10) > distance;
 	 }
 	 default: {
 		 return false;

@@ -1,14 +1,17 @@
 #include "Item.hpp"
 
-/**@FileItem used by humans to fight or protect them selfs
+/**@FileItem used by humans to fight or protect themselves
+ *This is an example of composition, each instance of this class exists only as an item that an individual human has
 */
 
-Item::Item() 
+Item::Item()
+//default values
 	:name("error"),
 	attack(0),
 	defence(0),
 	swiftness(0)
 {
+	//there are 10 random items
 	switch (rand() % 10)
 	{
 		case 0: {
@@ -86,7 +89,7 @@ Item::Item()
 }
 	Item::~Item(){}
 
-
+//getters
 	int Item::getSwiftness() const {
 		return swiftness;
 	}

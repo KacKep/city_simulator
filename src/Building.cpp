@@ -1,6 +1,6 @@
 #include "Building.hpp"
 
-/**@File Base class for all buildings*/
+/**@File Base class for all buildings, all building types inherit from it*/
 long unsigned int Building::building_count=0;
 
 Building::Building(const std::string& name, const BuildingList& construct)
@@ -43,7 +43,7 @@ int Building::getPrice()const {
 	return price;
 }
 
-//----------money---------
+//----------Money---------
 void Building::addMoney(double money) {
 	this->money += money;
 }

@@ -14,9 +14,12 @@ Cat::Cat(Human* owner)
 	setName("Cat");
 }
 
+//cats move independendly not caring about their owners. They move from one grass/flower tile to another and if they get hungry they hunt for food
 void Cat::behavior() {
+	//	//what happens when the cat gets to their desired target
 	if (getTarget() == getPosition())
 	{
+		//if the hunger is 0, the animal starts to take damage
 		if (getHunger() <= 0)
 		{
 			addHunger(0);
@@ -24,8 +27,11 @@ void Cat::behavior() {
 		}
 		else
 		{
+			//if the animal isnt staving, the hunger decreases as well as happiness
 			addHunger(-5);
+			addHappiness(-1);
 		}
+		//making sure health doesnt exceed 100
 		if (getHealth()>100)
 		{
 			addHealth(100 - getHealth());

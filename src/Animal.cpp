@@ -1,15 +1,19 @@
 #include "Animal.hpp"
-/**@File Base class for all animals */
+/**@File Base abstract class for all animals */
 Animal::Animal(Human* human)
 	:Entity(),
-	owner(human), //that's the only way, said the yt guy about agregations (he was talking about using refrence in the constructor)
+	owner(human), //this is an aggregation, each animal has one human as its owner
 	name("Animal")
 {
+	//sets an unique ID number
 	setID();
+	//gives the owner the ID of the pet (for saving purposes later)
 	owner->setPetID(getID());
+	//animal at the start has the same target as its owner
 	setTarget(owner->getTarget());
 	setPosition(getTarget());
 	setType(animal);
+	//animals dont use money
 	addMoney(-getMoney());
 }
 
@@ -43,6 +47,7 @@ void Animal::walk() {
 		setFillColor(sf::Color::Transparent);
 		setOutlineThickness(0);
 	}
+	//making sure those nubmers dont exceed 100
 	if (getHealth() > 100) {
 		addHealth(100 - getHealth());
 	}
@@ -57,8 +62,10 @@ void Animal::walk() {
 }
 
 void Animal::behavior() {
+	//what happens when the animal gets to their desired target
 	if (getTarget() == getPosition())
 	{
+		//if the hunger is 0, the animal starts to take damage
 		if (getHunger() <= 0)
 		{
 			addHunger(0);
@@ -67,6 +74,7 @@ void Animal::behavior() {
 		}
 		else
 		{
+			//if the animal isnt staving, the hunger decreases as well as happiness
 			addHunger(-10);
 			addHappiness(-1);
 		}
@@ -78,10 +86,11 @@ void Animal::behavior() {
 	//walkBasic();
 	
 }
-
+//interaction between an animal and another entity
 void Animal::fight(Entity* enemy) {
 	if (owner)
 	{
+		//if the animal meets its owner it gets healed (if the owner has money) and gets a lot of happiness (the owner also gets happiness)
 		if (enemy->getID() == owner->getID())
 		{
 			//std::cout << "pat pat" << std::endl;
@@ -97,11 +106,11 @@ void Animal::fight(Entity* enemy) {
 	}
 	if (getType()==enemy->getType())
 	{
-		//animals play or something
+		//if the enemy is another animal, the animals play or something instead of fighting
 		addHappiness((rand() % 5 + 1) * 5);
 		return;
 	}
-
+	//if the other entity is a human it can adopt the animal if its precious owner died
 	if (enemy->getType() == human && rand() % 10==0 && owner->isDead())
 	{
 		//PREVIOUS OWNER LOSES THE PET
@@ -110,6 +119,7 @@ void Animal::fight(Entity* enemy) {
 		Human* new_owner = dynamic_cast<Human*>(enemy);
         owner = new_owner;
 		owner->setPetID(getID());
+		//the new owner can then heal the animal
 		if (owner->getMoney()>100)
 		{
 			owner->addMoney(-100);
@@ -119,6 +129,7 @@ void Animal::fight(Entity* enemy) {
 		}
 		return;
 	}
+	// if the entity is hostile, fighting commences
 	int entity1DefRoll;
 	int enemyDefRoll;
 	for (;;) {
@@ -159,7 +170,7 @@ void Animal::fight(Entity* enemy) {
 		
 	}
 }
-
+//this method is used for the animals to get food, because they dont go to shops
 void Animal::hunt() {
 	if (rand() % 3 == 0 && getHunger() < 50)
 	{
@@ -168,7 +179,7 @@ void Animal::hunt() {
 		addHealth(1);//it's enought for a cat to survive
 	}
 }
-
+//all of the data from the getters gets converted to a string that can be printed in the output file
 std::string Animal::toSave() {
 	std::stringstream toSave;
 	toSave << getID() << ","

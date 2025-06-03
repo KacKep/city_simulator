@@ -7,8 +7,7 @@ class Human : public Entity
 public:
 	Human();
 	~Human() override = default;
-
-	//int getAttack()const override;
+	//overriding methods from the abstract entity class (example of polimorhpism)
 	void walk() override;
 	void fight(Entity* enemy) override;
 	std::string toSave()override;
@@ -17,11 +16,15 @@ public:
 	int getPetID() const;
 
 private:
-	Item item;
+	//------------variables---------------
+	//most variables are just inheritted from the entity class
+	Item item; //this is a composition, each human has his own unique item that is directly dependent on him
 	static sf::Texture texture;
 	std::string name;
 	int petID;
+	//methods
 	void setName();
+	//polimorphism
 	void behavior()override;
 };
 
