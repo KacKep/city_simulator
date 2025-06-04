@@ -497,7 +497,7 @@ void City::camera(sf::RenderWindow& window, sf::View& view) {
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F))
     {
-        //sf::sleep(sf::milliseconds(50));
+        sf::sleep(sf::milliseconds(200));
         if (!ValueSwitch2)
         {
             ValueSwitch2 = true;

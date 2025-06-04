@@ -4,3 +4,5 @@ out
 .idea
 .vs
 .vscode
+drawio/diagram_class.drawio
+*.drawio
