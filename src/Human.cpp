@@ -2,7 +2,6 @@
 /** file Human makes most decisions it's the most complex class.
 *It has needs only buildings can help them them 
 */
-sf::Texture Human::texture(std::string(RESOURCE_DIR) + "/Karol_Wojtyla.png");
 
 Human::Human()
 	:Entity()
@@ -275,21 +274,11 @@ void Human:: setName() {
 	std::string first = firstNames[std::rand() % firstNames.size()];
 	std::string last = lastNames[std::rand() % lastNames.size()];
 	this->name = first + " " + last;
-	if (getID()==2137) {
-		this->name = "Karol Wojtyla";
-	}
 	if (name == "Steve Jobs") {
 		this->addMoney(100000);
 	}
 	if (name == "Stanislaw Poniatowski") {
 		this->name = "Stanislaw August Poniatowski";
-	}
-	if (name == "Karol Wojtyla") {
-		//Divine protection
-		this->setDefence(10);
-		setFillColor(sf::Color::White);
-		setTexture(&texture);
-		this->addMoney(-getMoney()+2137);
 	}
 	if (name == "Stachu Jones") {
 		this->setAttack(15);
@@ -303,9 +292,5 @@ void Human:: setName() {
 	if (name == "Vladimir Bialy") {
 		this->addMoney(5000);
 		this->setAttack(this->getAttack()+3);
-	}
-	if (name == "Jakub Labiszak") {
-		this->addSemester(2);
-		addDrunkness(1000);
 	}
 }
