@@ -1,9 +1,17 @@
 #pragma once
+///<summary>
+/// List of enumeratos
+/// </summary>
+
+/// list of entities
 enum EntityList
 {
 	human=0,
 	animal=1
 };
+/// <summary>
+/// list of tiles
+/// </summary>
 enum BuildingList
 {
 	GrassTile = 0,

@@ -3,7 +3,12 @@
 #include <cstdlib>
 #include <iostream>
 class Item
-//item class is an example of composition, each instance of this class exists only as an item that an individual human has
+
+///<summary>
+/// item class is an example of composition, each instance of this class exists only as an item that an individual human has
+/// used by humans to fight or protect themselves
+///This is an example of composition, each instance of this class exists only as an item that an individual human has
+/// </summary>
 {
 private:
 	std::string name;
@@ -13,7 +18,7 @@ private:
 public:
 	Item();
 	~Item();
-	//getters
+	///getters
 	int getAttack1() const;
 	int getSwiftness() const;
 	int getDefence() const;

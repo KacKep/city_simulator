@@ -1,8 +1,11 @@
 #pragma once
 #include "Animal.hpp"
 
-//Animal created to show it living with an owner but not chasing it like a dog
-//inherits basically everything from the animal class except overriding the behaviour and having a custom texture
+
+///<summary>
+/// Animal created to show it living with an owner but not chasing it like a dog
+///inherits basically everything from the animal class except overriding the behaviour and having a custom texture
+/// </summary>
 
 class Cat :public Animal
 {
@@ -12,6 +15,6 @@ public:
 
 private:
 	static sf::Texture texture;
-	//polimorphism
+	///polimorphism
 	void behavior()override;
 };

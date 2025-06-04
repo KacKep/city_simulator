@@ -2,7 +2,9 @@
 
 #include <SFML/Graphics.hpp>
 #include <filesystem>
-
+/// <summary>
+/// File from sfml tutorial on sfml website allows for optimised background
+/// </summary>
 class TileMap : public sf::Drawable, public sf::Transformable
 {
 public:

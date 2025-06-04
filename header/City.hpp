@@ -14,7 +14,7 @@
 #include "Dog.hpp"
 #include "Polytechnic.hpp"
 
-//main primary class where basically everything happens
+///main primary class where basically everything happens
 
 class City 
 {
@@ -43,13 +43,13 @@ private:
 	void camera(sf::RenderWindow& window, sf::View& view);
 
 	void drawScreen(sf::RenderWindow& window, sf::View& view);
-	//saving data from the entire simulation to a csv output file
+	///saving data from the entire simulation to a csv output file
 	void save(std::vector<std::vector<int>>& Intmap);
 	//-----------Variables-------
 
 	std::vector<std::unique_ptr<Building>> buildings;
 	std::vector<std::unique_ptr<Entity>> entities;
-	//those following variables are inputted from an input file
+	///those following variables are inputted from an input file
 	long unsigned int numHumans;
 	long unsigned int numBuildings;
 	long unsigned int maxIterations;

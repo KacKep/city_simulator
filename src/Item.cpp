@@ -1,11 +1,7 @@
 #include "Item.hpp"
 
 
-/**@fileItem used by humans to fight or protect themselves
- *This is an example of composition, each instance of this class exists only as an item that an individual human has
 
-
-*/
 
 Item::Item()
 //default values

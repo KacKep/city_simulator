@@ -5,7 +5,8 @@
 #include <iostream>
 #include <sstream>
 
-//abstract class that is used for both humans and animals
+
+///  @brief enumeration for chosesn dierection
 
 enum Direction
 {
@@ -17,7 +18,10 @@ enum Direction
 
 };
 
-class Building;
+
+
+///  @brief abstract class that is used for both Human and Animal class
+
 
 class Entity : public sf::RectangleShape
 {
@@ -27,7 +31,7 @@ public:
 
 	//------Getters and Seters------------
 
-	//basically everything is private because of hermetization so we have to use those
+	///basically everything is private because of hermetization so we have to use those
 
 	//--------------Iteration------------
 	void setIteration();
@@ -109,7 +113,7 @@ public:
 
 
 private:
-	//variables
+	///variables
 	bool dead;
 	int drunkness;
 	int hunger;
@@ -122,20 +126,19 @@ private:
 	double money;
 	unsigned int ID;
 	unsigned int deathIteration;
-	//movement related
+	///movement related
 	Direction dir; //number of the tile where the entity is going
 	sf::Vector2f target;
 	BuildingList place;	//tile of the buildings mostly
 	EntityList entity_type; //0 means human, 1 means animal
-	//static variables
+	///static variables
 	static long unsigned int entity_count;
 	static long unsigned int death_count;
 	static long unsigned int iteration;
-	//map related
+	///map related
 	static std::vector<std::vector<int>> map;
 	static sf::Vector2i boundry;
 
-	//interface method
+	///interface method
 	virtual void behavior() = 0;
 };
-
